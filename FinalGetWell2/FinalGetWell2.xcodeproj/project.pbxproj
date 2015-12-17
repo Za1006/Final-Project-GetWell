@@ -1,0 +1,401 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5DCF68B21C23336500A72F12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCF68B11C23336500A72F12 /* AppDelegate.swift */; };
+		5DCF68B71C23336500A72F12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DCF68B51C23336500A72F12 /* Main.storyboard */; };
+		5DCF68BA1C23336500A72F12 /* FinalGetWell2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5DCF68B81C23336500A72F12 /* FinalGetWell2.xcdatamodeld */; };
+		5DCF68BC1C23336500A72F12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DCF68BB1C23336500A72F12 /* Assets.xcassets */; };
+		5DCF68BF1C23336500A72F12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DCF68BD1C23336500A72F12 /* LaunchScreen.storyboard */; };
+		AA184A2B1C2339FB001A679F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA184A2A1C2339FB001A679F /* LoginViewController.swift */; };
+		AA184A2D1C233A81001A679F /* Songs.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA184A2C1C233A81001A679F /* Songs.swift */; };
+		AA184A2F1C233AC1001A679F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA184A2E1C233AC1001A679F /* RegisterViewController.swift */; };
+		BD9EBEDF19FE0925AC376D40 /* libPods-FinalGetWell2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3517483E6AD61A0B82488FF0 /* libPods-FinalGetWell2.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		22214D90239856269A461A1B /* Pods-FinalGetWell2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinalGetWell2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FinalGetWell2/Pods-FinalGetWell2.debug.xcconfig"; sourceTree = "<group>"; };
+		3517483E6AD61A0B82488FF0 /* libPods-FinalGetWell2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FinalGetWell2.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DCF68AE1C23336500A72F12 /* FinalGetWell2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalGetWell2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DCF68B11C23336500A72F12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5DCF68B61C23336500A72F12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5DCF68B91C23336500A72F12 /* FinalGetWell2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FinalGetWell2.xcdatamodel; sourceTree = "<group>"; };
+		5DCF68BB1C23336500A72F12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5DCF68BE1C23336500A72F12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5DCF68C01C23336500A72F12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA184A281C233584001A679F /* FinalGetWell2-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FinalGetWell2-Bridging-Header.h"; sourceTree = "<group>"; };
+		AA184A2A1C2339FB001A679F /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		AA184A2C1C233A81001A679F /* Songs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Songs.swift; sourceTree = "<group>"; };
+		AA184A2E1C233AC1001A679F /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		B841F7DEDDD329769E75C116 /* Pods-FinalGetWell2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinalGetWell2.release.xcconfig"; path = "Pods/Target Support Files/Pods-FinalGetWell2/Pods-FinalGetWell2.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5DCF68AB1C23336500A72F12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD9EBEDF19FE0925AC376D40 /* libPods-FinalGetWell2.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5D191AE38EE7F12F47AAE1F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3517483E6AD61A0B82488FF0 /* libPods-FinalGetWell2.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5DCF68A51C23336500A72F12 = {
+			isa = PBXGroup;
+			children = (
+				5DCF68B01C23336500A72F12 /* FinalGetWell2 */,
+				5DCF68AF1C23336500A72F12 /* Products */,
+				9ADC964FE5007D976FE42964 /* Pods */,
+				5D191AE38EE7F12F47AAE1F4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5DCF68AF1C23336500A72F12 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5DCF68AE1C23336500A72F12 /* FinalGetWell2.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5DCF68B01C23336500A72F12 /* FinalGetWell2 */ = {
+			isa = PBXGroup;
+			children = (
+				AA184A281C233584001A679F /* FinalGetWell2-Bridging-Header.h */,
+				AA184A2C1C233A81001A679F /* Songs.swift */,
+				5DCF68B11C23336500A72F12 /* AppDelegate.swift */,
+				AA184A2E1C233AC1001A679F /* RegisterViewController.swift */,
+				AA184A2A1C2339FB001A679F /* LoginViewController.swift */,
+				5DCF68B51C23336500A72F12 /* Main.storyboard */,
+				5DCF68BB1C23336500A72F12 /* Assets.xcassets */,
+				5DCF68BD1C23336500A72F12 /* LaunchScreen.storyboard */,
+				5DCF68C01C23336500A72F12 /* Info.plist */,
+				5DCF68B81C23336500A72F12 /* FinalGetWell2.xcdatamodeld */,
+			);
+			path = FinalGetWell2;
+			sourceTree = "<group>";
+		};
+		9ADC964FE5007D976FE42964 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				22214D90239856269A461A1B /* Pods-FinalGetWell2.debug.xcconfig */,
+				B841F7DEDDD329769E75C116 /* Pods-FinalGetWell2.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5DCF68AD1C23336500A72F12 /* FinalGetWell2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DCF68C31C23336500A72F12 /* Build configuration list for PBXNativeTarget "FinalGetWell2" */;
+			buildPhases = (
+				8680AD7A36613233C4E25606 /* Check Pods Manifest.lock */,
+				5DCF68AA1C23336500A72F12 /* Sources */,
+				5DCF68AB1C23336500A72F12 /* Frameworks */,
+				5DCF68AC1C23336500A72F12 /* Resources */,
+				79C59B3B125A099FDF959E99 /* Embed Pods Frameworks */,
+				C2F0E45ABD0BE17D06B8F179 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FinalGetWell2;
+			productName = FinalGetWell2;
+			productReference = 5DCF68AE1C23336500A72F12 /* FinalGetWell2.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5DCF68A61C23336500A72F12 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Keron;
+				TargetAttributes = {
+					5DCF68AD1C23336500A72F12 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 5DCF68A91C23336500A72F12 /* Build configuration list for PBXProject "FinalGetWell2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5DCF68A51C23336500A72F12;
+			productRefGroup = 5DCF68AF1C23336500A72F12 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5DCF68AD1C23336500A72F12 /* FinalGetWell2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5DCF68AC1C23336500A72F12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DCF68BF1C23336500A72F12 /* LaunchScreen.storyboard in Resources */,
+				5DCF68BC1C23336500A72F12 /* Assets.xcassets in Resources */,
+				5DCF68B71C23336500A72F12 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		79C59B3B125A099FDF959E99 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FinalGetWell2/Pods-FinalGetWell2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8680AD7A36613233C4E25606 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C2F0E45ABD0BE17D06B8F179 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FinalGetWell2/Pods-FinalGetWell2-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5DCF68AA1C23336500A72F12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA184A2D1C233A81001A679F /* Songs.swift in Sources */,
+				AA184A2F1C233AC1001A679F /* RegisterViewController.swift in Sources */,
+				AA184A2B1C2339FB001A679F /* LoginViewController.swift in Sources */,
+				5DCF68BA1C23336500A72F12 /* FinalGetWell2.xcdatamodeld in Sources */,
+				5DCF68B21C23336500A72F12 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5DCF68B51C23336500A72F12 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5DCF68B61C23336500A72F12 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5DCF68BD1C23336500A72F12 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5DCF68BE1C23336500A72F12 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5DCF68C11C23336500A72F12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5DCF68C21C23336500A72F12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5DCF68C41C23336500A72F12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22214D90239856269A461A1B /* Pods-FinalGetWell2.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = FinalGetWell2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tiy.FinalGetWell2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FinalGetWell2/FinalGetWell2-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5DCF68C51C23336500A72F12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B841F7DEDDD329769E75C116 /* Pods-FinalGetWell2.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = FinalGetWell2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tiy.FinalGetWell2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FinalGetWell2/FinalGetWell2-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5DCF68A91C23336500A72F12 /* Build configuration list for PBXProject "FinalGetWell2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DCF68C11C23336500A72F12 /* Debug */,
+				5DCF68C21C23336500A72F12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DCF68C31C23336500A72F12 /* Build configuration list for PBXNativeTarget "FinalGetWell2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DCF68C41C23336500A72F12 /* Debug */,
+				5DCF68C51C23336500A72F12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5DCF68B81C23336500A72F12 /* FinalGetWell2.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5DCF68B91C23336500A72F12 /* FinalGetWell2.xcdatamodel */,
+			);
+			currentVersion = 5DCF68B91C23336500A72F12 /* FinalGetWell2.xcdatamodel */;
+			path = FinalGetWell2.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5DCF68A61C23336500A72F12 /* Project object */;
+}
