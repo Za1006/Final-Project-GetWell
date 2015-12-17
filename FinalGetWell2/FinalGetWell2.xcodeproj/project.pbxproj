@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C060F971C235DF500E65966 /* SetReminderPopOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C060F961C235DF500E65966 /* SetReminderPopOverViewController.swift */; };
 		5DCF68B21C23336500A72F12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCF68B11C23336500A72F12 /* AppDelegate.swift */; };
 		5DCF68B71C23336500A72F12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DCF68B51C23336500A72F12 /* Main.storyboard */; };
 		5DCF68BA1C23336500A72F12 /* FinalGetWell2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5DCF68B81C23336500A72F12 /* FinalGetWell2.xcdatamodeld */; };
@@ -49,6 +50,7 @@
 /* Begin PBXFileReference section */
 		22214D90239856269A461A1B /* Pods-FinalGetWell2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinalGetWell2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FinalGetWell2/Pods-FinalGetWell2.debug.xcconfig"; sourceTree = "<group>"; };
 		3517483E6AD61A0B82488FF0 /* libPods-FinalGetWell2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FinalGetWell2.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C060F961C235DF500E65966 /* SetReminderPopOverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetReminderPopOverViewController.swift; sourceTree = "<group>"; };
 		5DCF68AE1C23336500A72F12 /* FinalGetWell2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalGetWell2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DCF68B11C23336500A72F12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5DCF68B61C23336500A72F12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 				AA184A2C1C233A81001A679F /* Songs.swift */,
 				5DCF68B11C23336500A72F12 /* AppDelegate.swift */,
 				AA184A2E1C233AC1001A679F /* RegisterViewController.swift */,
+				4C060F961C235DF500E65966 /* SetReminderPopOverViewController.swift */,
 				AA184A2A1C2339FB001A679F /* LoginViewController.swift */,
 				AA184A301C233C5D001A679F /* MainViewController.swift */,
 				5DCF68B51C23336500A72F12 /* Main.storyboard */,
@@ -350,6 +353,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA184A2D1C233A81001A679F /* Songs.swift in Sources */,
+				4C060F971C235DF500E65966 /* SetReminderPopOverViewController.swift in Sources */,
 				AA184A2F1C233AC1001A679F /* RegisterViewController.swift in Sources */,
 				AA184A2B1C2339FB001A679F /* LoginViewController.swift in Sources */,
 				AA184A311C233C5D001A679F /* MainViewController.swift in Sources */,
