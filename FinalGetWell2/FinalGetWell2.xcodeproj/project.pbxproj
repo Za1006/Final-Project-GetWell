@@ -15,9 +15,8 @@
 		4C870F791C233D5400209B3B /* hypnosis87.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C870F711C233D5400209B3B /* hypnosis87.png */; };
 		4C870F7A1C233D5400209B3B /* hypnosis120.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C870F721C233D5400209B3B /* hypnosis120.png */; };
 		4C870F7B1C233D5400209B3B /* hypnosis180.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C870F731C233D5400209B3B /* hypnosis180.png */; };
+		4C870F7D1C233FE600209B3B /* SetReminderPopOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C870F7C1C233FE600209B3B /* SetReminderPopOverViewController.swift */; };
 		5DCF68B21C23336500A72F12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCF68B11C23336500A72F12 /* AppDelegate.swift */; };
-		5DCF68B41C23336500A72F12 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCF68B31C23336500A72F12 /* ViewController.swift */; };
-		5DCF68B71C23336500A72F12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DCF68B51C23336500A72F12 /* Main.storyboard */; };
 		5DCF68BA1C23336500A72F12 /* FinalGetWell2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5DCF68B81C23336500A72F12 /* FinalGetWell2.xcdatamodeld */; };
 		5DCF68BC1C23336500A72F12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DCF68BB1C23336500A72F12 /* Assets.xcassets */; };
 		5DCF68BF1C23336500A72F12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DCF68BD1C23336500A72F12 /* LaunchScreen.storyboard */; };
@@ -32,10 +31,9 @@
 		4C870F711C233D5400209B3B /* hypnosis87.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hypnosis87.png; sourceTree = "<group>"; };
 		4C870F721C233D5400209B3B /* hypnosis120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hypnosis120.png; sourceTree = "<group>"; };
 		4C870F731C233D5400209B3B /* hypnosis180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hypnosis180.png; sourceTree = "<group>"; };
+		4C870F7C1C233FE600209B3B /* SetReminderPopOverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetReminderPopOverViewController.swift; sourceTree = "<group>"; };
 		5DCF68AE1C23336500A72F12 /* FinalGetWell2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalGetWell2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DCF68B11C23336500A72F12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5DCF68B31C23336500A72F12 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5DCF68B61C23336500A72F12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5DCF68B91C23336500A72F12 /* FinalGetWell2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FinalGetWell2.xcdatamodel; sourceTree = "<group>"; };
 		5DCF68BB1C23336500A72F12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5DCF68BE1C23336500A72F12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -99,8 +97,7 @@
 		5DCF68B01C23336500A72F12 /* FinalGetWell2 */ = {
 			isa = PBXGroup;
 			children = (
-				5DCF68B31C23336500A72F12 /* ViewController.swift */,
-				5DCF68B51C23336500A72F12 /* Main.storyboard */,
+				4C870F7C1C233FE600209B3B /* SetReminderPopOverViewController.swift */,
 				4C870F6B1C233C9100209B3B /* Img */,
 				4C870F601C2335B300209B3B /* Misc */,
 			);
@@ -176,7 +173,6 @@
 				5DCF68BC1C23336500A72F12 /* Assets.xcassets in Resources */,
 				4C870F781C233D5400209B3B /* hypnosis80.png in Resources */,
 				4C870F791C233D5400209B3B /* hypnosis87.png in Resources */,
-				5DCF68B71C23336500A72F12 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,7 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5DCF68BA1C23336500A72F12 /* FinalGetWell2.xcdatamodeld in Sources */,
-				5DCF68B41C23336500A72F12 /* ViewController.swift in Sources */,
+				4C870F7D1C233FE600209B3B /* SetReminderPopOverViewController.swift in Sources */,
 				5DCF68B21C23336500A72F12 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -196,14 +192,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		5DCF68B51C23336500A72F12 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5DCF68B61C23336500A72F12 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5DCF68BD1C23336500A72F12 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
