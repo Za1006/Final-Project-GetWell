@@ -19,6 +19,10 @@ class MediaPlayerViewController: UIViewController
     //    @IBOutlet var artistLabel: UILabel!
     //    @IBOutlet var playPauseButton: UIButton!
     
+<<<<<<< HEAD
+=======
+
+>>>>>>> MainVC
     
     let avQueuePlayer = AVQueuePlayer()
     var songs = Array<Song>()
@@ -29,6 +33,7 @@ class MediaPlayerViewController: UIViewController
     var originalCount = 300
     var delegate: MainViewController?
 
+<<<<<<< HEAD
     var shuffleMode: MPMusicShuffleMode?
 //    var repeatMode: MPMusicRepeatMode
 
@@ -36,6 +41,15 @@ class MediaPlayerViewController: UIViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
+=======
+    
+    override func viewDidLoad()
+    {
+        super.viewDidLoad()
+        setupAudioSession()
+        configurePlaylist()
+        loadCurrentSong()
+>>>>>>> MainVC
 
     }
 
@@ -54,12 +68,20 @@ class MediaPlayerViewController: UIViewController
         // Pass the selected object to the new view controller.
     }
     */
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> MainVC
     
     @IBAction func segmentedIndexTapped(sender: UISegmentedControl)
     {
         
+<<<<<<< HEAD
   //        var shuffleMode: MPMusicShuffleMode
+=======
+        //        var shuffleMode: MPMusicShuffleMode
+>>>>>>> MainVC
         
         
         if sender.selectedSegmentIndex == 0
@@ -174,7 +196,10 @@ class MediaPlayerViewController: UIViewController
             togglePlayback(true)
         }
     }
+<<<<<<< HEAD
     
+=======
+>>>>>>> MainVC
 
     func configurePlaylist()
     {
@@ -259,4 +284,9 @@ class MediaPlayerViewController: UIViewController
         }
     }
 
+<<<<<<< HEAD
+=======
+    
+
+>>>>>>> MainVC
 }
