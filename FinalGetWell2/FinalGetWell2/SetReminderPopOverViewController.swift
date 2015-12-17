@@ -10,7 +10,7 @@ import UIKit
 
 class SetReminderPopOverViewController: UIViewController
 {
-    @IBOutlet var datePicker: UIDatePicker!
+    @IBOutlet weak var datePicker: UIDatePicker!
     @IBOutlet weak var doneButton: UIButton!
     
     var delegate: DatePickerDelegate?
