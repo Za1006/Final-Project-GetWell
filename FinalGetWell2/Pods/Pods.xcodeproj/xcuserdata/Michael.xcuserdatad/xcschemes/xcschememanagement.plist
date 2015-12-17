@@ -2,8 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-<<<<<<< HEAD
-=======
 	<key>SchemeUserState</key>
 	<dict>
 		<key>Bolts.xcscheme</key>
@@ -22,7 +20,6 @@
 			<integer>2</integer>
 		</dict>
 	</dict>
->>>>>>> parent of 4060efa... Merge branch 'SetRemider'
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>3C40AD938D23DF5F8345D23B4D3E1644</key>
