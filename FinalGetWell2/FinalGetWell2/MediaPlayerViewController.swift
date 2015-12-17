@@ -29,7 +29,9 @@ class MediaPlayerViewController: UIViewController
     var originalCount = 300
     var delegate: MainViewController?
 
-    //    var shuffleMode: MPMusicShuffleMode
+    var shuffleMode: MPMusicShuffleMode?
+//    var repeatMode: MPMusicRepeatMode
+
 
     override func viewDidLoad()
     {
@@ -57,7 +59,7 @@ class MediaPlayerViewController: UIViewController
     @IBAction func segmentedIndexTapped(sender: UISegmentedControl)
     {
         
-        //        var shuffleMode: MPMusicShuffleMode
+  //        var shuffleMode: MPMusicShuffleMode
         
         
         if sender.selectedSegmentIndex == 0
