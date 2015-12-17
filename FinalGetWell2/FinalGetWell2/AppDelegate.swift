@@ -15,8 +15,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
-    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool
+    {
+        
+        Parse.setApplicationId("TaE85IRBTU5SMaF1v1BUfPOOZ0eRNMsbqSWIY3p4",
+            clientKey: "tkjIZEXnJhcEOigGzkbr3PSY0eHKRBG0CgKehmD8")
+        
+
         return true
     }
 
