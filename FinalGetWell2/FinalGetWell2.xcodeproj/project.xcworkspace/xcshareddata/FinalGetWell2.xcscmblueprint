@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "DF7C6A7574ECB0B8FB66FCA3B919491A9CFCECC5",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "015120AE8606216EC33FD631B5CDACA5FD3C45C8" : 0,
+    "DF7C6A7574ECB0B8FB66FCA3B919491A9CFCECC5" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "42BB7F8D-FFEF-45FD-8299-20659EB110C7",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "015120AE8606216EC33FD631B5CDACA5FD3C45C8" : "",
+    "DF7C6A7574ECB0B8FB66FCA3B919491A9CFCECC5" : "Final-Project-GetWell\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "FinalGetWell2",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "FinalGetWell2\/FinalGetWell2.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Za1006\/Final-Project.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "015120AE8606216EC33FD631B5CDACA5FD3C45C8"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Za1006\/Final-Project-GetWell.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "DF7C6A7574ECB0B8FB66FCA3B919491A9CFCECC5"
+    }
+  ]
+}
