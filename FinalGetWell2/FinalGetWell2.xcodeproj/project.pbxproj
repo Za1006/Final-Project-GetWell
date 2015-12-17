@@ -7,22 +7,63 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+<<<<<<< HEAD
+=======
+		4C060F971C235DF500E65966 /* SetReminderPopOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C060F961C235DF500E65966 /* SetReminderPopOverViewController.swift */; };
+>>>>>>> master
 		5DCF68B21C23336500A72F12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCF68B11C23336500A72F12 /* AppDelegate.swift */; };
 		5DCF68B71C23336500A72F12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DCF68B51C23336500A72F12 /* Main.storyboard */; };
 		5DCF68BA1C23336500A72F12 /* FinalGetWell2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5DCF68B81C23336500A72F12 /* FinalGetWell2.xcdatamodeld */; };
 		5DCF68BC1C23336500A72F12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DCF68BB1C23336500A72F12 /* Assets.xcassets */; };
 		5DCF68BF1C23336500A72F12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DCF68BD1C23336500A72F12 /* LaunchScreen.storyboard */; };
+<<<<<<< HEAD
+=======
+		5DCF68D71C233F5E00A72F12 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DCF68C61C233F5E00A72F12 /* background.png */; };
+		5DCF68D81C233F5E00A72F12 /* checked.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DCF68C71C233F5E00A72F12 /* checked.png */; };
+		5DCF68D91C233F5E00A72F12 /* DownArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DCF68C81C233F5E00A72F12 /* DownArrow.png */; };
+		5DCF68DA1C233F5E00A72F12 /* GetWellLogin2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5DCF68C91C233F5E00A72F12 /* GetWellLogin2.jpg */; };
+		5DCF68DB1C233F5E00A72F12 /* GetWellLogin2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DCF68CA1C233F5E00A72F12 /* GetWellLogin2.png */; };
+		5DCF68DC1C233F5E00A72F12 /* GetWellLogin2a.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DCF68CB1C233F5E00A72F12 /* GetWellLogin2a.png */; };
+		5DCF68DD1C233F5E00A72F12 /* getWellLogoSized.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DCF68CC1C233F5E00A72F12 /* getWellLogoSized.png */; };
+		5DCF68DE1C233F5E00A72F12 /* GetWellMainPage.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DCF68CD1C233F5E00A72F12 /* GetWellMainPage.png */; };
+		5DCF68DF1C233F5E00A72F12 /* GetWellMediaDetailPage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5DCF68CE1C233F5E00A72F12 /* GetWellMediaDetailPage.jpg */; };
+		5DCF68E01C233F5E00A72F12 /* GetWellMediaDetailPage.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DCF68CF1C233F5E00A72F12 /* GetWellMediaDetailPage.png */; };
+		5DCF68E11C233F5E00A72F12 /* GetWellSignUp2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5DCF68D01C233F5E00A72F12 /* GetWellSignUp2.jpg */; };
+		5DCF68E21C233F5E00A72F12 /* GetWellSignUpFinal.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DCF68D11C233F5E00A72F12 /* GetWellSignUpFinal.png */; };
+		5DCF68E41C233F5E00A72F12 /* Next.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DCF68D31C233F5E00A72F12 /* Next.png */; };
+		5DCF68E51C233F5E00A72F12 /* PlayPause.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DCF68D41C233F5E00A72F12 /* PlayPause.png */; };
+		5DCF68E61C233F5E00A72F12 /* Previous.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DCF68D51C233F5E00A72F12 /* Previous.png */; };
+		5DCF68E71C233F5E00A72F12 /* unchecked.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DCF68D61C233F5E00A72F12 /* unchecked.png */; };
+		5DCF68F31C233FC500A72F12 /* acousticbreeze.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5DCF68E81C233FC500A72F12 /* acousticbreeze.mp3 */; };
+		5DCF68F41C233FC500A72F12 /* betterdays.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5DCF68E91C233FC500A72F12 /* betterdays.mp3 */; };
+		5DCF68F51C233FC500A72F12 /* deepblue.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5DCF68EA1C233FC500A72F12 /* deepblue.mp3 */; };
+		5DCF68F61C233FC500A72F12 /* enigmatic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5DCF68EB1C233FC500A72F12 /* enigmatic.mp3 */; };
+		5DCF68F71C233FC500A72F12 /* india.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5DCF68EC1C233FC500A72F12 /* india.mp3 */; };
+		5DCF68F81C233FC500A72F12 /* newdawn.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5DCF68ED1C233FC500A72F12 /* newdawn.mp3 */; };
+		5DCF68F91C233FC500A72F12 /* november.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5DCF68EE1C233FC500A72F12 /* november.mp3 */; };
+		5DCF68FA1C233FC500A72F12 /* relaxing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5DCF68EF1C233FC500A72F12 /* relaxing.mp3 */; };
+		5DCF68FB1C233FC500A72F12 /* sadday.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5DCF68F01C233FC500A72F12 /* sadday.mp3 */; };
+		5DCF68FC1C233FC500A72F12 /* slowmotion.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5DCF68F11C233FC500A72F12 /* slowmotion.mp3 */; };
+		5DCF68FD1C233FC500A72F12 /* tomorrow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5DCF68F21C233FC500A72F12 /* tomorrow.mp3 */; };
+>>>>>>> master
 		AA184A2B1C2339FB001A679F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA184A2A1C2339FB001A679F /* LoginViewController.swift */; };
 		AA184A2D1C233A81001A679F /* Songs.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA184A2C1C233A81001A679F /* Songs.swift */; };
 		AA184A2F1C233AC1001A679F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA184A2E1C233AC1001A679F /* RegisterViewController.swift */; };
 		AA184A311C233C5D001A679F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA184A301C233C5D001A679F /* MainViewController.swift */; };
+<<<<<<< HEAD
 		AA184A351C234144001A679F /* MediaPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA184A341C234144001A679F /* MediaPlayerViewController.swift */; };
+=======
+>>>>>>> master
 		BD9EBEDF19FE0925AC376D40 /* libPods-FinalGetWell2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3517483E6AD61A0B82488FF0 /* libPods-FinalGetWell2.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		22214D90239856269A461A1B /* Pods-FinalGetWell2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinalGetWell2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FinalGetWell2/Pods-FinalGetWell2.debug.xcconfig"; sourceTree = "<group>"; };
 		3517483E6AD61A0B82488FF0 /* libPods-FinalGetWell2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FinalGetWell2.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+<<<<<<< HEAD
+=======
+		4C060F961C235DF500E65966 /* SetReminderPopOverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetReminderPopOverViewController.swift; sourceTree = "<group>"; };
+>>>>>>> master
 		5DCF68AE1C23336500A72F12 /* FinalGetWell2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalGetWell2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DCF68B11C23336500A72F12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5DCF68B61C23336500A72F12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -30,12 +71,45 @@
 		5DCF68BB1C23336500A72F12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5DCF68BE1C23336500A72F12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5DCF68C01C23336500A72F12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+<<<<<<< HEAD
+=======
+		5DCF68C61C233F5E00A72F12 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		5DCF68C71C233F5E00A72F12 /* checked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checked.png; sourceTree = "<group>"; };
+		5DCF68C81C233F5E00A72F12 /* DownArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DownArrow.png; sourceTree = "<group>"; };
+		5DCF68C91C233F5E00A72F12 /* GetWellLogin2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = GetWellLogin2.jpg; sourceTree = "<group>"; };
+		5DCF68CA1C233F5E00A72F12 /* GetWellLogin2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GetWellLogin2.png; sourceTree = "<group>"; };
+		5DCF68CB1C233F5E00A72F12 /* GetWellLogin2a.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GetWellLogin2a.png; sourceTree = "<group>"; };
+		5DCF68CC1C233F5E00A72F12 /* getWellLogoSized.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = getWellLogoSized.png; sourceTree = "<group>"; };
+		5DCF68CD1C233F5E00A72F12 /* GetWellMainPage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GetWellMainPage.png; sourceTree = "<group>"; };
+		5DCF68CE1C233F5E00A72F12 /* GetWellMediaDetailPage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = GetWellMediaDetailPage.jpg; sourceTree = "<group>"; };
+		5DCF68CF1C233F5E00A72F12 /* GetWellMediaDetailPage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GetWellMediaDetailPage.png; sourceTree = "<group>"; };
+		5DCF68D01C233F5E00A72F12 /* GetWellSignUp2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = GetWellSignUp2.jpg; sourceTree = "<group>"; };
+		5DCF68D11C233F5E00A72F12 /* GetWellSignUpFinal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GetWellSignUpFinal.png; sourceTree = "<group>"; };
+		5DCF68D31C233F5E00A72F12 /* Next.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Next.png; sourceTree = "<group>"; };
+		5DCF68D41C233F5E00A72F12 /* PlayPause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PlayPause.png; sourceTree = "<group>"; };
+		5DCF68D51C233F5E00A72F12 /* Previous.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Previous.png; sourceTree = "<group>"; };
+		5DCF68D61C233F5E00A72F12 /* unchecked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unchecked.png; sourceTree = "<group>"; };
+		5DCF68E81C233FC500A72F12 /* acousticbreeze.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = acousticbreeze.mp3; sourceTree = "<group>"; };
+		5DCF68E91C233FC500A72F12 /* betterdays.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = betterdays.mp3; sourceTree = "<group>"; };
+		5DCF68EA1C233FC500A72F12 /* deepblue.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = deepblue.mp3; sourceTree = "<group>"; };
+		5DCF68EB1C233FC500A72F12 /* enigmatic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = enigmatic.mp3; sourceTree = "<group>"; };
+		5DCF68EC1C233FC500A72F12 /* india.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = india.mp3; sourceTree = "<group>"; };
+		5DCF68ED1C233FC500A72F12 /* newdawn.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = newdawn.mp3; sourceTree = "<group>"; };
+		5DCF68EE1C233FC500A72F12 /* november.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = november.mp3; sourceTree = "<group>"; };
+		5DCF68EF1C233FC500A72F12 /* relaxing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = relaxing.mp3; sourceTree = "<group>"; };
+		5DCF68F01C233FC500A72F12 /* sadday.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sadday.mp3; sourceTree = "<group>"; };
+		5DCF68F11C233FC500A72F12 /* slowmotion.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = slowmotion.mp3; sourceTree = "<group>"; };
+		5DCF68F21C233FC500A72F12 /* tomorrow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tomorrow.mp3; sourceTree = "<group>"; };
+>>>>>>> master
 		AA184A281C233584001A679F /* FinalGetWell2-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FinalGetWell2-Bridging-Header.h"; sourceTree = "<group>"; };
 		AA184A2A1C2339FB001A679F /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		AA184A2C1C233A81001A679F /* Songs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Songs.swift; sourceTree = "<group>"; };
 		AA184A2E1C233AC1001A679F /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		AA184A301C233C5D001A679F /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		AA184A341C234144001A679F /* MediaPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaPlayerViewController.swift; sourceTree = "<group>"; };
+=======
+>>>>>>> master
 		B841F7DEDDD329769E75C116 /* Pods-FinalGetWell2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinalGetWell2.release.xcconfig"; path = "Pods/Target Support Files/Pods-FinalGetWell2/Pods-FinalGetWell2.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,13 +154,24 @@
 		5DCF68B01C23336500A72F12 /* FinalGetWell2 */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
+=======
+				5DCF68FF1C233FE500A72F12 /* Music */,
+				5DCF68FE1C233FD100A72F12 /* Images */,
+>>>>>>> master
 				AA184A281C233584001A679F /* FinalGetWell2-Bridging-Header.h */,
 				AA184A2C1C233A81001A679F /* Songs.swift */,
 				5DCF68B11C23336500A72F12 /* AppDelegate.swift */,
 				AA184A2E1C233AC1001A679F /* RegisterViewController.swift */,
+<<<<<<< HEAD
 				AA184A2A1C2339FB001A679F /* LoginViewController.swift */,
 				AA184A301C233C5D001A679F /* MainViewController.swift */,
 				AA184A341C234144001A679F /* MediaPlayerViewController.swift */,
+=======
+				4C060F961C235DF500E65966 /* SetReminderPopOverViewController.swift */,
+				AA184A2A1C2339FB001A679F /* LoginViewController.swift */,
+				AA184A301C233C5D001A679F /* MainViewController.swift */,
+>>>>>>> master
 				5DCF68B51C23336500A72F12 /* Main.storyboard */,
 				5DCF68BB1C23336500A72F12 /* Assets.xcassets */,
 				5DCF68BD1C23336500A72F12 /* LaunchScreen.storyboard */,
@@ -96,6 +181,50 @@
 			path = FinalGetWell2;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
+=======
+		5DCF68FE1C233FD100A72F12 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				5DCF68C61C233F5E00A72F12 /* background.png */,
+				5DCF68C71C233F5E00A72F12 /* checked.png */,
+				5DCF68C81C233F5E00A72F12 /* DownArrow.png */,
+				5DCF68C91C233F5E00A72F12 /* GetWellLogin2.jpg */,
+				5DCF68CA1C233F5E00A72F12 /* GetWellLogin2.png */,
+				5DCF68CB1C233F5E00A72F12 /* GetWellLogin2a.png */,
+				5DCF68CC1C233F5E00A72F12 /* getWellLogoSized.png */,
+				5DCF68CD1C233F5E00A72F12 /* GetWellMainPage.png */,
+				5DCF68CE1C233F5E00A72F12 /* GetWellMediaDetailPage.jpg */,
+				5DCF68CF1C233F5E00A72F12 /* GetWellMediaDetailPage.png */,
+				5DCF68D01C233F5E00A72F12 /* GetWellSignUp2.jpg */,
+				5DCF68D11C233F5E00A72F12 /* GetWellSignUpFinal.png */,
+				5DCF68D31C233F5E00A72F12 /* Next.png */,
+				5DCF68D41C233F5E00A72F12 /* PlayPause.png */,
+				5DCF68D51C233F5E00A72F12 /* Previous.png */,
+				5DCF68D61C233F5E00A72F12 /* unchecked.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		5DCF68FF1C233FE500A72F12 /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				5DCF68E81C233FC500A72F12 /* acousticbreeze.mp3 */,
+				5DCF68E91C233FC500A72F12 /* betterdays.mp3 */,
+				5DCF68EA1C233FC500A72F12 /* deepblue.mp3 */,
+				5DCF68EB1C233FC500A72F12 /* enigmatic.mp3 */,
+				5DCF68EC1C233FC500A72F12 /* india.mp3 */,
+				5DCF68ED1C233FC500A72F12 /* newdawn.mp3 */,
+				5DCF68EE1C233FC500A72F12 /* november.mp3 */,
+				5DCF68EF1C233FC500A72F12 /* relaxing.mp3 */,
+				5DCF68F01C233FC500A72F12 /* sadday.mp3 */,
+				5DCF68F11C233FC500A72F12 /* slowmotion.mp3 */,
+				5DCF68F21C233FC500A72F12 /* tomorrow.mp3 */,
+			);
+			name = Music;
+			sourceTree = "<group>";
+		};
+>>>>>>> master
 		9ADC964FE5007D976FE42964 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +269,10 @@
 				TargetAttributes = {
 					5DCF68AD1C23336500A72F12 = {
 						CreatedOnToolsVersion = 7.2;
+<<<<<<< HEAD
+=======
+						DevelopmentTeam = 32355P55NQ;
+>>>>>>> master
 					};
 				};
 			};
@@ -166,9 +299,42 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD
 				5DCF68BF1C23336500A72F12 /* LaunchScreen.storyboard in Resources */,
 				5DCF68BC1C23336500A72F12 /* Assets.xcassets in Resources */,
 				5DCF68B71C23336500A72F12 /* Main.storyboard in Resources */,
+=======
+				5DCF68F71C233FC500A72F12 /* india.mp3 in Resources */,
+				5DCF68E01C233F5E00A72F12 /* GetWellMediaDetailPage.png in Resources */,
+				5DCF68F41C233FC500A72F12 /* betterdays.mp3 in Resources */,
+				5DCF68E41C233F5E00A72F12 /* Next.png in Resources */,
+				5DCF68E21C233F5E00A72F12 /* GetWellSignUpFinal.png in Resources */,
+				5DCF68D81C233F5E00A72F12 /* checked.png in Resources */,
+				5DCF68FC1C233FC500A72F12 /* slowmotion.mp3 in Resources */,
+				5DCF68D91C233F5E00A72F12 /* DownArrow.png in Resources */,
+				5DCF68F81C233FC500A72F12 /* newdawn.mp3 in Resources */,
+				5DCF68BF1C23336500A72F12 /* LaunchScreen.storyboard in Resources */,
+				5DCF68E61C233F5E00A72F12 /* Previous.png in Resources */,
+				5DCF68DC1C233F5E00A72F12 /* GetWellLogin2a.png in Resources */,
+				5DCF68F31C233FC500A72F12 /* acousticbreeze.mp3 in Resources */,
+				5DCF68F51C233FC500A72F12 /* deepblue.mp3 in Resources */,
+				5DCF68F61C233FC500A72F12 /* enigmatic.mp3 in Resources */,
+				5DCF68FB1C233FC500A72F12 /* sadday.mp3 in Resources */,
+				5DCF68F91C233FC500A72F12 /* november.mp3 in Resources */,
+				5DCF68FD1C233FC500A72F12 /* tomorrow.mp3 in Resources */,
+				5DCF68DE1C233F5E00A72F12 /* GetWellMainPage.png in Resources */,
+				5DCF68DF1C233F5E00A72F12 /* GetWellMediaDetailPage.jpg in Resources */,
+				5DCF68DB1C233F5E00A72F12 /* GetWellLogin2.png in Resources */,
+				5DCF68DA1C233F5E00A72F12 /* GetWellLogin2.jpg in Resources */,
+				5DCF68D71C233F5E00A72F12 /* background.png in Resources */,
+				5DCF68E71C233F5E00A72F12 /* unchecked.png in Resources */,
+				5DCF68DD1C233F5E00A72F12 /* getWellLogoSized.png in Resources */,
+				5DCF68BC1C23336500A72F12 /* Assets.xcassets in Resources */,
+				5DCF68B71C23336500A72F12 /* Main.storyboard in Resources */,
+				5DCF68E51C233F5E00A72F12 /* PlayPause.png in Resources */,
+				5DCF68E11C233F5E00A72F12 /* GetWellSignUp2.jpg in Resources */,
+				5DCF68FA1C233FC500A72F12 /* relaxing.mp3 in Resources */,
+>>>>>>> master
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,7 +394,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA184A2D1C233A81001A679F /* Songs.swift in Sources */,
+<<<<<<< HEAD
 				AA184A351C234144001A679F /* MediaPlayerViewController.swift in Sources */,
+=======
+				4C060F971C235DF500E65966 /* SetReminderPopOverViewController.swift in Sources */,
+>>>>>>> master
 				AA184A2F1C233AC1001A679F /* RegisterViewController.swift in Sources */,
 				AA184A2B1C2339FB001A679F /* LoginViewController.swift in Sources */,
 				AA184A311C233C5D001A679F /* MainViewController.swift in Sources */,
@@ -346,6 +516,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+<<<<<<< HEAD
+=======
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+>>>>>>> master
 				INFOPLIST_FILE = FinalGetWell2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tiy.FinalGetWell2;
@@ -361,6 +535,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+<<<<<<< HEAD
+=======
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+>>>>>>> master
 				INFOPLIST_FILE = FinalGetWell2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tiy.FinalGetWell2;
