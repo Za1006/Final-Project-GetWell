@@ -44,11 +44,19 @@ class MainViewController: UIViewController,UIPopoverPresentationControllerDelega
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
     {
+<<<<<<< HEAD
+        if segue.identifier == "ShowMediaSegue"
+        {
+            let mediaPlayerVC = segue.destinationViewController as! MediaPlayerViewController
+            mediaPlayerVC.delegate = self
+        }
+=======
 //        if segue.identifier == "ShowMediaSegue"
 //        {
 //            let mediaPlayerVC = segue.destinationViewController as! MediaPlayerViewController
 //            mediaPlayerVC.delegate = self
 //        }
+>>>>>>> master
         
         if segue.identifier == "SetReminderSegue"
         {
