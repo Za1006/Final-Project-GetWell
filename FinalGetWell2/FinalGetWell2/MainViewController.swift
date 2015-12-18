@@ -29,6 +29,9 @@ class MainViewController: UIViewController,UIPopoverPresentationControllerDelega
     @IBOutlet weak var image: UIImage!
     @IBOutlet var skipToSession: UIButton!
     
+    var remainingCharacters = []
+
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()

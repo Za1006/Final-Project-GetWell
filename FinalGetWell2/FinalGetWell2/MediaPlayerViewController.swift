@@ -10,6 +10,8 @@ import UIKit
 import MediaPlayer
 import AVFoundation
 
+
+
 class MediaPlayerViewController: UIViewController
 {
 
@@ -29,7 +31,8 @@ class MediaPlayerViewController: UIViewController
     var timer: NSTimer?
     var originalCount = 300
     
-    //    var shuffleMode: MPMusicShuffleMode
+    
+    var shuffleMode: MPMusicShuffleMode
     
     var delegate: MainViewController?
     
@@ -257,5 +260,7 @@ class MediaPlayerViewController: UIViewController
         // Pass the selected object to the new view controller.
     }
     */
+  
+
 
 }
