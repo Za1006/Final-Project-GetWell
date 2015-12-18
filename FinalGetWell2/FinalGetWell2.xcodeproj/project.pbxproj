@@ -12,6 +12,10 @@
 		5D6827491C247AFC00374755 /* Next1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D6827461C247AFC00374755 /* Next1.png */; };
 		5D68274A1C247AFC00374755 /* PlayPause1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D6827471C247AFC00374755 /* PlayPause1.png */; };
 		5D68274B1C247AFC00374755 /* Previous1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D6827481C247AFC00374755 /* Previous1.png */; };
+		5D68274E1C24A85C00374755 /* TableViewChkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D68274D1C24A85C00374755 /* TableViewChkList.swift */; };
+		5D6827511C24A8DA00374755 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6827501C24A8DA00374755 /* TableViewCell.swift */; };
+		5D6827531C24AAD100374755 /* ThumbsUp.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D6827521C24AAD100374755 /* ThumbsUp.png */; };
+		5D6827551C24ABD700374755 /* thumbs-up-icon-black-hi.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D6827541C24ABD700374755 /* thumbs-up-icon-black-hi.png */; };
 		5DCF68B21C23336500A72F12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCF68B11C23336500A72F12 /* AppDelegate.swift */; };
 		5DCF68B71C23336500A72F12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DCF68B51C23336500A72F12 /* Main.storyboard */; };
 		5DCF68BA1C23336500A72F12 /* FinalGetWell2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5DCF68B81C23336500A72F12 /* FinalGetWell2.xcdatamodeld */; };
@@ -49,27 +53,8 @@
 		AA184A2F1C233AC1001A679F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA184A2E1C233AC1001A679F /* RegisterViewController.swift */; };
 		AA184A311C233C5D001A679F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA184A301C233C5D001A679F /* MainViewController.swift */; };
 		AA184A371C237EB6001A679F /* MediaPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA184A361C237EB6001A679F /* MediaPlayerViewController.swift */; };
-		AA184AA71C249104001A679F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA184A991C249104001A679F /* AppDelegate.swift */; };
-		AA184AA81C249104001A679F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA184A9A1C249104001A679F /* Assets.xcassets */; };
-		AA184AA91C249104001A679F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA184A9B1C249104001A679F /* LaunchScreen.storyboard */; };
-		AA184AAA1C249104001A679F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA184A9D1C249104001A679F /* Main.storyboard */; };
-		AA184AAB1C249104001A679F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AA184A9F1C249104001A679F /* Info.plist */; };
-		AA184AAC1C249104001A679F /* Simple_Meditation_Step.docx in Resources */ = {isa = PBXBuildFile; fileRef = AA184AA01C249104001A679F /* Simple_Meditation_Step.docx */; };
-		AA184AAD1C249104001A679F /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA184AA11C249104001A679F /* TestViewController.swift */; };
-		AA184AAE1C249104001A679F /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA184AA21C249104001A679F /* ToDo.swift */; };
-		AA184AAF1C249104001A679F /* ToDoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA184AA31C249104001A679F /* ToDoCell.swift */; };
 		BD9EBEDF19FE0925AC376D40 /* libPods-FinalGetWell2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3517483E6AD61A0B82488FF0 /* libPods-FinalGetWell2.a */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		AA184AB11C249104001A679F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AA184AA41C249104001A679F /* TestTableView.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = AA184A7C1C247E52001A679F;
-			remoteInfo = TestTableView;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		22214D90239856269A461A1B /* Pods-FinalGetWell2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinalGetWell2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FinalGetWell2/Pods-FinalGetWell2.debug.xcconfig"; sourceTree = "<group>"; };
@@ -79,6 +64,10 @@
 		5D6827461C247AFC00374755 /* Next1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Next1.png; sourceTree = "<group>"; };
 		5D6827471C247AFC00374755 /* PlayPause1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PlayPause1.png; sourceTree = "<group>"; };
 		5D6827481C247AFC00374755 /* Previous1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Previous1.png; sourceTree = "<group>"; };
+		5D68274D1C24A85C00374755 /* TableViewChkList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewChkList.swift; sourceTree = "<group>"; };
+		5D6827501C24A8DA00374755 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		5D6827521C24AAD100374755 /* ThumbsUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ThumbsUp.png; sourceTree = "<group>"; };
+		5D6827541C24ABD700374755 /* thumbs-up-icon-black-hi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thumbs-up-icon-black-hi.png"; sourceTree = "<group>"; };
 		5DCF68AE1C23336500A72F12 /* FinalGetWell2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalGetWell2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DCF68B11C23336500A72F12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5DCF68B61C23336500A72F12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -119,16 +108,6 @@
 		AA184A2E1C233AC1001A679F /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		AA184A301C233C5D001A679F /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		AA184A361C237EB6001A679F /* MediaPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaPlayerViewController.swift; sourceTree = "<group>"; };
-		AA184A991C249104001A679F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AA184A9A1C249104001A679F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AA184A9C1C249104001A679F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		AA184A9E1C249104001A679F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		AA184A9F1C249104001A679F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AA184AA01C249104001A679F /* Simple_Meditation_Step.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = Simple_Meditation_Step.docx; sourceTree = "<group>"; };
-		AA184AA11C249104001A679F /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TestViewController.swift; path = TestTableView/TestTableView/TestViewController.swift; sourceTree = "<group>"; };
-		AA184AA21C249104001A679F /* ToDo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
-		AA184AA31C249104001A679F /* ToDoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoCell.swift; sourceTree = "<group>"; };
-		AA184AA41C249104001A679F /* TestTableView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = TestTableView.xcodeproj; sourceTree = "<group>"; };
 		B841F7DEDDD329769E75C116 /* Pods-FinalGetWell2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinalGetWell2.release.xcconfig"; path = "Pods/Target Support Files/Pods-FinalGetWell2/Pods-FinalGetWell2.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -173,23 +152,23 @@
 		5DCF68B01C23336500A72F12 /* FinalGetWell2 */ = {
 			isa = PBXGroup;
 			children = (
-				AA184A971C249104001A679F /* TestTableView */,
 				5DCF68FF1C233FE500A72F12 /* Music */,
 				5DCF68FE1C233FD100A72F12 /* Images */,
 				AA184A281C233584001A679F /* FinalGetWell2-Bridging-Header.h */,
 				AA184A2C1C233A81001A679F /* Songs.swift */,
-				AA184AA11C249104001A679F /* TestViewController.swift */,
 				5DCF68B11C23336500A72F12 /* AppDelegate.swift */,
 				AA184A2E1C233AC1001A679F /* RegisterViewController.swift */,
 				4C060F961C235DF500E65966 /* SetReminderPopOverViewController.swift */,
 				AA184A2A1C2339FB001A679F /* LoginViewController.swift */,
 				AA184A301C233C5D001A679F /* MainViewController.swift */,
+				5D6827501C24A8DA00374755 /* TableViewCell.swift */,
 				AA184A361C237EB6001A679F /* MediaPlayerViewController.swift */,
 				5DCF68B51C23336500A72F12 /* Main.storyboard */,
 				5DCF68BB1C23336500A72F12 /* Assets.xcassets */,
 				5DCF68BD1C23336500A72F12 /* LaunchScreen.storyboard */,
 				5DCF68C01C23336500A72F12 /* Info.plist */,
 				5DCF68B81C23336500A72F12 /* FinalGetWell2.xcdatamodeld */,
+				5D68274D1C24A85C00374755 /* TableViewChkList.swift */,
 			);
 			path = FinalGetWell2;
 			sourceTree = "<group>";
@@ -197,6 +176,7 @@
 		5DCF68FE1C233FD100A72F12 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				5D6827521C24AAD100374755 /* ThumbsUp.png */,
 				5DCF68C61C233F5E00A72F12 /* background.png */,
 				5DCF68C71C233F5E00A72F12 /* checked.png */,
 				5DCF68C81C233F5E00A72F12 /* DownArrow.png */,
@@ -206,6 +186,7 @@
 				5D6827441C2467D900374755 /* free_nature_wallpaper_hd_desktop.jpg */,
 				5DCF68CC1C233F5E00A72F12 /* getWellLogoSized.png */,
 				5D6827461C247AFC00374755 /* Next1.png */,
+				5D6827541C24ABD700374755 /* thumbs-up-icon-black-hi.png */,
 				5D6827471C247AFC00374755 /* PlayPause1.png */,
 				5D6827481C247AFC00374755 /* Previous1.png */,
 				5DCF68CD1C233F5E00A72F12 /* GetWellMainPage.png */,
@@ -246,38 +227,6 @@
 				B841F7DEDDD329769E75C116 /* Pods-FinalGetWell2.release.xcconfig */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		AA184A971C249104001A679F /* TestTableView */ = {
-			isa = PBXGroup;
-			children = (
-				AA184A981C249104001A679F /* TestTableView */,
-				AA184AA41C249104001A679F /* TestTableView.xcodeproj */,
-			);
-			path = TestTableView;
-			sourceTree = "<group>";
-		};
-		AA184A981C249104001A679F /* TestTableView */ = {
-			isa = PBXGroup;
-			children = (
-				AA184A991C249104001A679F /* AppDelegate.swift */,
-				AA184A9A1C249104001A679F /* Assets.xcassets */,
-				AA184A9B1C249104001A679F /* LaunchScreen.storyboard */,
-				AA184A9D1C249104001A679F /* Main.storyboard */,
-				AA184A9F1C249104001A679F /* Info.plist */,
-				AA184AA01C249104001A679F /* Simple_Meditation_Step.docx */,
-				AA184AA21C249104001A679F /* ToDo.swift */,
-				AA184AA31C249104001A679F /* ToDoCell.swift */,
-			);
-			path = TestTableView;
-			sourceTree = "<group>";
-		};
-		AA184AA51C249104001A679F /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				AA184AB21C249104001A679F /* TestTableView.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -330,28 +279,12 @@
 			mainGroup = 5DCF68A51C23336500A72F12;
 			productRefGroup = 5DCF68AF1C23336500A72F12 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = AA184AA51C249104001A679F /* Products */;
-					ProjectRef = AA184AA41C249104001A679F /* TestTableView.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				5DCF68AD1C23336500A72F12 /* FinalGetWell2 */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		AA184AB21C249104001A679F /* TestTableView.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = TestTableView.app;
-			remoteRef = AA184AB11C249104001A679F /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		5DCF68AC1C23336500A72F12 /* Resources */ = {
@@ -365,13 +298,12 @@
 				5D68274A1C247AFC00374755 /* PlayPause1.png in Resources */,
 				5DCF68E21C233F5E00A72F12 /* GetWellSignUpFinal.png in Resources */,
 				5DCF68D81C233F5E00A72F12 /* checked.png in Resources */,
+				5D6827531C24AAD100374755 /* ThumbsUp.png in Resources */,
 				5DCF68FC1C233FC500A72F12 /* slowmotion.mp3 in Resources */,
 				5D68274B1C247AFC00374755 /* Previous1.png in Resources */,
 				5DCF68D91C233F5E00A72F12 /* DownArrow.png in Resources */,
 				5D6827451C2467D900374755 /* free_nature_wallpaper_hd_desktop.jpg in Resources */,
 				5DCF68F81C233FC500A72F12 /* newdawn.mp3 in Resources */,
-				AA184AA91C249104001A679F /* LaunchScreen.storyboard in Resources */,
-				AA184AAB1C249104001A679F /* Info.plist in Resources */,
 				5DCF68BF1C23336500A72F12 /* LaunchScreen.storyboard in Resources */,
 				5DCF68E61C233F5E00A72F12 /* Previous.png in Resources */,
 				5D6827491C247AFC00374755 /* Next1.png in Resources */,
@@ -383,15 +315,13 @@
 				5DCF68F91C233FC500A72F12 /* november.mp3 in Resources */,
 				5DCF68FD1C233FC500A72F12 /* tomorrow.mp3 in Resources */,
 				5DCF68DE1C233F5E00A72F12 /* GetWellMainPage.png in Resources */,
-				AA184AAC1C249104001A679F /* Simple_Meditation_Step.docx in Resources */,
 				5DCF68DF1C233F5E00A72F12 /* GetWellMediaDetailPage.jpg in Resources */,
 				5DCF68DB1C233F5E00A72F12 /* GetWellLogin2.png in Resources */,
 				5DCF68DA1C233F5E00A72F12 /* GetWellLogin2.jpg in Resources */,
 				5DCF68D71C233F5E00A72F12 /* background.png in Resources */,
 				5DCF68E71C233F5E00A72F12 /* unchecked.png in Resources */,
-				AA184AA81C249104001A679F /* Assets.xcassets in Resources */,
+				5D6827551C24ABD700374755 /* thumbs-up-icon-black-hi.png in Resources */,
 				5DCF68DD1C233F5E00A72F12 /* getWellLogoSized.png in Resources */,
-				AA184AAA1C249104001A679F /* Main.storyboard in Resources */,
 				5DCF68BC1C23336500A72F12 /* Assets.xcassets in Resources */,
 				5DCF68B71C23336500A72F12 /* Main.storyboard in Resources */,
 				5DCF68E51C233F5E00A72F12 /* PlayPause.png in Resources */,
@@ -455,14 +385,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA184AAD1C249104001A679F /* TestViewController.swift in Sources */,
 				AA184A2D1C233A81001A679F /* Songs.swift in Sources */,
 				4C060F971C235DF500E65966 /* SetReminderPopOverViewController.swift in Sources */,
-				AA184AAE1C249104001A679F /* ToDo.swift in Sources */,
+				5D68274E1C24A85C00374755 /* TableViewChkList.swift in Sources */,
+				5D6827511C24A8DA00374755 /* TableViewCell.swift in Sources */,
 				AA184A2F1C233AC1001A679F /* RegisterViewController.swift in Sources */,
-				AA184AA71C249104001A679F /* AppDelegate.swift in Sources */,
 				AA184A2B1C2339FB001A679F /* LoginViewController.swift in Sources */,
-				AA184AAF1C249104001A679F /* ToDoCell.swift in Sources */,
 				AA184A311C233C5D001A679F /* MainViewController.swift in Sources */,
 				5DCF68BA1C23336500A72F12 /* FinalGetWell2.xcdatamodeld in Sources */,
 				AA184A371C237EB6001A679F /* MediaPlayerViewController.swift in Sources */,
@@ -487,22 +415,6 @@
 				5DCF68BE1C23336500A72F12 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		AA184A9B1C249104001A679F /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AA184A9C1C249104001A679F /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		AA184A9D1C249104001A679F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AA184A9E1C249104001A679F /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

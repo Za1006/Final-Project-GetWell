@@ -32,7 +32,7 @@ class MediaPlayerViewController: UIViewController
     var originalCount = 300
     
     
-    var shuffleMode: MPMusicShuffleMode
+    //var shuffleMode: MPMusicShuffleMode
     
     var delegate: MainViewController?
     
