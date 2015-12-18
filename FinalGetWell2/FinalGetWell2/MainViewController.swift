@@ -56,6 +56,7 @@ class MainViewController: UIViewController,UIPopoverPresentationControllerDelega
             destVC.popoverPresentationController?.delegate = self
             destVC.delegate = self
             destVC.preferredContentSize = CGSizeMake(400.0, 216.0)
+           
         }
     }
     

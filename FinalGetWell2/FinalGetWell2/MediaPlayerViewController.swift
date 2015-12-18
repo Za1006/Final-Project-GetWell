@@ -16,8 +16,8 @@ class MediaPlayerViewController: UIViewController
     
     @IBOutlet weak var timeSegmentedControl: UISegmentedControl!
     @IBOutlet var meditationCountdown: UILabel!
-    //    @IBOutlet var songTitleLabel: UILabel!
-    //    @IBOutlet var artistLabel: UILabel!
+    @IBOutlet var songTitleLabel: UILabel!
+    //  @IBOutlet var artistLabel: UILabel!
     //    @IBOutlet var playPauseButton: UIButton!
 
     

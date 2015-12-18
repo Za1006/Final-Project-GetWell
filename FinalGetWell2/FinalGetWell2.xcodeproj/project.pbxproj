@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		4C060F971C235DF500E65966 /* SetReminderPopOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C060F961C235DF500E65966 /* SetReminderPopOverViewController.swift */; };
+		5D6827451C2467D900374755 /* free_nature_wallpaper_hd_desktop.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D6827441C2467D900374755 /* free_nature_wallpaper_hd_desktop.jpg */; };
+		5D6827491C247AFC00374755 /* Next1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D6827461C247AFC00374755 /* Next1.png */; };
+		5D68274A1C247AFC00374755 /* PlayPause1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D6827471C247AFC00374755 /* PlayPause1.png */; };
+		5D68274B1C247AFC00374755 /* Previous1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D6827481C247AFC00374755 /* Previous1.png */; };
 		5DCF68B21C23336500A72F12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCF68B11C23336500A72F12 /* AppDelegate.swift */; };
 		5DCF68B71C23336500A72F12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DCF68B51C23336500A72F12 /* Main.storyboard */; };
 		5DCF68BA1C23336500A72F12 /* FinalGetWell2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5DCF68B81C23336500A72F12 /* FinalGetWell2.xcdatamodeld */; };
@@ -52,6 +56,10 @@
 		22214D90239856269A461A1B /* Pods-FinalGetWell2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinalGetWell2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FinalGetWell2/Pods-FinalGetWell2.debug.xcconfig"; sourceTree = "<group>"; };
 		3517483E6AD61A0B82488FF0 /* libPods-FinalGetWell2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FinalGetWell2.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C060F961C235DF500E65966 /* SetReminderPopOverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetReminderPopOverViewController.swift; sourceTree = "<group>"; };
+		5D6827441C2467D900374755 /* free_nature_wallpaper_hd_desktop.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = free_nature_wallpaper_hd_desktop.jpg; sourceTree = "<group>"; };
+		5D6827461C247AFC00374755 /* Next1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Next1.png; sourceTree = "<group>"; };
+		5D6827471C247AFC00374755 /* PlayPause1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PlayPause1.png; sourceTree = "<group>"; };
+		5D6827481C247AFC00374755 /* Previous1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Previous1.png; sourceTree = "<group>"; };
 		5DCF68AE1C23336500A72F12 /* FinalGetWell2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalGetWell2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DCF68B11C23336500A72F12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5DCF68B61C23336500A72F12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -164,7 +172,11 @@
 				5DCF68C91C233F5E00A72F12 /* GetWellLogin2.jpg */,
 				5DCF68CA1C233F5E00A72F12 /* GetWellLogin2.png */,
 				5DCF68CB1C233F5E00A72F12 /* GetWellLogin2a.png */,
+				5D6827441C2467D900374755 /* free_nature_wallpaper_hd_desktop.jpg */,
 				5DCF68CC1C233F5E00A72F12 /* getWellLogoSized.png */,
+				5D6827461C247AFC00374755 /* Next1.png */,
+				5D6827471C247AFC00374755 /* PlayPause1.png */,
+				5D6827481C247AFC00374755 /* Previous1.png */,
 				5DCF68CD1C233F5E00A72F12 /* GetWellMainPage.png */,
 				5DCF68CE1C233F5E00A72F12 /* GetWellMediaDetailPage.jpg */,
 				5DCF68CF1C233F5E00A72F12 /* GetWellMediaDetailPage.png */,
@@ -271,13 +283,17 @@
 				5DCF68E01C233F5E00A72F12 /* GetWellMediaDetailPage.png in Resources */,
 				5DCF68F41C233FC500A72F12 /* betterdays.mp3 in Resources */,
 				5DCF68E41C233F5E00A72F12 /* Next.png in Resources */,
+				5D68274A1C247AFC00374755 /* PlayPause1.png in Resources */,
 				5DCF68E21C233F5E00A72F12 /* GetWellSignUpFinal.png in Resources */,
 				5DCF68D81C233F5E00A72F12 /* checked.png in Resources */,
 				5DCF68FC1C233FC500A72F12 /* slowmotion.mp3 in Resources */,
+				5D68274B1C247AFC00374755 /* Previous1.png in Resources */,
 				5DCF68D91C233F5E00A72F12 /* DownArrow.png in Resources */,
+				5D6827451C2467D900374755 /* free_nature_wallpaper_hd_desktop.jpg in Resources */,
 				5DCF68F81C233FC500A72F12 /* newdawn.mp3 in Resources */,
 				5DCF68BF1C23336500A72F12 /* LaunchScreen.storyboard in Resources */,
 				5DCF68E61C233F5E00A72F12 /* Previous.png in Resources */,
+				5D6827491C247AFC00374755 /* Next1.png in Resources */,
 				5DCF68DC1C233F5E00A72F12 /* GetWellLogin2a.png in Resources */,
 				5DCF68F31C233FC500A72F12 /* acousticbreeze.mp3 in Resources */,
 				5DCF68F51C233FC500A72F12 /* deepblue.mp3 in Resources */,
