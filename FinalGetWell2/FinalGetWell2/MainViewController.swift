@@ -28,7 +28,7 @@ class MainViewController: UIViewController,UIPopoverPresentationControllerDelega
     @IBOutlet weak var nextMeditation: UILabel!
     //@IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var image: UIImage!
-    @IBOutlet var skipToSession: UIButton!
+    @IBOutlet var skipToMedia: UIButton!
     @IBOutlet weak var tv: UITableView!
     @IBOutlet weak var plus: UIButton!
     @IBOutlet weak var next: UIButton!
@@ -41,7 +41,6 @@ class MainViewController: UIViewController,UIPopoverPresentationControllerDelega
     let checkImg = UIImage(named: "checked.png")
     let uncheckImg = UIImage(named: "unchecked.png")
     
-    var remainingCharacters = []
 
     
     override func viewDidLoad()
