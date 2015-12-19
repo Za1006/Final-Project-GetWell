@@ -32,7 +32,11 @@ class MediaPlayerViewController: UIViewController
     var originalCount = 300
     
     
+<<<<<<< Updated upstream
     //var shuffleMode: MPMusicShuffleMode
+=======
+    var shuffleMode: MPMusicShuffleMode?
+>>>>>>> Stashed changes
     
     var delegate: MainViewController?
     
