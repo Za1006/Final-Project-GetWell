@@ -7,6 +7,14 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--Tutorial View Controller-->
+        <scene sceneID="Zxb-12-Ksm">
+            <objects>
+                <pageViewController storyboardIdentifier="TutorialViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="cJW-cm-XBM" customClass="TutorialViewController" customModule="FinalGetWell2" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gc2-8R-GYP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1102" y="-446"/>
+        </scene>
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -334,10 +342,27 @@
             </objects>
             <point key="canvasLocation" x="1803" y="255"/>
         </scene>
+        <!--Content View Controller-->
+        <scene sceneID="7a5-Y8-GXt">
+            <objects>
+                <viewController storyboardIdentifier="ContentViewController" id="Sj4-4S-PNf" customClass="ContentViewController" customModule="FinalGetWell2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sqm-Vl-C12"/>
+                        <viewControllerLayoutGuide type="bottom" id="v96-u1-fVG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Z9B-dr-VYR">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BNC-ZI-icG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="394" y="-446"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="bGK-Fg-gs3">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1C2-vf-bHo" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6nd-si-NjU" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="csH-KY-JxZ">
@@ -350,6 +375,7 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="hZn-6T-aIv"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1C2-vf-bHo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="402" y="255"/>
         </scene>
