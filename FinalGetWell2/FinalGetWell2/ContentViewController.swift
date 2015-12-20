@@ -10,12 +10,19 @@ import UIKit
 
 class ContentViewController: UIViewController
 {
+    
+    var pageIndex = Int(0)
+    var titleText = ""
+    var imageFile = ""
+    
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var image: UIImageView!
 
     override func viewDidLoad()
     {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.image.image = UIImage(named: imageFile)
+        self.titleLabel.text = self.titleText
     }
 
     override func didReceiveMemoryWarning()
