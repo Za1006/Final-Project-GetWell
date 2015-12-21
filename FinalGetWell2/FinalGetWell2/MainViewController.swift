@@ -213,7 +213,7 @@ class MainViewController: UIViewController,UIPopoverPresentationControllerDelega
     
     func dateWasChosen(date: NSDate)
     {
-        nextMeditation.text = dateFormat(date)
+        nextMeditation.text = "Next session: \(dateFormat(date))"
         
         let localNotification = UILocalNotification()
         localNotification.fireDate = date

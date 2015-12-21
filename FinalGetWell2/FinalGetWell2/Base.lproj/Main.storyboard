@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="6nd-si-NjU">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uCA-Fo-MXg">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -91,9 +91,6 @@
                                 <variation key="widthClass=compact" misplaced="YES">
                                     <rect key="frame" x="-150" y="346" width="700" height="34"/>
                                 </variation>
-                                <connections>
-                                    <segue destination="uCA-Fo-MXg" kind="show" identifier="" id="ffV-Ij-mHI"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -223,7 +220,7 @@
                         <barButtonItem key="rightBarButtonItem" title="Create Account" id="Vlv-NI-Rdq">
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <segue destination="wQd-YY-DGk" kind="show" id="A6A-qh-IgB"/>
+                                <segue destination="wQd-YY-DGk" kind="show" identifier="CreateAccountSegue" id="A6A-qh-IgB"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -261,7 +258,7 @@
                                 </constraints>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="73C-6P-qLn"/>
@@ -443,8 +440,8 @@
                                                         </mask>
                                                     </variation>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tbd-8H-AXJ">
-                                                    <rect key="frame" x="8" y="0.0" width="484" height="22"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tbd-8H-AXJ">
+                                                    <rect key="frame" x="8" y="0.0" width="484" height="32"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -485,15 +482,15 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Cw-vx-iHV">
                                 <rect key="frame" x="50" y="325" width="500" height="37"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
-                                <state key="normal" title="Skip to Media">
+                                <state key="normal" title="Skip to Media -&gt;">
                                     <color key="titleColor" red="0.97709502207081556" green="1" blue="0.96158271478105684" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="KqX-MC-iiQ" kind="show" id="kyU-JE-z58"/>
+                                    <segue destination="KqX-MC-iiQ" kind="show" identifier="SkipToMediaSegue" id="kyU-JE-z58"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Next Session" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fLA-fy-9Jb">
-                                <rect key="frame" x="248" y="83" width="105" height="25"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fLA-fy-9Jb">
+                                <rect key="frame" x="300" y="108" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
                                 <color key="textColor" red="1" green="0.93227755266571644" blue="0.065256610092707779" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -505,7 +502,7 @@
                                     <color key="titleColor" red="0.2936777227634591" green="0.60105121073298429" blue="0.014706422775981744" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="KqX-MC-iiQ" kind="show" id="tBN-eN-c65"/>
+                                    <segue destination="KqX-MC-iiQ" kind="show" identifier="NextSegue" id="tBN-eN-c65"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eaN-tX-I5a">
@@ -589,6 +586,12 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="lIt-KQ-lX4">
+                        <barButtonItem key="leftBarButtonItem" title="Log In" id="n3v-0j-Kpu">
+                            <color key="tintColor" red="0.99963909387588501" green="1" blue="0.99975615739822388" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="6nd-si-NjU" kind="show" identifier="ShowLoginSegue" id="42f-yt-3m7"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Set Reminder" id="Fre-4g-21G">
                             <color key="tintColor" red="1" green="0.99308319430878755" blue="0.98562194545861137" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
@@ -604,12 +607,12 @@
                         <outlet property="plus" destination="eaN-tX-I5a" id="KzB-0y-0Ok"/>
                         <outlet property="skipToMedia" destination="6Cw-vx-iHV" id="YLa-vF-5QP"/>
                         <outlet property="tv" destination="qUc-5C-0ZM" id="KiF-rK-CGv"/>
-                        <segue destination="4wl-Bb-yoR" kind="show" id="I49-h7-arU"/>
+                        <segue destination="4wl-Bb-yoR" kind="show" identifier="SeguetoNavigation" id="I49-h7-arU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n75-5W-ouf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1110" y="933"/>
+            <point key="canvasLocation" x="1128" y="933"/>
         </scene>
         <!--Media Player View Controller-->
         <scene sceneID="s8v-fl-zDm">
@@ -765,7 +768,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DIR-tM-1sH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1119" y="1603"/>
+            <point key="canvasLocation" x="1139" y="1857"/>
         </scene>
         <!--Set Reminder Pop Over View Controller-->
         <scene sceneID="zTW-JE-MKt">
@@ -829,7 +832,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lta-qK-reK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1803" y="933"/>
+            <point key="canvasLocation" x="1848" y="933"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="113-OB-FyG">
@@ -867,7 +870,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9tI-wP-wRU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="412" y="1622"/>
+            <point key="canvasLocation" x="402" y="1857"/>
         </scene>
     </scenes>
     <resources>
@@ -885,4 +888,5 @@
     <inferredMetricsTieBreakers>
         <segue reference="kyU-JE-z58"/>
     </inferredMetricsTieBreakers>
+    <color key="tintColor" red="0.9599220409" green="0.96391541270000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
 </document>

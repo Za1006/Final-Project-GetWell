@@ -118,22 +118,22 @@ class MediaPlayerViewController: UIViewController
         if originalCount == 0
         {
             stopTimer()
-            setNotification()
+//            setNotification()
             
         }
     }
     
-    func setNotification()
-    {
-        if originalCount == 0
-        {
-            let soundURL = NSBundle.mainBundle().URLForResource("sessionOver", withExtension: "m4a")!
-            var soundID: SystemSoundID = 0
-            AudioServicesCreateSystemSoundID(soundURL,&soundID)
-            AudioServicesPlayAlertSound(soundID)
-            
-        }
-    }
+//    func setNotification()
+//    {
+//        if originalCount == 0
+//        {
+//            let soundURL = NSBundle.mainBundle().URLForResource("sessionOver", withExtension: "m4a")!
+//            var soundID: SystemSoundID = 0
+//            AudioServicesCreateSystemSoundID(soundURL,&soundID)
+//            AudioServicesPlayAlertSound(soundID)
+//            
+//        }
+//    }
     
     @IBAction func playPauseTapped(sender: UIButton)
     {
