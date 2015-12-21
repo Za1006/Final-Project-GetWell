@@ -32,6 +32,8 @@ class MainViewController: UIViewController,UIPopoverPresentationControllerDelega
     @IBOutlet weak var tv: UITableView!
     @IBOutlet weak var plus: UIButton!
     @IBOutlet weak var next: UIButton!
+    @IBOutlet weak var loginButton: UIBarButtonItem!
+    @IBOutlet weak var setReminderButton: UIBarButtonItem!
     
     var allToDos = ["Find your meditation spot", "Get comfortable", "Begin Deep Breathing", "Clear your mind"]
     var shownTodos = [String]()
@@ -40,8 +42,6 @@ class MainViewController: UIViewController,UIPopoverPresentationControllerDelega
     var isDone: Bool?
     let checkImg = UIImage(named: "checked1.png")
     let uncheckImg = UIImage(named: "unchecked1.png")
-    
-
     
     override func viewDidLoad()
     {

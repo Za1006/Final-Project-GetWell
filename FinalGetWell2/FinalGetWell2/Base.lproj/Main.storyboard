@@ -91,6 +91,9 @@
                                 <variation key="widthClass=compact" misplaced="YES">
                                     <rect key="frame" x="-150" y="346" width="700" height="34"/>
                                 </variation>
+                                <connections>
+                                    <segue destination="SjU-rn-pmL" kind="show" identifier="LogintoMainSegue" id="bOh-Kf-ag0"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -424,7 +427,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ymr-an-YGv">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="unchecked.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ymr-an-YGv">
                                                     <rect key="frame" x="557" y="0.0" width="35" height="35"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="35" id="NMo-15-dJ2"/>
@@ -440,7 +443,7 @@
                                                         </mask>
                                                     </variation>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tbd-8H-AXJ">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tbd-8H-AXJ">
                                                     <rect key="frame" x="8" y="0.0" width="484" height="32"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -482,7 +485,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Cw-vx-iHV">
                                 <rect key="frame" x="50" y="325" width="500" height="37"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
-                                <state key="normal" title="Skip to Media -&gt;">
+                                <state key="normal" title="Skip to Media &gt;">
                                     <color key="titleColor" red="0.97709502207081556" green="1" blue="0.96158271478105684" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -884,9 +887,11 @@
         <image name="Previous1.png" width="500" height="500"/>
         <image name="background.png" width="1200" height="2038"/>
         <image name="free_nature_wallpaper_hd_desktop.jpg" width="2560" height="1600"/>
+        <image name="unchecked.png" width="500" height="500"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="kyU-JE-z58"/>
+        <segue reference="bOh-Kf-ag0"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.9599220409" green="0.96391541270000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
 </document>
