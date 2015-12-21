@@ -16,6 +16,8 @@
 		5D6827511C24A8DA00374755 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6827501C24A8DA00374755 /* TableViewCell.swift */; };
 		5D6827531C24AAD100374755 /* ThumbsUp.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D6827521C24AAD100374755 /* ThumbsUp.png */; };
 		5D6827551C24ABD700374755 /* thumbs-up-icon-black-hi.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D6827541C24ABD700374755 /* thumbs-up-icon-black-hi.png */; };
+		5DBDA2281C28594000B71F6F /* checked1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DBDA2261C28594000B71F6F /* checked1.png */; };
+		5DBDA2291C28594000B71F6F /* unchecked1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DBDA2271C28594000B71F6F /* unchecked1.png */; };
 		5DCF68B21C23336500A72F12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCF68B11C23336500A72F12 /* AppDelegate.swift */; };
 		5DCF68B71C23336500A72F12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DCF68B51C23336500A72F12 /* Main.storyboard */; };
 		5DCF68BA1C23336500A72F12 /* FinalGetWell2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5DCF68B81C23336500A72F12 /* FinalGetWell2.xcdatamodeld */; };
@@ -71,6 +73,8 @@
 		5D6827501C24A8DA00374755 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		5D6827521C24AAD100374755 /* ThumbsUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ThumbsUp.png; sourceTree = "<group>"; };
 		5D6827541C24ABD700374755 /* thumbs-up-icon-black-hi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thumbs-up-icon-black-hi.png"; sourceTree = "<group>"; };
+		5DBDA2261C28594000B71F6F /* checked1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checked1.png; sourceTree = "<group>"; };
+		5DBDA2271C28594000B71F6F /* unchecked1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unchecked1.png; sourceTree = "<group>"; };
 		5DCF68AE1C23336500A72F12 /* FinalGetWell2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalGetWell2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DCF68B11C23336500A72F12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5DCF68B61C23336500A72F12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -167,6 +171,8 @@
 				4C060F961C235DF500E65966 /* SetReminderPopOverViewController.swift */,
 				AA184A2A1C2339FB001A679F /* LoginViewController.swift */,
 				AA184A301C233C5D001A679F /* MainViewController.swift */,
+				5DBDA2261C28594000B71F6F /* checked1.png */,
+				5DBDA2271C28594000B71F6F /* unchecked1.png */,
 				5D6827501C24A8DA00374755 /* TableViewCell.swift */,
 				AA184AD71C272C62001A679F /* ContentViewController.swift */,
 				AA184ADB1C272D3C001A679F /* TutorialViewController.swift */,
@@ -306,6 +312,7 @@
 				5DCF68E41C233F5E00A72F12 /* Next.png in Resources */,
 				5D68274A1C247AFC00374755 /* PlayPause1.png in Resources */,
 				5DCF68E21C233F5E00A72F12 /* GetWellSignUpFinal.png in Resources */,
+				5DBDA2281C28594000B71F6F /* checked1.png in Resources */,
 				5DCF68D81C233F5E00A72F12 /* checked.png in Resources */,
 				5D6827531C24AAD100374755 /* ThumbsUp.png in Resources */,
 				5DCF68FC1C233FC500A72F12 /* slowmotion.mp3 in Resources */,
@@ -327,6 +334,7 @@
 				5DCF68DF1C233F5E00A72F12 /* GetWellMediaDetailPage.jpg in Resources */,
 				5DCF68DB1C233F5E00A72F12 /* GetWellLogin2.png in Resources */,
 				5DCF68DA1C233F5E00A72F12 /* GetWellLogin2.jpg in Resources */,
+				5DBDA2291C28594000B71F6F /* unchecked1.png in Resources */,
 				5DCF68D71C233F5E00A72F12 /* background.png in Resources */,
 				5DCF68E71C233F5E00A72F12 /* unchecked.png in Resources */,
 				5D6827551C24ABD700374755 /* thumbs-up-icon-black-hi.png in Resources */,

@@ -33,13 +33,13 @@ class MainViewController: UIViewController,UIPopoverPresentationControllerDelega
     @IBOutlet weak var plus: UIButton!
     @IBOutlet weak var next: UIButton!
     
-    var allToDos = ["Find your meditation spot", "Get comfortable", "Clear your mind"]
+    var allToDos = ["Find your meditation spot", "Get comfortable", "Begin Deep Breathing", "Clear your mind"]
     var shownTodos = [String]()
     var currentItemIndex = 0
     
     var isDone: Bool?
-    let checkImg = UIImage(named: "checked.png")
-    let uncheckImg = UIImage(named: "unchecked.png")
+    let checkImg = UIImage(named: "checked1.png")
+    let uncheckImg = UIImage(named: "unchecked1.png")
     
 
     
@@ -59,6 +59,13 @@ class MainViewController: UIViewController,UIPopoverPresentationControllerDelega
     }
 
     // MARK: - Data Source
+    
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int
+    {
+        
+        return 1
+    }
+
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
         
@@ -80,9 +87,9 @@ class MainViewController: UIViewController,UIPopoverPresentationControllerDelega
             
         {
             
-        case true: cell.todoCheckbox.image = UIImage(named: "checked.png")
+        case true: cell.todoCheckbox.image = UIImage(named: "checked1.png")
             
-        case false: cell.todoCheckbox.image = UIImage(named: "unchecked.png")
+        case false: cell.todoCheckbox.image = UIImage(named: "unchecked1.png")
             
         }
         
@@ -110,13 +117,13 @@ class MainViewController: UIViewController,UIPopoverPresentationControllerDelega
     {
         isDone = true
         let newTodo = allToDos[currentItemIndex]
-        shownTodos.append(newTodo)
-        
+        shownTodos.insert(newTodo, atIndex: currentItemIndex)
+     
         let newItemIndexPath = NSIndexPath(forRow: currentItemIndex, inSection: 0)
         tv.insertRowsAtIndexPaths([newItemIndexPath], withRowAnimation: .Automatic)
         
         currentItemIndex += 1
-        if currentItemIndex == 3
+        if currentItemIndex == 4
             
         {
             sender.enabled = false
@@ -140,7 +147,7 @@ class MainViewController: UIViewController,UIPopoverPresentationControllerDelega
             
         }
         
-        if count == 3
+        if count == 4
             
         {
             next.hidden = false
