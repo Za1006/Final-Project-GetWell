@@ -11,9 +11,9 @@ import UIKit
 class ContentViewController: UIViewController
 {
     
-    var pageIndex = Int(0)
-    var titleText = ""
-    var imageFile = ""
+    var pageIndex: Int?
+    var titleText: String!
+    var imageFile: String!
     
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var image: UIImageView!
