@@ -13,6 +13,7 @@ class LoginViewController: UIViewController
     
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var errorMessageLabel: UILabel!
 
     override func viewDidLoad()
     {
@@ -51,9 +52,15 @@ class LoginViewController: UIViewController
                 else
                 {
                     print(error?.localizedDescription)
+                    self.errorMessageLabel.text = "Please enter username and password to login."
                 }
             }
         }
+    }
+    
+    @IBAction func cancelPressed(sender: UIBarButtonItem)
+    {
+        dismissViewControllerAnimated(true, completion: nil)
     }
 
 

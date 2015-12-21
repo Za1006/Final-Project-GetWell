@@ -128,7 +128,7 @@ class MediaPlayerViewController: UIViewController
         
         if originalCount == 0
         {
-            meditationCountdown.textColor = UIColor.redColor()
+            meditationCountdown.textColor = UIColor.yellowColor()
             playNotification()
         }
     }
@@ -169,10 +169,10 @@ class MediaPlayerViewController: UIViewController
     @IBAction func skipBackTapped(sender: UIButton)
     {
         avQueuePlayer.seekToTime(CMTimeMakeWithSeconds(0.0, 1))
-        if !nowPlaying
-        {
-            togglePlayback(true)
-        }
+//        if !nowPlaying
+//        {
+//            togglePlayback(true)
+//        }
     }
     
     func configurePlaylist()
