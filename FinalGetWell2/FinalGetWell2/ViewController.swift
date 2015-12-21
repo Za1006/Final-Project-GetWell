@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UIPageViewControllerDataSource
+class ViewController: UIViewController
 {
 
     var TutorialViewController: UIPageViewController!
@@ -35,19 +35,19 @@ class ViewController: UIViewController, UIPageViewControllerDataSource
     {
         return 0
     }
-    func viewControllerAtIndex(index: Int) -> ContentViewController
-    {
-        if ((self.pageTitles = 0) || (index >= self.pageTitles.count))
-        {
-            return ContentViewController()
-        }
-        let vc : ContentViewController = (self.storyboard?.instantiateViewControllerWithIdentifier("ContentViewController") as? ContentViewController)!
-        vc.imageFile = self.pageImage
-        vc.titleText = self.pageTitles
-        vc.pageIndex = index
-        
-        return vc
-    }
+//    func viewControllerAtIndex(index: Int) -> ContentViewController
+//    {
+////        if ((self.pageTitles = 0) || (index >= self.pageTitles.count))
+////        {
+////            return ContentViewController()
+////        }
+////        let vc : ContentViewController = (self.storyboard?.instantiateViewControllerWithIdentifier("ContentViewController") as? ContentViewController)!
+////        vc.imageFile = self.pageImage
+////        vc.titleText = self.pageTitles
+////        vc.pageIndex = index
+////        
+////        return vc
+//    }
 //    MARK: - Page View Data Source
     func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController?
     {
@@ -63,24 +63,24 @@ class ViewController: UIViewController, UIPageViewControllerDataSource
         return self.TutorialViewController
     }
     
-    func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController?
-    {
-        let vc = viewController as? ContentViewController
-        var index = vc!.pageIndex as Int
-        
-        if index == NSNotFound
-        {
-            return nil
-        }
-        
-        index--
-        if index == self.pageTitles.count
-        {
-            return nil
-        }
-        return self.viewControllerAtIndex(index)
-    }
-    
+//    func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController?
+//    {
+////        let vc = viewController as? ContentViewController
+////        var index = vc!.pageIndex as Int
+////        
+////        if index == NSNotFound
+////        {
+////            return nil
+////        }
+////        
+////        index--
+////        if index == self.pageTitles.count
+////        {
+////            return nil
+////        }
+////        return self.viewControllerAtIndex(index)
+//    }
+//    
 
     /*
     // MARK: - Navigation
