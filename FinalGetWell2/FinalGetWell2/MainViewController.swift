@@ -40,8 +40,8 @@ class MainViewController: UIViewController,UIPopoverPresentationControllerDelega
     var currentItemIndex = 0
     
     var isDone: Bool?
-    let checkImg = UIImage(named: "checked1.png")
-    let uncheckImg = UIImage(named: "unchecked1.png")
+    let checkImg = UIImage(named: "checked.png")
+    let uncheckImg = UIImage(named: "unchecked.png")
     
     override func viewDidLoad()
     {
@@ -87,9 +87,9 @@ class MainViewController: UIViewController,UIPopoverPresentationControllerDelega
             
         {
             
-        case true: cell.todoCheckbox.image = UIImage(named: "checked1.png")
+        case true: cell.todoCheckbox.image = UIImage(named: "checked.png")
             
-        case false: cell.todoCheckbox.image = UIImage(named: "unchecked1.png")
+        case false: cell.todoCheckbox.image = UIImage(named: "unchecked.png")
             
         }
         

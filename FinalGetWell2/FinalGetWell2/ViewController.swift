@@ -6,7 +6,7 @@
 //  Copyright © 2015 Keron. All rights reserved.
 //
 
-import UIKit
+/*import UIKit
 
 class ViewController: UIViewController, UIPageViewControllerDataSource
 {
@@ -124,3 +124,4 @@ class ViewController: UIViewController, UIPageViewControllerDataSource
     }
 
 }
+*/
