@@ -32,6 +32,10 @@ class MediaPlayerViewController: UIViewController
     
     var whichSegment = 0
     
+    var flashTimer: NSTimer?
+    var flashCount = 0
+    var flashing = true
+    
 //    var shuffleMode: MPMusicShuffleMode?
     
     var delegate: MainViewController?
@@ -74,7 +78,7 @@ class MediaPlayerViewController: UIViewController
         }
         else if sender.selectedSegmentIndex == 1
         {
-            originalCount = 600
+            originalCount = 5
             meditationCountdown.text = "10:00"
             whichSegment = 1
 //            startTimer()
@@ -134,7 +138,29 @@ class MediaPlayerViewController: UIViewController
         if originalCount == 0
         {
             meditationCountdown.textColor = UIColor.yellowColor()
+            
+            flashTimer = NSTimer
+                .scheduledTimerWithTimeInterval(0.2, target: self, selector: "flashLabel" , userInfo: nil, repeats: true)
             playNotification()
+        }
+    }
+    
+    func flashLabel()
+    {
+        flashing = !flashing
+        if flashing
+        {
+            meditationCountdown.textColor = UIColor.whiteColor()
+        }
+        else
+        {
+            meditationCountdown.textColor = UIColor.yellowColor()
+        }
+        flashCount++
+        
+        if flashCount > 10
+        {
+            flashTimer?.invalidate()
         }
     }
     
