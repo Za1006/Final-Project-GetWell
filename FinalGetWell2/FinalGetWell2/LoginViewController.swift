@@ -46,7 +46,7 @@ class LoginViewController: UIViewController
                 if user != nil
                 {
                     print("login successful")
-                    self.performSegueWithIdentifier("MainViewController", sender: self)
+                    self.performSegueWithIdentifier("ShowLoginSegue", sender: self)
                     self.dismissViewControllerAnimated(true, completion: nil)
                 }
                 else

@@ -30,6 +30,8 @@ class MediaPlayerViewController: UIViewController
     var originalCount = 0
     var timerCount = 0
     
+    var whichSegment = 0
+    
 //    var shuffleMode: MPMusicShuffleMode?
     
     var delegate: MainViewController?
@@ -64,6 +66,7 @@ class MediaPlayerViewController: UIViewController
         {
             originalCount = 300
             meditationCountdown.text = "5:00"
+            whichSegment = 0
 //            startTimer()
 //            setupAudioSession()
 //            loadCurrentSong()
@@ -73,6 +76,7 @@ class MediaPlayerViewController: UIViewController
         {
             originalCount = 600
             meditationCountdown.text = "10:00"
+            whichSegment = 1
 //            startTimer()
 //            setupAudioSession()
 //            loadCurrentSong()
@@ -82,6 +86,7 @@ class MediaPlayerViewController: UIViewController
         {
             originalCount = 900
             meditationCountdown.text = "15:00"
+            whichSegment = 2
 //            startTimer()
 //            setupAudioSession()
 //            loadCurrentSong()
@@ -91,12 +96,13 @@ class MediaPlayerViewController: UIViewController
         {
             originalCount = 1200
             meditationCountdown.text = "20:00"
+            whichSegment = 3
 //            startTimer()
 //            setupAudioSession()
 //            loadCurrentSong()
 //            togglePlayback(true)
         }
-        
+
     }
     
     func startTimer()
@@ -120,7 +126,6 @@ class MediaPlayerViewController: UIViewController
     
     func updateUI()
     {
-        
         originalCount = originalCount - 1
         let newMinuteCount = originalCount/60
         let newSecondCount = originalCount%60
@@ -268,10 +273,25 @@ class MediaPlayerViewController: UIViewController
 //        }
 //        updateUI()
 //        startTimer()
-        
-        timer = nil
+        if whichSegment == 0
+        {
+            originalCount = 300
+        }
+        if whichSegment == 1
+        {
+            originalCount = 600
+        }
+        if whichSegment == 2
+        {
+            originalCount = 900
+        }
+        if whichSegment == 3
+        {
+            originalCount = 1200
+        }
+      
+        stopTimer()
         loadCurrentSong()
-        updateUI()
         startTimer()
     }
 
