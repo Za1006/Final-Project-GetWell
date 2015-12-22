@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4C060F971C235DF500E65966 /* SetReminderPopOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C060F961C235DF500E65966 /* SetReminderPopOverViewController.swift */; };
+		4C618F751C29D0D600104B71 /* reset.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C618F741C29D0D600104B71 /* reset.png */; };
 		4C8C816E1C287F03009C8C60 /* SessionOver.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4C8C816D1C287F03009C8C60 /* SessionOver.m4a */; };
 		5D6827451C2467D900374755 /* free_nature_wallpaper_hd_desktop.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D6827441C2467D900374755 /* free_nature_wallpaper_hd_desktop.jpg */; };
 		5D6827491C247AFC00374755 /* Next1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D6827461C247AFC00374755 /* Next1.png */; };
@@ -77,6 +78,7 @@
 		22214D90239856269A461A1B /* Pods-FinalGetWell2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinalGetWell2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FinalGetWell2/Pods-FinalGetWell2.debug.xcconfig"; sourceTree = "<group>"; };
 		3517483E6AD61A0B82488FF0 /* libPods-FinalGetWell2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FinalGetWell2.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C060F961C235DF500E65966 /* SetReminderPopOverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetReminderPopOverViewController.swift; sourceTree = "<group>"; };
+		4C618F741C29D0D600104B71 /* reset.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reset.png; sourceTree = "<group>"; };
 		4C8C816D1C287F03009C8C60 /* SessionOver.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = SessionOver.m4a; sourceTree = "<group>"; };
 		5D6827441C2467D900374755 /* free_nature_wallpaper_hd_desktop.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = free_nature_wallpaper_hd_desktop.jpg; sourceTree = "<group>"; };
 		5D6827461C247AFC00374755 /* Next1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Next1.png; sourceTree = "<group>"; };
@@ -157,6 +159,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C618F6D1C29CD8B00104B71 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				5DCF68BB1C23336500A72F12 /* Assets.xcassets */,
+				5DCF68BD1C23336500A72F12 /* LaunchScreen.storyboard */,
+				5DCF68C01C23336500A72F12 /* Info.plist */,
+				5DCF68B81C23336500A72F12 /* FinalGetWell2.xcdatamodeld */,
+				5D68274D1C24A85C00374755 /* TableViewChkList.swift */,
+			);
+			name = Misc;
+			sourceTree = "<group>";
+		};
 		5D191AE38EE7F12F47AAE1F4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -186,17 +200,11 @@
 		5DCF68B01C23336500A72F12 /* FinalGetWell2 */ = {
 			isa = PBXGroup;
 			children = (
-				5DCF68FF1C233FE500A72F12 /* Music */,
-				5DCF68FE1C233FD100A72F12 /* Images */,
 				AA184A281C233584001A679F /* FinalGetWell2-Bridging-Header.h */,
 				AA184A2C1C233A81001A679F /* Songs.swift */,
 				5DCF68B11C23336500A72F12 /* AppDelegate.swift */,
 				AA184A2E1C233AC1001A679F /* RegisterViewController.swift */,
-				5DBDA22A1C28AD3E00B71F6F /* star.png */,
-				5D8B942A1C29B81E001C9579 /* lpGetwell.png */,
-				5D8B94251C29ABAB001C9579 /* testchk.png */,
 				4C060F961C235DF500E65966 /* SetReminderPopOverViewController.swift */,
-				5D8B942C1C29B8F7001C9579 /* newLp.png */,
 				AA184A2A1C2339FB001A679F /* LoginViewController.swift */,
 				AA184A301C233C5D001A679F /* MainViewController.swift */,
 				5D6827501C24A8DA00374755 /* TableViewCell.swift */,
@@ -205,11 +213,9 @@
 				AA184AD71C272C62001A679F /* ContentViewController.swift */,
 				AA184ADB1C272D3C001A679F /* PageViewController.swift */,
 				5DCF68B51C23336500A72F12 /* Main.storyboard */,
-				5DCF68BB1C23336500A72F12 /* Assets.xcassets */,
-				5DCF68BD1C23336500A72F12 /* LaunchScreen.storyboard */,
-				5DCF68C01C23336500A72F12 /* Info.plist */,
-				5DCF68B81C23336500A72F12 /* FinalGetWell2.xcdatamodeld */,
-				5D68274D1C24A85C00374755 /* TableViewChkList.swift */,
+				5DCF68FE1C233FD100A72F12 /* Images */,
+				5DCF68FF1C233FE500A72F12 /* Music */,
+				4C618F6D1C29CD8B00104B71 /* Misc */,
 			);
 			path = FinalGetWell2;
 			sourceTree = "<group>";
@@ -217,6 +223,11 @@
 		5DCF68FE1C233FD100A72F12 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				4C618F741C29D0D600104B71 /* reset.png */,
+				5DBDA22A1C28AD3E00B71F6F /* star.png */,
+				5D8B94251C29ABAB001C9579 /* testchk.png */,
+				5D8B942C1C29B8F7001C9579 /* newLp.png */,
+				5D8B942A1C29B81E001C9579 /* lpGetwell.png */,
 				5D8B94271C29ACBF001C9579 /* testunchk.png */,
 				5DBDA2261C28594000B71F6F /* checked1.png */,
 				5DBDA2271C28594000B71F6F /* unchecked1.png */,
@@ -382,6 +393,7 @@
 				5DCF68D71C233F5E00A72F12 /* background.png in Resources */,
 				5D8B94211C29A8FC001C9579 /* checked@3x.png in Resources */,
 				5DCF68E71C233F5E00A72F12 /* unchecked.png in Resources */,
+				4C618F751C29D0D600104B71 /* reset.png in Resources */,
 				5D8B94261C29ABAB001C9579 /* testchk.png in Resources */,
 				4C8C816E1C287F03009C8C60 /* SessionOver.m4a in Resources */,
 				5D8B94241C29A8FC001C9579 /* unchecked@3x.png in Resources */,

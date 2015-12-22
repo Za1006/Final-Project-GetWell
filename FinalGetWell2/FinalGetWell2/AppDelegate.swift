@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        pageViewController.currentPageIndicatorTintColor = UIColor.greenColor()
 //        pageViewController.backgroundColor = UIColor.blueColor()
 //        
-//        application.registerUserNotificationSettings(UIUserNotificationSettings(forTypes: [.Alert, .Sound], categories: nil))
+        application.registerUserNotificationSettings(UIUserNotificationSettings(forTypes: [.Alert, .Sound], categories: nil))
         
   Parse.setApplicationId("TaE85IRBTU5SMaF1v1BUfPOOZ0eRNMsbqSWIY3p4",
             clientKey: "tkjIZEXnJhcEOigGzkbr3PSY0eHKRBG0CgKehmD8")

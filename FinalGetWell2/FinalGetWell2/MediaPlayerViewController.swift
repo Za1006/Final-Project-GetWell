@@ -253,6 +253,27 @@ class MediaPlayerViewController: UIViewController
             avQueuePlayer.pause()
         }
     }
+    
+    @IBAction func resetPressed(sender: UIButton!)
+    {
+//        stopTimer()
+//        loadCurrentSong()
+//        if timerCount % 2 == 0
+//        {
+//            originalCount = 420
+//        }
+//        else
+//        {
+//            originalCount = 421
+//        }
+//        updateUI()
+//        startTimer()
+        
+        timer = nil
+        loadCurrentSong()
+        updateUI()
+        startTimer()
+    }
 
 
 }
