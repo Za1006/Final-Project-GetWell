@@ -40,8 +40,8 @@ class MainViewController: UIViewController,UIPopoverPresentationControllerDelega
     var currentItemIndex = 0
     
     var isDone: Bool?
-    let checkImg = UIImage(named: "checked.png")
-    let uncheckImg = UIImage(named: "unchecked.png")
+    let checkImg = UIImage(named: "testchk.png")
+    let uncheckImg = UIImage(named: "testunchk.png")
     
     override func viewDidLoad()
     {
@@ -74,7 +74,6 @@ class MainViewController: UIViewController,UIPopoverPresentationControllerDelega
     }
     
     
-    
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
     {
         let cell = tableView.dequeueReusableCellWithIdentifier("aCell", forIndexPath: indexPath) as! TableViewCell
@@ -87,9 +86,11 @@ class MainViewController: UIViewController,UIPopoverPresentationControllerDelega
             
         {
             
-        case true: cell.todoCheckbox.image = UIImage(named: "checked.png")
+        case true: cell.todoCheckbox.image = UIImage(named: "testchk.png")
+            cell.backgroundColor = UIColor(red: 0.37, green: 0.90, blue: 0.207, alpha: 1)
             
-        case false: cell.todoCheckbox.image = UIImage(named: "unchecked.png")
+        case false: cell.todoCheckbox.image = UIImage(named: "testunchk.png")
+            cell.backgroundColor = UIColor(red:0.121, green:0.898, blue:0.47, alpha:1.0)
             
         }
         
@@ -97,7 +98,13 @@ class MainViewController: UIViewController,UIPopoverPresentationControllerDelega
         
     }
     
-    
+    // Override to support conditional editing of the table view.
+     func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool
+    {
+        // Return false if you do not want the specified item to be editable.
+        return true
+    }
+
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
         

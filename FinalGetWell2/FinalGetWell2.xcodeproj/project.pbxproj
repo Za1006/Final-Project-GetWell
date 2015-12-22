@@ -17,6 +17,16 @@
 		5D6827511C24A8DA00374755 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6827501C24A8DA00374755 /* TableViewCell.swift */; };
 		5D6827531C24AAD100374755 /* ThumbsUp.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D6827521C24AAD100374755 /* ThumbsUp.png */; };
 		5D6827551C24ABD700374755 /* thumbs-up-icon-black-hi.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D6827541C24ABD700374755 /* thumbs-up-icon-black-hi.png */; };
+		5D8B941F1C29A8FC001C9579 /* checked@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D8B94191C29A8FC001C9579 /* checked@1x.png */; };
+		5D8B94201C29A8FC001C9579 /* checked@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D8B941A1C29A8FC001C9579 /* checked@2x.png */; };
+		5D8B94211C29A8FC001C9579 /* checked@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D8B941B1C29A8FC001C9579 /* checked@3x.png */; };
+		5D8B94221C29A8FC001C9579 /* unchecked@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D8B941C1C29A8FC001C9579 /* unchecked@1x.png */; };
+		5D8B94231C29A8FC001C9579 /* unchecked@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D8B941D1C29A8FC001C9579 /* unchecked@2x.png */; };
+		5D8B94241C29A8FC001C9579 /* unchecked@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D8B941E1C29A8FC001C9579 /* unchecked@3x.png */; };
+		5D8B94261C29ABAB001C9579 /* testchk.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D8B94251C29ABAB001C9579 /* testchk.png */; };
+		5D8B94281C29ACBF001C9579 /* testunchk.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D8B94271C29ACBF001C9579 /* testunchk.png */; };
+		5D8B942B1C29B81F001C9579 /* lpGetwell.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D8B942A1C29B81E001C9579 /* lpGetwell.png */; };
+		5D8B942D1C29B8F7001C9579 /* newLp.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D8B942C1C29B8F7001C9579 /* newLp.png */; };
 		5DBDA2281C28594000B71F6F /* checked1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DBDA2261C28594000B71F6F /* checked1.png */; };
 		5DBDA2291C28594000B71F6F /* unchecked1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DBDA2271C28594000B71F6F /* unchecked1.png */; };
 		5DBDA22B1C28AD3E00B71F6F /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DBDA22A1C28AD3E00B71F6F /* star.png */; };
@@ -76,6 +86,16 @@
 		5D6827501C24A8DA00374755 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		5D6827521C24AAD100374755 /* ThumbsUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ThumbsUp.png; sourceTree = "<group>"; };
 		5D6827541C24ABD700374755 /* thumbs-up-icon-black-hi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thumbs-up-icon-black-hi.png"; sourceTree = "<group>"; };
+		5D8B94191C29A8FC001C9579 /* checked@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checked@1x.png"; sourceTree = "<group>"; };
+		5D8B941A1C29A8FC001C9579 /* checked@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checked@2x.png"; sourceTree = "<group>"; };
+		5D8B941B1C29A8FC001C9579 /* checked@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checked@3x.png"; sourceTree = "<group>"; };
+		5D8B941C1C29A8FC001C9579 /* unchecked@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "unchecked@1x.png"; sourceTree = "<group>"; };
+		5D8B941D1C29A8FC001C9579 /* unchecked@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "unchecked@2x.png"; sourceTree = "<group>"; };
+		5D8B941E1C29A8FC001C9579 /* unchecked@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "unchecked@3x.png"; sourceTree = "<group>"; };
+		5D8B94251C29ABAB001C9579 /* testchk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = testchk.png; sourceTree = "<group>"; };
+		5D8B94271C29ACBF001C9579 /* testunchk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = testunchk.png; sourceTree = "<group>"; };
+		5D8B942A1C29B81E001C9579 /* lpGetwell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lpGetwell.png; sourceTree = "<group>"; };
+		5D8B942C1C29B8F7001C9579 /* newLp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newLp.png; sourceTree = "<group>"; };
 		5DBDA2261C28594000B71F6F /* checked1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checked1.png; sourceTree = "<group>"; };
 		5DBDA2271C28594000B71F6F /* unchecked1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unchecked1.png; sourceTree = "<group>"; };
 		5DBDA22A1C28AD3E00B71F6F /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
@@ -173,11 +193,12 @@
 				5DCF68B11C23336500A72F12 /* AppDelegate.swift */,
 				AA184A2E1C233AC1001A679F /* RegisterViewController.swift */,
 				5DBDA22A1C28AD3E00B71F6F /* star.png */,
+				5D8B942A1C29B81E001C9579 /* lpGetwell.png */,
+				5D8B94251C29ABAB001C9579 /* testchk.png */,
 				4C060F961C235DF500E65966 /* SetReminderPopOverViewController.swift */,
+				5D8B942C1C29B8F7001C9579 /* newLp.png */,
 				AA184A2A1C2339FB001A679F /* LoginViewController.swift */,
 				AA184A301C233C5D001A679F /* MainViewController.swift */,
-				5DBDA2261C28594000B71F6F /* checked1.png */,
-				5DBDA2271C28594000B71F6F /* unchecked1.png */,
 				5D6827501C24A8DA00374755 /* TableViewCell.swift */,
 				AA184A361C237EB6001A679F /* MediaPlayerViewController.swift */,
 				AA184AE11C272F55001A679F /* ViewController.swift */,
@@ -196,6 +217,15 @@
 		5DCF68FE1C233FD100A72F12 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				5D8B94271C29ACBF001C9579 /* testunchk.png */,
+				5DBDA2261C28594000B71F6F /* checked1.png */,
+				5DBDA2271C28594000B71F6F /* unchecked1.png */,
+				5D8B94191C29A8FC001C9579 /* checked@1x.png */,
+				5D8B941A1C29A8FC001C9579 /* checked@2x.png */,
+				5D8B941B1C29A8FC001C9579 /* checked@3x.png */,
+				5D8B941C1C29A8FC001C9579 /* unchecked@1x.png */,
+				5D8B941D1C29A8FC001C9579 /* unchecked@2x.png */,
+				5D8B941E1C29A8FC001C9579 /* unchecked@3x.png */,
 				5D6827521C24AAD100374755 /* ThumbsUp.png */,
 				5DCF68C61C233F5E00A72F12 /* background.png */,
 				5DCF68C71C233F5E00A72F12 /* checked.png */,
@@ -315,14 +345,17 @@
 				5DCF68F71C233FC500A72F12 /* india.mp3 in Resources */,
 				5DCF68E01C233F5E00A72F12 /* GetWellMediaDetailPage.png in Resources */,
 				5DCF68F41C233FC500A72F12 /* betterdays.mp3 in Resources */,
+				5D8B941F1C29A8FC001C9579 /* checked@1x.png in Resources */,
 				5DCF68E41C233F5E00A72F12 /* Next.png in Resources */,
 				5D68274A1C247AFC00374755 /* PlayPause1.png in Resources */,
 				5DCF68E21C233F5E00A72F12 /* GetWellSignUpFinal.png in Resources */,
 				5DBDA2281C28594000B71F6F /* checked1.png in Resources */,
 				5DCF68D81C233F5E00A72F12 /* checked.png in Resources */,
+				5D8B942B1C29B81F001C9579 /* lpGetwell.png in Resources */,
 				5D6827531C24AAD100374755 /* ThumbsUp.png in Resources */,
 				5DCF68FC1C233FC500A72F12 /* slowmotion.mp3 in Resources */,
 				5D68274B1C247AFC00374755 /* Previous1.png in Resources */,
+				5D8B94231C29A8FC001C9579 /* unchecked@2x.png in Resources */,
 				5DCF68D91C233F5E00A72F12 /* DownArrow.png in Resources */,
 				5D6827451C2467D900374755 /* free_nature_wallpaper_hd_desktop.jpg in Resources */,
 				5DCF68F81C233FC500A72F12 /* newdawn.mp3 in Resources */,
@@ -335,16 +368,23 @@
 				5DCF68F61C233FC500A72F12 /* enigmatic.mp3 in Resources */,
 				5DBDA22B1C28AD3E00B71F6F /* star.png in Resources */,
 				5DCF68FB1C233FC500A72F12 /* sadday.mp3 in Resources */,
+				5D8B942D1C29B8F7001C9579 /* newLp.png in Resources */,
+				5D8B94281C29ACBF001C9579 /* testunchk.png in Resources */,
 				5DCF68F91C233FC500A72F12 /* november.mp3 in Resources */,
 				5DCF68FD1C233FC500A72F12 /* tomorrow.mp3 in Resources */,
+				5D8B94201C29A8FC001C9579 /* checked@2x.png in Resources */,
 				5DCF68DE1C233F5E00A72F12 /* GetWellMainPage.png in Resources */,
 				5DCF68DF1C233F5E00A72F12 /* GetWellMediaDetailPage.jpg in Resources */,
 				5DCF68DB1C233F5E00A72F12 /* GetWellLogin2.png in Resources */,
+				5D8B94221C29A8FC001C9579 /* unchecked@1x.png in Resources */,
 				5DCF68DA1C233F5E00A72F12 /* GetWellLogin2.jpg in Resources */,
 				5DBDA2291C28594000B71F6F /* unchecked1.png in Resources */,
 				5DCF68D71C233F5E00A72F12 /* background.png in Resources */,
+				5D8B94211C29A8FC001C9579 /* checked@3x.png in Resources */,
 				5DCF68E71C233F5E00A72F12 /* unchecked.png in Resources */,
+				5D8B94261C29ABAB001C9579 /* testchk.png in Resources */,
 				4C8C816E1C287F03009C8C60 /* SessionOver.m4a in Resources */,
+				5D8B94241C29A8FC001C9579 /* unchecked@3x.png in Resources */,
 				5D6827551C24ABD700374755 /* thumbs-up-icon-black-hi.png in Resources */,
 				5DCF68DD1C233F5E00A72F12 /* getWellLogoSized.png in Resources */,
 				5DCF68BC1C23336500A72F12 /* Assets.xcassets in Resources */,

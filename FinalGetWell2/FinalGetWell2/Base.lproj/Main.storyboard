@@ -590,7 +590,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="99"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="unchecked.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ymr-an-YGv">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="Ymr-an-YGv">
                                                     <rect key="frame" x="491" y="0.0" width="99" height="99"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="35" id="NMo-15-dJ2"/>
@@ -975,6 +975,9 @@
                                 <exclude reference="QUU-qZ-1GN"/>
                                 <exclude reference="Dgb-ht-wf8"/>
                                 <exclude reference="SQa-r0-fTS"/>
+                                <exclude reference="4tp-gH-Ua1"/>
+                                <exclude reference="Hhb-SU-Ufm"/>
+                                <exclude reference="TYf-La-apX"/>
                                 <exclude reference="AJA-x0-es9"/>
                                 <exclude reference="xcP-ki-DJQ"/>
                                 <exclude reference="Apd-pI-pcl"/>
@@ -987,9 +990,6 @@
                                 <exclude reference="Grv-1S-zW7"/>
                                 <exclude reference="VJC-5H-and"/>
                                 <exclude reference="iAs-3y-I1K"/>
-                                <exclude reference="4tp-gH-Ua1"/>
-                                <exclude reference="Hhb-SU-Ufm"/>
-                                <exclude reference="TYf-La-apX"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -1012,7 +1012,6 @@
                                 <exclude reference="NpW-1U-tC1"/>
                                 <include reference="O30-jm-Zk4"/>
                                 <include reference="jol-eN-vbR"/>
-                                <exclude reference="hJd-lN-05N"/>
                                 <exclude reference="gWQ-HB-wtL"/>
                                 <include reference="ifT-xN-CRr"/>
                                 <exclude reference="pkw-EI-I1A"/>
@@ -1022,6 +1021,7 @@
                                 <exclude reference="On0-e8-7s7"/>
                                 <exclude reference="RPY-wp-5EF"/>
                                 <include reference="VJC-5H-and"/>
+                                <exclude reference="hJd-lN-05N"/>
                             </mask>
                         </variation>
                     </view>
@@ -1057,14 +1057,6 @@
                                 <rect key="frame" x="282" y="608" width="37" height="30"/>
                                 <state key="normal" title="Done"/>
                             </button>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="0Uq-fQ-C84">
-                                <rect key="frame" x="0.0" y="20" width="600" height="540"/>
-                                <color key="backgroundColor" red="0.54988791687015559" green="0.92845803499221802" blue="0.68559239861812193" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="tintColor" red="0.70842544452255296" green="0.92845803499221802" blue="0.57209598396446315" alpha="1" colorSpace="calibratedRGB"/>
-                                <date key="date" timeIntervalSinceReferenceDate="472146445.12014198">
-                                    <!--2015-12-18 15:47:25 +0000-->
-                                </date>
-                            </datePicker>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x6r-24-vUE">
                                 <rect key="frame" x="278" y="570" width="45" height="37"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
@@ -1075,6 +1067,14 @@
                                     <action selector="doneWasPressed:" destination="hhd-nS-bf8" eventType="touchUpInside" id="ye4-Y6-3Lo"/>
                                 </connections>
                             </button>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="0Uq-fQ-C84">
+                                <rect key="frame" x="0.0" y="20" width="600" height="540"/>
+                                <color key="backgroundColor" red="0.54988791687015559" green="0.92845803499221802" blue="0.68559239861812193" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.70842544452255296" green="0.92845803499221802" blue="0.57209598396446315" alpha="1" colorSpace="calibratedRGB"/>
+                                <date key="date" timeIntervalSinceReferenceDate="472146445.12014198">
+                                    <!--2015-12-18 15:47:25 +0000-->
+                                </date>
+                            </datePicker>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -1153,12 +1153,12 @@
         <image name="GetWellMainPage.png" width="1200" height="1386"/>
         <image name="GetWellMediaDetailPage.png" width="1200" height="2038"/>
         <image name="GetWellSignUpFinal.png" width="1200" height="2038"/>
+        <image name="Image" width="125" height="125"/>
         <image name="Next1.png" width="500" height="500"/>
         <image name="PlayPause1.png" width="500" height="500"/>
         <image name="Previous1.png" width="500" height="500"/>
         <image name="background.png" width="1200" height="2038"/>
         <image name="free_nature_wallpaper_hd_desktop.jpg" width="2560" height="1600"/>
-        <image name="unchecked.png" width="500" height="500"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="tBN-eN-c65"/>
