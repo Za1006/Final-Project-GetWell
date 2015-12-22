@@ -261,18 +261,7 @@ class MediaPlayerViewController: UIViewController
     
     @IBAction func resetPressed(sender: UIButton!)
     {
-//        stopTimer()
-//        loadCurrentSong()
-//        if timerCount % 2 == 0
-//        {
-//            originalCount = 420
-//        }
-//        else
-//        {
-//            originalCount = 421
-//        }
-//        updateUI()
-//        startTimer()
+
         if whichSegment == 0
         {
             originalCount = 300
