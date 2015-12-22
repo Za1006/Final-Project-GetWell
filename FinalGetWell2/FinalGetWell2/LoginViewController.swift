@@ -15,7 +15,6 @@ class LoginViewController: UIViewController
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var errorMessageLabel: UILabel!
     
-//    var delegate: LoginViewController?
     
     var dismissDelegate: LoginViewControllerDismissDelegate?
     var sourceViewController: LoginViewController?
@@ -56,15 +55,12 @@ class LoginViewController: UIViewController
                 if user != nil
                 {
                     print("login successful")
-<<<<<<< Updated upstream
-                    self.performSegueWithIdentifier("ShowLoginSegue", sender: self)
-                    self.dismissViewControllerAnimated(true, completion: nil)
-=======
-                    self.dismissDelegate?.unwindFromLogin()
+//                    self.performSegueWithIdentifier("ShowLoginSegue", sender: self)
+//                    self.dismissViewControllerAnimated(true, completion: nil)
+//                    self.dismissDelegate?.unwindFromLogin()
                     
 //                    self.dismissViewControllerAnimated(true, completion: nil)
                     self.navigationController?.performSegueWithIdentifier("unwindFromLogin", sender: self)
->>>>>>> Stashed changes
                 }
                 else
                 {
@@ -78,6 +74,7 @@ class LoginViewController: UIViewController
     @IBAction func cancelPressed(sender: UIBarButtonItem)
     {
         dismissViewControllerAnimated(true, completion: nil)
+        self.navigationController?.performSegueWithIdentifier("unwindFromLogin", sender: self)
     }
 
 
