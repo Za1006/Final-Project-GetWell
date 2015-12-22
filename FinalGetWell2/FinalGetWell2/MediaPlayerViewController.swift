@@ -36,6 +36,8 @@ class MediaPlayerViewController: UIViewController
     var flashCount = 0
     var flashing = true
     
+    var timesTapped = 0
+    
 //    var shuffleMode: MPMusicShuffleMode?
     
     var delegate: MainViewController?
@@ -78,7 +80,7 @@ class MediaPlayerViewController: UIViewController
         }
         else if sender.selectedSegmentIndex == 1
         {
-            originalCount = 5
+            originalCount = 600
             meditationCountdown.text = "10:00"
             whichSegment = 1
 //            startTimer()
@@ -137,11 +139,10 @@ class MediaPlayerViewController: UIViewController
         
         if originalCount == 0
         {
-            meditationCountdown.textColor = UIColor.yellowColor()
-            
+            timer?.invalidate()
             flashTimer = NSTimer
                 .scheduledTimerWithTimeInterval(0.2, target: self, selector: "flashLabel" , userInfo: nil, repeats: true)
-            playNotification()
+//            playNotification()
         }
     }
     
@@ -158,7 +159,7 @@ class MediaPlayerViewController: UIViewController
         }
         flashCount++
         
-        if flashCount > 10
+        if flashCount > 15
         {
             flashTimer?.invalidate()
         }
@@ -199,11 +200,28 @@ class MediaPlayerViewController: UIViewController
     
     @IBAction func skipBackTapped(sender: UIButton)
     {
-        avQueuePlayer.seekToTime(CMTimeMakeWithSeconds(0.0, 1))
-//        if !nowPlaying
-//        {
-//            togglePlayback(true)
-//        }
+        timesTapped = timesTapped + 1
+        if timesTapped % 2 == 1
+        {
+            avQueuePlayer.seekToTime(CMTimeMakeWithSeconds(0.0, 1))
+        }
+        else if timesTapped % 2 == 0
+        {
+            let currentSongIndex = (songs as NSArray).indexOfObject(currentSong!)
+            let nextSong: Int
+            if currentSongIndex != 0
+            {
+                nextSong = currentSongIndex - 1
+            }
+            else
+            {
+                nextSong = songs.count - 1
+            }
+            currentSong = songs[nextSong]
+            loadCurrentSong()
+            togglePlayback(true)
+        }
+        
     }
     
     func configurePlaylist()
