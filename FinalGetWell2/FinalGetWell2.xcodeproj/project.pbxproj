@@ -19,6 +19,7 @@
 		5D6827551C24ABD700374755 /* thumbs-up-icon-black-hi.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D6827541C24ABD700374755 /* thumbs-up-icon-black-hi.png */; };
 		5DBDA2281C28594000B71F6F /* checked1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DBDA2261C28594000B71F6F /* checked1.png */; };
 		5DBDA2291C28594000B71F6F /* unchecked1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DBDA2271C28594000B71F6F /* unchecked1.png */; };
+		5DBDA22B1C28AD3E00B71F6F /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DBDA22A1C28AD3E00B71F6F /* star.png */; };
 		5DCF68B21C23336500A72F12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCF68B11C23336500A72F12 /* AppDelegate.swift */; };
 		5DCF68B71C23336500A72F12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DCF68B51C23336500A72F12 /* Main.storyboard */; };
 		5DCF68BA1C23336500A72F12 /* FinalGetWell2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5DCF68B81C23336500A72F12 /* FinalGetWell2.xcdatamodeld */; };
@@ -77,6 +78,7 @@
 		5D6827541C24ABD700374755 /* thumbs-up-icon-black-hi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thumbs-up-icon-black-hi.png"; sourceTree = "<group>"; };
 		5DBDA2261C28594000B71F6F /* checked1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checked1.png; sourceTree = "<group>"; };
 		5DBDA2271C28594000B71F6F /* unchecked1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unchecked1.png; sourceTree = "<group>"; };
+		5DBDA22A1C28AD3E00B71F6F /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
 		5DCF68AE1C23336500A72F12 /* FinalGetWell2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalGetWell2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DCF68B11C23336500A72F12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5DCF68B61C23336500A72F12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 				AA184A2C1C233A81001A679F /* Songs.swift */,
 				5DCF68B11C23336500A72F12 /* AppDelegate.swift */,
 				AA184A2E1C233AC1001A679F /* RegisterViewController.swift */,
+				5DBDA22A1C28AD3E00B71F6F /* star.png */,
 				4C060F961C235DF500E65966 /* SetReminderPopOverViewController.swift */,
 				AA184A2A1C2339FB001A679F /* LoginViewController.swift */,
 				AA184A301C233C5D001A679F /* MainViewController.swift */,
@@ -330,6 +333,7 @@
 				5DCF68F31C233FC500A72F12 /* acousticbreeze.mp3 in Resources */,
 				5DCF68F51C233FC500A72F12 /* deepblue.mp3 in Resources */,
 				5DCF68F61C233FC500A72F12 /* enigmatic.mp3 in Resources */,
+				5DBDA22B1C28AD3E00B71F6F /* star.png in Resources */,
 				5DCF68FB1C233FC500A72F12 /* sadday.mp3 in Resources */,
 				5DCF68F91C233FC500A72F12 /* november.mp3 in Resources */,
 				5DCF68FD1C233FC500A72F12 /* tomorrow.mp3 in Resources */,

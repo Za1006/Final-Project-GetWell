@@ -52,7 +52,7 @@ class MainViewController: UIViewController,UIPopoverPresentationControllerDelega
         isDone = false
 
     }
-
+    
     override func didReceiveMemoryWarning()
     {
         super.didReceiveMemoryWarning()
