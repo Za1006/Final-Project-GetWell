@@ -14,6 +14,12 @@ class LoginViewController: UIViewController
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var errorMessageLabel: UILabel!
+    
+//    var delegate: LoginViewController?
+    
+    var dismissDelegate: LoginViewControllerDismissDelegate?
+    var sourceViewController: LoginViewController?
+    var destinationViewController: MainViewController?
 
     override func viewDidLoad()
     {
@@ -27,6 +33,10 @@ class LoginViewController: UIViewController
         super.didReceiveMemoryWarning()
     }
     
+    
+    // MARK: - Navigation
+    
+ 
     func userCanSignIn() -> Bool
     {
         if usernameTextField.text != "" && passwordTextField.text != ""
@@ -37,7 +47,7 @@ class LoginViewController: UIViewController
     }
     
 
-    @IBAction func signInTapped(sender: UIButton)
+    @IBAction func signinTapped(sender: UIButton)
     {
         if userCanSignIn()
         {
@@ -46,8 +56,15 @@ class LoginViewController: UIViewController
                 if user != nil
                 {
                     print("login successful")
+<<<<<<< Updated upstream
                     self.performSegueWithIdentifier("ShowLoginSegue", sender: self)
                     self.dismissViewControllerAnimated(true, completion: nil)
+=======
+                    self.dismissDelegate?.unwindFromLogin()
+                    
+//                    self.dismissViewControllerAnimated(true, completion: nil)
+                    self.navigationController?.performSegueWithIdentifier("unwindFromLogin", sender: self)
+>>>>>>> Stashed changes
                 }
                 else
                 {
@@ -62,6 +79,7 @@ class LoginViewController: UIViewController
     {
         dismissViewControllerAnimated(true, completion: nil)
     }
+
 
 
 }

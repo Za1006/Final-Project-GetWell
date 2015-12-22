@@ -8,17 +8,22 @@
 
 import UIKit
 
-@objc protocol DatePickerDelegate
+protocol DatePickerDelegate
 {
     func dateWasChosen(date: NSDate)
 }
 
-@objc protocol StepsListViewDelegate
+protocol StepsListViewDelegate
 {
     func stepsChecked(buttonTapped: Int)
 }
 
-class MainViewController: UIViewController,UIPopoverPresentationControllerDelegate, DatePickerDelegate, UITableViewDataSource, UITableViewDelegate
+protocol LoginViewControllerDismissDelegate
+{
+    func unwindFromLogin()
+}
+
+class MainViewController: UIViewController,UIPopoverPresentationControllerDelegate, DatePickerDelegate, UITableViewDataSource, UITableViewDelegate, LoginViewControllerDismissDelegate
     
 {
 
@@ -50,12 +55,23 @@ class MainViewController: UIViewController,UIPopoverPresentationControllerDelega
         next.hidden = true
         next.alpha = 0
         isDone = false
+        
+        if PFUser.currentUser() == nil
+        {
+//            performSegueWithIdentifier(<#T##identifier: String##String#>, sender: <#T##AnyObject?#>)
+        }
 
     }
     
     override func didReceiveMemoryWarning()
     {
         super.didReceiveMemoryWarning()
+    }
+    
+    override func viewDidAppear(animated: Bool)
+    {
+        super.viewDidAppear(animated)
+      
     }
 
     // MARK: - Table View Data Source
@@ -203,7 +219,17 @@ class MainViewController: UIViewController,UIPopoverPresentationControllerDelega
             destVC.preferredContentSize = CGSizeMake(400.0, 216.0)
            
         }
+        if let loginVC = segue.destinationViewController as? LoginViewController
+        {
+            loginVC.dismissDelegate = self
+        }
     }
+    
+    func unwindFromLogin()
+    {
+        navigationController?.popToRootViewControllerAnimated(true)
+    }
+
     
     // MARK: - UIPopoverPresentationController Delegate
     
@@ -239,8 +265,11 @@ class MainViewController: UIViewController,UIPopoverPresentationControllerDelega
         
         return String(formattedTime)
     }
-    
 
+    @IBAction func unwindToMainViewController(unwindSegue: UIStoryboardSegue)
+    {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
 
 
 }
