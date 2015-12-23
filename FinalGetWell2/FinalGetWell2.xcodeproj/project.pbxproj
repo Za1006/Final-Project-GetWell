@@ -238,19 +238,6 @@
 		5DCF68B01C23336500A72F12 /* FinalGetWell2 */ = {
 			isa = PBXGroup;
 			children = (
-				5D8B946A1C2A36E8001C9579 /* BeachSound.png */,
-				5D8B94511C2A27B8001C9579 /* BetterDaySound.jpg */,
-				5D8B94521C2A27B8001C9579 /* BirdsSound.jpg */,
-				5D8B94531C2A27B8001C9579 /* CreekSound.jpg */,
-				5D8B94541C2A27B8001C9579 /* ForestSound.jpg */,
-				5D8B94551C2A27B8001C9579 /* HeavyRainSound.jpg */,
-				5D8B94561C2A27B8001C9579 /* RainSound.jpg */,
-				5D8B94571C2A27B8001C9579 /* RelaxingSound.jpg */,
-				5D8B94581C2A27B8001C9579 /* RoofTopSound.jpg */,
-				5D8B94591C2A27B8001C9579 /* SnowStormSound.jpg */,
-				5D8B945A1C2A27B8001C9579 /* ThunderSound.jpg */,
-				5D8B945B1C2A27B8001C9579 /* TomorrowSound.jpg */,
-				5D8B945C1C2A27B8001C9579 /* WindLeavessSound.jpg */,
 				AA184A281C233584001A679F /* FinalGetWell2-Bridging-Header.h */,
 				AA184A2C1C233A81001A679F /* Songs.swift */,
 				5DCF68B11C23336500A72F12 /* AppDelegate.swift */,
@@ -274,6 +261,19 @@
 		5DCF68FE1C233FD100A72F12 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				5D8B946A1C2A36E8001C9579 /* BeachSound.png */,
+				5D8B94511C2A27B8001C9579 /* BetterDaySound.jpg */,
+				5D8B94521C2A27B8001C9579 /* BirdsSound.jpg */,
+				5D8B94531C2A27B8001C9579 /* CreekSound.jpg */,
+				5D8B94541C2A27B8001C9579 /* ForestSound.jpg */,
+				5D8B94551C2A27B8001C9579 /* HeavyRainSound.jpg */,
+				5D8B94561C2A27B8001C9579 /* RainSound.jpg */,
+				5D8B94571C2A27B8001C9579 /* RelaxingSound.jpg */,
+				5D8B94581C2A27B8001C9579 /* RoofTopSound.jpg */,
+				5D8B94591C2A27B8001C9579 /* SnowStormSound.jpg */,
+				5D8B945A1C2A27B8001C9579 /* ThunderSound.jpg */,
+				5D8B945B1C2A27B8001C9579 /* TomorrowSound.jpg */,
+				5D8B945C1C2A27B8001C9579 /* WindLeavessSound.jpg */,
 				5D8B94301C2A1585001C9579 /* loadingIcon4.png */,
 				5D8B94341C2A199A001C9579 /* NewReset2.png */,
 				5D8B94321C2A17CF001C9579 /* NewReset.png */,

@@ -19,7 +19,7 @@ class MediaPlayerViewController: UIViewController
     @IBOutlet var meditationCountdown: UILabel!
     @IBOutlet var songTitleLabel: UILabel!
     @IBOutlet var albumArtwork: UIImageView!
-    //  @IBOutlet var artistLabel: UILabel!
+    @IBOutlet var artistLabel: UILabel!
     //  @IBOutlet var playPauseButton: UIButton!
     
     let avQueuePlayer = AVQueuePlayer()
