@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uCA-Fo-MXg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uCA-Fo-MXg">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -605,14 +605,14 @@
                         <viewControllerLayoutGuide type="bottom" id="hzS-W9-wmI"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="nSk-mS-qSA">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GetWellMediaDetailPage.png" translatesAutoresizingMaskIntoConstraints="NO" id="2GE-va-WTo">
-                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zeu-3J-79q">
-                                <rect key="frame" x="567" y="314" width="25" height="25"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zeu-3J-79q">
+                                <rect key="frame" x="342" y="314" width="25" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="B7g-t1-uWt"/>
                                     <constraint firstAttribute="width" constant="25" id="aq7-Uc-RGK"/>
@@ -627,7 +627,7 @@
                                     </mask>
                                 </variation>
                             </button>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="fik-pu-Jzf">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="fik-pu-Jzf">
                                 <rect key="frame" x="0.0" y="342" width="600" height="29"/>
                                 <segments>
                                     <segment title="5 minutes"/>
@@ -640,13 +640,13 @@
                                     <action selector="segmentedIndexTapped:" destination="KqX-MC-iiQ" eventType="valueChanged" id="9tw-zu-FQV"/>
                                 </connections>
                             </segmentedControl>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="05:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M8g-Na-5Ku">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="05:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M8g-Na-5Ku">
                                 <rect key="frame" x="274" y="429" width="54" height="28"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
                                 <color key="textColor" red="0.93946921510000003" green="0.96486600739999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uBn-M6-pjl">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uBn-M6-pjl">
                                 <rect key="frame" x="364" y="490" width="46" height="46"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="46" id="mxq-8O-KNx"/>
@@ -657,7 +657,7 @@
                                     <action selector="skipForwardTapped:" destination="KqX-MC-iiQ" eventType="touchUpInside" id="4R8-Hl-fAa"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mWe-sl-NCT">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mWe-sl-NCT">
                                 <rect key="frame" x="192" y="490" width="46" height="46"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="46" id="4cc-HF-vve"/>
@@ -668,13 +668,13 @@
                                     <action selector="skipBackTapped:" destination="KqX-MC-iiQ" eventType="touchUpInside" id="Yjg-ZX-SY8"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TIMER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hPN-rr-9SK">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="TIMER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hPN-rr-9SK">
                                 <rect key="frame" x="274" y="396" width="53" height="25"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
                                 <color key="textColor" red="0.18407953623595311" green="0.42479957460732987" blue="0.28625131991314673" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="muH-Nh-bPH">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="muH-Nh-bPH">
                                 <rect key="frame" x="288" y="491" width="26" height="26"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="26" id="PMb-cA-8CV"/>
@@ -701,7 +701,7 @@
                                     <action selector="resetPressed:" destination="KqX-MC-iiQ" eventType="touchUpInside" id="LEa-TE-gJi"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wvi-9e-AX7">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wvi-9e-AX7">
                                 <rect key="frame" x="278" y="490" width="46" height="46"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="46" id="GnB-Ea-Rbq"/>
@@ -812,34 +812,34 @@
                                 <exclude reference="EDD-DA-E6X"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="DRT-zY-aPL"/>
+                                <exclude reference="xjt-xC-BbC"/>
                                 <exclude reference="35V-kr-sdK"/>
                                 <exclude reference="vSM-A2-KIo"/>
                                 <exclude reference="zt5-gd-uyy"/>
                                 <exclude reference="94w-9k-XM5"/>
                                 <exclude reference="KmI-T9-Plk"/>
                                 <exclude reference="oTR-X3-oiS"/>
+                                <exclude reference="4tp-gH-Ua1"/>
+                                <exclude reference="Hhb-SU-Ufm"/>
+                                <exclude reference="TYf-La-apX"/>
                                 <exclude reference="Ial-ZH-Um5"/>
                                 <exclude reference="Nxe-X7-heT"/>
                                 <exclude reference="QUU-qZ-1GN"/>
                                 <exclude reference="m33-oe-Aag"/>
                                 <exclude reference="Dgb-ht-wf8"/>
                                 <exclude reference="SQa-r0-fTS"/>
-                                <exclude reference="4tp-gH-Ua1"/>
-                                <exclude reference="Hhb-SU-Ufm"/>
-                                <exclude reference="TYf-La-apX"/>
-                                <exclude reference="6nP-VQ-mdd"/>
-                                <exclude reference="zb8-p0-5nQ"/>
                                 <exclude reference="AJA-x0-es9"/>
                                 <exclude reference="xcP-ki-DJQ"/>
                                 <exclude reference="Apd-pI-pcl"/>
                                 <exclude reference="FRm-dC-YMo"/>
                                 <exclude reference="O30-jm-Zk4"/>
                                 <exclude reference="jol-eN-vbR"/>
+                                <exclude reference="6nP-VQ-mdd"/>
+                                <exclude reference="zb8-p0-5nQ"/>
                                 <exclude reference="ifT-xN-CRr"/>
                                 <exclude reference="pmq-jq-u7L"/>
                                 <exclude reference="zEg-hz-pps"/>
-                                <exclude reference="DRT-zY-aPL"/>
-                                <exclude reference="xjt-xC-BbC"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -848,6 +848,8 @@
                                 <include reference="EDD-DA-E6X"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="DRT-zY-aPL"/>
+                                <include reference="xjt-xC-BbC"/>
                                 <include reference="35V-kr-sdK"/>
                                 <include reference="vSM-A2-KIo"/>
                                 <include reference="zt5-gd-uyy"/>
@@ -864,10 +866,6 @@
                                 <include reference="Dgb-ht-wf8"/>
                                 <exclude reference="SQa-r0-fTS"/>
                                 <exclude reference="c57-0s-DDV"/>
-                                <include reference="6nP-VQ-mdd"/>
-                                <exclude reference="MQR-z0-ftQ"/>
-                                <exclude reference="abT-Zt-Ddw"/>
-                                <include reference="zb8-p0-5nQ"/>
                                 <include reference="AJA-x0-es9"/>
                                 <exclude reference="ukL-49-CgJ"/>
                                 <include reference="xcP-ki-DJQ"/>
@@ -876,13 +874,15 @@
                                 <include reference="FRm-dC-YMo"/>
                                 <include reference="O30-jm-Zk4"/>
                                 <include reference="jol-eN-vbR"/>
+                                <include reference="6nP-VQ-mdd"/>
+                                <exclude reference="MQR-z0-ftQ"/>
+                                <exclude reference="abT-Zt-Ddw"/>
+                                <include reference="zb8-p0-5nQ"/>
                                 <exclude reference="gWQ-HB-wtL"/>
                                 <include reference="ifT-xN-CRr"/>
                                 <exclude reference="pkw-EI-I1A"/>
                                 <include reference="pmq-jq-u7L"/>
                                 <include reference="zEg-hz-pps"/>
-                                <include reference="DRT-zY-aPL"/>
-                                <include reference="xjt-xC-BbC"/>
                             </mask>
                         </variation>
                     </view>
@@ -895,6 +895,7 @@
                     <connections>
                         <outlet property="albumArtwork" destination="nnA-1B-7fE" id="EJY-M0-LrD"/>
                         <outlet property="meditationCountdown" destination="M8g-Na-5Ku" id="syj-jg-iic"/>
+                        <outlet property="plusButton" destination="zeu-3J-79q" id="MoF-at-Yhd"/>
                         <outlet property="songTitleLabel" destination="EDD-DA-E6X" id="2qZ-fl-Fn0"/>
                         <outlet property="timeSegmentedControl" destination="fik-pu-Jzf" id="VHx-GS-rHV"/>
                     </connections>

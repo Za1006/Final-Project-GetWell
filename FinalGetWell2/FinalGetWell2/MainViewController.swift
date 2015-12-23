@@ -43,6 +43,7 @@ class MainViewController: UIViewController,UIPopoverPresentationControllerDelega
     var allToDos = ["Find your meditation spot", "Get comfortable", "Begin Deep Breathing", "Clear your mind"]
     var shownTodos = [String]()
     var currentItemIndex = 0
+    var addTodoTimer: NSTimer?
     
     var isDone: Bool?
     let checkImg = UIImage(named: "testchk.png")
@@ -52,15 +53,40 @@ class MainViewController: UIViewController,UIPopoverPresentationControllerDelega
     {
         super.viewDidLoad()
         
+        plus.hidden = true
+        plus.enabled = false
         next.hidden = true
         next.alpha = 0
         isDone = false
         
         if PFUser.currentUser() == nil
         {
-//            performSegueWithIdentifier(<#T##identifier: String##String#>, sender: <#T##AnyObject?#>)
+//                        performSegueWithIdentifier(<#T##identifier: String##String#>, sender: <#T##AnyObject?#>)
         }
-
+        
+        let addInterval: NSTimeInterval = 0.75
+        addTodoTimer = NSTimer.scheduledTimerWithTimeInterval(addInterval, target: self, selector: "addTodo", userInfo: nil, repeats: true)
+    }
+    
+    func addTodo()
+    {
+        if shownTodos.count != allToDos.count
+        {
+            let newTodo = allToDos[currentItemIndex]
+            shownTodos.insert(newTodo, atIndex: currentItemIndex)
+            
+            let newItemIndexPath = NSIndexPath(forRow: currentItemIndex, inSection: 0)
+            tv.insertRowsAtIndexPaths([newItemIndexPath], withRowAnimation: .Automatic)
+            
+            currentItemIndex++
+        }
+        else
+        {
+            if addTodoTimer != nil
+            {
+                addTodoTimer?.invalidate()
+            }
+        }
     }
     
     override func didReceiveMemoryWarning()

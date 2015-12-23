@@ -10,16 +10,15 @@ import UIKit
 import MediaPlayer
 import AVFoundation
 
-
-
 class MediaPlayerViewController: UIViewController
 {
 
     @IBOutlet weak var timeSegmentedControl: UISegmentedControl!
     @IBOutlet var meditationCountdown: UILabel!
-    @IBOutlet var songTitleLabel: UILabel!
-    @IBOutlet var albumArtwork: UIImageView!
-    @IBOutlet var artistLabel: UILabel!
+    @IBOutlet weak var songTitleLabel: UILabel!
+    @IBOutlet weak var albumArtwork: UIImageView!
+    @IBOutlet weak var artistLabel: UILabel!
+    @IBOutlet weak var plusButton: UIButton!
     //  @IBOutlet var playPauseButton: UIButton!
     
     let avQueuePlayer = AVQueuePlayer()
@@ -46,6 +45,8 @@ class MediaPlayerViewController: UIViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        
+        plusButton.hidden = true
         
         originalCount = 300
         meditationCountdown.text = "5:00"
@@ -143,7 +144,7 @@ class MediaPlayerViewController: UIViewController
             timer?.invalidate()
             flashTimer = NSTimer
                 .scheduledTimerWithTimeInterval(0.2, target: self, selector: "flashLabel" , userInfo: nil, repeats: true)
-//            playNotification()
+            playNotification()
         }
     }
     

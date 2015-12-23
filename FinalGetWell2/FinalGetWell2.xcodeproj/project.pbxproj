@@ -83,7 +83,7 @@
 		5DCF68E61C233F5E00A72F12 /* Previous.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DCF68D51C233F5E00A72F12 /* Previous.png */; };
 		5DCF68E71C233F5E00A72F12 /* unchecked.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DCF68D61C233F5E00A72F12 /* unchecked.png */; };
 		AA184A2B1C2339FB001A679F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA184A2A1C2339FB001A679F /* LoginViewController.swift */; };
-		AA184A2D1C233A81001A679F /* Songs.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA184A2C1C233A81001A679F /* Songs.swift */; };
+		AA184A2D1C233A81001A679F /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA184A2C1C233A81001A679F /* Song.swift */; };
 		AA184A2F1C233AC1001A679F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA184A2E1C233AC1001A679F /* RegisterViewController.swift */; };
 		AA184A311C233C5D001A679F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA184A301C233C5D001A679F /* MainViewController.swift */; };
 		AA184A371C237EB6001A679F /* MediaPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA184A361C237EB6001A679F /* MediaPlayerViewController.swift */; };
@@ -175,7 +175,7 @@
 		5DCF68D61C233F5E00A72F12 /* unchecked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unchecked.png; sourceTree = "<group>"; };
 		AA184A281C233584001A679F /* FinalGetWell2-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FinalGetWell2-Bridging-Header.h"; sourceTree = "<group>"; };
 		AA184A2A1C2339FB001A679F /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		AA184A2C1C233A81001A679F /* Songs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Songs.swift; sourceTree = "<group>"; };
+		AA184A2C1C233A81001A679F /* Song.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 		AA184A2E1C233AC1001A679F /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		AA184A301C233C5D001A679F /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		AA184A361C237EB6001A679F /* MediaPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaPlayerViewController.swift; sourceTree = "<group>"; };
@@ -239,7 +239,7 @@
 			isa = PBXGroup;
 			children = (
 				AA184A281C233584001A679F /* FinalGetWell2-Bridging-Header.h */,
-				AA184A2C1C233A81001A679F /* Songs.swift */,
+				AA184A2C1C233A81001A679F /* Song.swift */,
 				5DCF68B11C23336500A72F12 /* AppDelegate.swift */,
 				AA184A2E1C233AC1001A679F /* RegisterViewController.swift */,
 				4C060F961C235DF500E65966 /* SetReminderPopOverViewController.swift */,
@@ -538,7 +538,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA184A2D1C233A81001A679F /* Songs.swift in Sources */,
+				AA184A2D1C233A81001A679F /* Song.swift in Sources */,
 				4C060F971C235DF500E65966 /* SetReminderPopOverViewController.swift in Sources */,
 				5D68274E1C24A85C00374755 /* TableViewChkList.swift in Sources */,
 				5D6827511C24A8DA00374755 /* TableViewCell.swift in Sources */,
