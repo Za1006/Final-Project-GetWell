@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uCA-Fo-MXg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uCA-Fo-MXg">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -892,6 +892,9 @@
                     <navigationItem key="navigationItem" id="mWX-oB-pB0">
                         <barButtonItem key="rightBarButtonItem" title="Item" id="pgk-RK-Cfo">
                             <color key="tintColor" red="0.94937485030000002" green="1" blue="0.94555853690000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="4DS-SQ-1Rz" kind="show" id="vGD-Wi-P1M"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
@@ -906,6 +909,107 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DIR-tM-1sH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1082.25" y="1653.375"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="toX-H4-DTF">
+            <objects>
+                <viewController id="I0h-At-po1" customClass="MapViewController" customModule="FinalGetWell2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qzR-Go-Vxl"/>
+                        <viewControllerLayoutGuide type="bottom" id="gkG-Lp-I4S"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="U7E-Dl-zL5">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Efe-K0-PHw">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="612" id="PbO-IJ-2Cs"/>
+                                    <constraint firstAttribute="width" constant="375" id="SCI-MP-r8r"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="375" id="T92-YY-pWJ"/>
+                                    <constraint firstAttribute="height" constant="559" id="rVn-Fi-Xsd"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="PbO-IJ-2Cs"/>
+                                        <exclude reference="SCI-MP-r8r"/>
+                                        <exclude reference="T92-YY-pWJ"/>
+                                        <exclude reference="rVn-Fi-Xsd"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <exclude reference="PbO-IJ-2Cs"/>
+                                        <exclude reference="SCI-MP-r8r"/>
+                                        <exclude reference="T92-YY-pWJ"/>
+                                        <exclude reference="rVn-Fi-Xsd"/>
+                                    </mask>
+                                </variation>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Efe-K0-PHw" firstAttribute="top" secondItem="U7E-Dl-zL5" secondAttribute="top" id="2qU-rm-84I"/>
+                            <constraint firstItem="Efe-K0-PHw" firstAttribute="leading" secondItem="U7E-Dl-zL5" secondAttribute="leading" id="F6c-Pn-UeX"/>
+                            <constraint firstAttribute="trailing" secondItem="Efe-K0-PHw" secondAttribute="trailing" id="NMT-bO-g9z"/>
+                            <constraint firstAttribute="trailing" secondItem="Efe-K0-PHw" secondAttribute="trailing" id="WiF-TK-eKZ"/>
+                            <constraint firstItem="gkG-Lp-I4S" firstAttribute="top" secondItem="Efe-K0-PHw" secondAttribute="bottom" id="YxE-41-lb0"/>
+                            <constraint firstItem="Efe-K0-PHw" firstAttribute="bottom" secondItem="gkG-Lp-I4S" secondAttribute="top" id="Z9A-0K-hoB"/>
+                            <constraint firstItem="Efe-K0-PHw" firstAttribute="top" secondItem="qzR-Go-Vxl" secondAttribute="bottom" id="fEB-6z-hhU"/>
+                            <constraint firstItem="Efe-K0-PHw" firstAttribute="leading" secondItem="U7E-Dl-zL5" secondAttribute="leading" id="kQ5-yf-hx4"/>
+                            <constraint firstItem="gkG-Lp-I4S" firstAttribute="top" secondItem="Efe-K0-PHw" secondAttribute="bottom" id="omn-VL-tDd"/>
+                            <constraint firstItem="Efe-K0-PHw" firstAttribute="leading" secondItem="U7E-Dl-zL5" secondAttribute="leading" id="qmS-Ex-UFL"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Efe-K0-PHw"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="2qU-rm-84I"/>
+                                <exclude reference="F6c-Pn-UeX"/>
+                                <exclude reference="NMT-bO-g9z"/>
+                                <exclude reference="WiF-TK-eKZ"/>
+                                <exclude reference="Z9A-0K-hoB"/>
+                                <exclude reference="fEB-6z-hhU"/>
+                                <exclude reference="kQ5-yf-hx4"/>
+                                <exclude reference="qmS-Ex-UFL"/>
+                                <exclude reference="YxE-41-lb0"/>
+                                <exclude reference="omn-VL-tDd"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Efe-K0-PHw"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="2qU-rm-84I"/>
+                                <include reference="F6c-Pn-UeX"/>
+                                <include reference="NMT-bO-g9z"/>
+                                <exclude reference="WiF-TK-eKZ"/>
+                                <exclude reference="Z9A-0K-hoB"/>
+                                <exclude reference="fEB-6z-hhU"/>
+                                <exclude reference="kQ5-yf-hx4"/>
+                                <exclude reference="qmS-Ex-UFL"/>
+                                <exclude reference="YxE-41-lb0"/>
+                                <include reference="omn-VL-tDd"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="G0K-AY-5ZY">
+                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="SU8-WU-INT">
+                            <connections>
+                                <action selector="searchBar:" destination="I0h-At-po1" id="Ebf-1V-b8t"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="mapView" destination="Efe-K0-PHw" id="wRR-aw-Q7x"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IMb-Bj-yLU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2330.25" y="1653.375"/>
         </scene>
         <!--Set Reminder Pop Over View Controller-->
         <scene sceneID="zTW-JE-MKt">
@@ -1011,6 +1115,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9tI-wP-wRU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="393" y="1703.25"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="aqy-hM-XgM">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4DS-SQ-1Rz" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Drr-Eh-Xwl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.42352941176470588" green="0.89411764705882357" blue="0.58431372549019611" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="I0h-At-po1" kind="relationship" relationship="rootViewController" id="fBi-Nw-Thm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h6H-Cu-eok" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1707.75" y="1653.375"/>
         </scene>
     </scenes>
     <resources>
