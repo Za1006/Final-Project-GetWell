@@ -6,7 +6,7 @@
 //  Copyright © 2015 Keron. All rights reserved.
 //
 
-/*import UIKit
+import UIKit
 
 class ViewController: UIViewController, UIPageViewControllerDataSource
 {
@@ -16,7 +16,7 @@ class ViewController: UIViewController, UIPageViewControllerDataSource
     var pageImage = [""]
     var count = 0
     
-    
+    var delegate: ViewController?
     
     override func viewDidLoad()
     {
@@ -25,9 +25,9 @@ class ViewController: UIViewController, UIPageViewControllerDataSource
         self.pageImage = ["",""]
         self.pageViewController = self.storyboard?.instantiateViewControllerWithIdentifier("PageViewController") as! UIPageViewController
         self.pageViewController.dataSource = self
-        var StartVC = self.viewControllerAtIndex(0) as ContentViewController
-        var viewControllers = NSArray(object: StartVC)
-        self.pageViewController.setViewController(viewControllers,direction: UIPageViewControllerNavigationDirection.Forward, animated: true, completion: nil)
+        let StartVC = self.viewControllerAtIndex(0) as ContentViewController
+        let viewControllers = NSArray(object: StartVC)
+        self.pageViewController.setViewControllers((viewControllers as! [UIViewController]), direction: UIPageViewControllerNavigationDirection.Forward, animated: true, completion: nil)
         self.pageViewController.view.frame = CGRectMake(0, 30, self.view.frame.width, self.view.frame.size.height - 60)
         self.addChildViewController(self.pageViewController)
         self.view.addSubview(self.pageViewController.view)
@@ -96,32 +96,31 @@ class ViewController: UIViewController, UIPageViewControllerDataSource
     }
     
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
+    {
+        if segue.identifier == "StartSession"
+        {
+            let viewVC = segue.destinationViewController as! ViewController
+            viewVC.delegate = self
+        }
+        
     }
-    */
+
  
     
     @IBAction func startSession(sender: AnyObject)
     {
 
-        let pageContentViewController = self.viewControllerAtIndex(0)
-        var startVC = self.viewControllerAtIndex(0) as ContentViewController
-//        var viewControllers = NSArray(object: starVC)
-
-        self.pageViewController.setViewControllers(viewControllers, direction: UIPageViewControllerNavigationDirection.Forward, animated: true, completion: nil)
-        
+        self.viewControllerAtIndex(0)
+        self.viewControllerAtIndex(0) as ContentViewController
         self.pageViewController.view .removeFromSuperview()
-
 
         
 
     }
 
 }
-*/

@@ -24,7 +24,6 @@ class ContentViewController: UIViewController
         self.image.image = UIImage(named: imageFile)
         self.titleLabel.text = self.titleText
     }
-
     override func didReceiveMemoryWarning()
     {
         super.didReceiveMemoryWarning()
@@ -41,5 +40,6 @@ class ContentViewController: UIViewController
         // Pass the selected object to the new view controller.
     }
     */
+
 
 }
