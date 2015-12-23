@@ -28,6 +28,36 @@
 		5D8B94281C29ACBF001C9579 /* testunchk.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D8B94271C29ACBF001C9579 /* testunchk.png */; };
 		5D8B942B1C29B81F001C9579 /* lpGetwell.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D8B942A1C29B81E001C9579 /* lpGetwell.png */; };
 		5D8B942D1C29B8F7001C9579 /* newLp.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D8B942C1C29B8F7001C9579 /* newLp.png */; };
+		5D8B942F1C2A1318001C9579 /* loadingIcon3.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D8B942E1C2A1318001C9579 /* loadingIcon3.png */; };
+		5D8B94311C2A1585001C9579 /* loadingIcon4.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D8B94301C2A1585001C9579 /* loadingIcon4.png */; };
+		5D8B94331C2A17CF001C9579 /* NewReset.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D8B94321C2A17CF001C9579 /* NewReset.png */; };
+		5D8B94351C2A199A001C9579 /* NewReset2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D8B94341C2A199A001C9579 /* NewReset2.png */; };
+		5D8B94371C2A234C001C9579 /* rainOntheRooftop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5D8B94361C2A234C001C9579 /* rainOntheRooftop.mp3 */; };
+		5D8B94391C2A257B001C9579 /* coldsnowstorm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5D8B94381C2A257B001C9579 /* coldsnowstorm.mp3 */; };
+		5D8B943B1C2A25A2001C9579 /* relaxingnovember.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5D8B943A1C2A25A2001C9579 /* relaxingnovember.mp3 */; };
+		5D8B943D1C2A25C9001C9579 /* rainy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5D8B943C1C2A25C9001C9579 /* rainy.mp3 */; };
+		5D8B943F1C2A25F8001C9579 /* heavywetrain.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5D8B943E1C2A25F8001C9579 /* heavywetrain.mp3 */; };
+		5D8B94411C2A261B001C9579 /* busygreenforest.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5D8B94401C2A261B001C9579 /* busygreenforest.mp3 */; };
+		5D8B94431C2A264F001C9579 /* gentlewetcreek.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5D8B94421C2A264F001C9579 /* gentlewetcreek.mp3 */; };
+		5D8B94451C2A267E001C9579 /* thunderlight.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5D8B94441C2A267E001C9579 /* thunderlight.mp3 */; };
+		5D8B94471C2A26A9001C9579 /* littlebirds.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5D8B94461C2A26A9001C9579 /* littlebirds.mp3 */; };
+		5D8B94491C2A26CF001C9579 /* betterdaysahead.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5D8B94481C2A26CF001C9579 /* betterdaysahead.mp3 */; };
+		5D8B944B1C2A2720001C9579 /* thebeautifulbeach.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5D8B944A1C2A2720001C9579 /* thebeautifulbeach.mp3 */; };
+		5D8B944D1C2A274A001C9579 /* mytomorrow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5D8B944C1C2A274A001C9579 /* mytomorrow.mp3 */; };
+		5D8B944F1C2A276F001C9579 /* leaveswind.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5D8B944E1C2A276F001C9579 /* leaveswind.mp3 */; };
+		5D8B945E1C2A27B8001C9579 /* BetterDaySound.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D8B94511C2A27B8001C9579 /* BetterDaySound.jpg */; };
+		5D8B945F1C2A27B8001C9579 /* BirdsSound.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D8B94521C2A27B8001C9579 /* BirdsSound.jpg */; };
+		5D8B94601C2A27B8001C9579 /* CreekSound.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D8B94531C2A27B8001C9579 /* CreekSound.jpg */; };
+		5D8B94611C2A27B8001C9579 /* ForestSound.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D8B94541C2A27B8001C9579 /* ForestSound.jpg */; };
+		5D8B94621C2A27B8001C9579 /* HeavyRainSound.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D8B94551C2A27B8001C9579 /* HeavyRainSound.jpg */; };
+		5D8B94631C2A27B8001C9579 /* RainSound.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D8B94561C2A27B8001C9579 /* RainSound.jpg */; };
+		5D8B94641C2A27B8001C9579 /* RelaxingSound.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D8B94571C2A27B8001C9579 /* RelaxingSound.jpg */; };
+		5D8B94651C2A27B8001C9579 /* RoofTopSound.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D8B94581C2A27B8001C9579 /* RoofTopSound.jpg */; };
+		5D8B94661C2A27B8001C9579 /* SnowStormSound.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D8B94591C2A27B8001C9579 /* SnowStormSound.jpg */; };
+		5D8B94671C2A27B8001C9579 /* ThunderSound.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D8B945A1C2A27B8001C9579 /* ThunderSound.jpg */; };
+		5D8B94681C2A27B8001C9579 /* TomorrowSound.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D8B945B1C2A27B8001C9579 /* TomorrowSound.jpg */; };
+		5D8B94691C2A27B8001C9579 /* WindLeavessSound.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D8B945C1C2A27B8001C9579 /* WindLeavessSound.jpg */; };
+		5D8B946B1C2A36E8001C9579 /* BeachSound.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D8B946A1C2A36E8001C9579 /* BeachSound.png */; };
 		5DBDA2281C28594000B71F6F /* checked1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DBDA2261C28594000B71F6F /* checked1.png */; };
 		5DBDA2291C28594000B71F6F /* unchecked1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DBDA2271C28594000B71F6F /* unchecked1.png */; };
 		5DBDA22B1C28AD3E00B71F6F /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DBDA22A1C28AD3E00B71F6F /* star.png */; };
@@ -52,17 +82,6 @@
 		5DCF68E51C233F5E00A72F12 /* PlayPause.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DCF68D41C233F5E00A72F12 /* PlayPause.png */; };
 		5DCF68E61C233F5E00A72F12 /* Previous.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DCF68D51C233F5E00A72F12 /* Previous.png */; };
 		5DCF68E71C233F5E00A72F12 /* unchecked.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DCF68D61C233F5E00A72F12 /* unchecked.png */; };
-		5DCF68F31C233FC500A72F12 /* acousticbreeze.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5DCF68E81C233FC500A72F12 /* acousticbreeze.mp3 */; };
-		5DCF68F41C233FC500A72F12 /* betterdays.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5DCF68E91C233FC500A72F12 /* betterdays.mp3 */; };
-		5DCF68F51C233FC500A72F12 /* deepblue.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5DCF68EA1C233FC500A72F12 /* deepblue.mp3 */; };
-		5DCF68F61C233FC500A72F12 /* enigmatic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5DCF68EB1C233FC500A72F12 /* enigmatic.mp3 */; };
-		5DCF68F71C233FC500A72F12 /* india.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5DCF68EC1C233FC500A72F12 /* india.mp3 */; };
-		5DCF68F81C233FC500A72F12 /* newdawn.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5DCF68ED1C233FC500A72F12 /* newdawn.mp3 */; };
-		5DCF68F91C233FC500A72F12 /* november.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5DCF68EE1C233FC500A72F12 /* november.mp3 */; };
-		5DCF68FA1C233FC500A72F12 /* relaxing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5DCF68EF1C233FC500A72F12 /* relaxing.mp3 */; };
-		5DCF68FB1C233FC500A72F12 /* sadday.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5DCF68F01C233FC500A72F12 /* sadday.mp3 */; };
-		5DCF68FC1C233FC500A72F12 /* slowmotion.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5DCF68F11C233FC500A72F12 /* slowmotion.mp3 */; };
-		5DCF68FD1C233FC500A72F12 /* tomorrow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5DCF68F21C233FC500A72F12 /* tomorrow.mp3 */; };
 		AA184A2B1C2339FB001A679F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA184A2A1C2339FB001A679F /* LoginViewController.swift */; };
 		AA184A2D1C233A81001A679F /* Songs.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA184A2C1C233A81001A679F /* Songs.swift */; };
 		AA184A2F1C233AC1001A679F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA184A2E1C233AC1001A679F /* RegisterViewController.swift */; };
@@ -98,6 +117,36 @@
 		5D8B94271C29ACBF001C9579 /* testunchk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = testunchk.png; sourceTree = "<group>"; };
 		5D8B942A1C29B81E001C9579 /* lpGetwell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lpGetwell.png; sourceTree = "<group>"; };
 		5D8B942C1C29B8F7001C9579 /* newLp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newLp.png; sourceTree = "<group>"; };
+		5D8B942E1C2A1318001C9579 /* loadingIcon3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loadingIcon3.png; sourceTree = "<group>"; };
+		5D8B94301C2A1585001C9579 /* loadingIcon4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loadingIcon4.png; sourceTree = "<group>"; };
+		5D8B94321C2A17CF001C9579 /* NewReset.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NewReset.png; sourceTree = "<group>"; };
+		5D8B94341C2A199A001C9579 /* NewReset2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NewReset2.png; sourceTree = "<group>"; };
+		5D8B94361C2A234C001C9579 /* rainOntheRooftop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = rainOntheRooftop.mp3; sourceTree = "<group>"; };
+		5D8B94381C2A257B001C9579 /* coldsnowstorm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = coldsnowstorm.mp3; sourceTree = "<group>"; };
+		5D8B943A1C2A25A2001C9579 /* relaxingnovember.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = relaxingnovember.mp3; sourceTree = "<group>"; };
+		5D8B943C1C2A25C9001C9579 /* rainy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = rainy.mp3; sourceTree = "<group>"; };
+		5D8B943E1C2A25F8001C9579 /* heavywetrain.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = heavywetrain.mp3; sourceTree = "<group>"; };
+		5D8B94401C2A261B001C9579 /* busygreenforest.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = busygreenforest.mp3; sourceTree = "<group>"; };
+		5D8B94421C2A264F001C9579 /* gentlewetcreek.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gentlewetcreek.mp3; sourceTree = "<group>"; };
+		5D8B94441C2A267E001C9579 /* thunderlight.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = thunderlight.mp3; sourceTree = "<group>"; };
+		5D8B94461C2A26A9001C9579 /* littlebirds.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = littlebirds.mp3; sourceTree = "<group>"; };
+		5D8B94481C2A26CF001C9579 /* betterdaysahead.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = betterdaysahead.mp3; sourceTree = "<group>"; };
+		5D8B944A1C2A2720001C9579 /* thebeautifulbeach.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = thebeautifulbeach.mp3; sourceTree = "<group>"; };
+		5D8B944C1C2A274A001C9579 /* mytomorrow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mytomorrow.mp3; sourceTree = "<group>"; };
+		5D8B944E1C2A276F001C9579 /* leaveswind.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = leaveswind.mp3; sourceTree = "<group>"; };
+		5D8B94511C2A27B8001C9579 /* BetterDaySound.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BetterDaySound.jpg; sourceTree = "<group>"; };
+		5D8B94521C2A27B8001C9579 /* BirdsSound.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BirdsSound.jpg; sourceTree = "<group>"; };
+		5D8B94531C2A27B8001C9579 /* CreekSound.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = CreekSound.jpg; sourceTree = "<group>"; };
+		5D8B94541C2A27B8001C9579 /* ForestSound.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ForestSound.jpg; sourceTree = "<group>"; };
+		5D8B94551C2A27B8001C9579 /* HeavyRainSound.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = HeavyRainSound.jpg; sourceTree = "<group>"; };
+		5D8B94561C2A27B8001C9579 /* RainSound.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = RainSound.jpg; sourceTree = "<group>"; };
+		5D8B94571C2A27B8001C9579 /* RelaxingSound.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = RelaxingSound.jpg; sourceTree = "<group>"; };
+		5D8B94581C2A27B8001C9579 /* RoofTopSound.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = RoofTopSound.jpg; sourceTree = "<group>"; };
+		5D8B94591C2A27B8001C9579 /* SnowStormSound.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SnowStormSound.jpg; sourceTree = "<group>"; };
+		5D8B945A1C2A27B8001C9579 /* ThunderSound.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ThunderSound.jpg; sourceTree = "<group>"; };
+		5D8B945B1C2A27B8001C9579 /* TomorrowSound.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = TomorrowSound.jpg; sourceTree = "<group>"; };
+		5D8B945C1C2A27B8001C9579 /* WindLeavessSound.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WindLeavessSound.jpg; sourceTree = "<group>"; };
+		5D8B946A1C2A36E8001C9579 /* BeachSound.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BeachSound.png; sourceTree = "<group>"; };
 		5DBDA2261C28594000B71F6F /* checked1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checked1.png; sourceTree = "<group>"; };
 		5DBDA2271C28594000B71F6F /* unchecked1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unchecked1.png; sourceTree = "<group>"; };
 		5DBDA22A1C28AD3E00B71F6F /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
@@ -124,17 +173,6 @@
 		5DCF68D41C233F5E00A72F12 /* PlayPause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PlayPause.png; sourceTree = "<group>"; };
 		5DCF68D51C233F5E00A72F12 /* Previous.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Previous.png; sourceTree = "<group>"; };
 		5DCF68D61C233F5E00A72F12 /* unchecked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unchecked.png; sourceTree = "<group>"; };
-		5DCF68E81C233FC500A72F12 /* acousticbreeze.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = acousticbreeze.mp3; sourceTree = "<group>"; };
-		5DCF68E91C233FC500A72F12 /* betterdays.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = betterdays.mp3; sourceTree = "<group>"; };
-		5DCF68EA1C233FC500A72F12 /* deepblue.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = deepblue.mp3; sourceTree = "<group>"; };
-		5DCF68EB1C233FC500A72F12 /* enigmatic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = enigmatic.mp3; sourceTree = "<group>"; };
-		5DCF68EC1C233FC500A72F12 /* india.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = india.mp3; sourceTree = "<group>"; };
-		5DCF68ED1C233FC500A72F12 /* newdawn.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = newdawn.mp3; sourceTree = "<group>"; };
-		5DCF68EE1C233FC500A72F12 /* november.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = november.mp3; sourceTree = "<group>"; };
-		5DCF68EF1C233FC500A72F12 /* relaxing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = relaxing.mp3; sourceTree = "<group>"; };
-		5DCF68F01C233FC500A72F12 /* sadday.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sadday.mp3; sourceTree = "<group>"; };
-		5DCF68F11C233FC500A72F12 /* slowmotion.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = slowmotion.mp3; sourceTree = "<group>"; };
-		5DCF68F21C233FC500A72F12 /* tomorrow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tomorrow.mp3; sourceTree = "<group>"; };
 		AA184A281C233584001A679F /* FinalGetWell2-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FinalGetWell2-Bridging-Header.h"; sourceTree = "<group>"; };
 		AA184A2A1C2339FB001A679F /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		AA184A2C1C233A81001A679F /* Songs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Songs.swift; sourceTree = "<group>"; };
@@ -200,6 +238,19 @@
 		5DCF68B01C23336500A72F12 /* FinalGetWell2 */ = {
 			isa = PBXGroup;
 			children = (
+				5D8B946A1C2A36E8001C9579 /* BeachSound.png */,
+				5D8B94511C2A27B8001C9579 /* BetterDaySound.jpg */,
+				5D8B94521C2A27B8001C9579 /* BirdsSound.jpg */,
+				5D8B94531C2A27B8001C9579 /* CreekSound.jpg */,
+				5D8B94541C2A27B8001C9579 /* ForestSound.jpg */,
+				5D8B94551C2A27B8001C9579 /* HeavyRainSound.jpg */,
+				5D8B94561C2A27B8001C9579 /* RainSound.jpg */,
+				5D8B94571C2A27B8001C9579 /* RelaxingSound.jpg */,
+				5D8B94581C2A27B8001C9579 /* RoofTopSound.jpg */,
+				5D8B94591C2A27B8001C9579 /* SnowStormSound.jpg */,
+				5D8B945A1C2A27B8001C9579 /* ThunderSound.jpg */,
+				5D8B945B1C2A27B8001C9579 /* TomorrowSound.jpg */,
+				5D8B945C1C2A27B8001C9579 /* WindLeavessSound.jpg */,
 				AA184A281C233584001A679F /* FinalGetWell2-Bridging-Header.h */,
 				AA184A2C1C233A81001A679F /* Songs.swift */,
 				5DCF68B11C23336500A72F12 /* AppDelegate.swift */,
@@ -223,6 +274,10 @@
 		5DCF68FE1C233FD100A72F12 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				5D8B94301C2A1585001C9579 /* loadingIcon4.png */,
+				5D8B94341C2A199A001C9579 /* NewReset2.png */,
+				5D8B94321C2A17CF001C9579 /* NewReset.png */,
+				5D8B942E1C2A1318001C9579 /* loadingIcon3.png */,
 				4C618F741C29D0D600104B71 /* reset.png */,
 				5DBDA22A1C28AD3E00B71F6F /* star.png */,
 				5D8B94251C29ABAB001C9579 /* testchk.png */,
@@ -266,17 +321,19 @@
 		5DCF68FF1C233FE500A72F12 /* Music */ = {
 			isa = PBXGroup;
 			children = (
-				5DCF68E81C233FC500A72F12 /* acousticbreeze.mp3 */,
-				5DCF68E91C233FC500A72F12 /* betterdays.mp3 */,
-				5DCF68EA1C233FC500A72F12 /* deepblue.mp3 */,
-				5DCF68EB1C233FC500A72F12 /* enigmatic.mp3 */,
-				5DCF68EC1C233FC500A72F12 /* india.mp3 */,
-				5DCF68ED1C233FC500A72F12 /* newdawn.mp3 */,
-				5DCF68EE1C233FC500A72F12 /* november.mp3 */,
-				5DCF68EF1C233FC500A72F12 /* relaxing.mp3 */,
-				5DCF68F01C233FC500A72F12 /* sadday.mp3 */,
-				5DCF68F11C233FC500A72F12 /* slowmotion.mp3 */,
-				5DCF68F21C233FC500A72F12 /* tomorrow.mp3 */,
+				5D8B944E1C2A276F001C9579 /* leaveswind.mp3 */,
+				5D8B944C1C2A274A001C9579 /* mytomorrow.mp3 */,
+				5D8B944A1C2A2720001C9579 /* thebeautifulbeach.mp3 */,
+				5D8B943C1C2A25C9001C9579 /* rainy.mp3 */,
+				5D8B94361C2A234C001C9579 /* rainOntheRooftop.mp3 */,
+				5D8B94381C2A257B001C9579 /* coldsnowstorm.mp3 */,
+				5D8B943A1C2A25A2001C9579 /* relaxingnovember.mp3 */,
+				5D8B943E1C2A25F8001C9579 /* heavywetrain.mp3 */,
+				5D8B94401C2A261B001C9579 /* busygreenforest.mp3 */,
+				5D8B94421C2A264F001C9579 /* gentlewetcreek.mp3 */,
+				5D8B94441C2A267E001C9579 /* thunderlight.mp3 */,
+				5D8B94461C2A26A9001C9579 /* littlebirds.mp3 */,
+				5D8B94481C2A26CF001C9579 /* betterdaysahead.mp3 */,
 				4C8C816D1C287F03009C8C60 /* SessionOver.m4a */,
 			);
 			name = Music;
@@ -353,36 +410,48 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5DCF68F71C233FC500A72F12 /* india.mp3 in Resources */,
+				5D8B94431C2A264F001C9579 /* gentlewetcreek.mp3 in Resources */,
+				5D8B94681C2A27B8001C9579 /* TomorrowSound.jpg in Resources */,
+				5D8B944D1C2A274A001C9579 /* mytomorrow.mp3 in Resources */,
 				5DCF68E01C233F5E00A72F12 /* GetWellMediaDetailPage.png in Resources */,
-				5DCF68F41C233FC500A72F12 /* betterdays.mp3 in Resources */,
 				5D8B941F1C29A8FC001C9579 /* checked@1x.png in Resources */,
 				5DCF68E41C233F5E00A72F12 /* Next.png in Resources */,
+				5D8B94451C2A267E001C9579 /* thunderlight.mp3 in Resources */,
+				5D8B94671C2A27B8001C9579 /* ThunderSound.jpg in Resources */,
+				5D8B94311C2A1585001C9579 /* loadingIcon4.png in Resources */,
+				5D8B94691C2A27B8001C9579 /* WindLeavessSound.jpg in Resources */,
+				5D8B94491C2A26CF001C9579 /* betterdaysahead.mp3 in Resources */,
+				5D8B94611C2A27B8001C9579 /* ForestSound.jpg in Resources */,
 				5D68274A1C247AFC00374755 /* PlayPause1.png in Resources */,
+				5D8B94601C2A27B8001C9579 /* CreekSound.jpg in Resources */,
 				5DCF68E21C233F5E00A72F12 /* GetWellSignUpFinal.png in Resources */,
+				5D8B945E1C2A27B8001C9579 /* BetterDaySound.jpg in Resources */,
 				5DBDA2281C28594000B71F6F /* checked1.png in Resources */,
 				5DCF68D81C233F5E00A72F12 /* checked.png in Resources */,
+				5D8B94631C2A27B8001C9579 /* RainSound.jpg in Resources */,
+				5D8B94661C2A27B8001C9579 /* SnowStormSound.jpg in Resources */,
 				5D8B942B1C29B81F001C9579 /* lpGetwell.png in Resources */,
+				5D8B94371C2A234C001C9579 /* rainOntheRooftop.mp3 in Resources */,
+				5D8B94351C2A199A001C9579 /* NewReset2.png in Resources */,
 				5D6827531C24AAD100374755 /* ThumbsUp.png in Resources */,
-				5DCF68FC1C233FC500A72F12 /* slowmotion.mp3 in Resources */,
 				5D68274B1C247AFC00374755 /* Previous1.png in Resources */,
+				5D8B943B1C2A25A2001C9579 /* relaxingnovember.mp3 in Resources */,
+				5D8B94331C2A17CF001C9579 /* NewReset.png in Resources */,
+				5D8B94391C2A257B001C9579 /* coldsnowstorm.mp3 in Resources */,
+				5D8B94621C2A27B8001C9579 /* HeavyRainSound.jpg in Resources */,
 				5D8B94231C29A8FC001C9579 /* unchecked@2x.png in Resources */,
 				5DCF68D91C233F5E00A72F12 /* DownArrow.png in Resources */,
 				5D6827451C2467D900374755 /* free_nature_wallpaper_hd_desktop.jpg in Resources */,
-				5DCF68F81C233FC500A72F12 /* newdawn.mp3 in Resources */,
 				5DCF68BF1C23336500A72F12 /* LaunchScreen.storyboard in Resources */,
 				5DCF68E61C233F5E00A72F12 /* Previous.png in Resources */,
+				5D8B94651C2A27B8001C9579 /* RoofTopSound.jpg in Resources */,
+				5D8B946B1C2A36E8001C9579 /* BeachSound.png in Resources */,
 				5D6827491C247AFC00374755 /* Next1.png in Resources */,
 				5DCF68DC1C233F5E00A72F12 /* GetWellLogin2a.png in Resources */,
-				5DCF68F31C233FC500A72F12 /* acousticbreeze.mp3 in Resources */,
-				5DCF68F51C233FC500A72F12 /* deepblue.mp3 in Resources */,
-				5DCF68F61C233FC500A72F12 /* enigmatic.mp3 in Resources */,
 				5DBDA22B1C28AD3E00B71F6F /* star.png in Resources */,
-				5DCF68FB1C233FC500A72F12 /* sadday.mp3 in Resources */,
+				5D8B942F1C2A1318001C9579 /* loadingIcon3.png in Resources */,
 				5D8B942D1C29B8F7001C9579 /* newLp.png in Resources */,
 				5D8B94281C29ACBF001C9579 /* testunchk.png in Resources */,
-				5DCF68F91C233FC500A72F12 /* november.mp3 in Resources */,
-				5DCF68FD1C233FC500A72F12 /* tomorrow.mp3 in Resources */,
 				5D8B94201C29A8FC001C9579 /* checked@2x.png in Resources */,
 				5DCF68DE1C233F5E00A72F12 /* GetWellMainPage.png in Resources */,
 				5DCF68DF1C233F5E00A72F12 /* GetWellMediaDetailPage.jpg in Resources */,
@@ -391,19 +460,26 @@
 				5DCF68DA1C233F5E00A72F12 /* GetWellLogin2.jpg in Resources */,
 				5DBDA2291C28594000B71F6F /* unchecked1.png in Resources */,
 				5DCF68D71C233F5E00A72F12 /* background.png in Resources */,
+				5D8B94471C2A26A9001C9579 /* littlebirds.mp3 in Resources */,
 				5D8B94211C29A8FC001C9579 /* checked@3x.png in Resources */,
 				5DCF68E71C233F5E00A72F12 /* unchecked.png in Resources */,
 				4C618F751C29D0D600104B71 /* reset.png in Resources */,
 				5D8B94261C29ABAB001C9579 /* testchk.png in Resources */,
+				5D8B945F1C2A27B8001C9579 /* BirdsSound.jpg in Resources */,
 				4C8C816E1C287F03009C8C60 /* SessionOver.m4a in Resources */,
 				5D8B94241C29A8FC001C9579 /* unchecked@3x.png in Resources */,
 				5D6827551C24ABD700374755 /* thumbs-up-icon-black-hi.png in Resources */,
+				5D8B94641C2A27B8001C9579 /* RelaxingSound.jpg in Resources */,
+				5D8B944B1C2A2720001C9579 /* thebeautifulbeach.mp3 in Resources */,
+				5D8B94411C2A261B001C9579 /* busygreenforest.mp3 in Resources */,
 				5DCF68DD1C233F5E00A72F12 /* getWellLogoSized.png in Resources */,
 				5DCF68BC1C23336500A72F12 /* Assets.xcassets in Resources */,
+				5D8B943D1C2A25C9001C9579 /* rainy.mp3 in Resources */,
 				5DCF68B71C23336500A72F12 /* Main.storyboard in Resources */,
 				5DCF68E51C233F5E00A72F12 /* PlayPause.png in Resources */,
+				5D8B943F1C2A25F8001C9579 /* heavywetrain.mp3 in Resources */,
 				5DCF68E11C233F5E00A72F12 /* GetWellSignUp2.jpg in Resources */,
-				5DCF68FA1C233FC500A72F12 /* relaxing.mp3 in Resources */,
+				5D8B944F1C2A276F001C9579 /* leaveswind.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

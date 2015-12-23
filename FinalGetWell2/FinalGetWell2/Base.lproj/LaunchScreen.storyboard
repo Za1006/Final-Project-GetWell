@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -18,20 +18,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newLp.png" translatesAutoresizingMaskIntoConstraints="NO" id="ELc-Yu-910">
-                                <rect key="frame" x="0.0" y="208" width="375" height="252"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loadingIcon4.png" translatesAutoresizingMaskIntoConstraints="NO" id="ELc-Yu-910">
+                                <rect key="frame" x="0.0" y="170" width="375" height="252"/>
+                                <color key="backgroundColor" red="0.14901960784313725" green="0.88235294117647056" blue="0.47058823529411764" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="ELc-Yu-910" secondAttribute="height" multiplier="125:84" id="pLJ-8l-4if"/>
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.97574683894384517" green="1" blue="0.99911737488902741" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="ELc-Yu-910" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="8y4-Vp-Qgx"/>
                             <constraint firstItem="ELc-Yu-910" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Cbo-Ww-vpM"/>
                             <constraint firstItem="ELc-Yu-910" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" id="UVq-fs-ArT"/>
+                            <constraint firstItem="ELc-Yu-910" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="150" id="WvQ-e5-99V"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="8y4-Vp-Qgx"/>
+                            </mask>
+                        </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
@@ -41,6 +47,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="newLp.png" width="1042" height="696"/>
+        <image name="loadingIcon4.png" width="1042" height="684"/>
     </resources>
 </document>

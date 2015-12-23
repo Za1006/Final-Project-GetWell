@@ -18,6 +18,7 @@ class MediaPlayerViewController: UIViewController
     @IBOutlet weak var timeSegmentedControl: UISegmentedControl!
     @IBOutlet var meditationCountdown: UILabel!
     @IBOutlet var songTitleLabel: UILabel!
+    @IBOutlet var albumArtwork: UIImageView!
     //  @IBOutlet var artistLabel: UILabel!
     //  @IBOutlet var playPauseButton: UIButton!
     
@@ -226,33 +227,48 @@ class MediaPlayerViewController: UIViewController
     
     func configurePlaylist()
     {
-        let acoustic = Song(title: "Acoustic Breeze", artist: "Benjamin Tissot", filename: "acousticbreeze")
-        songs.append(acoustic)
+        let mindpower = Song(title: "Mind Power", artist: "Benjamin Tissot", filename: "betterdaysahead", albumArtwork: "BetterDaySound")
+        songs.append(mindpower)
+        currentSong = mindpower
         
-        let betterdays = Song(title: "Better Days", artist: "Benjamin Tissot", filename: "betterdays")
-        songs.append(betterdays)
-        currentSong = betterdays
+        let autum = Song(title: "Fall", artist: "Benjamin Tissot", filename: "leaveswind", albumArtwork: "WindLeavessSound")
+        songs.append(autum)
+        //currentSong = mindpower
 
-        let deepblue = Song(title: "Deep Blue", artist: "Benjamin Tissot", filename: "deepblue")
-        songs.append(deepblue)
-        
-        let enigmatic = Song(title: "Enigmatic", artist: "Benjamin Tissot", filename: "enigmatic")
-        songs.append(enigmatic)
-        
-        let november = Song(title: "November", artist: "Benjamin Tissot", filename: "november")
-        songs.append(november)
-        
-        let relaxing = Song(title: "Relaxing", artist: "Benjamin Tissot", filename: "relaxing")
-        songs.append(relaxing)
-        
-        let sadday = Song(title: "Sadday", artist: "Benjamin Tissot", filename: "sadday")
-        songs.append(sadday)
-        
-        let slowmotion = Song(title: "Slowmotion", artist: "Benjamin Tissot", filename: "slowmotion")
-        songs.append(slowmotion)
-        
-        let tomorrow = Song(title: "Tomorrow", artist: "Benjamin Tissot", filename: "tomorrow")
+        let tomorrow = Song(title: "The Future", artist: "Benjamin Tissot", filename: "mytomorrow", albumArtwork: "TomorrowSound")
         songs.append(tomorrow)
+        
+        let beach = Song(title: "Sea Shore", artist: "Benjamin Tissot", filename: "thebeautifulbeach", albumArtwork: "BeachSound")
+        songs.append(beach)
+        
+        let rain = Song(title: "Rain", artist: "Benjamin Tissot", filename: "rainy", albumArtwork: "RainSound")
+        songs.append(rain)
+        
+        let snow = Song(title: "Winter", artist: "Benjamin Tissot", filename: "coldsnowstorm", albumArtwork: "SnowStormSound")
+        songs.append(snow)
+        
+        let roof = Song(title: "Roof Top", artist: "Benjamin Tissot", filename: "rainOntheRooftop", albumArtwork: "RoofTopSound")
+        songs.append(roof)
+        
+        let relax = Song(title: "Calm", artist: "Benjamin Tissot", filename: "relaxingnovember", albumArtwork: "RelaxingSound")
+        songs.append(relax)
+        
+        let pouring = Song(title: "Drench", artist: "Benjamin Tissot", filename: "heavywetrain", albumArtwork: "HeavyRainSound")
+        songs.append(pouring)
+        
+        let lush = Song(title: "Lush", artist: "Benjamin Tissot", filename: "busygreenforest", albumArtwork: "ForestSound")
+        songs.append(lush)
+        
+        let stream = Song(title: "Soft Creek", artist: "Benjamin Tissot", filename: "gentlewetcreek", albumArtwork: "CreekSound")
+        songs.append(stream)
+        
+        let heaven = Song(title: "Rage", artist: "Benjamin Tissot", filename: "thunderlight", albumArtwork: "ThunderSound")
+        songs.append(heaven)
+        
+        let tweets = Song(title: "Happy", artist: "Benjamin Tissot", filename: "littlebirds", albumArtwork: "BirdsSound")
+        songs.append(tweets)
+        
+        
     }
     
     func loadCurrentSong()
