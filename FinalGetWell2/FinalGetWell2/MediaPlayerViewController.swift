@@ -279,8 +279,10 @@ class MediaPlayerViewController: UIViewController
         {
             song.playerItem.seekToTime(CMTimeMakeWithSeconds(0.0, 1))
             avQueuePlayer.insertItem(song.playerItem, afterItem: nil)
-            //                        songTitleLabel.text? = song.title
-            //                        artistLabel.text? = song.artist
+            songTitleLabel.text = song.title
+//            artistLabel.text? = song.artist
+            albumArtwork.image = UIImage(named: song.albumArtworkName)
+
         }
     }
     
