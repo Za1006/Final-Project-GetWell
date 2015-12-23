@@ -79,6 +79,13 @@ class MapViewController: UIViewController, UISearchBarDelegate
         }
     }
     
+    @IBAction func backPressed(sender: UIBarButtonItem)
+    {
+        dismissViewControllerAnimated(true, completion: nil)
+        //        self.navigationController?.performSegueWithIdentifier("unwindFromLogin", sender: self)
+    }
+
+    
     
     
 }

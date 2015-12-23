@@ -346,6 +346,7 @@ class MediaPlayerViewController: UIViewController
         loadCurrentSong()
         startTimer()
     }
-
+    
+    
 
 }
