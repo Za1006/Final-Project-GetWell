@@ -636,6 +636,9 @@
                                     <segment title="20 minutes"/>
                                 </segments>
                                 <color key="tintColor" red="0.94937485034776359" green="1" blue="0.9455585369080548" alpha="1" colorSpace="calibratedRGB"/>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="342" width="374" height="29"/>
+                                </variation>
                                 <connections>
                                     <action selector="segmentedIndexTapped:" destination="KqX-MC-iiQ" eventType="valueChanged" id="9tw-zu-FQV"/>
                                 </connections>
@@ -673,6 +676,9 @@
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
                                 <color key="textColor" red="0.18407953623595311" green="0.42479957460732987" blue="0.28625131991314673" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="161" y="378" width="53" height="25"/>
+                                </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="muH-Nh-bPH">
                                 <rect key="frame" x="288" y="491" width="26" height="26"/>
@@ -817,6 +823,8 @@
                                 <exclude reference="EDD-DA-E6X"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="DRT-zY-aPL"/>
+                                <exclude reference="xjt-xC-BbC"/>
                                 <exclude reference="35V-kr-sdK"/>
                                 <exclude reference="vSM-A2-KIo"/>
                                 <exclude reference="zt5-gd-uyy"/>
@@ -825,6 +833,9 @@
                                 <exclude reference="KmI-T9-Plk"/>
                                 <exclude reference="oTR-X3-oiS"/>
                                 <exclude reference="pf6-kL-8S4"/>
+                                <exclude reference="4tp-gH-Ua1"/>
+                                <exclude reference="Hhb-SU-Ufm"/>
+                                <exclude reference="TYf-La-apX"/>
                                 <exclude reference="8YB-tJ-Ech"/>
                                 <exclude reference="9dC-eK-ESD"/>
                                 <exclude reference="Ial-ZH-Um5"/>
@@ -834,22 +845,17 @@
                                 <exclude reference="m33-oe-Aag"/>
                                 <exclude reference="Dgb-ht-wf8"/>
                                 <exclude reference="SQa-r0-fTS"/>
-                                <exclude reference="4tp-gH-Ua1"/>
-                                <exclude reference="Hhb-SU-Ufm"/>
-                                <exclude reference="TYf-La-apX"/>
-                                <exclude reference="6nP-VQ-mdd"/>
-                                <exclude reference="zb8-p0-5nQ"/>
                                 <exclude reference="AJA-x0-es9"/>
                                 <exclude reference="xcP-ki-DJQ"/>
                                 <exclude reference="Apd-pI-pcl"/>
                                 <exclude reference="FRm-dC-YMo"/>
                                 <exclude reference="O30-jm-Zk4"/>
                                 <exclude reference="jol-eN-vbR"/>
+                                <exclude reference="6nP-VQ-mdd"/>
+                                <exclude reference="zb8-p0-5nQ"/>
                                 <exclude reference="ifT-xN-CRr"/>
                                 <exclude reference="pmq-jq-u7L"/>
                                 <exclude reference="zEg-hz-pps"/>
-                                <exclude reference="DRT-zY-aPL"/>
-                                <exclude reference="xjt-xC-BbC"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -858,6 +864,8 @@
                                 <include reference="EDD-DA-E6X"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="DRT-zY-aPL"/>
+                                <include reference="xjt-xC-BbC"/>
                                 <include reference="35V-kr-sdK"/>
                                 <include reference="vSM-A2-KIo"/>
                                 <include reference="zt5-gd-uyy"/>
@@ -879,10 +887,6 @@
                                 <include reference="Dgb-ht-wf8"/>
                                 <exclude reference="SQa-r0-fTS"/>
                                 <exclude reference="c57-0s-DDV"/>
-                                <include reference="6nP-VQ-mdd"/>
-                                <exclude reference="MQR-z0-ftQ"/>
-                                <exclude reference="abT-Zt-Ddw"/>
-                                <include reference="zb8-p0-5nQ"/>
                                 <include reference="AJA-x0-es9"/>
                                 <exclude reference="ukL-49-CgJ"/>
                                 <include reference="xcP-ki-DJQ"/>
@@ -891,13 +895,15 @@
                                 <include reference="FRm-dC-YMo"/>
                                 <include reference="O30-jm-Zk4"/>
                                 <include reference="jol-eN-vbR"/>
+                                <include reference="6nP-VQ-mdd"/>
+                                <exclude reference="MQR-z0-ftQ"/>
+                                <exclude reference="abT-Zt-Ddw"/>
+                                <include reference="zb8-p0-5nQ"/>
                                 <exclude reference="gWQ-HB-wtL"/>
                                 <include reference="ifT-xN-CRr"/>
                                 <exclude reference="pkw-EI-I1A"/>
                                 <include reference="pmq-jq-u7L"/>
                                 <include reference="zEg-hz-pps"/>
-                                <include reference="DRT-zY-aPL"/>
-                                <include reference="xjt-xC-BbC"/>
                             </mask>
                         </variation>
                     </view>
