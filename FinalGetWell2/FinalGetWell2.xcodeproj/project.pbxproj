@@ -91,6 +91,7 @@
 		AA184AD81C272C62001A679F /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA184AD71C272C62001A679F /* ContentViewController.swift */; };
 		AA184ADC1C272D3C001A679F /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA184ADB1C272D3C001A679F /* PageViewController.swift */; };
 		AA184AE21C272F55001A679F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA184AE11C272F55001A679F /* ViewController.swift */; };
+		AAA99D331C2F7D5200C573A4 /* Positive Affirmations.docx in Resources */ = {isa = PBXBuildFile; fileRef = AAA99D321C2F7D5200C573A4 /* Positive Affirmations.docx */; };
 		BD9EBEDF19FE0925AC376D40 /* libPods-FinalGetWell2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3517483E6AD61A0B82488FF0 /* libPods-FinalGetWell2.a */; };
 /* End PBXBuildFile section */
 
@@ -184,6 +185,7 @@
 		AA184AD71C272C62001A679F /* ContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
 		AA184ADB1C272D3C001A679F /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		AA184AE11C272F55001A679F /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AAA99D321C2F7D5200C573A4 /* Positive Affirmations.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Positive Affirmations.docx"; sourceTree = "<group>"; };
 		B841F7DEDDD329769E75C116 /* Pods-FinalGetWell2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinalGetWell2.release.xcconfig"; path = "Pods/Target Support Files/Pods-FinalGetWell2/Pods-FinalGetWell2.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -202,6 +204,7 @@
 		4C618F6D1C29CD8B00104B71 /* Misc */ = {
 			isa = PBXGroup;
 			children = (
+				AAA99D321C2F7D5200C573A4 /* Positive Affirmations.docx */,
 				5DCF68BB1C23336500A72F12 /* Assets.xcassets */,
 				5DCF68BD1C23336500A72F12 /* LaunchScreen.storyboard */,
 				5DCF68C01C23336500A72F12 /* Info.plist */,
@@ -417,6 +420,7 @@
 				5D8B94681C2A27B8001C9579 /* TomorrowSound.png in Resources */,
 				5D8B944D1C2A274A001C9579 /* mytomorrow.mp3 in Resources */,
 				5DCF68E01C233F5E00A72F12 /* GetWellMediaDetailPage.png in Resources */,
+				AAA99D331C2F7D5200C573A4 /* Positive Affirmations.docx in Resources */,
 				5D8B941F1C29A8FC001C9579 /* checked@1x.png in Resources */,
 				5DCF68E41C233F5E00A72F12 /* Next.png in Resources */,
 				5D8B94451C2A267E001C9579 /* thunderlight.mp3 in Resources */,
