@@ -10,6 +10,9 @@
 		4C060F971C235DF500E65966 /* SetReminderPopOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C060F961C235DF500E65966 /* SetReminderPopOverViewController.swift */; };
 		4C618F751C29D0D600104B71 /* reset.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C618F741C29D0D600104B71 /* reset.png */; };
 		4C8C816E1C287F03009C8C60 /* SessionOver.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4C8C816D1C287F03009C8C60 /* SessionOver.m4a */; };
+		5D28B1751C32FC1800A11907 /* mindPowerAffirmation.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5D28B1731C32FC1800A11907 /* mindPowerAffirmation.mp3 */; };
+		5D28B1761C32FC1800A11907 /* MindPowerImg.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D28B1741C32FC1800A11907 /* MindPowerImg.png */; };
+		5D28B1781C3307AE00A11907 /* checkedwhite.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D28B1771C3307AE00A11907 /* checkedwhite.png */; };
 		5D6827451C2467D900374755 /* free_nature_wallpaper_hd_desktop.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D6827441C2467D900374755 /* free_nature_wallpaper_hd_desktop.jpg */; };
 		5D6827491C247AFC00374755 /* Next1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D6827461C247AFC00374755 /* Next1.png */; };
 		5D68274A1C247AFC00374755 /* PlayPause1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D6827471C247AFC00374755 /* PlayPause1.png */; };
@@ -101,6 +104,9 @@
 		4C060F961C235DF500E65966 /* SetReminderPopOverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetReminderPopOverViewController.swift; sourceTree = "<group>"; };
 		4C618F741C29D0D600104B71 /* reset.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reset.png; sourceTree = "<group>"; };
 		4C8C816D1C287F03009C8C60 /* SessionOver.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = SessionOver.m4a; sourceTree = "<group>"; };
+		5D28B1731C32FC1800A11907 /* mindPowerAffirmation.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mindPowerAffirmation.mp3; sourceTree = "<group>"; };
+		5D28B1741C32FC1800A11907 /* MindPowerImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MindPowerImg.png; sourceTree = "<group>"; };
+		5D28B1771C3307AE00A11907 /* checkedwhite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkedwhite.png; sourceTree = "<group>"; };
 		5D6827441C2467D900374755 /* free_nature_wallpaper_hd_desktop.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = free_nature_wallpaper_hd_desktop.jpg; sourceTree = "<group>"; };
 		5D6827461C247AFC00374755 /* Next1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Next1.png; sourceTree = "<group>"; };
 		5D6827471C247AFC00374755 /* PlayPause1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PlayPause1.png; sourceTree = "<group>"; };
@@ -243,6 +249,7 @@
 		5DCF68B01C23336500A72F12 /* FinalGetWell2 */ = {
 			isa = PBXGroup;
 			children = (
+				5D28B1771C3307AE00A11907 /* checkedwhite.png */,
 				AA184A281C233584001A679F /* FinalGetWell2-Bridging-Header.h */,
 				AA184A2C1C233A81001A679F /* Song.swift */,
 				5DCF68B11C23336500A72F12 /* AppDelegate.swift */,
@@ -267,6 +274,7 @@
 		5DCF68FE1C233FD100A72F12 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				5D28B1741C32FC1800A11907 /* MindPowerImg.png */,
 				5D8B946A1C2A36E8001C9579 /* BeachSound.png */,
 				5D8B94511C2A27B8001C9579 /* BetterDaySound.png */,
 				5D8B94521C2A27B8001C9579 /* BirdsSound.png */,
@@ -327,6 +335,7 @@
 		5DCF68FF1C233FE500A72F12 /* Music */ = {
 			isa = PBXGroup;
 			children = (
+				5D28B1731C32FC1800A11907 /* mindPowerAffirmation.mp3 */,
 				5D8B944E1C2A276F001C9579 /* leaveswind.mp3 */,
 				5D8B944C1C2A274A001C9579 /* mytomorrow.mp3 */,
 				5D8B944A1C2A2720001C9579 /* thebeautifulbeach.mp3 */,
@@ -419,6 +428,7 @@
 				5D8B94431C2A264F001C9579 /* gentlewetcreek.mp3 in Resources */,
 				5D8B94681C2A27B8001C9579 /* TomorrowSound.png in Resources */,
 				5D8B944D1C2A274A001C9579 /* mytomorrow.mp3 in Resources */,
+				5D28B1751C32FC1800A11907 /* mindPowerAffirmation.mp3 in Resources */,
 				5DCF68E01C233F5E00A72F12 /* GetWellMediaDetailPage.png in Resources */,
 				AAA99D331C2F7D5200C573A4 /* Positive Affirmations.docx in Resources */,
 				5D8B941F1C29A8FC001C9579 /* checked@1x.png in Resources */,
@@ -474,8 +484,10 @@
 				5D8B94261C29ABAB001C9579 /* testchk.png in Resources */,
 				5D8B945F1C2A27B8001C9579 /* BirdsSound.png in Resources */,
 				4C8C816E1C287F03009C8C60 /* SessionOver.m4a in Resources */,
+				5D28B1781C3307AE00A11907 /* checkedwhite.png in Resources */,
 				5D8B94241C29A8FC001C9579 /* unchecked@3x.png in Resources */,
 				5D6827551C24ABD700374755 /* thumbs-up-icon-black-hi.png in Resources */,
+				5D28B1761C32FC1800A11907 /* MindPowerImg.png in Resources */,
 				5D8B94641C2A27B8001C9579 /* RelaxingSound.png in Resources */,
 				5D8B944B1C2A2720001C9579 /* thebeautifulbeach.mp3 in Resources */,
 				5D8B94411C2A261B001C9579 /* busygreenforest.mp3 in Resources */,

@@ -232,6 +232,9 @@ class MediaPlayerViewController: UIViewController
         songs.append(mindpower)
         currentSong = mindpower
         
+        let mindpowerAff = Song(title: "Mind Power Affirmation", artist: "Benjamin Tissot", filename: "mindPowerAffirmation", albumArtwork: "MindPowerImg")
+        songs.append(mindpowerAff)
+        
         let autum = Song(title: "Fall", artist: "Benjamin Tissot", filename: "leaveswind", albumArtwork: "WindLeavessSound")
         songs.append(autum)
         //currentSong = mindpower
