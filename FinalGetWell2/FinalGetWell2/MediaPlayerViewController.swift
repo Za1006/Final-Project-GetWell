@@ -19,6 +19,7 @@ class MediaPlayerViewController: UIViewController
     @IBOutlet weak var albumArtwork: UIImageView!
     @IBOutlet weak var artistLabel: UILabel!
     @IBOutlet weak var plusButton: UIButton!
+
     //  @IBOutlet var playPauseButton: UIButton!
     
     let avQueuePlayer = AVQueuePlayer()
@@ -350,6 +351,11 @@ class MediaPlayerViewController: UIViewController
         startTimer()
     }
     
+    @IBAction func searchTapped(sender: UIBarButtonItem)
+    {
+        dismissViewControllerAnimated(true, completion: nil)
+        
+    }
     
 
 }
