@@ -9,6 +9,9 @@
 import UIKit
 import MediaPlayer
 import AVFoundation
+//import MapKit
+//import CoreLocation
+//import GoogleMaps
 
 class MediaPlayerViewController: UIViewController
 {
@@ -39,6 +42,10 @@ class MediaPlayerViewController: UIViewController
     
     var timesTapped = 0
     
+//    var placesClient: GMSPlacesClient?
+//    var placePicker:GMSPlacePicker?
+//    let locationManager = CLLocationManager()
+    
 //    var shuffleMode: MPMusicShuffleMode?
     
     var delegate: MainViewController?
@@ -55,6 +62,10 @@ class MediaPlayerViewController: UIViewController
         setupAudioSession()
         configurePlaylist()
         loadCurrentSong()
+        
+        
+//        locationManager.requestWhenInUseAuthorization()
+//        locationManager.requestAlwaysAuthorization()
 
     }
 
@@ -353,6 +364,32 @@ class MediaPlayerViewController: UIViewController
     
     @IBAction func searchTapped(sender: UIBarButtonItem)
     {
+//        let center = CLLocationCoordinate2DMake(28.538336, -81.379234)
+//        let northEast = CLLocationCoordinate2DMake(center.latitude + 0.001, center.longitude + 0.001)
+//        let southWest = CLLocationCoordinate2DMake(center.latitude - 0.001, center.longitude - 0.001)
+//        let viewport = GMSCoordinateBounds(coordinate: northEast, coordinate: southWest)
+//        let config = GMSPlacePickerConfig(viewport: viewport)
+//        
+//        
+//        placePicker = GMSPlacePicker(config: config)
+//        
+//        placePicker?.pickPlaceWithCallback({ (place: GMSPlace?, error: NSError?) -> Void in
+//            if let error = error {
+//                print("Pick Place error: \(error.localizedDescription)")
+//                return
+//            }
+//            
+//            if let place = place {
+//                print("Place name \(place.name)")
+//                print("Place address \(place.formattedAddress)")
+//                print("Place attributions \(place.attributions)")
+//            } else {
+//                print("No place selected")
+//            }
+//        })
+//        
+        
+
         dismissViewControllerAnimated(true, completion: nil)
         
     }
