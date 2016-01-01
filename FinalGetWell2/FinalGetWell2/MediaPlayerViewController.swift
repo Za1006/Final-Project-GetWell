@@ -46,7 +46,7 @@ class MediaPlayerViewController: UIViewController
     {
         super.viewDidLoad()
         
-        plusButton.hidden = true
+       //plusButton.hidden = true
         
         originalCount = 300
         meditationCountdown.text = "5:00"
