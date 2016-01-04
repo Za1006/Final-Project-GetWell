@@ -12,6 +12,8 @@ import AVFoundation
 
 class MediaPlayerViewController: UIViewController
 {
+    
+    var song: Song?
 
     @IBOutlet weak var timeSegmentedControl: UISegmentedControl!
     @IBOutlet var meditationCountdown: UILabel!

@@ -631,7 +631,7 @@
         <!--Media Player View Controller-->
         <scene sceneID="s8v-fl-zDm">
             <objects>
-                <viewController id="KqX-MC-iiQ" customClass="MediaPlayerViewController" customModule="FinalGetWell2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MediaPlayerViewController" id="KqX-MC-iiQ" customClass="MediaPlayerViewController" customModule="FinalGetWell2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="D9u-7Y-a3z"/>
                         <viewControllerLayoutGuide type="bottom" id="hzS-W9-wmI"/>
@@ -817,6 +817,17 @@
                                     <action selector="resetPressed:" destination="KqX-MC-iiQ" eventType="touchUpInside" id="IQk-lA-k3s"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GIC-8O-UIZ">
+                                <rect key="frame" x="254" y="337" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="O5n-hj-zgt"/>
+                                    <constraint firstAttribute="width" secondItem="GIC-8O-UIZ" secondAttribute="height" multiplier="23:15" id="sGT-Gk-19B"/>
+                                </constraints>
+                                <state key="normal" title="Playlist" image="DownArrow2.png"/>
+                                <connections>
+                                    <segue destination="NIw-ZC-1n5" kind="presentation" identifier="PlaylistModalView" id="ycV-iu-kmg"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -829,6 +840,7 @@
                             <constraint firstItem="hPN-rr-9SK" firstAttribute="top" secondItem="wVM-aS-Wbk" secondAttribute="bottom" constant="42" id="318-yv-eQJ"/>
                             <constraint firstItem="hPN-rr-9SK" firstAttribute="centerX" secondItem="fik-pu-Jzf" secondAttribute="centerX" id="33F-l6-Q9m"/>
                             <constraint firstItem="M8g-Na-5Ku" firstAttribute="top" secondItem="hPN-rr-9SK" secondAttribute="bottom" constant="8" id="3zE-3c-nAU"/>
+                            <constraint firstItem="GIC-8O-UIZ" firstAttribute="top" secondItem="fik-pu-Jzf" secondAttribute="bottom" constant="8" id="4NY-jC-zHv"/>
                             <constraint firstItem="fik-pu-Jzf" firstAttribute="top" secondItem="wVM-aS-Wbk" secondAttribute="bottom" id="4Py-qQ-GNx"/>
                             <constraint firstAttribute="trailing" secondItem="2GE-va-WTo" secondAttribute="trailing" id="4os-eb-LeW"/>
                             <constraint firstAttribute="trailing" secondItem="wVM-aS-Wbk" secondAttribute="trailing" id="55d-aV-cvN"/>
@@ -952,6 +964,7 @@
                             <constraint firstItem="2GE-va-WTo" firstAttribute="top" secondItem="D9u-7Y-a3z" secondAttribute="bottom" id="a1h-J5-8cY"/>
                             <constraint firstItem="hPN-rr-9SK" firstAttribute="centerX" secondItem="fik-pu-Jzf" secondAttribute="centerX" id="a65-eY-oTs"/>
                             <constraint firstItem="fik-pu-Jzf" firstAttribute="top" secondItem="wVM-aS-Wbk" secondAttribute="bottom" constant="-1" id="afQ-Wp-EsA"/>
+                            <constraint firstAttribute="trailing" secondItem="GIC-8O-UIZ" secondAttribute="trailing" constant="20" id="ay8-Bt-zN8"/>
                             <constraint firstAttribute="trailing" secondItem="fik-pu-Jzf" secondAttribute="trailing" id="bRS-WG-Ig2"/>
                             <constraint firstItem="fik-pu-Jzf" firstAttribute="top" secondItem="D9u-7Y-a3z" secondAttribute="bottom" constant="266" id="bd3-vH-t4i"/>
                             <constraint firstItem="fik-pu-Jzf" firstAttribute="centerX" secondItem="wVM-aS-Wbk" secondAttribute="centerX" id="be6-TA-QFY"/>
@@ -1572,9 +1585,67 @@
             </objects>
             <point key="canvasLocation" x="1686" y="1755"/>
         </scene>
+        <!--Playlist Table View Controller-->
+        <scene sceneID="Jbo-0u-ON8">
+            <objects>
+                <tableViewController id="NIw-ZC-1n5" customClass="PlaylistTableViewController" customModule="FinalGetWell2" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="white" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="osH-Ka-GiO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.015686274510000001" green="0.87058823529999996" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="separatorColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="RUU-9L-EWn">
+                            <rect key="frame" x="0.0" y="72" width="320" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Dismiss">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="dismissPressed:" destination="NIw-ZC-1n5" eventType="touchUpInside" id="PVz-2k-OG9"/>
+                            </connections>
+                        </button>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="PlaylistModalViewCell" textLabel="P2L-77-6Sk" detailTextLabel="lOF-wF-qC0" style="IBUITableViewCellStyleValue1" id="TXb-xU-rVU">
+                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TXb-xU-rVU" id="k4E-R1-nhr">
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="P2L-77-6Sk">
+                                            <rect key="frame" x="15" y="12" width="32" height="20"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lOF-wF-qC0">
+                                            <rect key="frame" x="243" y="12" width="42" height="20"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.015686274510000001" green="0.87058823529999996" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.015686274510000001" green="0.87058823529999996" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="NIw-ZC-1n5" id="5qN-eD-HZr"/>
+                            <outlet property="delegate" destination="NIw-ZC-1n5" id="Nsd-l2-UnZ"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pCF-uS-a2q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1401" y="2413"/>
+        </scene>
     </scenes>
     <resources>
         <image name="DownArrow.png" width="88" height="87"/>
+        <image name="DownArrow2.png" width="50" height="49"/>
         <image name="GetWellLogin2a.png" width="1200" height="2038"/>
         <image name="GetWellMainPage.png" width="1200" height="1386"/>
         <image name="GetWellSignUpFinal.png" width="1200" height="2038"/>
