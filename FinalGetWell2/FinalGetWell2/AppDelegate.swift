@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+//import GoogleMaps
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -19,9 +20,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     {
        
         application.registerUserNotificationSettings(UIUserNotificationSettings(forTypes: [.Alert, .Sound], categories: nil))
-//        
-//       GMSServices.provideAPIKey ("AIzaSyAiAa8nJaxymnzr0EvEoV2bD38bKo4HGno")
-  Parse.setApplicationId("TaE85IRBTU5SMaF1v1BUfPOOZ0eRNMsbqSWIY3p4",
+       
+//     GMSServices.provideAPIKey ("AIzaSyAiAa8nJaxymnzr0EvEoV2bD38bKo4HGno")
+     Parse.setApplicationId("TaE85IRBTU5SMaF1v1BUfPOOZ0eRNMsbqSWIY3p4",
             clientKey: "tkjIZEXnJhcEOigGzkbr3PSY0eHKRBG0CgKehmD8")
         
 

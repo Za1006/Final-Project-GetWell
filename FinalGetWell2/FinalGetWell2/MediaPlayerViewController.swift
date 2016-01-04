@@ -9,8 +9,8 @@
 import UIKit
 import MediaPlayer
 import AVFoundation
-//import MapKit
-//import CoreLocation
+import MapKit
+import CoreLocation
 //import GoogleMaps
 
 class MediaPlayerViewController: UIViewController
@@ -387,7 +387,7 @@ class MediaPlayerViewController: UIViewController
 //                print("No place selected")
 //            }
 //        })
-//        
+
         
 
         dismissViewControllerAnimated(true, completion: nil)
