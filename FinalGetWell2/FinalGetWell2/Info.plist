@@ -22,16 +22,6 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
-	<key>NSLocationAlwaysInUse</key>
-	<string>Allows app to always running in the background when app is not in use</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Authorization needed to provide location when app is in use</string>
-	<key>UIBackgroundModes</key>
-	<array>
-		<string>audio</string>
-		<string>fetch</string>
-		<string>location</string>
-	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

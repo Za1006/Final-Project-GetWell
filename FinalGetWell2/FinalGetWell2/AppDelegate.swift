@@ -8,7 +8,6 @@
 
 import UIKit
 import CoreData
-//import GoogleMaps
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,11 +17,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool
     {
-       
+        
+//        let pageViewController = UIPageControl.appearance()
+//        pageViewController.pageIndicatorTintColor = UIColor.lightGrayColor()
+//        pageViewController.currentPageIndicatorTintColor = UIColor.greenColor()
+//        pageViewController.backgroundColor = UIColor.blueColor()
+//        
         application.registerUserNotificationSettings(UIUserNotificationSettings(forTypes: [.Alert, .Sound], categories: nil))
-       
-//     GMSServices.provideAPIKey ("AIzaSyAiAa8nJaxymnzr0EvEoV2bD38bKo4HGno")
-     Parse.setApplicationId("TaE85IRBTU5SMaF1v1BUfPOOZ0eRNMsbqSWIY3p4",
+        
+  Parse.setApplicationId("TaE85IRBTU5SMaF1v1BUfPOOZ0eRNMsbqSWIY3p4",
             clientKey: "tkjIZEXnJhcEOigGzkbr3PSY0eHKRBG0CgKehmD8")
         
 

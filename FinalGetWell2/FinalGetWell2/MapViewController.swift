@@ -7,86 +7,86 @@
 //
 
 
-//import UIKit
-//import MapKit
-//
-//class MapViewController: UIViewController, UISearchBarDelegate
-//{
-//    var searchController:UISearchController!
-//    var annotation:MKAnnotation!
-//    var localSearchRequest:MKLocalSearchRequest!
-//    var localSearch:MKLocalSearch!
-//    var localSearchResponse:MKLocalSearchResponse!
-//    var error:NSError!
-//    var pointAnnotation:MKPointAnnotation!
-//    var pinAnnotationView:MKPinAnnotationView!
-//    
-//    @IBAction func searchBar(sender: AnyObject)
-//    {
-//        searchController = UISearchController(searchResultsController: nil)
-//        searchController.hidesNavigationBarDuringPresentation = false
-//        self.searchController.searchBar.delegate = self
-//        presentViewController(searchController, animated: true, completion: nil)
-//    }
-//    
-//    @IBOutlet weak var mapView: MKMapView!
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//        // Do any additional setup after loading the view, typically from a nib.
-//        
-//        // Init the zoom level
-//        let coordinate:CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: 28.538336, longitude: -81.379234)
-//        let span = MKCoordinateSpanMake(100, 80)
-//        let region = MKCoordinateRegionMake(coordinate, span)
-//        self.mapView.setRegion(region, animated: true)
-//        
-//    }
-//    
-//    override func didReceiveMemoryWarning() {
-//        super.didReceiveMemoryWarning()
-//        // Dispose of any resources that can be recreated.
-//    }
-//    
-//    func searchBarSearchButtonClicked(searchBar: UISearchBar){
-//        //1
-//        searchBar.resignFirstResponder()
-//        dismissViewControllerAnimated(true, completion: nil)
-//        if self.mapView.annotations.count != 0{
-//            annotation = self.mapView.annotations[0]
-//            self.mapView.removeAnnotation(annotation)
-//        }
-//        //2
-//        localSearchRequest = MKLocalSearchRequest()
-//        localSearchRequest.naturalLanguageQuery = searchBar.text
-//        localSearch = MKLocalSearch(request: localSearchRequest)
-//        localSearch.startWithCompletionHandler { (localSearchResponse, error) -> Void in
-//            
-//            if localSearchResponse == nil{
-//                let alertController = UIAlertController(title: nil, message: "Place Not Found", preferredStyle: UIAlertControllerStyle.Alert)
-//                alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default, handler: nil))
-//                self.presentViewController(alertController, animated: true, completion: nil)
-//                return
-//            }
-//            //3
-//            self.pointAnnotation = MKPointAnnotation()
-//            self.pointAnnotation.title = searchBar.text
-//            self.pointAnnotation.coordinate = CLLocationCoordinate2D(latitude: localSearchResponse!.boundingRegion.center.latitude, longitude:     localSearchResponse!.boundingRegion.center.longitude)
-//            
-//            
-//            self.pinAnnotationView = MKPinAnnotationView(annotation: self.pointAnnotation, reuseIdentifier: nil)
-//            self.mapView.centerCoordinate = self.pointAnnotation.coordinate
-//            self.mapView.addAnnotation(self.pinAnnotationView.annotation!)
-//        }
-//    }
-//    
-//    @IBAction func backPressed(sender: UIBarButtonItem)
-//    {
-//        dismissViewControllerAnimated(true, completion: nil)
-//        //        self.navigationController?.performSegueWithIdentifier("unwindFromLogin", sender: self)
-//    }
-//
-//    
-//    
-//    
-//}
-//
+import UIKit
+import MapKit
+
+class MapViewController: UIViewController, UISearchBarDelegate
+{
+    var searchController:UISearchController!
+    var annotation:MKAnnotation!
+    var localSearchRequest:MKLocalSearchRequest!
+    var localSearch:MKLocalSearch!
+    var localSearchResponse:MKLocalSearchResponse!
+    var error:NSError!
+    var pointAnnotation:MKPointAnnotation!
+    var pinAnnotationView:MKPinAnnotationView!
+    
+    @IBAction func searchBar(sender: AnyObject)
+    {
+        searchController = UISearchController(searchResultsController: nil)
+        searchController.hidesNavigationBarDuringPresentation = false
+        self.searchController.searchBar.delegate = self
+        presentViewController(searchController, animated: true, completion: nil)
+    }
+    
+    @IBOutlet weak var mapView: MKMapView!
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+        
+        // Init the zoom level
+        let coordinate:CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: 28.538336, longitude: -81.379234)
+        let span = MKCoordinateSpanMake(100, 80)
+        let region = MKCoordinateRegionMake(coordinate, span)
+        self.mapView.setRegion(region, animated: true)
+        
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    func searchBarSearchButtonClicked(searchBar: UISearchBar){
+        //1
+        searchBar.resignFirstResponder()
+        dismissViewControllerAnimated(true, completion: nil)
+        if self.mapView.annotations.count != 0{
+            annotation = self.mapView.annotations[0]
+            self.mapView.removeAnnotation(annotation)
+        }
+        //2
+        localSearchRequest = MKLocalSearchRequest()
+        localSearchRequest.naturalLanguageQuery = searchBar.text
+        localSearch = MKLocalSearch(request: localSearchRequest)
+        localSearch.startWithCompletionHandler { (localSearchResponse, error) -> Void in
+            
+            if localSearchResponse == nil{
+                let alertController = UIAlertController(title: nil, message: "Place Not Found", preferredStyle: UIAlertControllerStyle.Alert)
+                alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default, handler: nil))
+                self.presentViewController(alertController, animated: true, completion: nil)
+                return
+            }
+            //3
+            self.pointAnnotation = MKPointAnnotation()
+            self.pointAnnotation.title = searchBar.text
+            self.pointAnnotation.coordinate = CLLocationCoordinate2D(latitude: localSearchResponse!.boundingRegion.center.latitude, longitude:     localSearchResponse!.boundingRegion.center.longitude)
+            
+            
+            self.pinAnnotationView = MKPinAnnotationView(annotation: self.pointAnnotation, reuseIdentifier: nil)
+            self.mapView.centerCoordinate = self.pointAnnotation.coordinate
+            self.mapView.addAnnotation(self.pinAnnotationView.annotation!)
+        }
+    }
+    
+    @IBAction func backPressed(sender: UIBarButtonItem)
+    {
+        dismissViewControllerAnimated(true, completion: nil)
+        //        self.navigationController?.performSegueWithIdentifier("unwindFromLogin", sender: self)
+    }
+
+    
+    
+    
+}
+
