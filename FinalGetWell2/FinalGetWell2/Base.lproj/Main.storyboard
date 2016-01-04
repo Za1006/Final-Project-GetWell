@@ -825,7 +825,7 @@
                                 </constraints>
                                 <state key="normal" title="Playlist" image="DownArrow2.png"/>
                                 <connections>
-                                    <segue destination="6wq-l4-FTH" kind="show" identifier="PlaylistModalView" id="ycV-iu-kmg"/>
+                                    <segue destination="6wq-l4-FTH" kind="presentation" identifier="PlaylistModalView" modalTransitionStyle="crossDissolve" id="ycV-iu-kmg"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1585,7 +1585,7 @@
             </objects>
             <point key="canvasLocation" x="1686" y="1755"/>
         </scene>
-        <!--Playlist Table View Controller-->
+        <!--Songs-->
         <scene sceneID="Jbo-0u-ON8">
             <objects>
                 <tableViewController id="NIw-ZC-1n5" customClass="PlaylistTableViewController" customModule="FinalGetWell2" customModuleProvider="target" sceneMemberID="viewController">
@@ -1620,19 +1620,22 @@
                             <outlet property="delegate" destination="NIw-ZC-1n5" id="Nsd-l2-UnZ"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="MGN-Yx-Rak">
-                        <nil key="title"/>
-                        <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1RZ-zi-Uu4">
-                            <rect key="frame" x="143" y="7" width="128" height="30"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <state key="normal" title="Dismiss">
-                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                            </state>
-                            <connections>
-                                <action selector="dismissPressed:" destination="NIw-ZC-1n5" eventType="touchUpInside" id="Wzx-oP-dqa"/>
-                            </connections>
-                        </button>
-                    </navigationItem>
+                    <toolbarItems>
+                        <barButtonItem style="plain" id="Ceg-p7-GWN">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1RZ-zi-Uu4">
+                                <rect key="frame" x="143" y="7" width="128" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Dismiss">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="dismissPressed:" destination="NIw-ZC-1n5" eventType="touchUpInside" id="Wzx-oP-dqa"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" title="Songs" id="MGN-Yx-Rak"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pCF-uS-a2q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

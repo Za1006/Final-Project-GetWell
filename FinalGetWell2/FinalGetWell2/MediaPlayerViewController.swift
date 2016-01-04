@@ -10,6 +10,8 @@ import UIKit
 import MediaPlayer
 import AVFoundation
 
+var timerCount = 0
+
 class MediaPlayerViewController: UIViewController
 {
     
@@ -30,7 +32,6 @@ class MediaPlayerViewController: UIViewController
     
     var timer: NSTimer?
     var originalCount = 0
-    var timerCount = 0
     
     var whichSegment = 0
     
@@ -444,10 +445,14 @@ class MediaPlayerViewController: UIViewController
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
     {
-        if let playlistVC = segue.destinationViewController as? PlaylistTableViewController
+        if let nav = segue.destinationViewController as? UINavigationController
         {
-            playlistVC.parent = self
+            if let playlistVC = nav.topViewController as? PlaylistTableViewController
+            {
+                playlistVC.parent = self
+            }
         }
+
     }
 
 }

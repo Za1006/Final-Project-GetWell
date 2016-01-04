@@ -60,9 +60,13 @@ class PlaylistTableViewController: UITableViewController
     {
         tableview.deselectRowAtIndexPath(indexPath, animated: true)
         
+        timerCount = timerCount + 1
+        
         let selectedSong = songs[indexPath.row]
         parent?.song = selectedSong
+        parent?.currentSong = selectedSong
         parent?.loadCurrentSong()
+        parent?.startTimer()
         parent?.togglePlayback(true)
     
         navigationController?.dismissViewControllerAnimated(true, completion: nil)
