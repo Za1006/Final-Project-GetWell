@@ -21,7 +21,8 @@ class MediaPlayerViewController: UIViewController
     @IBOutlet weak var plusButton: UIButton!
     //  @IBOutlet var playPauseButton: UIButton!
     
-    let avQueuePlayer = AVQueuePlayer()
+//    let avQueuePlayer = AVQueuePlayer()
+    var player = AVQueuePlayer()
     var songs = Array<Song>()
     var currentSong: Song?
     var nowPlaying: Bool = false
@@ -54,9 +55,33 @@ class MediaPlayerViewController: UIViewController
         setupAudioSession()
         configurePlaylist()
         loadCurrentSong()
-
+    
+      do
+      {
+        try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayAndRecord, withOptions:.DefaultToSpeaker)
+        }
+      catch let error as NSError
+      {
+        print("Failed to set audio session category. Error: \(error)")
+        }
+//        let songNames = ["betterdaysahead", "mindPowerAffirmation", "leaveswind", "mytomorrow", "thebeautifulbeach", "rainy", "coldsnowstorm", "rainOntheRooftop", "relaxingnovember", "heavywetrain", "busygreenforest", "gentlewetcreek", "thunderlight", "littlebirds" ]
+//        
+//        let songs = songNames.map {AVPlayerItem(URL: NSBundle.mainBundle().URLForResource($0 , withExtension: "mp3")!)}
+//        player = AVQueuePlayer(items: songs)
+//        player.actionAtItemEnd = .Advance
+//        player.addObserver(self, forKeyPath: "currentItem", options: [.New, .Initial], context: nil)
+//        
     }
-
+    
+    
+    override func observeValueForKeyPath(keyPath: String?, ofObject object: AnyObject?, change: [String : AnyObject]?, context: UnsafeMutablePointer<Void>)
+    {
+        if keyPath == "currentItem", let player = object as? AVPlayer, currentItem = player.currentItem?.asset as? AVURLAsset
+        {
+            songTitleLabel.text = currentItem.URL.lastPathComponent ?? "Unknown"
+        
+        }
+    }
     override func didReceiveMemoryWarning()
     {
         super.didReceiveMemoryWarning()
@@ -215,7 +240,7 @@ class MediaPlayerViewController: UIViewController
         timesTapped = timesTapped + 1
         if timesTapped % 2 == 1
         {
-            avQueuePlayer.seekToTime(CMTimeMakeWithSeconds(0.0, 1))
+            player.seekToTime(CMTimeMakeWithSeconds(0.0, 1))
         }
         else if timesTapped % 2 == 0
         {
@@ -287,11 +312,11 @@ class MediaPlayerViewController: UIViewController
     
     func loadCurrentSong()
     {
-        avQueuePlayer.removeAllItems()
+        player.removeAllItems()
         if let song = currentSong
         {
             song.playerItem.seekToTime(CMTimeMakeWithSeconds(0.0, 1))
-            avQueuePlayer.insertItem(song.playerItem, afterItem: nil)
+            player.insertItem(song.playerItem, afterItem: nil)
             songTitleLabel.text = song.title
 //            artistLabel.text? = song.artist
             albumArtwork.image = UIImage(named: song.albumArtworkName)
@@ -326,12 +351,12 @@ class MediaPlayerViewController: UIViewController
         if play
         {
             //            playPauseButton.setImage(UIImage(named: "Pause"), forState: UIControlState.Normal)
-            avQueuePlayer.play()
+            player.play()
         }
         else
         {
             //            playPauseButton.setImage(UIImage(named: "Play"), forState: UIControlState.Normal)
-            avQueuePlayer.pause()
+            player.pause()
         }
     }
     
