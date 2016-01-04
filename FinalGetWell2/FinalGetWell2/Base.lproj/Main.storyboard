@@ -587,13 +587,13 @@
                                 <exclude reference="S7G-Eo-gpK"/>
                                 <exclude reference="MHU-3H-vFj"/>
                                 <exclude reference="bdG-bi-4BP"/>
+                                <exclude reference="SDn-cc-Fg2"/>
+                                <exclude reference="qTl-g2-qgw"/>
+                                <exclude reference="j1U-OT-6m2"/>
                                 <exclude reference="56y-wG-gRL"/>
                                 <exclude reference="8pf-tW-6ox"/>
                                 <exclude reference="JUQ-0Z-zEd"/>
                                 <exclude reference="deY-1b-Ifm"/>
-                                <exclude reference="j1U-OT-6m2"/>
-                                <exclude reference="SDn-cc-Fg2"/>
-                                <exclude reference="qTl-g2-qgw"/>
                             </mask>
                         </variation>
                     </view>
@@ -1446,7 +1446,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IMb-Bj-yLU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2617.5" y="1754.5"/>
+            <point key="canvasLocation" x="2189.5" y="1786.5"/>
         </scene>
         <!--Set Reminder Pop Over View Controller-->
         <scene sceneID="zTW-JE-MKt">
@@ -1570,7 +1570,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h6H-Cu-eok" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1870.5" y="1705.5"/>
+            <point key="canvasLocation" x="1686" y="1755"/>
         </scene>
     </scenes>
     <resources>
