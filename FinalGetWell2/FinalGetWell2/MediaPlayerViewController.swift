@@ -240,51 +240,132 @@ class MediaPlayerViewController: UIViewController
     
     func configurePlaylist()
     {
-        let mindpower = Song(title: "Mind Power", artist: "Benjamin Tissot", filename: "betterdaysahead", albumArtwork: "BetterDaySound")
-        songs.append(mindpower)
-        currentSong = mindpower
+        let mindpowerDict: NSDictionary = [
+            "title": "Mind Power",
+            "artist" : "Benjamin Tissot",
+            "filename" : "betterdaysahead",
+            "albumArtwork" : "BetterDaySound"
+        ]
+        let mindpowerSong = Song(dictionary: mindpowerDict)
+        songs.append(mindpowerSong)
+        currentSong = mindpowerSong
         
-        let mindpowerAff = Song(title: "Mind Power Affirmation", artist: "Benjamin Tissot", filename: "mindPowerAffirmation", albumArtwork: "MindPowerImg")
+        let mindpowerAffDict: NSDictionary = [
+            "title": "Mind Power Affirmation",
+            "artist": "Benjamin Tissot",
+            "filename": "mindPowerAffirmation",
+            "albumArtwork": "MindPowerImg"
+        ]
+        let mindpowerAff = Song(dictionary: mindpowerAffDict)
         songs.append(mindpowerAff)
         
-        let autum = Song(title: "Fall", artist: "Benjamin Tissot", filename: "leaveswind", albumArtwork: "WindLeavessSound")
+        let autumDict: NSDictionary = [
+            "title": "Fall",
+            "artist": "Benjamin Tissot",
+            "filename": "leaveswind",
+            "albumArtwork": "WindLeavessSound"
+        ]
+        let autum = Song(dictionary: autumDict)
         songs.append(autum)
-        //currentSong = mindpower
 
-        let tomorrow = Song(title: "The Future", artist: "Benjamin Tissot", filename: "mytomorrow", albumArtwork: "TomorrowSound")
+        let tomorrowDict: NSDictionary = [
+            "title": "The Future",
+            "artist": "Benjamin Tissot",
+            "filename": "mytomorrow",
+            "albumArtwork": "TomorrowSound"
+        ]
+        let tomorrow = Song(dictionary: tomorrowDict)
         songs.append(tomorrow)
         
-        let beach = Song(title: "Sea Shore", artist: "Benjamin Tissot", filename: "thebeautifulbeach", albumArtwork: "BeachSound")
+        let beachDict: NSDictionary = [
+            "title": "Sea Shore",
+            "artist": "Benjamin Tissot",
+            "filename": "thebeautifulbeach",
+            "albumArtwork": "BeachSound"
+        ]
+        let beach = Song(dictionary: beachDict)
         songs.append(beach)
         
-        let rain = Song(title: "Rain", artist: "Benjamin Tissot", filename: "rainy", albumArtwork: "RainSound")
+        let rainDict: NSDictionary = [
+            "title": "Rain",
+            "artist": "Benjamin Tissot",
+            "filename": "rainy",
+            "albumArtwork": "RainSound"
+        ]
+        let rain = Song(dictionary: rainDict)
         songs.append(rain)
         
-        let snow = Song(title: "Winter", artist: "Benjamin Tissot", filename: "coldsnowstorm", albumArtwork: "SnowStormSound")
+        let snowDict: NSDictionary = [
+            "title": "Winter",
+            "artist": "Benjamin Tissot",
+            "filename": "coldsnowstorm",
+            "albumArtwork": "SnowStormSound"
+        ]
+        let snow = Song(dictionary: snowDict)
         songs.append(snow)
         
-        let roof = Song(title: "Roof Top", artist: "Benjamin Tissot", filename: "rainOntheRooftop", albumArtwork: "RoofTopSound")
+        let roofDict: NSDictionary = [
+            "title": "Roof Top",
+            "artist": "Benjamin Tissot",
+            "filename": "rainOntheRooftop",
+            "albumArtwork": "RoofTopSound"
+        ]
+        let roof = Song(dictionary: roofDict)
         songs.append(roof)
         
-        let relax = Song(title: "Calm", artist: "Benjamin Tissot", filename: "relaxingnovember", albumArtwork: "RelaxingSound")
+        let relaxDict: NSDictionary = [
+            "title": "Calm",
+            "artist": "Benjamin Tissot",
+            "filename": "relaxingnovember",
+            "albumArtwork": "RelaxingSound"
+        ]
+        let relax = Song(dictionary: relaxDict)
         songs.append(relax)
         
-        let pouring = Song(title: "Drench", artist: "Benjamin Tissot", filename: "heavywetrain", albumArtwork: "HeavyRainSound")
+        let pouringDict: NSDictionary = [
+            "title": "Drench",
+            "artist": "Benjamin Tissot",
+            "filename": "heavywetrain",
+            "albumArtwork": "HeavyRainSound"
+        ]
+        let pouring = Song(dictionary: pouringDict)
         songs.append(pouring)
         
-        let lush = Song(title: "Lush", artist: "Benjamin Tissot", filename: "busygreenforest", albumArtwork: "ForestSound")
+        let lushDict: NSDictionary = [
+            "title": "Lush",
+            "artist": "Benjamin Tissot",
+            "filename": "busygreenforest",
+            "albumArtwork": "ForestSound"
+        ]
+        let lush = Song(dictionary: lushDict)
         songs.append(lush)
         
-        let stream = Song(title: "Soft Creek", artist: "Benjamin Tissot", filename: "gentlewetcreek", albumArtwork: "CreekSound")
+        let streamDict: NSDictionary = [
+            "title": "Soft Creek",
+            "artist": "Benjamin Tissot",
+            "filename": "gentlewetcreek",
+            "albumArtwork": "CreekSound"
+        ]
+        let stream = Song(dictionary: streamDict)
         songs.append(stream)
         
-        let heaven = Song(title: "Rage", artist: "Benjamin Tissot", filename: "thunderlight", albumArtwork: "ThunderSound")
+        let heavenDict: NSDictionary = [
+            "title": "Rage",
+            "artist": "Benjamin Tissot",
+            "filename": "thunderlight",
+            "albumArtwork": "ThunderSound"
+        ]
+        let heaven = Song(dictionary: heavenDict)
         songs.append(heaven)
         
-        let tweets = Song(title: "Happy", artist: "Benjamin Tissot", filename: "littlebirds", albumArtwork: "BirdsSound")
+        let tweetsDict: NSDictionary = [
+            "title": "Happy",
+            "artist": "Benjamin Tissot",
+            "filename": "littlebirds",
+            "albumArtwork": "BirdsSound"
+        ]
+        let tweets = Song(dictionary: tweetsDict)
         songs.append(tweets)
-        
-        
     }
     
     func loadCurrentSong()
@@ -297,7 +378,6 @@ class MediaPlayerViewController: UIViewController
             songTitleLabel.text = song.title
 //            artistLabel.text? = song.artist
             albumArtwork.image = UIImage(named: song.albumArtworkName)
-
         }
     }
     
@@ -362,6 +442,12 @@ class MediaPlayerViewController: UIViewController
         startTimer()
     }
     
-    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
+    {
+        if let playlistVC = segue.destinationViewController as? PlaylistTableViewController
+        {
+            playlistVC.parent = self
+        }
+    }
 
 }

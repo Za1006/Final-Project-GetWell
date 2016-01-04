@@ -637,14 +637,14 @@
                         <viewControllerLayoutGuide type="bottom" id="hzS-W9-wmI"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="nSk-mS-qSA">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newMediaSkin.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="2GE-va-WTo">
-                                <rect key="frame" x="-4" y="64" width="328" height="504"/>
+                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wVM-aS-Wbk">
-                                <rect key="frame" x="0.0" y="64" width="320" height="229"/>
+                                <rect key="frame" x="0.0" y="64" width="414" height="296"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="600" id="4el-8A-sHy"/>
                                     <constraint firstAttribute="height" constant="247" id="HNu-QS-Smh"/>
@@ -678,7 +678,7 @@
                                 </variation>
                             </imageView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="fik-pu-Jzf">
-                                <rect key="frame" x="0.0" y="301" width="320" height="29"/>
+                                <rect key="frame" x="0.0" y="368" width="414" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="OfG-tq-Kf8"/>
                                     <constraint firstAttribute="width" constant="359" id="kFT-Xr-Yx1"/>
@@ -715,7 +715,7 @@
                                 </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TIMER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hPN-rr-9SK">
-                                <rect key="frame" x="134" y="335" width="53" height="25"/>
+                                <rect key="frame" x="181" y="402" width="53" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="aes-Gd-F36"/>
                                     <constraint firstAttribute="width" constant="302" id="rJ3-nQ-XgD"/>
@@ -737,7 +737,7 @@
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="05:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M8g-Na-5Ku">
-                                <rect key="frame" x="134" y="358" width="54" height="28"/>
+                                <rect key="frame" x="181" y="425" width="54" height="28"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="54" id="41o-hf-5S7"/>
                                     <constraint firstAttribute="width" constant="54" id="DLB-DA-wq9"/>
@@ -767,7 +767,7 @@
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Song Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qna-FH-2Bg">
-                                <rect key="frame" x="115" y="512" width="92" height="28"/>
+                                <rect key="frame" x="163" y="579" width="92" height="28"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="87" id="n2m-NB-7Er"/>
                                     <constraint firstAttribute="height" constant="26" id="yKM-TL-RIc"/>
@@ -789,28 +789,28 @@
                                 </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nmf-NF-XH3">
-                                <rect key="frame" x="138" y="451" width="45" height="45"/>
+                                <rect key="frame" x="186" y="518" width="45" height="45"/>
                                 <state key="normal" image="PlayB"/>
                                 <connections>
                                     <action selector="playPauseTapped:" destination="KqX-MC-iiQ" eventType="touchUpInside" id="Zem-lr-5pg"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y6D-cX-78S">
-                                <rect key="frame" x="223" y="451" width="45" height="45"/>
+                                <rect key="frame" x="271" y="518" width="45" height="45"/>
                                 <state key="normal" image="NextB"/>
                                 <connections>
                                     <action selector="skipForwardTapped:" destination="KqX-MC-iiQ" eventType="touchUpInside" id="v6A-hX-1bq"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L3s-fU-7FT">
-                                <rect key="frame" x="53" y="451" width="45" height="45"/>
+                                <rect key="frame" x="101" y="518" width="45" height="45"/>
                                 <state key="normal" image="Prev"/>
                                 <connections>
                                     <action selector="skipBackTapped:" destination="KqX-MC-iiQ" eventType="touchUpInside" id="YRP-Pe-SXv"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5iS-jU-J5n">
-                                <rect key="frame" x="143" y="401" width="35" height="35"/>
+                                <rect key="frame" x="191" y="468" width="35" height="35"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <state key="normal" image="Reset"/>
                                 <connections>
@@ -818,14 +818,14 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GIC-8O-UIZ">
-                                <rect key="frame" x="254" y="337" width="46" height="30"/>
+                                <rect key="frame" x="348" y="404" width="46" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="O5n-hj-zgt"/>
                                     <constraint firstAttribute="width" secondItem="GIC-8O-UIZ" secondAttribute="height" multiplier="23:15" id="sGT-Gk-19B"/>
                                 </constraints>
                                 <state key="normal" title="Playlist" image="DownArrow2.png"/>
                                 <connections>
-                                    <segue destination="NIw-ZC-1n5" kind="presentation" identifier="PlaylistModalView" id="ycV-iu-kmg"/>
+                                    <segue destination="6wq-l4-FTH" kind="show" identifier="PlaylistModalView" id="ycV-iu-kmg"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1340,7 +1340,7 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="albumArtwork" destination="wVM-aS-Wbk" id="djV-VD-x7W"/>
                         <outlet property="meditationCountdown" destination="M8g-Na-5Ku" id="syj-jg-iic"/>
@@ -1459,7 +1459,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IMb-Bj-yLU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2189.5" y="1786.5"/>
+            <point key="canvasLocation" x="2721.5" y="1786.5"/>
         </scene>
         <!--Set Reminder Pop Over View Controller-->
         <scene sceneID="zTW-JE-MKt">
@@ -1590,40 +1590,23 @@
             <objects>
                 <tableViewController id="NIw-ZC-1n5" customClass="PlaylistTableViewController" customModule="FinalGetWell2" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="white" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="osH-Ka-GiO">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.015686274510000001" green="0.87058823529999996" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="separatorColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="RUU-9L-EWn">
-                            <rect key="frame" x="0.0" y="72" width="320" height="44"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <state key="normal" title="Dismiss">
-                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                            </state>
-                            <connections>
-                                <action selector="dismissPressed:" destination="NIw-ZC-1n5" eventType="touchUpInside" id="PVz-2k-OG9"/>
-                            </connections>
-                        </button>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="PlaylistModalViewCell" textLabel="P2L-77-6Sk" detailTextLabel="lOF-wF-qC0" style="IBUITableViewCellStyleValue1" id="TXb-xU-rVU">
-                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="PlaylistModalViewCell" textLabel="P2L-77-6Sk" style="IBUITableViewCellStyleDefault" id="TXb-xU-rVU">
+                                <rect key="frame" x="0.0" y="92" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TXb-xU-rVU" id="k4E-R1-nhr">
-                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="381" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="P2L-77-6Sk">
-                                            <rect key="frame" x="15" y="12" width="32" height="20"/>
+                                            <rect key="frame" x="15" y="0.0" width="364" height="43"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lOF-wF-qC0">
-                                            <rect key="frame" x="243" y="12" width="42" height="20"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                            <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -1637,10 +1620,41 @@
                             <outlet property="delegate" destination="NIw-ZC-1n5" id="Nsd-l2-UnZ"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="MGN-Yx-Rak">
+                        <nil key="title"/>
+                        <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1RZ-zi-Uu4">
+                            <rect key="frame" x="143" y="7" width="128" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Dismiss">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="dismissPressed:" destination="NIw-ZC-1n5" eventType="touchUpInside" id="Wzx-oP-dqa"/>
+                            </connections>
+                        </button>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pCF-uS-a2q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1401" y="2413"/>
+            <point key="canvasLocation" x="1566" y="2535"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="QxO-Jd-Pk2">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6wq-l4-FTH" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nsb-mL-ViC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="NIw-ZC-1n5" kind="relationship" relationship="rootViewController" id="0JY-AK-wrY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sXH-V9-a6j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1098" y="2535"/>
         </scene>
     </scenes>
     <resources>

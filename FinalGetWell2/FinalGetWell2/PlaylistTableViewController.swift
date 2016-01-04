@@ -12,6 +12,7 @@ class PlaylistTableViewController: UITableViewController
 {
     
     var songs = Array<Song>()
+    var parent: MediaPlayerViewController?
 
     override func viewDidLoad()
     {
@@ -23,7 +24,7 @@ class PlaylistTableViewController: UITableViewController
          self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-         self.navigationItem.rightBarButtonItem = self.editButtonItem()
+//         self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
 
     override func didReceiveMemoryWarning()
@@ -60,9 +61,11 @@ class PlaylistTableViewController: UITableViewController
         tableview.deselectRowAtIndexPath(indexPath, animated: true)
         
         let selectedSong = songs[indexPath.row]
-        let mediaVC = storyboard?.instantiateViewControllerWithIdentifier("MediaPlayerViewController") as! MediaPlayerViewController
-        mediaVC.song = selectedSong
-        navigationController?.pushViewController(mediaVC, animated: true)
+        parent?.song = selectedSong
+        parent?.loadCurrentSong()
+        parent?.togglePlayback(true)
+    
+        navigationController?.dismissViewControllerAnimated(true, completion: nil)
     }
     
     @IBAction func dismissPressed(sender: UIButton!)
@@ -72,40 +75,41 @@ class PlaylistTableViewController: UITableViewController
     
     
 
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        if editingStyle == .Delete {
-            // Delete the row from the data source
-            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-        } else if editingStyle == .Insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(tableView: UITableView, moveRowAtIndexPath fromIndexPath: NSIndexPath, toIndexPath: NSIndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
+    
+//    // Override to support conditional editing of the table view.
+//    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+//        // Return false if you do not want the specified item to be editable.
+//        return false
+//    }
+//
+//
+//    /*
+//    // Override to support editing the table view.
+//    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+//        if editingStyle == .Delete {
+//            // Delete the row from the data source
+//            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+//        } else if editingStyle == .Insert {
+//            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+//        }    
+//    }
+//    */
+//
+//    
+//    // Override to support rearranging the table view.
+//    override func tableView(tableView: UITableView, moveRowAtIndexPath fromIndexPath: NSIndexPath, toIndexPath: NSIndexPath)
+//    {
+//
+//    }
+//    
+//
+//    /*
+//    // Override to support conditional rearranging of the table view.
+//    override func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+//        // Return false if you do not want the item to be re-orderable.
+//        return true
+//    }
+//    */
 
     /*
     // MARK: - Navigation
@@ -125,15 +129,16 @@ class PlaylistTableViewController: UITableViewController
         {
             let filePath = NSBundle.mainBundle().pathForResource("Songs", ofType: "json")
             let dataFromFile = NSData(contentsOfFile: filePath!)
-            let songData: NSArray! = try NSJSONSerialization.JSONObjectWithData(dataFromFile!, options: []) as! NSArray
+            let songData: NSArray! = try NSJSONSerialization.JSONObjectWithData(dataFromFile!, options: []) as! [NSDictionary]
             for songDictionary in songData
             {
-                let aSong = Song(songDictionary: songDictionary as! NSDictionary)
+//                let aSong = Song(songDictionary: songDictionary as! NSDictionary)
+                let song = Song(dictionary: songDictionary as! NSDictionary)
                 
-                songs.append(aSong)
+                songs.append(song)
             }
             songs.sortInPlace({ $0.title < $1.title})
-            songs.sortInPlace({ $0.artist < $1.artist})
+//            songs.sortInPlace({ $0.artist < $1.artist})
 
         }
         catch let error as NSError

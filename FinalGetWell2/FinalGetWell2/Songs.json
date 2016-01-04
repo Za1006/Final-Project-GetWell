@@ -1,12 +1,86 @@
 [
  {
- "title": "Thor",
+ "title": "Mind Power",
  "artist": "Benjamin Tissot",
- "powers": "Superhuman strength, endurance, and longevity; abilities via Mjolnir: dimensional transportation; electric manipulation; flight; weather manipulation"
+ "filename": "betterdaysahead",
+ "albumArtwork" : "BetterDaySound"
  },
  {
  "title": "Mind Power Affirmation",
  "artist": "Benjamin Tissot",
- "powers": "Genius-level intellect; highly proficient scientist, engineer, and businessperson; via powered armored suit: superhuman strength and durability; supersonic flight at Mach 3; energy repulsors; missiles; regenerative life support (sometimes powered by solar power)"
+ "filename": "mindPowerAffirmation",
+ "albumArtwork": "MindPowerImg"
+ },
+ {
+ "title": "Fall",
+ "artist": "Benjamin Tissot",
+ "filename": "leaveswind",
+ "albumArtwork": "WindLeavessSound"
+ },
+ {
+ "title": "The Future",
+ "artist": "Benjamin Tissot",
+ "filename": "mytomorrow",
+ "albumArtwork": "TomorrowSound"
+ },
+ {
+ "title": "Sea Shore",
+ "artist": "Benjamin Tissot",
+ "filename": "thebeautifulbeach",
+ "albumArtwork": "BeachSound"
+ },
+ {
+ "title": "Rain",
+ "artist": "Benjamin Tissot",
+ "filename": "rainy",
+ "albumArtwork": "RainSound"
+ },
+ {
+ "title": "Winter",
+ "artist": "Benjamin Tissot",
+ "filename": "coldsnowstorm",
+ "albumArtwork": "SnowStormSound"
+ },
+ {
+ "title": "Roof Top",
+ "artist": "Benjamin Tissot",
+ "filename": "rainOntheRooftop",
+ "albumArtwork": "RoofTopSound"
+ },
+ {
+ "title": "Calm",
+ "artist": "Benjamin Tissot",
+ "filename": "relaxingnovember",
+ "albumArtwork": "RelaxingSound"
+ },
+ {
+ "title": "Drench",
+ "artist": "Benjamin Tissot",
+ "filename": "heavywetrain",
+ "albumArtwork": "HeavyRainSound"
+ },
+ {
+ "title": "Lush",
+ "artist": "Benjamin Tissot",
+ "filename": "busygreenforest",
+ "albumArtwork": "ForestSound"
+ },
+ {
+ "title": "Soft Creek",
+ "artist": "Benjamin Tissot",
+ "filename": "gentlewetcreek",
+ "albumArtwork": "CreekSound"
+ },
+ {
+ "title": "Rage",
+ "artist": "Benjamin Tissot",
+ "filename": "thunderlight",
+ "albumArtwork": "ThunderSound"
+ },
+ {
+ "title": "Happy",
+ "artist": "Benjamin Tissot",
+ "filename": "littlebirds",
+ "albumArtwork": "BirdsSound"
  }
 ]
