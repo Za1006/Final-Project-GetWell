@@ -109,7 +109,7 @@
 		AA184ADC1C272D3C001A679F /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA184ADB1C272D3C001A679F /* PageViewController.swift */; };
 		AA184AE21C272F55001A679F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA184AE11C272F55001A679F /* ViewController.swift */; };
 		AAA99D331C2F7D5200C573A4 /* Positive Affirmations.docx in Resources */ = {isa = PBXBuildFile; fileRef = AAA99D321C2F7D5200C573A4 /* Positive Affirmations.docx */; };
-		BD9EBEDF19FE0925AC376D40 /* libPods-FinalGetWell2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3517483E6AD61A0B82488FF0 /* libPods-FinalGetWell2.a */; };
+		BD9EBEDF19FE0925AC376D40 /* libPods-FinalGetWell2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3517483E6AD61A0B82488FF0 /* libPods-FinalGetWell2.a */; settings = {ATTRIBUTES = (Required, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -481,6 +481,14 @@
 					5DCF68AD1C23336500A72F12 = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = HM7AP2V9SS;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -709,6 +717,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -730,6 +739,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
+				New_Setting = "";
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -753,6 +763,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -768,6 +779,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				New_Setting = "";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -782,8 +794,9 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FinalGetWell2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tiy.FinalGetWell2;
+				PRODUCT_BUNDLE_IDENTIFIER = FinalGetWell2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "FinalGetWell2/FinalGetWell2-Bridging-Header.h";
@@ -800,8 +813,9 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FinalGetWell2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tiy.FinalGetWell2;
+				PRODUCT_BUNDLE_IDENTIFIER = FinalGetWell2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "FinalGetWell2/FinalGetWell2-Bridging-Header.h";

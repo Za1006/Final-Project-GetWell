@@ -703,8 +703,7 @@
                                 <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
                                     <rect key="frame" x="0.0" y="182" width="400" height="29"/>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="311" width="375" height="29"/>
+                                <variation key="heightClass=regular-widthClass=compact">
                                     <mask key="constraints">
                                         <exclude reference="OfG-tq-Kf8"/>
                                         <exclude reference="kFT-Xr-Yx1"/>
@@ -720,22 +719,79 @@
                                     <constraint firstAttribute="height" constant="25" id="aes-Gd-F36"/>
                                     <constraint firstAttribute="width" constant="302" id="rJ3-nQ-XgD"/>
                                 </constraints>
+<<<<<<< HEAD
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
                                 <color key="textColor" red="0.18407953623595311" green="0.42479957460732987" blue="0.28625131991314673" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+=======
+                                <state key="normal" image="PlayPause1.png"/>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="HNu-QS-Smh"/>
-                                        <exclude reference="pC2-9Y-Ojj"/>
+                                        <exclude reference="08u-Eh-HdX"/>
+                                        <exclude reference="GnB-Ea-Rbq"/>
+                                        <exclude reference="Hne-Gn-eFl"/>
+                                        <exclude reference="PBs-qY-OT6"/>
+                                        <exclude reference="SA2-lg-Xim"/>
+                                        <exclude reference="T8n-av-3v1"/>
+                                        <exclude reference="dm6-7H-kgb"/>
+                                        <exclude reference="rzL-pj-4Bq"/>
+                                        <exclude reference="yAy-Uf-hgq"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="178" y="413" width="46" height="46"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <exclude reference="08u-Eh-HdX"/>
+                                        <exclude reference="GnB-Ea-Rbq"/>
+                                        <exclude reference="Hne-Gn-eFl"/>
+                                        <exclude reference="SA2-lg-Xim"/>
+                                        <exclude reference="T8n-av-3v1"/>
+                                        <exclude reference="dm6-7H-kgb"/>
+                                        <exclude reference="yAy-Uf-hgq"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="playPauseTapped:" destination="KqX-MC-iiQ" eventType="touchUpInside" id="1Mz-mQ-RIW"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TIMER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hPN-rr-9SK">
+                                <rect key="frame" x="149" y="354" width="77" height="25"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
+                                <color key="textColor" red="0.18407953623595311" green="0.42479957460732987" blue="0.28625131991314673" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="174" y="225" width="53" height="87"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="161" y="354" width="53" height="25"/>
+                                </variation>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wVM-aS-Wbk">
+                                <rect key="frame" x="0.0" y="64" width="375" height="247"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="247" id="HNu-QS-Smh"/>
+                                    <constraint firstAttribute="width" constant="375" id="pC2-9Y-Ojj"/>
+                                </constraints>
+>>>>>>> origin/SetRemider
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="aes-Gd-F36"/>
+                                        <exclude reference="rJ3-nQ-XgD"/>
                                     </mask>
                                 </variation>
                                 <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
                                     <rect key="frame" x="174" y="225" width="53" height="87"/>
                                 </variation>
+<<<<<<< HEAD
                                 <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
                                     <rect key="frame" x="161" y="354" width="53" height="25"/>
                                 </variation>
                             </label>
+=======
+                            </imageView>
+>>>>>>> origin/SetRemider
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="05:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M8g-Na-5Ku">
                                 <rect key="frame" x="134" y="358" width="54" height="28"/>
                                 <constraints>
@@ -782,6 +838,34 @@
                                     </mask>
                                 </variation>
                                 <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+<<<<<<< HEAD
+=======
+                                    <rect key="frame" x="181" y="347" width="40" height="43"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <exclude reference="45e-17-i5j"/>
+                                        <exclude reference="OXU-WJ-F0T"/>
+                                        <exclude reference="PMb-cA-8CV"/>
+                                        <exclude reference="SXX-hD-c7m"/>
+                                        <include reference="ZZZ-wx-GCW"/>
+                                        <include reference="c8P-7W-tN9"/>
+                                        <exclude reference="dfx-Gl-az9"/>
+                                        <exclude reference="wen-PN-j4s"/>
+                                        <exclude reference="zKr-za-sYG"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="resetPressed:" destination="KqX-MC-iiQ" eventType="touchUpInside" id="LEa-TE-gJi"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Song Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qna-FH-2Bg">
+                                <rect key="frame" x="144" y="534" width="87" height="26"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="19"/>
+                                <color key="textColor" red="0.93946921510000003" green="0.96486600739999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+>>>>>>> origin/SetRemider
                                     <rect key="frame" x="158" y="504" width="87" height="26"/>
                                 </variation>
                             </label>
@@ -792,9 +876,40 @@
                                     <action selector="playPauseTapped:" destination="KqX-MC-iiQ" eventType="touchUpInside" id="Zem-lr-5pg"/>
                                 </connections>
                             </button>
+<<<<<<< HEAD
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y6D-cX-78S">
                                 <rect key="frame" x="223" y="451" width="45" height="45"/>
                                 <state key="normal" image="NextB"/>
+=======
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mWe-sl-NCT">
+                                <rect key="frame" x="88" y="480" width="46" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="1kr-5q-iM9"/>
+                                    <constraint firstAttribute="height" constant="46" id="4cc-HF-vve"/>
+                                    <constraint firstAttribute="height" constant="46" id="9DI-Jc-gBF"/>
+                                    <constraint firstAttribute="width" constant="46" id="DbD-7Y-8iD"/>
+                                    <constraint firstAttribute="width" constant="46" id="jOl-xb-EHp"/>
+                                    <constraint firstAttribute="height" constant="46" id="sOP-6L-fF8"/>
+                                </constraints>
+                                <state key="normal" image="Previous1.png"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="4cc-HF-vve"/>
+                                        <exclude reference="DbD-7Y-8iD"/>
+                                        <exclude reference="jOl-xb-EHp"/>
+                                        <exclude reference="sOP-6L-fF8"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="101" y="413" width="46" height="46"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <exclude reference="DbD-7Y-8iD"/>
+                                        <exclude reference="sOP-6L-fF8"/>
+                                    </mask>
+                                </variation>
+>>>>>>> origin/SetRemider
                                 <connections>
                                     <action selector="skipForwardTapped:" destination="KqX-MC-iiQ" eventType="touchUpInside" id="v6A-hX-1bq"/>
                                 </connections>
@@ -1264,6 +1379,21 @@
                                 <exclude reference="tI3-LP-vXr"/>
                                 <exclude reference="wT2-Kr-MKF"/>
                                 <exclude reference="xwh-cV-fB5"/>
+<<<<<<< HEAD
+                                <exclude reference="zlC-b9-7Jo"/>
+                                <exclude reference="0RS-fT-Fre"/>
+                                <exclude reference="lJ3-BO-ZUp"/>
+                                <exclude reference="BCr-Ev-rWL"/>
+                                <exclude reference="JoP-uL-EgE"/>
+                                <exclude reference="Law-5r-Zct"/>
+                                <exclude reference="Mmh-vF-1q0"/>
+                                <exclude reference="cTV-pf-XaA"/>
+                                <exclude reference="dMh-tn-Ec8"/>
+                                <exclude reference="iqv-Km-tI1"/>
+                                <exclude reference="qoO-Ml-pkw"/>
+                                <exclude reference="rgi-PV-zCx"/>
+                                <exclude reference="sL2-iA-Hd4"/>
+=======
                                 <exclude reference="1eL-Hn-Bkt"/>
                                 <exclude reference="6nP-VQ-mdd"/>
                                 <exclude reference="Fnq-1z-GGL"/>
@@ -1359,6 +1489,15 @@
                                 <exclude reference="zy4-hA-qlt"/>
                             </mask>
                         </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="6c0-Az-Ycs"/>
+                                <include reference="p2a-hc-3He"/>
+                                <include reference="uTl-BV-fEI"/>
+                                <include reference="nON-VM-rqv"/>
+>>>>>>> origin/SetRemider
+                            </mask>
+                        </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="constraints">
                                 <include reference="5RM-0j-ocl"/>
@@ -1393,6 +1532,68 @@
                                 <exclude reference="emk-1h-ja7"/>
                                 <exclude reference="tI3-LP-vXr"/>
                                 <exclude reference="xwh-cV-fB5"/>
+<<<<<<< HEAD
+=======
+                                <exclude reference="1eL-Hn-Bkt"/>
+                                <exclude reference="6nP-VQ-mdd"/>
+                                <exclude reference="Fnq-1z-GGL"/>
+                                <exclude reference="MQR-z0-ftQ"/>
+                                <exclude reference="abT-Zt-Ddw"/>
+                                <exclude reference="dVZ-0g-YOj"/>
+                                <exclude reference="hlS-83-61c"/>
+                                <include reference="qM5-Ej-kRn"/>
+                                <exclude reference="r1V-If-IlZ"/>
+                                <exclude reference="tvG-yO-zKW"/>
+                                <include reference="ySc-mb-VRh"/>
+                                <exclude reference="zb8-p0-5nQ"/>
+                                <exclude reference="AJA-x0-es9"/>
+                                <exclude reference="J77-iR-vcT"/>
+                                <include reference="pac-7t-bOu"/>
+                                <exclude reference="ukL-49-CgJ"/>
+                                <exclude reference="xcP-ki-DJQ"/>
+                                <exclude reference="Auf-sr-m2H"/>
+                                <exclude reference="IM8-UQ-7Zj"/>
+                                <exclude reference="JL3-e2-5ug"/>
+                                <include reference="VqS-gP-k4b"/>
+                                <exclude reference="Xga-j0-1l4"/>
+                                <exclude reference="YLp-i6-KWW"/>
+                                <exclude reference="fKr-F6-4Aa"/>
+                                <exclude reference="iZU-a3-ug2"/>
+                                <exclude reference="sod-X3-EXT"/>
+                                <exclude reference="2t8-vk-RhZ"/>
+                                <exclude reference="531-ao-8pn"/>
+                                <exclude reference="6x5-mY-2VR"/>
+                                <exclude reference="Apd-pI-pcl"/>
+                                <exclude reference="FRm-dC-YMo"/>
+                                <exclude reference="LfJ-yk-5ac"/>
+                                <exclude reference="O30-jm-Zk4"/>
+                                <include reference="aWh-1J-2oM"/>
+                                <exclude reference="cuv-GO-ptK"/>
+                                <exclude reference="deP-v4-0oJ"/>
+                                <exclude reference="jol-eN-vbR"/>
+                                <include reference="rmP-pC-VxC"/>
+                                <exclude reference="2p3-8l-qFD"/>
+                                <include reference="5U8-aR-s7O"/>
+                                <exclude reference="IbS-c2-uFA"/>
+                                <include reference="V1Q-VR-XOj"/>
+                                <include reference="aJf-1T-NNe"/>
+                                <include reference="cLI-at-PuM"/>
+                                <include reference="drs-W6-ZYk"/>
+                                <include reference="fzv-Ox-v8s"/>
+                                <include reference="gL0-9r-x8j"/>
+                                <exclude reference="gWQ-HB-wtL"/>
+                                <exclude reference="ifT-xN-CRr"/>
+                                <exclude reference="pkw-EI-I1A"/>
+                                <exclude reference="pmq-jq-u7L"/>
+                                <include reference="yMs-wy-PXZ"/>
+                                <exclude reference="zEg-hz-pps"/>
+                                <exclude reference="K7I-yg-Rnx"/>
+                                <include reference="OVf-Vp-l0V"/>
+                                <include reference="Zr6-Ic-SaS"/>
+                                <include reference="amu-IM-N7G"/>
+                                <exclude reference="cTq-GD-mAs"/>
+                                <include reference="mnw-gO-xAo"/>
+>>>>>>> origin/SetRemider
                             </mask>
                         </variation>
                     </view>
