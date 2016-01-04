@@ -256,7 +256,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		5D4D47B61C3603C400B9949B /* buttons */ = {
+		5D4D47B61C3603C400B9949B /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
 				5D4D47D31C36126500B9949B /* reserbttn2.png */,
@@ -265,6 +265,7 @@
 				5D4D47BF1C3603C400B9949B /* prev */,
 				5D4D47C31C3603C400B9949B /* reset */,
 			);
+			name = Buttons;
 			path = buttons;
 			sourceTree = "<group>";
 		};
@@ -329,7 +330,6 @@
 		5DCF68B01C23336500A72F12 /* FinalGetWell2 */ = {
 			isa = PBXGroup;
 			children = (
-				5D4D47B61C3603C400B9949B /* buttons */,
 				AA184A281C233584001A679F /* FinalGetWell2-Bridging-Header.h */,
 				AA184A2C1C233A81001A679F /* Song.swift */,
 				5DCF68B11C23336500A72F12 /* AppDelegate.swift */,
@@ -344,6 +344,7 @@
 				AA184ADB1C272D3C001A679F /* PageViewController.swift */,
 				5D8B94761C2AE3E4001C9579 /* MapViewController.swift */,
 				5DCF68B51C23336500A72F12 /* Main.storyboard */,
+				5D4D47B61C3603C400B9949B /* Buttons */,
 				5DCF68FE1C233FD100A72F12 /* Images */,
 				5DCF68FF1C233FE500A72F12 /* Music */,
 				4C618F6D1C29CD8B00104B71 /* Misc */,
