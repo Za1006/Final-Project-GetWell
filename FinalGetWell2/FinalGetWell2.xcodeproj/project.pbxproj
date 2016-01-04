@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		4C060F971C235DF500E65966 /* SetReminderPopOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C060F961C235DF500E65966 /* SetReminderPopOverViewController.swift */; };
+		4C0C88391C3B3759001016AE /* Songs.json in Resources */ = {isa = PBXBuildFile; fileRef = 4C0C88381C3B3759001016AE /* Songs.json */; };
+		4C0C883B1C3B3794001016AE /* PlaylistTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0C883A1C3B3794001016AE /* PlaylistTableViewController.swift */; };
+		4C0C883D1C3B37F7001016AE /* PlaylistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0C883C1C3B37F7001016AE /* PlaylistTableViewCell.swift */; };
+		4C0C883F1C3B3891001016AE /* DownArrow2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C0C883E1C3B3891001016AE /* DownArrow2.png */; };
 		4C618F751C29D0D600104B71 /* reset.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C618F741C29D0D600104B71 /* reset.png */; };
 		4C8C816E1C287F03009C8C60 /* SessionOver.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4C8C816D1C287F03009C8C60 /* SessionOver.m4a */; };
 		5D28B1751C32FC1800A11907 /* mindPowerAffirmation.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5D28B1731C32FC1800A11907 /* mindPowerAffirmation.mp3 */; };
@@ -116,6 +120,10 @@
 		22214D90239856269A461A1B /* Pods-FinalGetWell2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinalGetWell2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FinalGetWell2/Pods-FinalGetWell2.debug.xcconfig"; sourceTree = "<group>"; };
 		3517483E6AD61A0B82488FF0 /* libPods-FinalGetWell2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FinalGetWell2.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C060F961C235DF500E65966 /* SetReminderPopOverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetReminderPopOverViewController.swift; sourceTree = "<group>"; };
+		4C0C88381C3B3759001016AE /* Songs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Songs.json; sourceTree = "<group>"; };
+		4C0C883A1C3B3794001016AE /* PlaylistTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistTableViewController.swift; sourceTree = "<group>"; };
+		4C0C883C1C3B37F7001016AE /* PlaylistTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistTableViewCell.swift; sourceTree = "<group>"; };
+		4C0C883E1C3B3891001016AE /* DownArrow2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DownArrow2.png; sourceTree = "<group>"; };
 		4C618F741C29D0D600104B71 /* reset.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reset.png; sourceTree = "<group>"; };
 		4C8C816D1C287F03009C8C60 /* SessionOver.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = SessionOver.m4a; sourceTree = "<group>"; };
 		5D28B1731C32FC1800A11907 /* mindPowerAffirmation.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mindPowerAffirmation.mp3; sourceTree = "<group>"; };
@@ -235,6 +243,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C0C88401C3B3A79001016AE /* Playlist */ = {
+			isa = PBXGroup;
+			children = (
+				4C0C88381C3B3759001016AE /* Songs.json */,
+				4C0C883A1C3B3794001016AE /* PlaylistTableViewController.swift */,
+				4C0C883C1C3B37F7001016AE /* PlaylistTableViewCell.swift */,
+			);
+			name = Playlist;
+			sourceTree = "<group>";
+		};
 		4C618F6D1C29CD8B00104B71 /* Misc */ = {
 			isa = PBXGroup;
 			children = (
@@ -256,7 +274,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		5D4D47B61C3603C400B9949B /* buttons */ = {
+		5D4D47B61C3603C400B9949B /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
 				5D4D47B71C3603C400B9949B /* next */,
@@ -264,6 +282,7 @@
 				5D4D47BF1C3603C400B9949B /* prev */,
 				5D4D47C31C3603C400B9949B /* reset */,
 			);
+			name = Buttons;
 			path = buttons;
 			sourceTree = "<group>";
 		};
@@ -328,7 +347,6 @@
 		5DCF68B01C23336500A72F12 /* FinalGetWell2 */ = {
 			isa = PBXGroup;
 			children = (
-				5D4D47B61C3603C400B9949B /* buttons */,
 				AA184A281C233584001A679F /* FinalGetWell2-Bridging-Header.h */,
 				AA184A2C1C233A81001A679F /* Song.swift */,
 				5DCF68B11C23336500A72F12 /* AppDelegate.swift */,
@@ -343,9 +361,11 @@
 				AA184ADB1C272D3C001A679F /* PageViewController.swift */,
 				5D8B94761C2AE3E4001C9579 /* MapViewController.swift */,
 				5DCF68B51C23336500A72F12 /* Main.storyboard */,
+				5D4D47B61C3603C400B9949B /* Buttons */,
 				5DCF68FE1C233FD100A72F12 /* Images */,
 				5DCF68FF1C233FE500A72F12 /* Music */,
 				4C618F6D1C29CD8B00104B71 /* Misc */,
+				4C0C88401C3B3A79001016AE /* Playlist */,
 			);
 			path = FinalGetWell2;
 			sourceTree = "<group>";
@@ -353,6 +373,7 @@
 		5DCF68FE1C233FD100A72F12 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				4C0C883E1C3B3891001016AE /* DownArrow2.png */,
 				5D4D47D51C36143300B9949B /* newMediaSkin.jpg */,
 				5D28B1771C3307AE00A11907 /* checkedwhite.png */,
 				5D4D47D31C36126500B9949B /* reserbttn2.png */,
@@ -545,6 +566,7 @@
 				5D8B943B1C2A25A2001C9579 /* relaxingnovember.mp3 in Resources */,
 				5D8B94331C2A17CF001C9579 /* NewReset.png in Resources */,
 				5D8B94391C2A257B001C9579 /* coldsnowstorm.mp3 in Resources */,
+				4C0C88391C3B3759001016AE /* Songs.json in Resources */,
 				5D8B94621C2A27B8001C9579 /* HeavyRainSound.png in Resources */,
 				5D8B94231C29A8FC001C9579 /* unchecked@2x.png in Resources */,
 				5DCF68D91C233F5E00A72F12 /* DownArrow.png in Resources */,
@@ -585,6 +607,7 @@
 				5D8B94241C29A8FC001C9579 /* unchecked@3x.png in Resources */,
 				5D4D47C71C3603C400B9949B /* NextBx1.png in Resources */,
 				5D6827551C24ABD700374755 /* thumbs-up-icon-black-hi.png in Resources */,
+				4C0C883F1C3B3891001016AE /* DownArrow2.png in Resources */,
 				5D28B1761C32FC1800A11907 /* MindPowerImg.png in Resources */,
 				5D8B94641C2A27B8001C9579 /* RelaxingSound.png in Resources */,
 				5D8B944B1C2A2720001C9579 /* thebeautifulbeach.mp3 in Resources */,
@@ -668,6 +691,8 @@
 				5DCF68BA1C23336500A72F12 /* FinalGetWell2.xcdatamodeld in Sources */,
 				AA184AE21C272F55001A679F /* ViewController.swift in Sources */,
 				AA184AD81C272C62001A679F /* ContentViewController.swift in Sources */,
+				4C0C883B1C3B3794001016AE /* PlaylistTableViewController.swift in Sources */,
+				4C0C883D1C3B37F7001016AE /* PlaylistTableViewCell.swift in Sources */,
 				AA184A371C237EB6001A679F /* MediaPlayerViewController.swift in Sources */,
 				AA184ADC1C272D3C001A679F /* PageViewController.swift in Sources */,
 				5DCF68B21C23336500A72F12 /* AppDelegate.swift in Sources */,
