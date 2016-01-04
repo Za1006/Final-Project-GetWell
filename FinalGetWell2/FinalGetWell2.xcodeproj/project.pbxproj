@@ -329,7 +329,6 @@
 			isa = PBXGroup;
 			children = (
 				5D4D47B61C3603C400B9949B /* buttons */,
-				5D28B1771C3307AE00A11907 /* checkedwhite.png */,
 				AA184A281C233584001A679F /* FinalGetWell2-Bridging-Header.h */,
 				AA184A2C1C233A81001A679F /* Song.swift */,
 				5DCF68B11C23336500A72F12 /* AppDelegate.swift */,
@@ -337,14 +336,12 @@
 				4C060F961C235DF500E65966 /* SetReminderPopOverViewController.swift */,
 				AA184A2A1C2339FB001A679F /* LoginViewController.swift */,
 				AA184A301C233C5D001A679F /* MainViewController.swift */,
-				5D4D47D31C36126500B9949B /* reserbttn2.png */,
 				5D6827501C24A8DA00374755 /* TableViewCell.swift */,
 				AA184A361C237EB6001A679F /* MediaPlayerViewController.swift */,
 				AA184AE11C272F55001A679F /* ViewController.swift */,
 				AA184AD71C272C62001A679F /* ContentViewController.swift */,
 				AA184ADB1C272D3C001A679F /* PageViewController.swift */,
 				5D8B94761C2AE3E4001C9579 /* MapViewController.swift */,
-				5D4D47D51C36143300B9949B /* newMediaSkin.jpg */,
 				5DCF68B51C23336500A72F12 /* Main.storyboard */,
 				5DCF68FE1C233FD100A72F12 /* Images */,
 				5DCF68FF1C233FE500A72F12 /* Music */,
@@ -356,6 +353,9 @@
 		5DCF68FE1C233FD100A72F12 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				5D4D47D51C36143300B9949B /* newMediaSkin.jpg */,
+				5D28B1771C3307AE00A11907 /* checkedwhite.png */,
+				5D4D47D31C36126500B9949B /* reserbttn2.png */,
 				5D28B1741C32FC1800A11907 /* MindPowerImg.png */,
 				5D8B946A1C2A36E8001C9579 /* BeachSound.png */,
 				5D8B94511C2A27B8001C9579 /* BetterDaySound.png */,
