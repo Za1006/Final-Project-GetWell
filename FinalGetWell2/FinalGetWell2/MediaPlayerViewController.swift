@@ -147,9 +147,10 @@ class MediaPlayerViewController: UIViewController
     func updateUI()
     {
         originalCount = originalCount - 1
-        let newMinuteCount = originalCount/60
-        let newSecondCount = originalCount%60
-        meditationCountdown.text = String("\(newMinuteCount):\(newSecondCount)")
+//        let newMinuteCount = originalCount/60
+//        let newSecondCount = originalCount%60
+//        meditationCountdown.text = String("\(newMinuteCount):\(newSecondCount)")
+        timerDisplay()
         
         if originalCount == 0
         {
@@ -158,6 +159,15 @@ class MediaPlayerViewController: UIViewController
                 .scheduledTimerWithTimeInterval(0.2, target: self, selector: "flashLabel" , userInfo: nil, repeats: true)
             playNotification()
         }
+    }
+
+    func timerDisplay()
+    {
+            let dFormat = "%02d"
+            let newMinuteCount = originalCount/60
+            let newSecondCount = originalCount%60
+            let s = "\(String(format: dFormat, newMinuteCount)):\(String(format: dFormat, newSecondCount))"
+            meditationCountdown.text = s
     }
     
     func flashLabel()
