@@ -72,7 +72,7 @@ class MediaPlayerViewController: UIViewController
 //        player = AVQueuePlayer(items: songs)
 //        player.actionAtItemEnd = .Advance
 //        player.addObserver(self, forKeyPath: "currentItem", options: [.New, .Initial], context: nil)
-//        
+        
     }
     
     
