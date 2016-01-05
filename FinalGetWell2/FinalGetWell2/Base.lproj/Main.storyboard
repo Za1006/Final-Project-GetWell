@@ -1098,6 +1098,8 @@
                                 <exclude reference="GWS-ak-i15"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="FsA-UG-XSy"/>
+                                <exclude reference="iS6-oF-kMe"/>
                                 <exclude reference="1Wn-Qd-2H4"/>
                                 <exclude reference="55d-aV-cvN"/>
                                 <exclude reference="79Z-wz-JcR"/>
@@ -1296,8 +1298,6 @@
                                 <exclude reference="wT2-Kr-MKF"/>
                                 <exclude reference="xwh-cV-fB5"/>
                                 <exclude reference="zlC-b9-7Jo"/>
-                                <exclude reference="FsA-UG-XSy"/>
-                                <exclude reference="iS6-oF-kMe"/>
                                 <exclude reference="0RS-fT-Fre"/>
                                 <exclude reference="lJ3-BO-ZUp"/>
                                 <exclude reference="BCr-Ev-rWL"/>
@@ -1378,20 +1378,26 @@
             </objects>
             <point key="canvasLocation" x="1098.5" y="1763.5"/>
         </scene>
-        <!--Playlist Table View Controller-->
+        <!--My Playlist-->
         <scene sceneID="1pY-FR-doI">
             <objects>
                 <tableViewController id="VA0-qt-dJF" customClass="PlaylistTableViewController" customModule="FinalGetWell2" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="0Nb-fq-Mp6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.015686274510000001" green="0.87058823529999996" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="sectionIndexColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="PlaylistModalViewCell" textLabel="kcQ-Kw-YfD" style="IBUITableViewCellStyleDefault" id="jVW-T4-tgf" customClass="PlaylistTableViewCell" customModule="FinalGetWell2" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jVW-T4-tgf" id="xOd-K0-7LM">
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kcQ-Kw-YfD">
+                                            <rect key="frame" x="15" y="0.0" width="270" height="43"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -1402,6 +1408,7 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -1409,8 +1416,13 @@
                             <outlet property="delegate" destination="VA0-qt-dJF" id="7DK-ct-lpr"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="GZJ-dd-7bq">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="eeG-Rc-YBy"/>
+                    <navigationItem key="navigationItem" title="My Playlist" id="GZJ-dd-7bq">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="eeG-Rc-YBy">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="dismissPressed:" destination="VA0-qt-dJF" id="2xC-H1-sIK"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QAm-S1-5DF" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1621,6 +1633,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.42352941176470588" green="0.89411764705882357" blue="0.58431372549019611" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -1658,6 +1673,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="P4k-g0-fLV">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.42352941179999998" green="0.89411764709999997" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -1685,7 +1704,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="xe1-GB-gHC"/>
-        <segue reference="tBN-eN-c65"/>
+        <segue reference="kWk-Ig-xUA"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
 </document>

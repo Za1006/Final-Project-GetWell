@@ -253,6 +253,23 @@
 			name = Playlist;
 			sourceTree = "<group>";
 		};
+		4C0C88411C3B3B56001016AE /* Set Reminder */ = {
+			isa = PBXGroup;
+			children = (
+				4C060F961C235DF500E65966 /* SetReminderPopOverViewController.swift */,
+			);
+			name = "Set Reminder";
+			sourceTree = "<group>";
+		};
+		4C0C88421C3B3B81001016AE /* Parse Login */ = {
+			isa = PBXGroup;
+			children = (
+				AA184A2E1C233AC1001A679F /* RegisterViewController.swift */,
+				AA184A2A1C2339FB001A679F /* LoginViewController.swift */,
+			);
+			name = "Parse Login";
+			sourceTree = "<group>";
+		};
 		4C618F6D1C29CD8B00104B71 /* Misc */ = {
 			isa = PBXGroup;
 			children = (
@@ -350,9 +367,6 @@
 				AA184A281C233584001A679F /* FinalGetWell2-Bridging-Header.h */,
 				AA184A2C1C233A81001A679F /* Song.swift */,
 				5DCF68B11C23336500A72F12 /* AppDelegate.swift */,
-				AA184A2E1C233AC1001A679F /* RegisterViewController.swift */,
-				4C060F961C235DF500E65966 /* SetReminderPopOverViewController.swift */,
-				AA184A2A1C2339FB001A679F /* LoginViewController.swift */,
 				AA184A301C233C5D001A679F /* MainViewController.swift */,
 				5D6827501C24A8DA00374755 /* TableViewCell.swift */,
 				AA184A361C237EB6001A679F /* MediaPlayerViewController.swift */,
@@ -361,6 +375,8 @@
 				AA184ADB1C272D3C001A679F /* PageViewController.swift */,
 				5D8B94761C2AE3E4001C9579 /* MapViewController.swift */,
 				5DCF68B51C23336500A72F12 /* Main.storyboard */,
+				4C0C88421C3B3B81001016AE /* Parse Login */,
+				4C0C88411C3B3B56001016AE /* Set Reminder */,
 				5D4D47B61C3603C400B9949B /* Buttons */,
 				5DCF68FE1C233FD100A72F12 /* Images */,
 				5DCF68FF1C233FE500A72F12 /* Music */,
@@ -501,7 +517,7 @@
 				TargetAttributes = {
 					5DCF68AD1C23336500A72F12 = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = HM7AP2V9SS;
+						DevelopmentTeam = 32355P55NQ;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -813,7 +829,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FinalGetWell2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = FinalGetWell2;
+				PRODUCT_BUNDLE_IDENTIFIER = FinalGetWell22;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "FinalGetWell2/FinalGetWell2-Bridging-Header.h";
@@ -831,7 +847,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FinalGetWell2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = FinalGetWell2;
+				PRODUCT_BUNDLE_IDENTIFIER = FinalGetWell22;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "FinalGetWell2/FinalGetWell2-Bridging-Header.h";
