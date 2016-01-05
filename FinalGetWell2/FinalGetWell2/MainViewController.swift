@@ -131,7 +131,7 @@ class MainViewController: UIViewController,UIPopoverPresentationControllerDelega
             cell.backgroundColor = UIColor(red: 0.73, green: 0.031, blue: 0.91, alpha: 1)
             
         case false: cell.todoCheckbox.image = UIImage(named: "testunchk.png")
-            cell.backgroundColor = UIColor(red:0.45, green:0.019, blue:0.64, alpha:1.0)
+            cell.backgroundColor = UIColor(red:0.64, green:0.027, blue:0.86, alpha:1.0)
             
         }
         
