@@ -269,7 +269,7 @@ class MediaPlayerViewController: UIViewController
             "title": "Mind Power",
             "artist" : "Benjamin Tissot",
             "filename" : "betterdaysahead",
-            "albumArtwork" : "BetterDaySound"
+            "albumArtwork" : "newChillImg"
         ]
         let mindpowerSong = Song(dictionary: mindpowerDict)
         songs.append(mindpowerSong)
@@ -279,7 +279,7 @@ class MediaPlayerViewController: UIViewController
             "title": "Mind Power Affirmation",
             "artist": "Benjamin Tissot",
             "filename": "mindPowerAffirmation",
-            "albumArtwork": "MindPowerImg"
+            "albumArtwork": "newMindPowerImg"
         ]
         let mindpowerAff = Song(dictionary: mindpowerAffDict)
         songs.append(mindpowerAff)
@@ -288,7 +288,7 @@ class MediaPlayerViewController: UIViewController
             "title": "Fall",
             "artist": "Benjamin Tissot",
             "filename": "leaveswind",
-            "albumArtwork": "WindLeavessSound"
+            "albumArtwork": "newWindLeavesImg"
         ]
         let autum = Song(dictionary: autumDict)
         songs.append(autum)
@@ -297,7 +297,7 @@ class MediaPlayerViewController: UIViewController
             "title": "The Future",
             "artist": "Benjamin Tissot",
             "filename": "mytomorrow",
-            "albumArtwork": "TomorrowSound"
+            "albumArtwork": "newTomorrowImg"
         ]
         let tomorrow = Song(dictionary: tomorrowDict)
         songs.append(tomorrow)
@@ -306,7 +306,7 @@ class MediaPlayerViewController: UIViewController
             "title": "Sea Shore",
             "artist": "Benjamin Tissot",
             "filename": "thebeautifulbeach",
-            "albumArtwork": "BeachSound"
+            "albumArtwork": "newBeachImg"
         ]
         let beach = Song(dictionary: beachDict)
         songs.append(beach)
@@ -315,7 +315,7 @@ class MediaPlayerViewController: UIViewController
             "title": "Rain",
             "artist": "Benjamin Tissot",
             "filename": "rainy",
-            "albumArtwork": "RainSound"
+            "albumArtwork": "newRainImg"
         ]
         let rain = Song(dictionary: rainDict)
         songs.append(rain)
@@ -324,7 +324,7 @@ class MediaPlayerViewController: UIViewController
             "title": "Winter",
             "artist": "Benjamin Tissot",
             "filename": "coldsnowstorm",
-            "albumArtwork": "SnowStormSound"
+            "albumArtwork": "newSnowStormImg"
         ]
         let snow = Song(dictionary: snowDict)
         songs.append(snow)
@@ -333,7 +333,7 @@ class MediaPlayerViewController: UIViewController
             "title": "Roof Top",
             "artist": "Benjamin Tissot",
             "filename": "rainOntheRooftop",
-            "albumArtwork": "RoofTopSound"
+            "albumArtwork": "newRooftopImg"
         ]
         let roof = Song(dictionary: roofDict)
         songs.append(roof)
@@ -342,7 +342,7 @@ class MediaPlayerViewController: UIViewController
             "title": "Calm",
             "artist": "Benjamin Tissot",
             "filename": "relaxingnovember",
-            "albumArtwork": "RelaxingSound"
+            "albumArtwork": "newRelaxingImg"
         ]
         let relax = Song(dictionary: relaxDict)
         songs.append(relax)
@@ -351,7 +351,7 @@ class MediaPlayerViewController: UIViewController
             "title": "Drench",
             "artist": "Benjamin Tissot",
             "filename": "heavywetrain",
-            "albumArtwork": "HeavyRainSound"
+            "albumArtwork": "newHeavyRain"
         ]
         let pouring = Song(dictionary: pouringDict)
         songs.append(pouring)
@@ -360,7 +360,7 @@ class MediaPlayerViewController: UIViewController
             "title": "Lush",
             "artist": "Benjamin Tissot",
             "filename": "busygreenforest",
-            "albumArtwork": "ForestSound"
+            "albumArtwork": "newForestImg"
         ]
         let lush = Song(dictionary: lushDict)
         songs.append(lush)
@@ -369,7 +369,7 @@ class MediaPlayerViewController: UIViewController
             "title": "Soft Creek",
             "artist": "Benjamin Tissot",
             "filename": "gentlewetcreek",
-            "albumArtwork": "CreekSound"
+            "albumArtwork": "newCreekImg"
         ]
         let stream = Song(dictionary: streamDict)
         songs.append(stream)
@@ -378,7 +378,7 @@ class MediaPlayerViewController: UIViewController
             "title": "Rage",
             "artist": "Benjamin Tissot",
             "filename": "thunderlight",
-            "albumArtwork": "ThunderSound"
+            "albumArtwork": "newThunderImg"
         ]
         let heaven = Song(dictionary: heavenDict)
         songs.append(heaven)
@@ -387,7 +387,7 @@ class MediaPlayerViewController: UIViewController
             "title": "Happy",
             "artist": "Benjamin Tissot",
             "filename": "littlebirds",
-            "albumArtwork": "BirdsSound"
+            "albumArtwork": "newBirdsImg"
         ]
         let tweets = Song(dictionary: tweetsDict)
         songs.append(tweets)
