@@ -470,7 +470,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C9L-IB-wD8">
-                                <rect key="frame" x="192" y="570" width="216" height="31"/>
+                                <rect key="frame" x="209" y="570" width="182" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="9N9-Ut-IDW"/>
                                     <constraint firstAttribute="width" constant="64" id="avo-pK-XAX"/>
@@ -478,7 +478,7 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="kJf-VT-XiI"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="21"/>
-                                <state key="normal" title="BEGIN MEDITATION &gt;">
+                                <state key="normal" title="Begin Meditation &gt;">
                                     <color key="titleColor" red="0.69564986552221397" green="0.22658940965202257" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <variation key="default">
