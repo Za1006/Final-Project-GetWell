@@ -55,11 +55,11 @@ class LoginViewController: UIViewController
                 if user != nil
                 {
                     print("login successful")
-//                    self.performSegueWithIdentifier("ShowLoginSegue", sender: self)
+//                    self.performSegueWithIdentifier("MediaPlayerViewController", sender: self)
 //                    self.dismissViewControllerAnimated(true, completion: nil)
 //                    self.dismissDelegate?.unwindFromLogin()
                     
-//                    self.dismissViewControllerAnimated(true, completion: nil)
+//                  self.dismissViewControllerAnimated(true, completion: nil)
                     self.navigationController?.performSegueWithIdentifier("unwindFromLogin", sender: self)
                 }
                 else
@@ -74,7 +74,7 @@ class LoginViewController: UIViewController
     @IBAction func cancelPressed(sender: UIBarButtonItem)
     {
         dismissViewControllerAnimated(true, completion: nil)
-        self.navigationController?.performSegueWithIdentifier("unwindFromLogin", sender: self)
+       self.navigationController?.performSegueWithIdentifier("unwindFromLogin", sender: self)
     }
 
 

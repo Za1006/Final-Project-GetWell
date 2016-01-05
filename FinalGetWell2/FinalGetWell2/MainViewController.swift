@@ -23,7 +23,7 @@ protocol LoginViewControllerDismissDelegate
     func unwindFromLogin()
 }
 
-class MainViewController: UIViewController,UIPopoverPresentationControllerDelegate, DatePickerDelegate, UITableViewDataSource, UITableViewDelegate, LoginViewControllerDismissDelegate
+class MainViewController: UIViewController,UIPopoverPresentationControllerDelegate, DatePickerDelegate, UITableViewDataSource, UITableViewDelegate,LoginViewControllerDismissDelegate
     
 {
 
@@ -231,11 +231,11 @@ class MainViewController: UIViewController,UIPopoverPresentationControllerDelega
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
     {
-        if segue.identifier == "ShowMediaSegue"
-        {
-            let mediaPlayerVC = segue.destinationViewController as! MediaPlayerViewController
-            mediaPlayerVC.delegate = self
-        }
+//        if segue.identifier == "ShowMediaSegue"
+//        {
+//            let mediaPlayerVC = segue.destinationViewController as! MediaPlayerViewController
+//            mediaPlayerVC.delegate = self
+//        }
         
         if segue.identifier == "SetReminderSegue"
         {
@@ -248,6 +248,7 @@ class MainViewController: UIViewController,UIPopoverPresentationControllerDelega
         if let loginVC = segue.destinationViewController as? LoginViewController
         {
             loginVC.dismissDelegate = self
+
         }
     }
     

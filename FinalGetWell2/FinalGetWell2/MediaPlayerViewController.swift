@@ -42,7 +42,6 @@ class MediaPlayerViewController: UIViewController
     
     var timesTapped = 0
     
-//    var shuffleMode: MPMusicShuffleMode?
     
     var delegate: MainViewController?
     
@@ -67,9 +66,9 @@ class MediaPlayerViewController: UIViewController
       {
         print("Failed to set audio session category. Error: \(error)")
         }
-//        let songNames = ["betterdaysahead", "mindPowerAffirmation", "leaveswind", "mytomorrow", "thebeautifulbeach", "rainy", "coldsnowstorm", "rainOntheRooftop", "relaxingnovember", "heavywetrain", "busygreenforest", "gentlewetcreek", "thunderlight", "littlebirds" ]
+//        let fileNames = ["betterdaysahead", "mindPowerAffirmation", "leaveswind", "mytomorrow", "thebeautifulbeach", "rainy", "coldsnowstorm", "rainOntheRooftop", "relaxingnovember", "heavywetrain", "busygreenforest", "gentlewetcreek", "thunderlight", "littlebirds" ]
 //        
-//        let songs = songNames.map {AVPlayerItem(URL: NSBundle.mainBundle().URLForResource($0 , withExtension: "mp3")!)}
+//        let songs = fileNames.map {AVPlayerItem(URL: NSBundle.mainBundle().URLForResource($0 , withExtension: "mp3")!)}
 //        player = AVQueuePlayer(items: songs)
 //        player.actionAtItemEnd = .Advance
 //        player.addObserver(self, forKeyPath: "currentItem", options: [.New, .Initial], context: nil)
