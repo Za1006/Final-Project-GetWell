@@ -242,7 +242,7 @@ class MainViewController: UIViewController,UIPopoverPresentationControllerDelega
             let destVC = segue.destinationViewController as! SetReminderPopOverViewController
             destVC.popoverPresentationController?.delegate = self
             destVC.delegate = self
-            destVC.preferredContentSize = CGSizeMake(400.0, 216.0)
+            destVC.preferredContentSize = CGSizeMake(410.0, 216.0)
            
         }
         if let loginVC = segue.destinationViewController as? LoginViewController
