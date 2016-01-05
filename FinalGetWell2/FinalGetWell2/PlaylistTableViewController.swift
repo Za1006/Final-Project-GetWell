@@ -11,7 +11,6 @@ import UIKit
 
 class PlaylistTableViewController: UITableViewController
 {
-    
     var songs = Array<Song>()
 
     var parent: MediaPlayerViewController?
@@ -20,7 +19,7 @@ class PlaylistTableViewController: UITableViewController
     {
         super.viewDidLoad()
         
-        loadSongs()
+//        loadSongs()
         
         // Uncomment the following line to preserve selection between presentations
         self.clearsSelectionOnViewWillAppear = false
@@ -131,28 +130,28 @@ class PlaylistTableViewController: UITableViewController
     
     // Private Functions
     
-    private func loadSongs()
-    {
-        do
-        {
-            let filePath = NSBundle.mainBundle().pathForResource("Songs", ofType: "json")
-            let dataFromFile = NSData(contentsOfFile: filePath!)
-            let songData: NSArray! = try NSJSONSerialization.JSONObjectWithData(dataFromFile!, options: []) as! [NSDictionary]
-            for songDictionary in songData
-            {
-                //                let aSong = Song(songDictionary: songDictionary as! NSDictionary)
-                let song = Song(dictionary: songDictionary as! NSDictionary)
-                
-                songs.append(song)
-            }
-            songs.sortInPlace({ $0.title < $1.title})
-            //            songs.sortInPlace({ $0.artist < $1.artist})
-            
-        }
-        catch let error as NSError
-        {
-            print(error)
-        }
-    }
+//    private func loadSongs()
+//    {
+//        do
+//        {
+//            let filePath = NSBundle.mainBundle().pathForResource("Songs", ofType: "json")
+//            let dataFromFile = NSData(contentsOfFile: filePath!)
+//            let songData: NSArray! = try NSJSONSerialization.JSONObjectWithData(dataFromFile!, options: []) as! [NSDictionary]
+//            for songDictionary in songData
+//            {
+//                //                let aSong = Song(songDictionary: songDictionary as! NSDictionary)
+//                let song = Song(dictionary: songDictionary as! NSDictionary)
+//                
+//                songs.append(song)
+//            }
+//            songs.sortInPlace({ $0.title < $1.title})
+//            //            songs.sortInPlace({ $0.artist < $1.artist})
+//            
+//        }
+//        catch let error as NSError
+//        {
+//            print(error)
+//        }
+//    }
     
 }

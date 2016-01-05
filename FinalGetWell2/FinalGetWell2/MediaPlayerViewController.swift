@@ -476,6 +476,7 @@ class MediaPlayerViewController: UIViewController
             if let playlistVC = nav.topViewController as? PlaylistTableViewController
             {
                 playlistVC.parent = self
+                playlistVC.songs = songs
             }
         }
         
