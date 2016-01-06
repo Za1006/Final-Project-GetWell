@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uCA-Fo-MXg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uCA-Fo-MXg">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -1398,17 +1398,17 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Song Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efZ-Gb-ngz">
-                                            <rect key="frame" x="8" y="9" width="78" height="30"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <rect key="frame" x="8" y="8" width="87" height="27"/>
+                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="19"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wY9-O1-uGX">
+                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wY9-O1-uGX">
                                             <rect key="frame" x="321" y="9" width="46" height="30"/>
                                             <state key="normal" title="Button"/>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O0o-JS-kIf">
-                                            <rect key="frame" x="332" y="4" width="35" height="35"/>
+                                            <rect key="frame" x="332" y="0.0" width="35" height="35"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="45" id="bJ4-b0-bvK"/>
                                                 <constraint firstAttribute="height" constant="45" id="bwn-5j-Wfc"/>
@@ -1416,7 +1416,7 @@
                                                 <constraint firstAttribute="height" constant="35" id="lXE-Rd-o4T"/>
                                                 <constraint firstAttribute="width" constant="35" id="wcc-ke-1TI"/>
                                             </constraints>
-                                            <state key="normal" title="Button" image="RecordButtonEdited.png"/>
+                                            <state key="normal" title="Button" image="microphone2.png"/>
                                             <variation key="default">
                                                 <mask key="constraints">
                                                     <exclude reference="bJ4-b0-bvK"/>
@@ -1424,30 +1424,20 @@
                                                 </mask>
                                             </variation>
                                         </button>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vCH-LT-t2w">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="47"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" secondItem="vCH-LT-t2w" secondAttribute="height" multiplier="334:35" id="a1J-fB-Lox"/>
-                                            </constraints>
-                                        </imageView>
                                     </subviews>
                                     <color key="backgroundColor" red="0.60784313729999995" green="0.33725490200000002" blue="0.7725490196" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     <constraints>
-                                        <constraint firstAttribute="bottom" secondItem="vCH-LT-t2w" secondAttribute="bottom" id="4dC-dB-cSJ"/>
                                         <constraint firstItem="efZ-Gb-ngz" firstAttribute="top" secondItem="xOd-K0-7LM" secondAttribute="top" constant="8" id="JFk-0Q-WiV"/>
                                         <constraint firstAttribute="bottom" secondItem="efZ-Gb-ngz" secondAttribute="bottom" constant="8" id="Mh0-m2-xMA"/>
                                         <constraint firstItem="wY9-O1-uGX" firstAttribute="top" secondItem="xOd-K0-7LM" secondAttribute="top" constant="8" id="P0I-wl-Mf8"/>
-                                        <constraint firstItem="vCH-LT-t2w" firstAttribute="top" secondItem="xOd-K0-7LM" secondAttribute="top" id="PAD-md-HQF"/>
                                         <constraint firstItem="O0o-JS-kIf" firstAttribute="top" secondItem="xOd-K0-7LM" secondAttribute="top" constant="7" id="V9I-jk-CXx"/>
                                         <constraint firstAttribute="trailing" secondItem="wY9-O1-uGX" secondAttribute="trailing" constant="8" id="cDI-XB-u6w"/>
                                         <constraint firstAttribute="trailing" secondItem="O0o-JS-kIf" secondAttribute="trailing" constant="300" id="hYp-zd-FCV"/>
-                                        <constraint firstItem="vCH-LT-t2w" firstAttribute="leading" secondItem="xOd-K0-7LM" secondAttribute="leading" id="iRw-lC-FRQ"/>
                                         <constraint firstAttribute="bottom" secondItem="wY9-O1-uGX" secondAttribute="bottom" constant="8" id="jG5-3M-9xf"/>
                                         <constraint firstAttribute="trailing" secondItem="O0o-JS-kIf" secondAttribute="trailing" constant="8" id="l6P-w5-i8o"/>
                                         <constraint firstAttribute="bottom" secondItem="O0o-JS-kIf" secondAttribute="bottom" constant="6" id="ltZ-GU-9h4"/>
                                         <constraint firstItem="O0o-JS-kIf" firstAttribute="bottom" secondItem="efZ-Gb-ngz" secondAttribute="bottom" id="nrR-4f-l9i"/>
-                                        <constraint firstAttribute="trailing" secondItem="vCH-LT-t2w" secondAttribute="trailing" id="oof-P1-UEa"/>
                                         <constraint firstItem="efZ-Gb-ngz" firstAttribute="leading" secondItem="xOd-K0-7LM" secondAttribute="leading" constant="8" id="pZ9-ka-9Pz"/>
                                         <constraint firstItem="O0o-JS-kIf" firstAttribute="centerX" secondItem="xOd-K0-7LM" secondAttribute="centerX" id="uAp-zc-rOo"/>
                                     </constraints>
@@ -1462,7 +1452,6 @@
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.60784313725490191" green="0.33725490196078434" blue="0.77254901960784317" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
-                                    <outlet property="meditationImage" destination="vCH-LT-t2w" id="AKq-fg-MDa"/>
                                     <outlet property="recordButton" destination="O0o-JS-kIf" id="Ps4-3X-CxD"/>
                                     <outlet property="songTitle" destination="efZ-Gb-ngz" id="CE5-Qd-tSX"/>
                                 </connections>
@@ -1720,7 +1709,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h6H-Cu-eok" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1765.5" y="1804.5"/>
+            <point key="canvasLocation" x="1880.5" y="1678.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="RfK-EW-hsh">
@@ -1755,9 +1744,9 @@
         <image name="NextB" width="45" height="45"/>
         <image name="PlayB" width="45" height="45"/>
         <image name="Prev" width="45" height="45"/>
-        <image name="RecordButtonEdited.png" width="283" height="283"/>
         <image name="Reset" width="35" height="35"/>
         <image name="background.png" width="1200" height="2038"/>
+        <image name="microphone2.png" width="366" height="366"/>
         <image name="newMediaSkin.jpg" width="1200" height="2038"/>
         <image name="searchYogaButton3.png" width="24" height="24"/>
     </resources>
