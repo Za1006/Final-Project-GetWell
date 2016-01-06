@@ -1362,14 +1362,16 @@
                         <barButtonItem key="rightBarButtonItem" title="Search" id="pgk-RK-Cfo">
                             <color key="tintColor" red="0.94937485030000002" green="1" blue="0.94555853690000002" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <segue destination="4DS-SQ-1Rz" kind="show" id="vGD-Wi-P1M"/>
+                                <segue destination="4DS-SQ-1Rz" kind="presentation" modalTransitionStyle="flipHorizontal" id="vGD-Wi-P1M"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="albumArtwork" destination="wVM-aS-Wbk" id="djV-VD-x7W"/>
+                        <outlet property="backButton" destination="L3s-fU-7FT" id="fuw-av-2k6"/>
                         <outlet property="meditationCountdown" destination="M8g-Na-5Ku" id="syj-jg-iic"/>
+                        <outlet property="playPauseButton" destination="Nmf-NF-XH3" id="wzD-gk-IYn"/>
                         <outlet property="songTitleLabel" destination="Qna-FH-2Bg" id="3hk-pa-k8T"/>
                         <outlet property="timeSegmentedControl" destination="fik-pu-Jzf" id="VHx-GS-rHV"/>
                     </connections>
@@ -1663,7 +1665,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h6H-Cu-eok" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1745" y="1663"/>
+            <point key="canvasLocation" x="1765.5" y="1804.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="RfK-EW-hsh">

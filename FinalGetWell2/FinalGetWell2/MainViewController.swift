@@ -53,6 +53,8 @@ class MainViewController: UIViewController,UIPopoverPresentationControllerDelega
     {
         super.viewDidLoad()
         
+//        self.navigationController!.navigationBar.topItem!.title = "Cancel"
+        
         plus.hidden = true
         plus.enabled = false
         next.hidden = true
@@ -231,6 +233,10 @@ class MainViewController: UIViewController,UIPopoverPresentationControllerDelega
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
     {
+        let backItem = UIBarButtonItem()
+        backItem.title = "Cancel"
+        navigationItem.backBarButtonItem = backItem
+        backItem.tintColor = UIColor.whiteColor()
 //        if segue.identifier == "ShowMediaSegue"
 //        {
 //            let mediaPlayerVC = segue.destinationViewController as! MediaPlayerViewController
