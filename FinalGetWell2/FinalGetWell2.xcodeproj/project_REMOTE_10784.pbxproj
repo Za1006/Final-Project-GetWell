@@ -56,9 +56,6 @@
 		5D7CFF9F1C3C675100CBC505 /* searchYogaButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D7CFF9E1C3C675100CBC505 /* searchYogaButton.png */; };
 		5D7CFFA11C3C67BB00CBC505 /* searchYogaButton2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D7CFFA01C3C67BB00CBC505 /* searchYogaButton2.png */; };
 		5D7CFFA31C3C6B1D00CBC505 /* searchYogaButton3.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D7CFFA21C3C6B1D00CBC505 /* searchYogaButton3.png */; };
-		5D7CFFA51C3D61C600CBC505 /* gwNewMindPower.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5D7CFFA41C3D61C600CBC505 /* gwNewMindPower.mp3 */; };
-		5D7CFFA71C3D621600CBC505 /* calmPeace.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5D7CFFA61C3D621600CBC505 /* calmPeace.mp3 */; };
-		5D7CFFA91C3D723400CBC505 /* newCalmAffirmation.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D7CFFA81C3D723400CBC505 /* newCalmAffirmation.png */; };
 		5D8B941F1C29A8FC001C9579 /* checked@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D8B94191C29A8FC001C9579 /* checked@1x.png */; };
 		5D8B94201C29A8FC001C9579 /* checked@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D8B941A1C29A8FC001C9579 /* checked@2x.png */; };
 		5D8B94211C29A8FC001C9579 /* checked@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D8B941B1C29A8FC001C9579 /* checked@3x.png */; };
@@ -499,7 +496,6 @@
 		5DCF68FF1C233FE500A72F12 /* Music */ = {
 			isa = PBXGroup;
 			children = (
-				5D7CFFA41C3D61C600CBC505 /* gwNewMindPower.mp3 */,
 				5D28B1731C32FC1800A11907 /* mindPowerAffirmation.mp3 */,
 				5D8B944E1C2A276F001C9579 /* leaveswind.mp3 */,
 				5D8B944C1C2A274A001C9579 /* mytomorrow.mp3 */,
@@ -611,7 +607,6 @@
 				5D8B94311C2A1585001C9579 /* loadingIcon4.png in Resources */,
 				5D7CFF901C3C1CFF00CBC505 /* newChillImg.png in Resources */,
 				5D8B94691C2A27B8001C9579 /* WindLeavessSound.png in Resources */,
-				5D7CFFA71C3D621600CBC505 /* calmPeace.mp3 in Resources */,
 				5D8B94491C2A26CF001C9579 /* betterdaysahead.mp3 in Resources */,
 				5D8B94611C2A27B8001C9579 /* ForestSound.png in Resources */,
 				5D7CFF9B1C3C1CFF00CBC505 /* newWindLeavesImg.png in Resources */,
@@ -657,7 +652,6 @@
 				5D8B94281C29ACBF001C9579 /* testunchk.png in Resources */,
 				5D8B94201C29A8FC001C9579 /* checked@2x.png in Resources */,
 				5DCF68DE1C233F5E00A72F12 /* GetWellMainPage.png in Resources */,
-				5D7CFFA51C3D61C600CBC505 /* gwNewMindPower.mp3 in Resources */,
 				5DCF68DF1C233F5E00A72F12 /* GetWellMediaDetailPage.jpg in Resources */,
 				5DCF68DB1C233F5E00A72F12 /* GetWellLogin2.png in Resources */,
 				5D8B94221C29A8FC001C9579 /* unchecked@1x.png in Resources */,
@@ -687,7 +681,6 @@
 				5D7CFF941C3C1CFF00CBC505 /* newMindPowerImg.png in Resources */,
 				4C0C883F1C3B3891001016AE /* DownArrow2.png in Resources */,
 				5D7CFF981C3C1CFF00CBC505 /* newSnowStormImg.png in Resources */,
-				5D7CFFA91C3D723400CBC505 /* newCalmAffirmation.png in Resources */,
 				5D28B1761C32FC1800A11907 /* MindPowerImg.png in Resources */,
 				5D7CFF971C3C1CFF00CBC505 /* newRooftopImg.png in Resources */,
 				5D7CFF911C3C1CFF00CBC505 /* newCreekImg.png in Resources */,

@@ -185,6 +185,12 @@
 		5D7CFF9E1C3C675100CBC505 /* searchYogaButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = searchYogaButton.png; path = ../searchYogaButton.png; sourceTree = "<group>"; };
 		5D7CFFA01C3C67BB00CBC505 /* searchYogaButton2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = searchYogaButton2.png; path = ../searchYogaButton2.png; sourceTree = "<group>"; };
 		5D7CFFA21C3C6B1D00CBC505 /* searchYogaButton3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = searchYogaButton3.png; path = ../searchYogaButton3.png; sourceTree = "<group>"; };
+<<<<<<< Updated upstream
+		5D7CFFA41C3D61C600CBC505 /* gwNewMindPower.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gwNewMindPower.mp3; sourceTree = "<group>"; };
+		5D7CFFA61C3D621600CBC505 /* calmPeace.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = calmPeace.mp3; sourceTree = "<group>"; };
+		5D7CFFA81C3D723400CBC505 /* newCalmAffirmation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newCalmAffirmation.png; sourceTree = "<group>"; };
+=======
+>>>>>>> Stashed changes
 		5D8B94191C29A8FC001C9579 /* checked@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checked@1x.png"; sourceTree = "<group>"; };
 		5D8B941A1C29A8FC001C9579 /* checked@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checked@2x.png"; sourceTree = "<group>"; };
 		5D8B941B1C29A8FC001C9579 /* checked@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checked@3x.png"; sourceTree = "<group>"; };
@@ -325,9 +331,15 @@
 		5D4D47B61C3603C400B9949B /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< Updated upstream
+				5D7CFF9E1C3C675100CBC505 /* searchYogaButton.png */,
+				5D7CFFA01C3C67BB00CBC505 /* searchYogaButton2.png */,
+				5D7CFFA21C3C6B1D00CBC505 /* searchYogaButton3.png */,
+=======
 				5D7CFFA21C3C6B1D00CBC505 /* searchYogaButton3.png */,
 				5D7CFFA01C3C67BB00CBC505 /* searchYogaButton2.png */,
 				5D7CFF9E1C3C675100CBC505 /* searchYogaButton.png */,
+>>>>>>> Stashed changes
 				5D4D47B71C3603C400B9949B /* next */,
 				5D4D47BB1C3603C400B9949B /* play */,
 				5D4D47BF1C3603C400B9949B /* prev */,
@@ -404,6 +416,11 @@
 				AA184A301C233C5D001A679F /* MainViewController.swift */,
 				5D6827501C24A8DA00374755 /* TableViewCell.swift */,
 				AA184A361C237EB6001A679F /* MediaPlayerViewController.swift */,
+<<<<<<< Updated upstream
+				5D7CFFA81C3D723400CBC505 /* newCalmAffirmation.png */,
+				5D7CFFA61C3D621600CBC505 /* calmPeace.mp3 */,
+=======
+>>>>>>> Stashed changes
 				5D8B94761C2AE3E4001C9579 /* MapViewController.swift */,
 				5DCF68B51C23336500A72F12 /* Main.storyboard */,
 				4C0C88421C3B3B81001016AE /* Parse Login */,

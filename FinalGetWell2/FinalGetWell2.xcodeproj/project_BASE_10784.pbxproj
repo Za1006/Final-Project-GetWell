@@ -56,9 +56,6 @@
 		5D7CFF9F1C3C675100CBC505 /* searchYogaButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D7CFF9E1C3C675100CBC505 /* searchYogaButton.png */; };
 		5D7CFFA11C3C67BB00CBC505 /* searchYogaButton2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D7CFFA01C3C67BB00CBC505 /* searchYogaButton2.png */; };
 		5D7CFFA31C3C6B1D00CBC505 /* searchYogaButton3.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D7CFFA21C3C6B1D00CBC505 /* searchYogaButton3.png */; };
-		5D7CFFA51C3D61C600CBC505 /* gwNewMindPower.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5D7CFFA41C3D61C600CBC505 /* gwNewMindPower.mp3 */; };
-		5D7CFFA71C3D621600CBC505 /* calmPeace.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5D7CFFA61C3D621600CBC505 /* calmPeace.mp3 */; };
-		5D7CFFA91C3D723400CBC505 /* newCalmAffirmation.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D7CFFA81C3D723400CBC505 /* newCalmAffirmation.png */; };
 		5D8B941F1C29A8FC001C9579 /* checked@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D8B94191C29A8FC001C9579 /* checked@1x.png */; };
 		5D8B94201C29A8FC001C9579 /* checked@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D8B941A1C29A8FC001C9579 /* checked@2x.png */; };
 		5D8B94211C29A8FC001C9579 /* checked@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D8B941B1C29A8FC001C9579 /* checked@3x.png */; };
@@ -182,9 +179,9 @@
 		5D7CFF8B1C3C1CFF00CBC505 /* newThunderImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newThunderImg.png; sourceTree = "<group>"; };
 		5D7CFF8C1C3C1CFF00CBC505 /* newTomorrowImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newTomorrowImg.png; sourceTree = "<group>"; };
 		5D7CFF8D1C3C1CFF00CBC505 /* newWindLeavesImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newWindLeavesImg.png; sourceTree = "<group>"; };
-		5D7CFF9E1C3C675100CBC505 /* searchYogaButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = searchYogaButton.png; path = ../searchYogaButton.png; sourceTree = "<group>"; };
-		5D7CFFA01C3C67BB00CBC505 /* searchYogaButton2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = searchYogaButton2.png; path = ../searchYogaButton2.png; sourceTree = "<group>"; };
-		5D7CFFA21C3C6B1D00CBC505 /* searchYogaButton3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = searchYogaButton3.png; path = ../searchYogaButton3.png; sourceTree = "<group>"; };
+		5D7CFF9E1C3C675100CBC505 /* searchYogaButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = searchYogaButton.png; sourceTree = "<group>"; };
+		5D7CFFA01C3C67BB00CBC505 /* searchYogaButton2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = searchYogaButton2.png; sourceTree = "<group>"; };
+		5D7CFFA21C3C6B1D00CBC505 /* searchYogaButton3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = searchYogaButton3.png; sourceTree = "<group>"; };
 		5D8B94191C29A8FC001C9579 /* checked@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checked@1x.png"; sourceTree = "<group>"; };
 		5D8B941A1C29A8FC001C9579 /* checked@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checked@2x.png"; sourceTree = "<group>"; };
 		5D8B941B1C29A8FC001C9579 /* checked@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checked@3x.png"; sourceTree = "<group>"; };
@@ -325,9 +322,6 @@
 		5D4D47B61C3603C400B9949B /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
-				5D7CFFA21C3C6B1D00CBC505 /* searchYogaButton3.png */,
-				5D7CFFA01C3C67BB00CBC505 /* searchYogaButton2.png */,
-				5D7CFF9E1C3C675100CBC505 /* searchYogaButton.png */,
 				5D4D47B71C3603C400B9949B /* next */,
 				5D4D47BB1C3603C400B9949B /* play */,
 				5D4D47BF1C3603C400B9949B /* prev */,
@@ -404,6 +398,12 @@
 				AA184A301C233C5D001A679F /* MainViewController.swift */,
 				5D6827501C24A8DA00374755 /* TableViewCell.swift */,
 				AA184A361C237EB6001A679F /* MediaPlayerViewController.swift */,
+				AA184AE11C272F55001A679F /* ViewController.swift */,
+				5D7CFF9E1C3C675100CBC505 /* searchYogaButton.png */,
+				5D7CFFA01C3C67BB00CBC505 /* searchYogaButton2.png */,
+				5D7CFFA21C3C6B1D00CBC505 /* searchYogaButton3.png */,
+				AA184AD71C272C62001A679F /* ContentViewController.swift */,
+				AA184ADB1C272D3C001A679F /* PageViewController.swift */,
 				5D8B94761C2AE3E4001C9579 /* MapViewController.swift */,
 				5DCF68B51C23336500A72F12 /* Main.storyboard */,
 				4C0C88421C3B3B81001016AE /* Parse Login */,
@@ -499,7 +499,6 @@
 		5DCF68FF1C233FE500A72F12 /* Music */ = {
 			isa = PBXGroup;
 			children = (
-				5D7CFFA41C3D61C600CBC505 /* gwNewMindPower.mp3 */,
 				5D28B1731C32FC1800A11907 /* mindPowerAffirmation.mp3 */,
 				5D8B944E1C2A276F001C9579 /* leaveswind.mp3 */,
 				5D8B944C1C2A274A001C9579 /* mytomorrow.mp3 */,
@@ -611,7 +610,6 @@
 				5D8B94311C2A1585001C9579 /* loadingIcon4.png in Resources */,
 				5D7CFF901C3C1CFF00CBC505 /* newChillImg.png in Resources */,
 				5D8B94691C2A27B8001C9579 /* WindLeavessSound.png in Resources */,
-				5D7CFFA71C3D621600CBC505 /* calmPeace.mp3 in Resources */,
 				5D8B94491C2A26CF001C9579 /* betterdaysahead.mp3 in Resources */,
 				5D8B94611C2A27B8001C9579 /* ForestSound.png in Resources */,
 				5D7CFF9B1C3C1CFF00CBC505 /* newWindLeavesImg.png in Resources */,
@@ -657,7 +655,6 @@
 				5D8B94281C29ACBF001C9579 /* testunchk.png in Resources */,
 				5D8B94201C29A8FC001C9579 /* checked@2x.png in Resources */,
 				5DCF68DE1C233F5E00A72F12 /* GetWellMainPage.png in Resources */,
-				5D7CFFA51C3D61C600CBC505 /* gwNewMindPower.mp3 in Resources */,
 				5DCF68DF1C233F5E00A72F12 /* GetWellMediaDetailPage.jpg in Resources */,
 				5DCF68DB1C233F5E00A72F12 /* GetWellLogin2.png in Resources */,
 				5D8B94221C29A8FC001C9579 /* unchecked@1x.png in Resources */,
@@ -687,7 +684,6 @@
 				5D7CFF941C3C1CFF00CBC505 /* newMindPowerImg.png in Resources */,
 				4C0C883F1C3B3891001016AE /* DownArrow2.png in Resources */,
 				5D7CFF981C3C1CFF00CBC505 /* newSnowStormImg.png in Resources */,
-				5D7CFFA91C3D723400CBC505 /* newCalmAffirmation.png in Resources */,
 				5D28B1761C32FC1800A11907 /* MindPowerImg.png in Resources */,
 				5D7CFF971C3C1CFF00CBC505 /* newRooftopImg.png in Resources */,
 				5D7CFF911C3C1CFF00CBC505 /* newCreekImg.png in Resources */,
