@@ -26,4 +26,9 @@ class PlaylistTableViewCell: UITableViewCell
         // Configure the view for the selected state
     }
     
+    @IBAction func startRecording(sender: UIButton!)
+    {
+        
+    }
+    
 }

@@ -1399,11 +1399,38 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fyf-3N-wGF">
-                                            <rect key="frame" x="0.0" y="0.0" width="332" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                         </imageView>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rPF-XF-c6f">
-                                            <rect key="frame" x="0.0" y="0.0" width="332" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Kn-0L-MUy">
+                                                    <rect key="frame" x="332" y="0.0" width="35" height="35"/>
+                                                    <color key="backgroundColor" red="0.60784313729999995" green="0.33725490200000002" blue="0.7725490196" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="5Kn-0L-MUy" secondAttribute="height" multiplier="1:1" id="J0H-jC-y1I"/>
+                                                        <constraint firstAttribute="width" constant="35" id="yB3-1k-NKe"/>
+                                                        <constraint firstAttribute="height" constant="35" id="yCu-ee-zGA"/>
+                                                    </constraints>
+                                                    <state key="normal" title="Button" image="microphone2.png"/>
+                                                    <connections>
+                                                        <action selector="startRecording:" destination="jVW-T4-tgf" eventType="touchUpInside" id="8LW-yy-1CZ"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
                                             <color key="backgroundColor" red="0.60784313725490191" green="0.33725490196078434" blue="0.77254901960784317" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="5Kn-0L-MUy" firstAttribute="top" secondItem="rPF-XF-c6f" secondAttribute="top" id="4we-dh-n3b"/>
+                                                <constraint firstItem="5Kn-0L-MUy" firstAttribute="leading" secondItem="rPF-XF-c6f" secondAttribute="leading" constant="332" id="5sR-O2-CWZ"/>
+                                                <constraint firstItem="5Kn-0L-MUy" firstAttribute="bottom" secondItem="rPF-XF-c6f" secondAttribute="bottomMargin" id="GlX-OP-GW3"/>
+                                                <constraint firstItem="5Kn-0L-MUy" firstAttribute="top" secondItem="rPF-XF-c6f" secondAttribute="top" id="KNe-v5-a2h"/>
+                                                <constraint firstAttribute="trailing" secondItem="5Kn-0L-MUy" secondAttribute="trailing" constant="8" id="PS6-rt-TLT"/>
+                                                <constraint firstAttribute="bottom" secondItem="5Kn-0L-MUy" secondAttribute="bottom" constant="8" id="dGj-wW-AHv"/>
+                                                <constraint firstAttribute="trailing" secondItem="5Kn-0L-MUy" secondAttribute="trailing" constant="8" id="eQv-ej-Ww8"/>
+                                                <constraint firstItem="5Kn-0L-MUy" firstAttribute="trailing" secondItem="rPF-XF-c6f" secondAttribute="trailingMargin" id="hbR-h7-sxF"/>
+                                                <constraint firstItem="5Kn-0L-MUy" firstAttribute="top" secondItem="rPF-XF-c6f" secondAttribute="top" id="sH4-Lu-ePH"/>
+                                                <constraint firstItem="5Kn-0L-MUy" firstAttribute="top" secondItem="rPF-XF-c6f" secondAttribute="top" id="xDi-lB-o76"/>
+                                            </constraints>
                                         </view>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Song Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efZ-Gb-ngz">
                                             <rect key="frame" x="8" y="8" width="87" height="27"/>
@@ -1411,60 +1438,27 @@
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O0o-JS-kIf">
-                                            <rect key="frame" x="332" y="0.0" width="35" height="35"/>
-                                            <color key="backgroundColor" red="0.60784313729999995" green="0.33725490200000002" blue="0.7725490196" alpha="1" colorSpace="calibratedRGB"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="45" id="bJ4-b0-bvK"/>
-                                                <constraint firstAttribute="height" constant="45" id="bwn-5j-Wfc"/>
-                                                <constraint firstAttribute="width" secondItem="O0o-JS-kIf" secondAttribute="height" multiplier="1:1" id="eBP-lo-1Xl"/>
-                                                <constraint firstAttribute="height" constant="35" id="lXE-Rd-o4T"/>
-                                                <constraint firstAttribute="width" constant="35" id="wcc-ke-1TI"/>
-                                            </constraints>
-                                            <state key="normal" title="Button" image="microphone2.png"/>
-                                            <variation key="default">
-                                                <mask key="constraints">
-                                                    <exclude reference="bJ4-b0-bvK"/>
-                                                    <exclude reference="bwn-5j-Wfc"/>
-                                                </mask>
-                                            </variation>
-                                        </button>
                                     </subviews>
                                     <color key="backgroundColor" red="0.60784313729999995" green="0.33725490200000002" blue="0.7725490196" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     <constraints>
                                         <constraint firstAttribute="bottom" secondItem="fyf-3N-wGF" secondAttribute="bottom" id="119-8b-kU5"/>
+                                        <constraint firstItem="rPF-XF-c6f" firstAttribute="leading" secondItem="fyf-3N-wGF" secondAttribute="leading" id="HU7-em-cbd"/>
                                         <constraint firstItem="efZ-Gb-ngz" firstAttribute="top" secondItem="xOd-K0-7LM" secondAttribute="top" constant="8" id="JFk-0Q-WiV"/>
                                         <constraint firstAttribute="bottom" secondItem="efZ-Gb-ngz" secondAttribute="bottom" constant="8" id="Mh0-m2-xMA"/>
                                         <constraint firstItem="fyf-3N-wGF" firstAttribute="top" secondItem="xOd-K0-7LM" secondAttribute="top" id="N0A-GE-9CC"/>
-                                        <constraint firstItem="O0o-JS-kIf" firstAttribute="top" secondItem="xOd-K0-7LM" secondAttribute="top" constant="7" id="V9I-jk-CXx"/>
-                                        <constraint firstItem="rPF-XF-c6f" firstAttribute="centerY" secondItem="fyf-3N-wGF" secondAttribute="centerY" id="Xvm-bA-n8w"/>
                                         <constraint firstItem="fyf-3N-wGF" firstAttribute="leading" secondItem="xOd-K0-7LM" secondAttribute="leading" id="aTU-4I-XAh"/>
-                                        <constraint firstItem="O0o-JS-kIf" firstAttribute="leading" secondItem="fyf-3N-wGF" secondAttribute="trailing" id="byd-PF-rJ7"/>
-                                        <constraint firstAttribute="trailing" secondItem="O0o-JS-kIf" secondAttribute="trailing" constant="300" id="hYp-zd-FCV"/>
-                                        <constraint firstItem="rPF-XF-c6f" firstAttribute="centerX" secondItem="fyf-3N-wGF" secondAttribute="centerX" id="inh-69-Qgg"/>
-                                        <constraint firstItem="rPF-XF-c6f" firstAttribute="height" secondItem="fyf-3N-wGF" secondAttribute="height" id="jcz-wH-b5V"/>
-                                        <constraint firstAttribute="trailing" secondItem="O0o-JS-kIf" secondAttribute="trailing" constant="8" id="l6P-w5-i8o"/>
-                                        <constraint firstAttribute="bottom" secondItem="O0o-JS-kIf" secondAttribute="bottom" constant="6" id="ltZ-GU-9h4"/>
-                                        <constraint firstItem="O0o-JS-kIf" firstAttribute="bottom" secondItem="efZ-Gb-ngz" secondAttribute="bottom" id="nrR-4f-l9i"/>
+                                        <constraint firstItem="rPF-XF-c6f" firstAttribute="bottom" secondItem="fyf-3N-wGF" secondAttribute="bottom" id="kqO-em-xpH"/>
+                                        <constraint firstItem="rPF-XF-c6f" firstAttribute="top" secondItem="fyf-3N-wGF" secondAttribute="top" id="ngu-RZ-lw0"/>
                                         <constraint firstItem="efZ-Gb-ngz" firstAttribute="leading" secondItem="xOd-K0-7LM" secondAttribute="leading" constant="8" id="pZ9-ka-9Pz"/>
-                                        <constraint firstItem="rPF-XF-c6f" firstAttribute="width" secondItem="fyf-3N-wGF" secondAttribute="width" id="pbn-Zz-axH"/>
-                                        <constraint firstItem="O0o-JS-kIf" firstAttribute="centerX" secondItem="xOd-K0-7LM" secondAttribute="centerX" id="uAp-zc-rOo"/>
+                                        <constraint firstAttribute="trailing" secondItem="fyf-3N-wGF" secondAttribute="trailing" id="uWv-2q-7FZ"/>
                                     </constraints>
-                                    <variation key="default">
-                                        <mask key="constraints">
-                                            <exclude reference="V9I-jk-CXx"/>
-                                            <exclude reference="hYp-zd-FCV"/>
-                                            <exclude reference="ltZ-GU-9h4"/>
-                                            <exclude reference="uAp-zc-rOo"/>
-                                        </mask>
-                                    </variation>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.60784313725490191" green="0.33725490196078434" blue="0.77254901960784317" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <outlet property="imageOverlayView" destination="rPF-XF-c6f" id="TXW-Ub-dQ2"/>
                                     <outlet property="meditationImage" destination="fyf-3N-wGF" id="1na-NI-woN"/>
-                                    <outlet property="recordButton" destination="O0o-JS-kIf" id="Ps4-3X-CxD"/>
+                                    <outlet property="recordButton" destination="5Kn-0L-MUy" id="uOX-Pl-4NG"/>
                                     <outlet property="songTitle" destination="efZ-Gb-ngz" id="CE5-Qd-tSX"/>
                                 </connections>
                             </tableViewCell>
