@@ -10,7 +10,8 @@ import UIKit
 import CoreData
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate
+{
 
     var window: UIWindow?
 
@@ -18,11 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool
     {
         
-//        let pageViewController = UIPageControl.appearance()
-//        pageViewController.pageIndicatorTintColor = UIColor.lightGrayColor()
-//        pageViewController.currentPageIndicatorTintColor = UIColor.greenColor()
-//        pageViewController.backgroundColor = UIColor.blueColor()
-//        
+        
         application.registerUserNotificationSettings(UIUserNotificationSettings(forTypes: [.Alert, .Sound], categories: nil))
         
   Parse.setApplicationId("TaE85IRBTU5SMaF1v1BUfPOOZ0eRNMsbqSWIY3p4",

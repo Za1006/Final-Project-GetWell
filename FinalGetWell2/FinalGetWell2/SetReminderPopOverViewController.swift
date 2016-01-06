@@ -22,24 +22,24 @@ class SetReminderPopOverViewController: UIViewController
         // Do any additional setup after loading the view.
     }
     
-    override func viewWillDisappear(animated: Bool)
-    {
-        super.viewWillDisappear(animated)
-        
-        delegate?.dateWasChosen(datePicker.date)
-        
-        let localNotification = UILocalNotification()
-                  localNotification.fireDate = datePicker.date
-                           print(NSDate())
-                          print(localNotification.fireDate)
-                   localNotification.timeZone = NSTimeZone.localTimeZone()
-                   localNotification.alertBody = "Time to Relax"
-                   localNotification.alertAction = "Open App"
-                   localNotification.soundName = UILocalNotificationDefaultSoundName
-        
-                UIApplication.sharedApplication().scheduleLocalNotification(localNotification)
-    
-    }
+//    override func viewWillDisappear(animated: Bool)
+//    {
+//        super.viewWillDisappear(animated)
+//        
+//        delegate?.dateWasChosen(datePicker.date)
+//        
+//        let localNotification = UILocalNotification()
+//                  localNotification.fireDate = datePicker.date
+//                           print(NSDate())
+//                          print(localNotification.fireDate)
+//                   localNotification.timeZone = NSTimeZone.localTimeZone()
+//                   localNotification.alertBody = "Time to Relax"
+//                   localNotification.alertAction = "Open App"
+//                   localNotification.soundName = UILocalNotificationDefaultSoundName
+//        
+//                UIApplication.sharedApplication().scheduleLocalNotification(localNotification)
+//    
+//    }
 
     override func didReceiveMemoryWarning()
     {

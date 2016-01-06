@@ -398,12 +398,15 @@
 				AA184A301C233C5D001A679F /* MainViewController.swift */,
 				5D6827501C24A8DA00374755 /* TableViewCell.swift */,
 				AA184A361C237EB6001A679F /* MediaPlayerViewController.swift */,
+<<<<<<< HEAD
 				AA184AE11C272F55001A679F /* ViewController.swift */,
 				5D7CFF9E1C3C675100CBC505 /* searchYogaButton.png */,
 				5D7CFFA01C3C67BB00CBC505 /* searchYogaButton2.png */,
 				5D7CFFA21C3C6B1D00CBC505 /* searchYogaButton3.png */,
 				AA184AD71C272C62001A679F /* ContentViewController.swift */,
 				AA184ADB1C272D3C001A679F /* PageViewController.swift */,
+=======
+>>>>>>> origin/SetRemider
 				5D8B94761C2AE3E4001C9579 /* MapViewController.swift */,
 				5DCF68B51C23336500A72F12 /* Main.storyboard */,
 				4C0C88421C3B3B81001016AE /* Parse Login */,

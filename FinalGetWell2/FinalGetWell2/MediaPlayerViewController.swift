@@ -9,6 +9,7 @@
 import UIKit
 import MediaPlayer
 import AVFoundation
+import QuartzCore
 
 var timerCount = 0
 
@@ -23,8 +24,9 @@ class MediaPlayerViewController: UIViewController
     @IBOutlet weak var albumArtwork: UIImageView!
     @IBOutlet weak var artistLabel: UILabel!
     @IBOutlet weak var plusButton: UIButton!
-    //  @IBOutlet var playPauseButton: UIButton!
-    
+    @IBOutlet weak var playPauseButton: UIButton!
+    @IBOutlet weak var backButton: UIButton!
+ 
 //    let avQueuePlayer = AVQueuePlayer()
     var player = AVQueuePlayer()
     var songs = Array<Song>()
@@ -49,10 +51,18 @@ class MediaPlayerViewController: UIViewController
     {
         super.viewDidLoad()
         
+//        self.navigationController!.navigationBar.topItem!.title = "Cancel"
+        
+        backButton.enabled = false
+        
+        pulse(playPauseButton)
+        morePulse(playPauseButton)
+
        //plusButton.hidden = true
         
+        timerCount = 0
         originalCount = 300
-        meditationCountdown.text = "5:00"
+        meditationCountdown.text = "05:00"
         
         setupAudioSession()
         configurePlaylist()
@@ -72,7 +82,7 @@ class MediaPlayerViewController: UIViewController
 //        player = AVQueuePlayer(items: songs)
 //        player.actionAtItemEnd = .Advance
 //        player.addObserver(self, forKeyPath: "currentItem", options: [.New, .Initial], context: nil)
-//        
+        
     }
     
     
@@ -100,7 +110,7 @@ class MediaPlayerViewController: UIViewController
         if sender.selectedSegmentIndex == 0
         {
             originalCount = 300
-            meditationCountdown.text = "5:00"
+            meditationCountdown.text = "05:00"
             whichSegment = 0
 //            startTimer()
 //            setupAudioSession()
@@ -140,6 +150,31 @@ class MediaPlayerViewController: UIViewController
 
     }
     
+    func morePulse(button: UIButton)
+    {
+        let pulseAnimation = CABasicAnimation(keyPath: "opacity")
+        pulseAnimation.duration = 3
+        pulseAnimation.fromValue = 0.7
+        pulseAnimation.toValue = 1.3
+        pulseAnimation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+        pulseAnimation.autoreverses = true
+        pulseAnimation.repeatCount = FLT_MAX
+        button.layer.addAnimation(pulseAnimation, forKey: nil)
+    }
+    
+    func pulse(button: UIButton)
+    {
+        let pulseAnimation:CABasicAnimation = CABasicAnimation(keyPath: "transform.scale")
+        pulseAnimation.duration = 3
+        pulseAnimation.fromValue = NSNumber(float: 0.7)
+        pulseAnimation.toValue = NSNumber(float: 1.3)
+        pulseAnimation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+        pulseAnimation.autoreverses = true
+        pulseAnimation.repeatCount = FLT_MAX
+        button.layer.addAnimation(pulseAnimation, forKey: "layerAnimation")
+    }
+    
+    
     func startTimer()
     {
         if timerCount % 2 == 0
@@ -166,6 +201,7 @@ class MediaPlayerViewController: UIViewController
 //        let newSecondCount = originalCount%60
 //        meditationCountdown.text = String("\(newMinuteCount):\(newSecondCount)")
         timerDisplay()
+        print(originalCount)
         
         if originalCount == 0
         {
@@ -198,7 +234,7 @@ class MediaPlayerViewController: UIViewController
         }
         flashCount++
         
-        if flashCount > 15
+        if flashCount > 100
         {
             flashTimer?.invalidate()
         }
@@ -217,10 +253,14 @@ class MediaPlayerViewController: UIViewController
         timerCount = timerCount + 1
         startTimer()
         togglePlayback(!nowPlaying)
+        backButton.hidden = false
+        backButton.enabled = true
+        meditationCountdown.textColor = UIColor.whiteColor()
     }
     
     @IBAction func skipForwardTapped(sender: UIButton)
     {
+        meditationCountdown.textColor = UIColor.whiteColor()
         let currentSongIndex = (songs as NSArray).indexOfObject(currentSong!)
         let nextSong: Int
         
@@ -239,7 +279,11 @@ class MediaPlayerViewController: UIViewController
     
     @IBAction func skipBackTapped(sender: UIButton)
     {
+        if nowPlaying
+        {
+        meditationCountdown.textColor = UIColor.whiteColor()
         timesTapped = timesTapped + 1
+    
         if timesTapped % 2 == 1
         {
             player.seekToTime(CMTimeMakeWithSeconds(0.0, 1))
@@ -259,6 +303,11 @@ class MediaPlayerViewController: UIViewController
             currentSong = songs[nextSong]
             loadCurrentSong()
             togglePlayback(true)
+        }
+        }
+        else
+        {
+            backButton.enabled = false
         }
         
     }
@@ -446,37 +495,57 @@ class MediaPlayerViewController: UIViewController
     
     @IBAction func resetPressed(sender: UIButton!)
     {
+        meditationCountdown.textColor = UIColor.whiteColor()
 
         if whichSegment == 0
         {
             originalCount = 300
+            meditationCountdown.text = "05:00"
         }
         if whichSegment == 1
         {
             originalCount = 600
+            meditationCountdown.text = "10:00"
         }
         if whichSegment == 2
         {
             originalCount = 900
+            meditationCountdown.text = "15:00"
         }
         if whichSegment == 3
         {
             originalCount = 1200
+            meditationCountdown.text = "20:00"
         }
       
         stopTimer()
+        timerCount = 0
+        timesTapped = 1
         loadCurrentSong()
-        startTimer()
+        togglePlayback(false)
+//        startTimer()
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
     {
+        if timerCount%2 == 1
+        {
+            togglePlayback(true)
+        }
         if let nav = segue.destinationViewController as? UINavigationController
         {
             if let playlistVC = nav.topViewController as? PlaylistTableViewController
             {
                 playlistVC.parent = self
                 playlistVC.songs = songs
+            }
+        }
+        
+        if let nav = segue.destinationViewController as? UINavigationController
+        {
+            if let searchVC = nav.topViewController as? MapViewController
+            {
+                searchVC.parent = self
             }
         }
         

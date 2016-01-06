@@ -55,18 +55,16 @@ class LoginViewController: UIViewController
                 if user != nil
                 {
                     print("login successful")
-//                    self.performSegueWithIdentifier("MediaPlayerViewController", sender: self)
-//                    self.dismissViewControllerAnimated(true, completion: nil)
-//                    self.dismissDelegate?.unwindFromLogin()
-                    
-//                  self.dismissViewControllerAnimated(true, completion: nil)
-                    self.navigationController?.performSegueWithIdentifier("unwindFromLogin", sender: self)
+//       self.dismissDelegate?.unwindFromLogin()
+        self.navigationController?.performSegueWithIdentifier("unwindFromLogin", sender: self)
+//                    self.navigationController?.performSegueWithIdentifier("MediaPlayerViewController", sender: self)
                 }
                 else
                 {
                     print(error?.localizedDescription)
                     self.errorMessageLabel.text = "Please enter username and password to login."
                 }
+                
             }
         }
     }

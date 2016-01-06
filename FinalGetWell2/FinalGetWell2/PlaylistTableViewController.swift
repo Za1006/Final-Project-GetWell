@@ -19,6 +19,8 @@ class PlaylistTableViewController: UITableViewController
     {
         super.viewDidLoad()
         
+        tableView.separatorColor = UIColor.whiteColor()
+        
 //        loadSongs()
         
         // Uncomment the following line to preserve selection between presentations
@@ -30,6 +32,10 @@ class PlaylistTableViewController: UITableViewController
             }
     override func viewWillAppear(animated: Bool) {
         animateTable()
+        if timerCount%2 == 1
+        {
+            parent?.togglePlayback(true)
+        }
     }
 
     
@@ -91,14 +97,14 @@ class PlaylistTableViewController: UITableViewController
     {
         tableview.deselectRowAtIndexPath(indexPath, animated: true)
         
-        timerCount = timerCount + 1
+//        timerCount = timerCount + 1
         
         let selectedSong = songs[indexPath.row]
         parent?.song = selectedSong
         parent?.currentSong = selectedSong
         parent?.loadCurrentSong()
-        parent?.startTimer()
-        parent?.togglePlayback(true)
+//        parent?.player.play()
+//        parent?.startTimer()
         
         navigationController?.dismissViewControllerAnimated(true, completion: nil)
     }
@@ -106,8 +112,19 @@ class PlaylistTableViewController: UITableViewController
     @IBAction func dismissPressed(sender: UIButton!)
     {
         dismissViewControllerAnimated(true, completion: nil)
+        if timerCount%2 == 1
+        {
+            parent?.togglePlayback(true)
+        }
     }
     
+//    override func tableView(tableView: UITableView, didHighlightRowAtIndexPath indexPath: NSIndexPath) {
+//        <#code#>
+//    }
+//    
+//    override func tableView(tableView: UITableView, didUnhighlightRowAtIndexPath indexPath: NSIndexPath) {
+//        <#code#>
+//    }
     
     
     

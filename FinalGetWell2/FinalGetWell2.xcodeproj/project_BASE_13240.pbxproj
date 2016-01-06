@@ -53,9 +53,6 @@
 		5D7CFF991C3C1CFF00CBC505 /* newThunderImg.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D7CFF8B1C3C1CFF00CBC505 /* newThunderImg.png */; };
 		5D7CFF9A1C3C1CFF00CBC505 /* newTomorrowImg.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D7CFF8C1C3C1CFF00CBC505 /* newTomorrowImg.png */; };
 		5D7CFF9B1C3C1CFF00CBC505 /* newWindLeavesImg.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D7CFF8D1C3C1CFF00CBC505 /* newWindLeavesImg.png */; };
-		5D7CFF9F1C3C675100CBC505 /* searchYogaButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D7CFF9E1C3C675100CBC505 /* searchYogaButton.png */; };
-		5D7CFFA11C3C67BB00CBC505 /* searchYogaButton2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D7CFFA01C3C67BB00CBC505 /* searchYogaButton2.png */; };
-		5D7CFFA31C3C6B1D00CBC505 /* searchYogaButton3.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D7CFFA21C3C6B1D00CBC505 /* searchYogaButton3.png */; };
 		5D8B941F1C29A8FC001C9579 /* checked@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D8B94191C29A8FC001C9579 /* checked@1x.png */; };
 		5D8B94201C29A8FC001C9579 /* checked@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D8B941A1C29A8FC001C9579 /* checked@2x.png */; };
 		5D8B94211C29A8FC001C9579 /* checked@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D8B941B1C29A8FC001C9579 /* checked@3x.png */; };
@@ -126,6 +123,9 @@
 		AA184A2F1C233AC1001A679F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA184A2E1C233AC1001A679F /* RegisterViewController.swift */; };
 		AA184A311C233C5D001A679F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA184A301C233C5D001A679F /* MainViewController.swift */; };
 		AA184A371C237EB6001A679F /* MediaPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA184A361C237EB6001A679F /* MediaPlayerViewController.swift */; };
+		AA184AD81C272C62001A679F /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA184AD71C272C62001A679F /* ContentViewController.swift */; };
+		AA184ADC1C272D3C001A679F /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA184ADB1C272D3C001A679F /* PageViewController.swift */; };
+		AA184AE21C272F55001A679F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA184AE11C272F55001A679F /* ViewController.swift */; };
 		AAA99D331C2F7D5200C573A4 /* Positive Affirmations.docx in Resources */ = {isa = PBXBuildFile; fileRef = AAA99D321C2F7D5200C573A4 /* Positive Affirmations.docx */; };
 		BD9EBEDF19FE0925AC376D40 /* libPods-FinalGetWell2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3517483E6AD61A0B82488FF0 /* libPods-FinalGetWell2.a */; };
 /* End PBXBuildFile section */
@@ -179,9 +179,6 @@
 		5D7CFF8B1C3C1CFF00CBC505 /* newThunderImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newThunderImg.png; sourceTree = "<group>"; };
 		5D7CFF8C1C3C1CFF00CBC505 /* newTomorrowImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newTomorrowImg.png; sourceTree = "<group>"; };
 		5D7CFF8D1C3C1CFF00CBC505 /* newWindLeavesImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newWindLeavesImg.png; sourceTree = "<group>"; };
-		5D7CFF9E1C3C675100CBC505 /* searchYogaButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = searchYogaButton.png; sourceTree = "<group>"; };
-		5D7CFFA01C3C67BB00CBC505 /* searchYogaButton2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = searchYogaButton2.png; sourceTree = "<group>"; };
-		5D7CFFA21C3C6B1D00CBC505 /* searchYogaButton3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = searchYogaButton3.png; sourceTree = "<group>"; };
 		5D8B94191C29A8FC001C9579 /* checked@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checked@1x.png"; sourceTree = "<group>"; };
 		5D8B941A1C29A8FC001C9579 /* checked@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checked@2x.png"; sourceTree = "<group>"; };
 		5D8B941B1C29A8FC001C9579 /* checked@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checked@3x.png"; sourceTree = "<group>"; };
@@ -255,6 +252,9 @@
 		AA184A2E1C233AC1001A679F /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		AA184A301C233C5D001A679F /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		AA184A361C237EB6001A679F /* MediaPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaPlayerViewController.swift; sourceTree = "<group>"; };
+		AA184AD71C272C62001A679F /* ContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
+		AA184ADB1C272D3C001A679F /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		AA184AE11C272F55001A679F /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AAA99D321C2F7D5200C573A4 /* Positive Affirmations.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Positive Affirmations.docx"; sourceTree = "<group>"; };
 		B841F7DEDDD329769E75C116 /* Pods-FinalGetWell2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinalGetWell2.release.xcconfig"; path = "Pods/Target Support Files/Pods-FinalGetWell2/Pods-FinalGetWell2.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -399,9 +399,6 @@
 				5D6827501C24A8DA00374755 /* TableViewCell.swift */,
 				AA184A361C237EB6001A679F /* MediaPlayerViewController.swift */,
 				AA184AE11C272F55001A679F /* ViewController.swift */,
-				5D7CFF9E1C3C675100CBC505 /* searchYogaButton.png */,
-				5D7CFFA01C3C67BB00CBC505 /* searchYogaButton2.png */,
-				5D7CFFA21C3C6B1D00CBC505 /* searchYogaButton3.png */,
 				AA184AD71C272C62001A679F /* ContentViewController.swift */,
 				AA184ADB1C272D3C001A679F /* PageViewController.swift */,
 				5D8B94761C2AE3E4001C9579 /* MapViewController.swift */,
@@ -562,7 +559,7 @@
 				TargetAttributes = {
 					5DCF68AD1C23336500A72F12 = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = HM7AP2V9SS;
+						DevelopmentTeam = 32355P55NQ;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -604,9 +601,7 @@
 				5D8B941F1C29A8FC001C9579 /* checked@1x.png in Resources */,
 				5DCF68E41C233F5E00A72F12 /* Next.png in Resources */,
 				5D8B94451C2A267E001C9579 /* thunderlight.mp3 in Resources */,
-				5D7CFFA11C3C67BB00CBC505 /* searchYogaButton2.png in Resources */,
 				5D8B94671C2A27B8001C9579 /* ThunderSound.png in Resources */,
-				5D7CFF9F1C3C675100CBC505 /* searchYogaButton.png in Resources */,
 				5D8B94311C2A1585001C9579 /* loadingIcon4.png in Resources */,
 				5D7CFF901C3C1CFF00CBC505 /* newChillImg.png in Resources */,
 				5D8B94691C2A27B8001C9579 /* WindLeavessSound.png in Resources */,
@@ -616,7 +611,6 @@
 				5D68274A1C247AFC00374755 /* PlayPause1.png in Resources */,
 				5D8B94601C2A27B8001C9579 /* CreekSound.png in Resources */,
 				5DCF68E21C233F5E00A72F12 /* GetWellSignUpFinal.png in Resources */,
-				5D7CFFA31C3C6B1D00CBC505 /* searchYogaButton3.png in Resources */,
 				5D8B945E1C2A27B8001C9579 /* BetterDaySound.png in Resources */,
 				5D7CFF931C3C1CFF00CBC505 /* newHeavyRain.png in Resources */,
 				5D7CFF961C3C1CFF00CBC505 /* newRelaxingImg.png in Resources */,
@@ -767,9 +761,12 @@
 				AA184A2B1C2339FB001A679F /* LoginViewController.swift in Sources */,
 				AA184A311C233C5D001A679F /* MainViewController.swift in Sources */,
 				5DCF68BA1C23336500A72F12 /* FinalGetWell2.xcdatamodeld in Sources */,
+				AA184AE21C272F55001A679F /* ViewController.swift in Sources */,
+				AA184AD81C272C62001A679F /* ContentViewController.swift in Sources */,
 				4C0C883B1C3B3794001016AE /* PlaylistTableViewController.swift in Sources */,
 				4C0C883D1C3B37F7001016AE /* PlaylistTableViewCell.swift in Sources */,
 				AA184A371C237EB6001A679F /* MediaPlayerViewController.swift in Sources */,
+				AA184ADC1C272D3C001A679F /* PageViewController.swift in Sources */,
 				5DCF68B21C23336500A72F12 /* AppDelegate.swift in Sources */,
 				5D8B94771C2AE3E4001C9579 /* MapViewController.swift in Sources */,
 			);
@@ -888,7 +885,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FinalGetWell2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = FinalGetWell235;
+				PRODUCT_BUNDLE_IDENTIFIER = FinalGetWell22;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "FinalGetWell2/FinalGetWell2-Bridging-Header.h";
@@ -906,7 +903,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FinalGetWell2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = FinalGetWell235;
+				PRODUCT_BUNDLE_IDENTIFIER = FinalGetWell22;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "FinalGetWell2/FinalGetWell2-Bridging-Header.h";
