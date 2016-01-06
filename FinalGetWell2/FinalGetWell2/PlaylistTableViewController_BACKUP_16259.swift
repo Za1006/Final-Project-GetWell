@@ -119,6 +119,10 @@ class PlaylistTableViewController: UITableViewController
             cell.imageOverlayView.alpha = 0.3
         }
 //        cell.backgroundView = aSong.albumArtworkName
+<<<<<<< Updated upstream
+=======
+        cell.meditationImage?.image = UIImage(named: aSong.albumArtworkName)
+>>>>>>> Stashed changes
     }
     
         override func tableView(tableView: UITableView, didUnhighlightRowAtIndexPath indexPath: NSIndexPath)
