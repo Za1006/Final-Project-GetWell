@@ -84,11 +84,11 @@ class PlaylistTableViewController: UITableViewController
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
     {
-        let cell = tableView.dequeueReusableCellWithIdentifier("PlaylistModalViewCell", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("PlaylistModalViewCell", forIndexPath: indexPath) as! PlaylistTableViewCell
         
         let aSong = songs[indexPath.row]
-        cell.textLabel?.text = aSong.title
-        cell.detailTextLabel?.text = aSong.artist
+        cell.songTitle.text = aSong.title
+//        cell.detailTextLabel?.text = aSong.artist
         
         return cell
     }
@@ -109,6 +109,20 @@ class PlaylistTableViewController: UITableViewController
         navigationController?.dismissViewControllerAnimated(true, completion: nil)
     }
     
+    override func tableView(tableView: UITableView, didHighlightRowAtIndexPath indexPath: NSIndexPath)
+    {
+        let cell = tableView.dequeueReusableCellWithIdentifier("PlaylistModalViewCell", forIndexPath: indexPath) as! PlaylistTableViewCell
+        
+        let aSong = songs[indexPath.row]
+//        cell.backgroundView = aSong.albumArtworkName
+        cell.meditationImage.image = UIImage(named: aSong.albumArtworkName)
+    }
+    
+//        override func tableView(tableView: UITableView, didUnhighlightRowAtIndexPath indexPath: NSIndexPath)
+//        {
+//            <#code#>
+//        }
+    
     @IBAction func dismissPressed(sender: UIButton!)
     {
         dismissViewControllerAnimated(true, completion: nil)
@@ -117,16 +131,6 @@ class PlaylistTableViewController: UITableViewController
             parent?.togglePlayback(true)
         }
     }
-    
-//    override func tableView(tableView: UITableView, didHighlightRowAtIndexPath indexPath: NSIndexPath) {
-//        <#code#>
-//    }
-//    
-//    override func tableView(tableView: UITableView, didUnhighlightRowAtIndexPath indexPath: NSIndexPath) {
-//        <#code#>
-//    }
-    
-    
     
     //    // Override to support conditional editing of the table view.
     //    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {

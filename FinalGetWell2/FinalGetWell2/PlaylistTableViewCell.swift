@@ -8,6 +8,9 @@
 
 class PlaylistTableViewCell: UITableViewCell
 {
+    @IBOutlet weak var songTitle: UILabel!
+    @IBOutlet weak var meditationImage: UIImageView!
+    @IBOutlet weak var recordButton: UIButton!
     
     override func awakeFromNib()
     {
