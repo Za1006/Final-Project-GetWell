@@ -201,6 +201,7 @@ class MediaPlayerViewController: UIViewController
 //        let newSecondCount = originalCount%60
 //        meditationCountdown.text = String("\(newMinuteCount):\(newSecondCount)")
         timerDisplay()
+        print(originalCount)
         
         if originalCount == 0
         {
@@ -540,9 +541,12 @@ class MediaPlayerViewController: UIViewController
             }
         }
         
-        if let searchVC = segue.destinationViewController as? MapViewController
+        if let nav = segue.destinationViewController as? UINavigationController
         {
-            searchVC.parent = self
+            if let searchVC = nav.topViewController as? MapViewController
+            {
+                searchVC.parent = self
+            }
         }
         
     }

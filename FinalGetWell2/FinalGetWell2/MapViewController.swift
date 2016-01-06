@@ -36,13 +36,7 @@ class MapViewController: UIViewController, UISearchBarDelegate
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         
-        // Init the zoom level
-//        if timerCount%2 == 0
-//        {
-//            parent?.togglePlayback(true)
-//        }
         let coordinate:CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: 28.538336, longitude: -81.379234)
         let span = MKCoordinateSpanMake(100, 80)
         let region = MKCoordinateRegionMake(coordinate, span)
@@ -53,19 +47,26 @@ class MapViewController: UIViewController, UISearchBarDelegate
     override func didReceiveMemoryWarning()
     {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
-//    override func viewWillAppear(animated: Bool)
-//    {
-//        parent?.timer?.invalidate()
-//        if timerCount%2 == 0
-//        {
-//            parent?.togglePlayback(true)
-//        }
-//    }
+    override func viewWillAppear(animated: Bool)
+    {
+        if timerCount%2 == 1
+        {
+            parent?.togglePlayback(true)
+        }
+    }
     
-    func searchBarSearchButtonClicked(searchBar: UISearchBar){
+    override func viewWillDisappear(animated: Bool)
+    {
+        if timerCount%2 == 1
+        {
+            parent?.togglePlayback(true)
+        }
+    }
+    
+    func searchBarSearchButtonClicked(searchBar: UISearchBar)
+    {
         //1
         searchBar.resignFirstResponder()
         dismissViewControllerAnimated(true, completion: nil)
@@ -100,14 +101,10 @@ class MapViewController: UIViewController, UISearchBarDelegate
     @IBAction func backPressed(sender: UIBarButtonItem)
     {
         dismissViewControllerAnimated(true, completion: nil)
-//        parent?.timer?.invalidate()
-//        parent?.timer = nil
-//        parent?.stopTimer()
-//        parent?.loadCurrentSong()
-//        if timerCount%2 == 0
-//        {
-//            parent?.togglePlayback(true)
-//        }
+        if timerCount%2 == 1
+        {
+            parent?.togglePlayback(true)
+        }
         
         //        self.navigationController?.performSegueWithIdentifier("unwindFromLogin", sender: self)
     }
