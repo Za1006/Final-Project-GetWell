@@ -420,6 +420,7 @@
 		5DCF68FE1C233FD100A72F12 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				5D7CFFA81C3D723400CBC505 /* newCalmAffirmation.png */,
 				5D7CFF801C3C1CFF00CBC505 /* newBeachImg.png */,
 				5D7CFF811C3C1CFF00CBC505 /* newBirdsImg.png */,
 				5D7CFF821C3C1CFF00CBC505 /* newChillImg.png */,
@@ -499,6 +500,7 @@
 		5DCF68FF1C233FE500A72F12 /* Music */ = {
 			isa = PBXGroup;
 			children = (
+				5D7CFFA61C3D621600CBC505 /* calmPeace.mp3 */,
 				5D7CFFA41C3D61C600CBC505 /* gwNewMindPower.mp3 */,
 				5D28B1731C32FC1800A11907 /* mindPowerAffirmation.mp3 */,
 				5D8B944E1C2A276F001C9579 /* leaveswind.mp3 */,
