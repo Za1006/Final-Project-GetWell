@@ -19,7 +19,8 @@ class PlaylistTableViewController: UITableViewController
     {
         super.viewDidLoad()
         
-        tableView.separatorColor = UIColor.whiteColor()
+//        tableView.separatorColor = UIColor.whiteColor()
+        tableView.separatorStyle = .None
         
 //        loadSongs()
         
@@ -87,6 +88,7 @@ class PlaylistTableViewController: UITableViewController
         let cell = tableView.dequeueReusableCellWithIdentifier("PlaylistModalViewCell", forIndexPath: indexPath) as! PlaylistTableViewCell
         
         let aSong = songs[indexPath.row]
+        cell.meditationImage.image = UIImage(named: aSong.albumArtworkName)
         cell.songTitle.text = aSong.title
 //        cell.detailTextLabel?.text = aSong.artist
         
@@ -111,17 +113,22 @@ class PlaylistTableViewController: UITableViewController
     
     override func tableView(tableView: UITableView, didHighlightRowAtIndexPath indexPath: NSIndexPath)
     {
-        let cell = tableView.dequeueReusableCellWithIdentifier("PlaylistModalViewCell", forIndexPath: indexPath) as! PlaylistTableViewCell
+        let cell = tableView.cellForRowAtIndexPath(indexPath) as! PlaylistTableViewCell
         
-        let aSong = songs[indexPath.row]
+        UIView.animateWithDuration(0.5) { () -> Void in
+            cell.imageOverlayView.alpha = 0.3
+        }
 //        cell.backgroundView = aSong.albumArtworkName
-        cell.meditationImage.image = UIImage(named: aSong.albumArtworkName)
     }
     
-//        override func tableView(tableView: UITableView, didUnhighlightRowAtIndexPath indexPath: NSIndexPath)
-//        {
-//            <#code#>
-//        }
+        override func tableView(tableView: UITableView, didUnhighlightRowAtIndexPath indexPath: NSIndexPath)
+        {
+            let cell = tableView.cellForRowAtIndexPath(indexPath) as! PlaylistTableViewCell
+            
+            UIView.animateWithDuration(0.25) { () -> Void in
+                cell.imageOverlayView.alpha = 1.0
+            }
+        }
     
     @IBAction func dismissPressed(sender: UIButton!)
     {
