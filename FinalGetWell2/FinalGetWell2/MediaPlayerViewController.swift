@@ -327,7 +327,7 @@ class MediaPlayerViewController: UIViewController
         let mindpowerAffDict: NSDictionary = [
             "title": "Mind Power Affirmation",
             "artist": "Benjamin Tissot",
-            "filename": "mindPowerAffirmation",
+            "filename": "gwNewMindPower",
             "albumArtwork": "newMindPowerImg"
         ]
         let mindpowerAff = Song(dictionary: mindpowerAffDict)
@@ -395,6 +395,15 @@ class MediaPlayerViewController: UIViewController
         ]
         let relax = Song(dictionary: relaxDict)
         songs.append(relax)
+        
+        let relaxCalm: NSDictionary = [
+            "title": "Calm Affirmation",
+            "artist": "Benjamin Tissot",
+            "filename": "calmPeace",
+            "albumArtwork": "newCalmAffirmation"
+        ]
+        let calm = Song(dictionary: relaxCalm)
+        songs.append(calm)
         
         let pouringDict: NSDictionary = [
             "title": "Drench",
