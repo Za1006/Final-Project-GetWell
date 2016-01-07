@@ -1437,33 +1437,6 @@
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-<<<<<<< Updated upstream
-=======
-                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wY9-O1-uGX">
-                                            <rect key="frame" x="321" y="9" width="46" height="30"/>
-                                            <state key="normal" title="Button"/>
-                                        </button>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O0o-JS-kIf">
-                                            <rect key="frame" x="332" y="0.0" width="35" height="35"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="45" id="bJ4-b0-bvK"/>
-                                                <constraint firstAttribute="height" constant="45" id="bwn-5j-Wfc"/>
-                                                <constraint firstAttribute="width" secondItem="O0o-JS-kIf" secondAttribute="height" multiplier="1:1" id="eBP-lo-1Xl"/>
-                                                <constraint firstAttribute="height" constant="35" id="lXE-Rd-o4T"/>
-                                                <constraint firstAttribute="width" constant="35" id="wcc-ke-1TI"/>
-                                            </constraints>
-                                            <state key="normal" title="Button" image="microphone2.png"/>
-                                            <variation key="default">
-                                                <mask key="constraints">
-                                                    <exclude reference="bJ4-b0-bvK"/>
-                                                    <exclude reference="bwn-5j-Wfc"/>
-                                                </mask>
-                                            </variation>
-                                            <connections>
-                                                <segue destination="xyB-8o-I2n" kind="presentation" id="y2A-3I-7iB"/>
-                                            </connections>
-                                        </button>
->>>>>>> Stashed changes
                                     </subviews>
                                     <color key="backgroundColor" red="0.60784313729999995" green="0.33725490200000002" blue="0.7725490196" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -1508,63 +1481,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QAm-S1-5DF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1335.5" y="1662.5"/>
-        </scene>
-        <!--Recording View Controller-->
-        <scene sceneID="OFX-ra-WT0">
-            <objects>
-                <viewController id="xyB-8o-I2n" customClass="RecordingViewController" customModule="FinalGetWell2" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="gJ3-gh-Odj"/>
-                        <viewControllerLayoutGuide type="bottom" id="ijt-cw-qtZ"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8g3-GZ-7YF">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="microphone2.png" translatesAutoresizingMaskIntoConstraints="NO" id="MaI-BV-lWT">
-                                <rect key="frame" x="122" y="101" width="130" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="130" id="ycF-PS-3Uk"/>
-                                </constraints>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-10.png" translatesAutoresizingMaskIntoConstraints="NO" id="3VD-LO-9tj">
-                                <rect key="frame" x="20" y="278" width="130" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="130" id="cKO-LT-iYB"/>
-                                </constraints>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PlayPauseBx3.png" translatesAutoresizingMaskIntoConstraints="NO" id="Q0T-6s-t5U">
-                                <rect key="frame" x="219" y="278" width="130" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="130" id="JMk-Ck-3HE"/>
-                                </constraints>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="ijt-cw-qtZ" firstAttribute="top" secondItem="3VD-LO-9tj" secondAttribute="bottom" constant="261" id="7OE-Z7-dnr"/>
-                            <constraint firstItem="Q0T-6s-t5U" firstAttribute="leading" secondItem="3VD-LO-9tj" secondAttribute="trailing" constant="69" id="FVx-vo-7kE"/>
-                            <constraint firstItem="3VD-LO-9tj" firstAttribute="top" secondItem="Q0T-6s-t5U" secondAttribute="top" id="KcW-Ms-kqL"/>
-                            <constraint firstItem="MaI-BV-lWT" firstAttribute="top" secondItem="gJ3-gh-Odj" secondAttribute="bottom" constant="81" id="QIi-6E-qOe"/>
-                            <constraint firstItem="3VD-LO-9tj" firstAttribute="bottom" secondItem="Q0T-6s-t5U" secondAttribute="bottom" id="WwR-LJ-Isu"/>
-                            <constraint firstItem="Q0T-6s-t5U" firstAttribute="leading" secondItem="MaI-BV-lWT" secondAttribute="trailing" constant="-33" id="YLN-mU-KwL"/>
-                            <constraint firstItem="Q0T-6s-t5U" firstAttribute="top" secondItem="MaI-BV-lWT" secondAttribute="bottom" constant="49" id="lK9-jL-g4A"/>
-                            <constraint firstItem="MaI-BV-lWT" firstAttribute="centerX" secondItem="8g3-GZ-7YF" secondAttribute="centerX" id="m4v-Pu-M6U"/>
-                            <constraint firstItem="3VD-LO-9tj" firstAttribute="top" secondItem="MaI-BV-lWT" secondAttribute="bottom" constant="49" id="uWD-C7-L6S"/>
-                            <constraint firstItem="ijt-cw-qtZ" firstAttribute="top" secondItem="MaI-BV-lWT" secondAttribute="bottom" constant="438" id="w4A-2P-Res"/>
-                            <constraint firstItem="MaI-BV-lWT" firstAttribute="leading" secondItem="3VD-LO-9tj" secondAttribute="trailing" constant="-28" id="wpB-iA-1Zj"/>
-                        </constraints>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <connections>
-                        <outlet property="cancelButtonImageView" destination="3VD-LO-9tj" id="GEb-i9-p1w"/>
-                        <outlet property="playButtonImageView" destination="Q0T-6s-t5U" id="B7e-uo-mSG"/>
-                        <outlet property="recordButtonImageView" destination="MaI-BV-lWT" id="6ZV-V1-B6z"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7ad-iS-RC3" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1340.5" y="2427.5"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="toX-H4-DTF">
@@ -1673,7 +1589,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IMb-Bj-yLU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2343.5" y="1662.5"/>
+            <point key="canvasLocation" x="2191.5" y="1712.5"/>
         </scene>
         <!--Set Reminder Pop Over View Controller-->
         <scene sceneID="zTW-JE-MKt">
@@ -1834,11 +1750,9 @@
         <image name="Image" width="125" height="125"/>
         <image name="NextB" width="45" height="45"/>
         <image name="PlayB" width="45" height="45"/>
-        <image name="PlayPauseBx3.png" width="260" height="260"/>
         <image name="Prev" width="45" height="45"/>
         <image name="Reset" width="35" height="35"/>
         <image name="background.png" width="1200" height="2038"/>
-        <image name="icon-10.png" width="256" height="256"/>
         <image name="microphone2.png" width="366" height="366"/>
         <image name="newMediaSkin.jpg" width="1200" height="2038"/>
         <image name="searchYogaButton3.png" width="24" height="24"/>
