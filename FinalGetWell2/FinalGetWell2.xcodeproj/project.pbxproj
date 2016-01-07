@@ -324,6 +324,7 @@
 		4C0C88411C3B3B56001016AE /* Set Reminder */ = {
 			isa = PBXGroup;
 			children = (
+				5D7C007E1C3EDC3000CBC505 /* cancelButton.png */,
 				4C060F961C235DF500E65966 /* SetReminderPopOverViewController.swift */,
 			);
 			name = "Set Reminder";
@@ -443,7 +444,6 @@
 				5DCF68B11C23336500A72F12 /* AppDelegate.swift */,
 				AAEA574D1C3ECECA006D06BC /* StartUpViewController.swift */,
 				AA184A301C233C5D001A679F /* MainViewController.swift */,
-				5D7C007E1C3EDC3000CBC505 /* cancelButton.png */,
 				5D6827501C24A8DA00374755 /* TableViewCell.swift */,
 				AA184A361C237EB6001A679F /* MediaPlayerViewController.swift */,
 				5D8B94761C2AE3E4001C9579 /* MapViewController.swift */,

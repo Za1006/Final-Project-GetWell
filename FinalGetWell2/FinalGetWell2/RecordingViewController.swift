@@ -20,7 +20,8 @@ import AVFoundation
         var audioRecorder: AVAudioRecorder!
         var audioPlayer: AVAudioPlayer?
         
-        override func viewDidLoad() {
+        override func viewDidLoad()
+        {
             super.viewDidLoad()
             // Do any additional setup after loading the view, typically from a nib.
             
@@ -58,9 +59,12 @@ import AVFoundation
             // answers question like should the app stops the currently playing music, should be allowed to play back the recording
             let audioSession = AVAudioSession.sharedInstance()
             
-            do {
+            do
+            {
                 try audioSession.setCategory(AVAudioSessionCategoryPlayAndRecord, withOptions: AVAudioSessionCategoryOptions.DefaultToSpeaker)
-            } catch let error {
+            }
+            catch let error
+            {
                 print(error)
             }
             
@@ -75,24 +79,31 @@ import AVFoundation
                 audioRecorder?.delegate = self
                 audioRecorder?.meteringEnabled = true
                 audioRecorder?.prepareToRecord()
-            } catch let error {
+            }
+            catch let error
+            {
                 print(error)
             }
         }
         
         func play()
         {
-            if let player = audioPlayer {
-                if player.playing {
+            if let player = audioPlayer
+            {
+                if player.playing
+                {
                     player.stop()
                     playButtonImageView.image = UIImage(named: "Play")
                     return
                 }
             }
             
-            if let recorder = audioRecorder {
-                if !recorder.recording {
-                    do {
+            if let recorder = audioRecorder
+            {
+                if !recorder.recording
+                {
+                    do
+                    {
                         audioPlayer = try AVAudioPlayer(contentsOfURL: recorder.url)
                         audioPlayer?.delegate = self
                         audioPlayer?.play()
@@ -103,7 +114,9 @@ import AVFoundation
                         
                         // disable the cancel button image view
                         configureImageView(cancelButtonImageView, alpha: 0.5, userInteractionEnabled: false)
-                    } catch let error {
+                    }
+                    catch let error
+                    {
                         print(error)
                     }
                 }
@@ -122,9 +135,12 @@ import AVFoundation
             audioRecorder?.stop()
             
             // deactivate the audio session
-            do {
+            do
+            {
                 try AVAudioSession.sharedInstance().setActive(false)
-            } catch let error {
+            }
+            catch let error
+            {
                 print(error)
             }
         }
@@ -132,8 +148,10 @@ import AVFoundation
         func record()
         {
             // stop the audio player before recording
-            if let player = audioPlayer {
-                if player.playing {
+            if let player = audioPlayer
+            {
+                if player.playing
+                {
                     player.stop()
                     playButtonImageView.image = UIImage(named: "Play")
                     playButtonImageView.userInteractionEnabled = false
@@ -141,9 +159,12 @@ import AVFoundation
             }
             
             // if we are not recording the start recording!
-            if let recorder = audioRecorder {
-                if !recorder.recording {
-                    do {
+            if let recorder = audioRecorder
+            {
+                if !recorder.recording
+                {
+                    do
+                    {
                         let audioSession = AVAudioSession.sharedInstance()
                         try audioSession.setActive(true)    // make the recorder work
                         
@@ -151,10 +172,14 @@ import AVFoundation
                         recorder.record()
                         recordButtonImageView.image = UIImage(named: "Start-Recording")
                         configureImageView(recordButtonImageView, alpha: 1.0, userInteractionEnabled: true)
-                    } catch let error {
+                    }
+                    catch let error
+                    {
                         print(error)
                     }
-                } else {
+                }
+                else
+                {
                     // pause the recording
                     recorder.pause()
                     recordButtonImageView.image = UIImage(named: "Record")
@@ -184,8 +209,10 @@ import AVFoundation
     
     extension RecordingViewController : AVAudioRecorderDelegate
     {
-        func audioRecorderDidFinishRecording(recorder: AVAudioRecorder, successfully flag: Bool) {
-            if flag {
+        func audioRecorderDidFinishRecording(recorder: AVAudioRecorder, successfully flag: Bool)
+        {
+            if flag
+            {
                 self.alert("Finish recording", msg: "Successfully recorded the audio")
             }
         }
@@ -198,7 +225,8 @@ import AVFoundation
     {
         func audioPlayerDidFinishPlaying(player: AVAudioPlayer, successfully flag: Bool)
         {
-            if flag {
+            if flag
+            {
                 self.alert("Finish Playing", msg: "Finish playing the recording")
                 
                 playButtonImageView.image = UIImage(named: "Play")
