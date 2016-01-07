@@ -46,8 +46,8 @@ class MainViewController: UIViewController,UIPopoverPresentationControllerDelega
     var addTodoTimer: NSTimer?
     
     var isDone: Bool?
-    let checkImg = UIImage(named: "checkedWhite.png")
-    let uncheckImg = UIImage(named: "newUnchecked.png")
+    let checkImg = UIImage(named: "checkedwhite.png")
+    let uncheckImg = UIImage(named: "testunchk.png")
     
     override func viewDidLoad()
     {
@@ -129,10 +129,10 @@ class MainViewController: UIViewController,UIPopoverPresentationControllerDelega
             
         {
             
-        case true: cell.todoCheckbox.image = UIImage(named: "checkedWhite.png")
+        case true: cell.todoCheckbox.image = UIImage(named: "checkedwhite.png")
             cell.backgroundColor = UIColor(red: 0.73, green: 0.031, blue: 0.91, alpha: 1)
             
-        case false: cell.todoCheckbox.image = UIImage(named: "newUnchecked.png")
+        case false: cell.todoCheckbox.image = UIImage(named: "testunchk.png")
             cell.backgroundColor = UIColor(red:0.64, green:0.027, blue:0.86, alpha:1.0)
             
         }
