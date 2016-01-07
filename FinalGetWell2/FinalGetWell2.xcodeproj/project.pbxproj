@@ -40,6 +40,8 @@
 		5D6827511C24A8DA00374755 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6827501C24A8DA00374755 /* TableViewCell.swift */; };
 		5D6827531C24AAD100374755 /* ThumbsUp.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D6827521C24AAD100374755 /* ThumbsUp.png */; };
 		5D6827551C24ABD700374755 /* thumbs-up-icon-black-hi.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D6827541C24ABD700374755 /* thumbs-up-icon-black-hi.png */; };
+		5D7C00771C3ED17700CBC505 /* RecordingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7C00761C3ED17700CBC505 /* RecordingViewController.swift */; };
+		5D7C00791C3ED48900CBC505 /* icon-10.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D7C00781C3ED48900CBC505 /* icon-10.png */; };
 		5D7CFF8E1C3C1CFF00CBC505 /* newBeachImg.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D7CFF801C3C1CFF00CBC505 /* newBeachImg.png */; };
 		5D7CFF8F1C3C1CFF00CBC505 /* newBirdsImg.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D7CFF811C3C1CFF00CBC505 /* newBirdsImg.png */; };
 		5D7CFF901C3C1CFF00CBC505 /* newChillImg.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D7CFF821C3C1CFF00CBC505 /* newChillImg.png */; };
@@ -184,6 +186,8 @@
 		5D6827501C24A8DA00374755 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		5D6827521C24AAD100374755 /* ThumbsUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ThumbsUp.png; sourceTree = "<group>"; };
 		5D6827541C24ABD700374755 /* thumbs-up-icon-black-hi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thumbs-up-icon-black-hi.png"; sourceTree = "<group>"; };
+		5D7C00761C3ED17700CBC505 /* RecordingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordingViewController.swift; sourceTree = "<group>"; };
+		5D7C00781C3ED48900CBC505 /* icon-10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-10.png"; sourceTree = "<group>"; };
 		5D7CFF801C3C1CFF00CBC505 /* newBeachImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newBeachImg.png; sourceTree = "<group>"; };
 		5D7CFF811C3C1CFF00CBC505 /* newBirdsImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newBirdsImg.png; sourceTree = "<group>"; };
 		5D7CFF821C3C1CFF00CBC505 /* newChillImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newChillImg.png; sourceTree = "<group>"; };
@@ -358,6 +362,7 @@
 		5D4D47B61C3603C400B9949B /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
+				5D7C00781C3ED48900CBC505 /* icon-10.png */,
 				5D7CFFAC1C3DAC8A00CBC505 /* microphone2.png */,
 				5D7CFFAA1C3DAC3B00CBC505 /* micIcon.png */,
 				4CDC86901C3D9D27006842DC /* RecordButtonEdited.png */,
@@ -442,6 +447,7 @@
 				5D6827501C24A8DA00374755 /* TableViewCell.swift */,
 				AA184A361C237EB6001A679F /* MediaPlayerViewController.swift */,
 				5D8B94761C2AE3E4001C9579 /* MapViewController.swift */,
+				5D7C00761C3ED17700CBC505 /* RecordingViewController.swift */,
 				5DCF68B51C23336500A72F12 /* Main.storyboard */,
 				4C0C88421C3B3B81001016AE /* Parse Login */,
 				4C0C88411C3B3B56001016AE /* Set Reminder */,
@@ -679,6 +685,7 @@
 				5DCF68D81C233F5E00A72F12 /* checked.png in Resources */,
 				5D8B94631C2A27B8001C9579 /* RainSound.png in Resources */,
 				5D8B94661C2A27B8001C9579 /* SnowStormSound.png in Resources */,
+				5D7C00791C3ED48900CBC505 /* icon-10.png in Resources */,
 				5D8B942B1C29B81F001C9579 /* lpGetwell.png in Resources */,
 				5D8B94371C2A234C001C9579 /* rainOntheRooftop.mp3 in Resources */,
 				5D8B94351C2A199A001C9579 /* NewReset2.png in Resources */,
@@ -837,6 +844,7 @@
 				5DCF68BA1C23336500A72F12 /* FinalGetWell2.xcdatamodeld in Sources */,
 				4C0C883B1C3B3794001016AE /* PlaylistTableViewController.swift in Sources */,
 				4C0C883D1C3B37F7001016AE /* PlaylistTableViewCell.swift in Sources */,
+				5D7C00771C3ED17700CBC505 /* RecordingViewController.swift in Sources */,
 				AA184A371C237EB6001A679F /* MediaPlayerViewController.swift in Sources */,
 				5DCF68B21C23336500A72F12 /* AppDelegate.swift in Sources */,
 				AAEA574E1C3ECECA006D06BC /* StartUpViewController.swift in Sources */,
