@@ -40,6 +40,8 @@
 		5D6827511C24A8DA00374755 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6827501C24A8DA00374755 /* TableViewCell.swift */; };
 		5D6827531C24AAD100374755 /* ThumbsUp.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D6827521C24AAD100374755 /* ThumbsUp.png */; };
 		5D6827551C24ABD700374755 /* thumbs-up-icon-black-hi.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D6827541C24ABD700374755 /* thumbs-up-icon-black-hi.png */; };
+		5D7C007B1C3ED9EB00CBC505 /* RecordingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7C007A1C3ED9EB00CBC505 /* RecordingViewController.swift */; };
+		5D7C007F1C3EDC3000CBC505 /* cancelButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D7C007E1C3EDC3000CBC505 /* cancelButton.png */; };
 		5D7CFF8E1C3C1CFF00CBC505 /* newBeachImg.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D7CFF801C3C1CFF00CBC505 /* newBeachImg.png */; };
 		5D7CFF8F1C3C1CFF00CBC505 /* newBirdsImg.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D7CFF811C3C1CFF00CBC505 /* newBirdsImg.png */; };
 		5D7CFF901C3C1CFF00CBC505 /* newChillImg.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D7CFF821C3C1CFF00CBC505 /* newChillImg.png */; };
@@ -184,6 +186,8 @@
 		5D6827501C24A8DA00374755 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		5D6827521C24AAD100374755 /* ThumbsUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ThumbsUp.png; sourceTree = "<group>"; };
 		5D6827541C24ABD700374755 /* thumbs-up-icon-black-hi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thumbs-up-icon-black-hi.png"; sourceTree = "<group>"; };
+		5D7C007A1C3ED9EB00CBC505 /* RecordingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordingViewController.swift; sourceTree = "<group>"; };
+		5D7C007E1C3EDC3000CBC505 /* cancelButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cancelButton.png; sourceTree = "<group>"; };
 		5D7CFF801C3C1CFF00CBC505 /* newBeachImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newBeachImg.png; sourceTree = "<group>"; };
 		5D7CFF811C3C1CFF00CBC505 /* newBirdsImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newBirdsImg.png; sourceTree = "<group>"; };
 		5D7CFF821C3C1CFF00CBC505 /* newChillImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newChillImg.png; sourceTree = "<group>"; };
@@ -439,9 +443,11 @@
 				5DCF68B11C23336500A72F12 /* AppDelegate.swift */,
 				AAEA574D1C3ECECA006D06BC /* StartUpViewController.swift */,
 				AA184A301C233C5D001A679F /* MainViewController.swift */,
+				5D7C007E1C3EDC3000CBC505 /* cancelButton.png */,
 				5D6827501C24A8DA00374755 /* TableViewCell.swift */,
 				AA184A361C237EB6001A679F /* MediaPlayerViewController.swift */,
 				5D8B94761C2AE3E4001C9579 /* MapViewController.swift */,
+				5D7C007A1C3ED9EB00CBC505 /* RecordingViewController.swift */,
 				5DCF68B51C23336500A72F12 /* Main.storyboard */,
 				4C0C88421C3B3B81001016AE /* Parse Login */,
 				4C0C88411C3B3B56001016AE /* Set Reminder */,
@@ -763,6 +769,7 @@
 				5D8B943D1C2A25C9001C9579 /* rainy.mp3 in Resources */,
 				5DCF68B71C23336500A72F12 /* Main.storyboard in Resources */,
 				5DCF68E51C233F5E00A72F12 /* PlayPause.png in Resources */,
+				5D7C007F1C3EDC3000CBC505 /* cancelButton.png in Resources */,
 				5D4D47CA1C3603C400B9949B /* PlayPauseBx1.png in Resources */,
 				5D8B943F1C2A25F8001C9579 /* heavywetrain.mp3 in Resources */,
 				5DCF68E11C233F5E00A72F12 /* GetWellSignUp2.jpg in Resources */,
@@ -828,6 +835,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA184A2D1C233A81001A679F /* Song.swift in Sources */,
+				5D7C007B1C3ED9EB00CBC505 /* RecordingViewController.swift in Sources */,
 				4C060F971C235DF500E65966 /* SetReminderPopOverViewController.swift in Sources */,
 				5D68274E1C24A85C00374755 /* TableViewChkList.swift in Sources */,
 				5D6827511C24A8DA00374755 /* TableViewCell.swift in Sources */,
