@@ -31,4 +31,8 @@ class PlaylistTableViewCell: UITableViewCell
         
     }
     
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> origin/SetRemider
