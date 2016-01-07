@@ -8,7 +8,7 @@
 
 import UIKit
 import AVFoundation
-    
+
     class RecordingViewController: UIViewController
     {
         
@@ -18,7 +18,7 @@ import AVFoundation
         
         // an instance of AVAudioRecorder and AVAudioPlayer (to play the recording sound)
         var audioRecorder: AVAudioRecorder!
-        var audioPlayer: AVAudioPlayer?
+        var audioPlayer: AVAudioPlayer!
         
         override func viewDidLoad()
         {
@@ -33,13 +33,14 @@ import AVFoundation
             
             let recordTap = UITapGestureRecognizer(target: self, action: "record")
             recordButtonImageView.addGestureRecognizer(recordTap)
-            
+
             // disable the stop and play buttons when we start
             self.configureImageView(cancelButtonImageView, alpha: 0.5, userInteractionEnabled: false)
             self.configureImageView(playButtonImageView, alpha: 0.5, userInteractionEnabled: false)
             
             // let's set up the audio recorder and player
             setUpAudioRecord()
+
             
         }
         

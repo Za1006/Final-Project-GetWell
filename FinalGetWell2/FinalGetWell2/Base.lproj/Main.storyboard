@@ -1717,12 +1717,22 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="70" id="CZE-RE-WIe"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="CZE-RE-WIe"/>
+                                    </mask>
+                                </variation>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="microphone2.png" translatesAutoresizingMaskIntoConstraints="NO" id="t0Q-Kk-IaK">
                                 <rect key="frame" x="55" y="152" width="70" height="63"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="70" id="Jtz-HR-SAo"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Jtz-HR-SAo"/>
+                                    </mask>
+                                </variation>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cancelButton.png" translatesAutoresizingMaskIntoConstraints="NO" id="BQK-iG-WHC">
                                 <rect key="frame" x="252" y="152" width="70" height="63"/>
@@ -1733,15 +1743,22 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="ZuI-dj-Q2g" firstAttribute="top" secondItem="BQK-iG-WHC" secondAttribute="bottom" constant="452" id="1WO-5V-lDF"/>
+                            <constraint firstItem="ZuI-dj-Q2g" firstAttribute="top" secondItem="t0Q-Kk-IaK" secondAttribute="bottom" constant="452" id="7Br-ys-9rQ"/>
                             <constraint firstItem="bPe-3R-nrh" firstAttribute="leading" secondItem="t0Q-Kk-IaK" secondAttribute="trailing" constant="28" id="DZY-XG-QYL"/>
+                            <constraint firstItem="t0Q-Kk-IaK" firstAttribute="top" secondItem="DJr-yd-ZJF" secondAttribute="bottom" constant="132" id="Eni-JJ-8vg"/>
+                            <constraint firstAttribute="trailing" secondItem="BQK-iG-WHC" secondAttribute="trailing" constant="53" id="EyJ-gi-Op9"/>
                             <constraint firstItem="BQK-iG-WHC" firstAttribute="top" secondItem="bPe-3R-nrh" secondAttribute="bottom" constant="-63" id="KzG-rV-rPx"/>
                             <constraint firstItem="t0Q-Kk-IaK" firstAttribute="top" secondItem="bPe-3R-nrh" secondAttribute="top" id="Oqg-Ih-YKU"/>
                             <constraint firstItem="BQK-iG-WHC" firstAttribute="leading" secondItem="bPe-3R-nrh" secondAttribute="trailing" constant="29" id="SCj-Av-H3P"/>
                             <constraint firstItem="bPe-3R-nrh" firstAttribute="centerX" secondItem="CQz-gW-Bwm" secondAttribute="centerX" id="Wko-1Z-REV"/>
+                            <constraint firstItem="BQK-iG-WHC" firstAttribute="top" secondItem="DJr-yd-ZJF" secondAttribute="bottom" constant="132" id="Y2C-EK-7zp"/>
+                            <constraint firstItem="BQK-iG-WHC" firstAttribute="centerY" secondItem="bPe-3R-nrh" secondAttribute="centerY" id="hb2-9L-Om3"/>
                             <constraint firstItem="t0Q-Kk-IaK" firstAttribute="bottom" secondItem="BQK-iG-WHC" secondAttribute="bottom" id="kbi-pu-Zk9"/>
                             <constraint firstItem="t0Q-Kk-IaK" firstAttribute="centerY" secondItem="bPe-3R-nrh" secondAttribute="centerY" id="pyL-54-v1H"/>
                             <constraint firstItem="ZuI-dj-Q2g" firstAttribute="top" secondItem="bPe-3R-nrh" secondAttribute="bottom" constant="452" id="rDM-gm-Hyt"/>
                             <constraint firstItem="bPe-3R-nrh" firstAttribute="top" secondItem="DJr-yd-ZJF" secondAttribute="bottom" constant="132" id="uNG-m2-3jg"/>
+                            <constraint firstItem="t0Q-Kk-IaK" firstAttribute="leading" secondItem="CQz-gW-Bwm" secondAttribute="leading" constant="55" id="veX-Yy-F0n"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
