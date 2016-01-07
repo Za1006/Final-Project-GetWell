@@ -115,7 +115,7 @@ class PlaylistTableViewController: UITableViewController
         
         let aSong = songs[indexPath.row]
 //        cell.backgroundView = aSong.albumArtworkName
-        cell.meditationImage.image = UIImage(named: aSong.albumArtworkName)
+        cell.meditationImage?.image = UIImage(named: aSong.albumArtworkName)
     }
     
 //        override func tableView(tableView: UITableView, didUnhighlightRowAtIndexPath indexPath: NSIndexPath)
