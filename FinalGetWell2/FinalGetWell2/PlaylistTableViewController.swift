@@ -5,6 +5,7 @@
 //  Created by Michael Reynolds on 1/4/16.
 //  Copyright © 2016 Keron. All rights reserved.
 //
+
 import UIKit
 
 
@@ -87,11 +88,7 @@ class PlaylistTableViewController: UITableViewController
         let cell = tableView.dequeueReusableCellWithIdentifier("PlaylistModalViewCell", forIndexPath: indexPath) as! PlaylistTableViewCell
         
         let aSong = songs[indexPath.row]
-<<<<<<< HEAD
         cell.meditationImage.image = UIImage(named: aSong.albumArtworkName)
-=======
-        cell.meditationImage?.image = UIImage(named: aSong.albumArtworkName)
->>>>>>> origin/SetRemider
         cell.songTitle.text = aSong.title
         //        cell.detailTextLabel?.text = aSong.artist
         
@@ -119,11 +116,7 @@ class PlaylistTableViewController: UITableViewController
         let cell = tableView.cellForRowAtIndexPath(indexPath) as! PlaylistTableViewCell
         
         UIView.animateWithDuration(0.5) { () -> Void in
-<<<<<<< HEAD
             cell.imageOverlayView.alpha = 0.3
-=======
-            cell.imageOverlayView?.alpha = 0.3
->>>>>>> origin/SetRemider
         }
         //        cell.backgroundView = aSong.albumArtworkName
     }
@@ -133,11 +126,7 @@ class PlaylistTableViewController: UITableViewController
         let cell = tableView.cellForRowAtIndexPath(indexPath) as! PlaylistTableViewCell
         
         UIView.animateWithDuration(0.25) { () -> Void in
-<<<<<<< HEAD
             cell.imageOverlayView.alpha = 1.0
-=======
-            cell.imageOverlayView?.alpha = 1.0
->>>>>>> origin/SetRemider
         }
     }
     
