@@ -23,6 +23,7 @@ class MapViewController: UIViewController, UISearchBarDelegate
     var error:NSError!
     var pointAnnotation:MKPointAnnotation!
     var pinAnnotationView:MKPinAnnotationView!
+    var currentLocation = PFGeoPoint!()
     
     @IBAction func searchBar(sender: AnyObject)
     {
@@ -41,7 +42,6 @@ class MapViewController: UIViewController, UISearchBarDelegate
         let span = MKCoordinateSpanMake(100, 80)
         let region = MKCoordinateRegionMake(coordinate, span)
         self.mapView.setRegion(region, animated: true)
-        
     }
     
     override func didReceiveMemoryWarning()
