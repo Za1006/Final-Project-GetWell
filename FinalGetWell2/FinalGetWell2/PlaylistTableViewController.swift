@@ -12,16 +12,17 @@ import UIKit
 class PlaylistTableViewController: UITableViewController
 {
     var songs = Array<Song>()
-
+    
     var parent: MediaPlayerViewController?
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
         
-        tableView.separatorColor = UIColor.whiteColor()
+        //        tableView.separatorColor = UIColor.whiteColor()
+        tableView.separatorStyle = .None
         
-//        loadSongs()
+        //        loadSongs()
         
         // Uncomment the following line to preserve selection between presentations
         self.clearsSelectionOnViewWillAppear = false
@@ -29,7 +30,7 @@ class PlaylistTableViewController: UITableViewController
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         //         self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
-            }
+    }
     override func viewWillAppear(animated: Bool) {
         animateTable()
         if timerCount%2 == 1
@@ -37,7 +38,7 @@ class PlaylistTableViewController: UITableViewController
             parent?.togglePlayback(true)
         }
     }
-
+    
     
     func animateTable() {
         tableView.reloadData()
@@ -61,7 +62,7 @@ class PlaylistTableViewController: UITableViewController
             index += 1
         }
     }
-
+    
     
     
     override func didReceiveMemoryWarning()
@@ -87,8 +88,9 @@ class PlaylistTableViewController: UITableViewController
         let cell = tableView.dequeueReusableCellWithIdentifier("PlaylistModalViewCell", forIndexPath: indexPath) as! PlaylistTableViewCell
         
         let aSong = songs[indexPath.row]
+        cell.meditationImage.image = UIImage(named: aSong.albumArtworkName)
         cell.songTitle.text = aSong.title
-//        cell.detailTextLabel?.text = aSong.artist
+        //        cell.detailTextLabel?.text = aSong.artist
         
         return cell
     }
@@ -97,31 +99,36 @@ class PlaylistTableViewController: UITableViewController
     {
         tableview.deselectRowAtIndexPath(indexPath, animated: true)
         
-//        timerCount = timerCount + 1
+        //        timerCount = timerCount + 1
         
         let selectedSong = songs[indexPath.row]
         parent?.song = selectedSong
         parent?.currentSong = selectedSong
         parent?.loadCurrentSong()
-//        parent?.player.play()
-//        parent?.startTimer()
+        //        parent?.player.play()
+        //        parent?.startTimer()
         
         navigationController?.dismissViewControllerAnimated(true, completion: nil)
     }
     
     override func tableView(tableView: UITableView, didHighlightRowAtIndexPath indexPath: NSIndexPath)
     {
-        let cell = tableView.dequeueReusableCellWithIdentifier("PlaylistModalViewCell", forIndexPath: indexPath) as! PlaylistTableViewCell
+        let cell = tableView.cellForRowAtIndexPath(indexPath) as! PlaylistTableViewCell
         
-        let aSong = songs[indexPath.row]
-//        cell.backgroundView = aSong.albumArtworkName
-        cell.meditationImage?.image = UIImage(named: aSong.albumArtworkName)
+        UIView.animateWithDuration(0.5) { () -> Void in
+            cell.imageOverlayView.alpha = 0.3
+        }
+        //        cell.backgroundView = aSong.albumArtworkName
     }
     
-//        override func tableView(tableView: UITableView, didUnhighlightRowAtIndexPath indexPath: NSIndexPath)
-//        {
-//            <#code#>
-//        }
+    override func tableView(tableView: UITableView, didUnhighlightRowAtIndexPath indexPath: NSIndexPath)
+    {
+        let cell = tableView.cellForRowAtIndexPath(indexPath) as! PlaylistTableViewCell
+        
+        UIView.animateWithDuration(0.25) { () -> Void in
+            cell.imageOverlayView.alpha = 1.0
+        }
+    }
     
     @IBAction func dismissPressed(sender: UIButton!)
     {
@@ -179,28 +186,28 @@ class PlaylistTableViewController: UITableViewController
     
     // Private Functions
     
-//    private func loadSongs()
-//    {
-//        do
-//        {
-//            let filePath = NSBundle.mainBundle().pathForResource("Songs", ofType: "json")
-//            let dataFromFile = NSData(contentsOfFile: filePath!)
-//            let songData: NSArray! = try NSJSONSerialization.JSONObjectWithData(dataFromFile!, options: []) as! [NSDictionary]
-//            for songDictionary in songData
-//            {
-//                //                let aSong = Song(songDictionary: songDictionary as! NSDictionary)
-//                let song = Song(dictionary: songDictionary as! NSDictionary)
-//                
-//                songs.append(song)
-//            }
-//            songs.sortInPlace({ $0.title < $1.title})
-//            //            songs.sortInPlace({ $0.artist < $1.artist})
-//            
-//        }
-//        catch let error as NSError
-//        {
-//            print(error)
-//        }
-//    }
+    //    private func loadSongs()
+    //    {
+    //        do
+    //        {
+    //            let filePath = NSBundle.mainBundle().pathForResource("Songs", ofType: "json")
+    //            let dataFromFile = NSData(contentsOfFile: filePath!)
+    //            let songData: NSArray! = try NSJSONSerialization.JSONObjectWithData(dataFromFile!, options: []) as! [NSDictionary]
+    //            for songDictionary in songData
+    //            {
+    //                //                let aSong = Song(songDictionary: songDictionary as! NSDictionary)
+    //                let song = Song(dictionary: songDictionary as! NSDictionary)
+    //
+    //                songs.append(song)
+    //            }
+    //            songs.sortInPlace({ $0.title < $1.title})
+    //            //            songs.sortInPlace({ $0.artist < $1.artist})
+    //
+    //        }
+    //        catch let error as NSError
+    //        {
+    //            print(error)
+    //        }
+    //    }
     
 }
