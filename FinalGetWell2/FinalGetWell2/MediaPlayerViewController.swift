@@ -17,7 +17,7 @@ class MediaPlayerViewController: UIViewController
 {
     
     var song: Song?
-
+    
     @IBOutlet weak var timeSegmentedControl: UISegmentedControl!
     @IBOutlet var meditationCountdown: UILabel!
     @IBOutlet weak var songTitleLabel: UILabel!
@@ -26,8 +26,8 @@ class MediaPlayerViewController: UIViewController
     @IBOutlet weak var plusButton: UIButton!
     @IBOutlet weak var playPauseButton: UIButton!
     @IBOutlet weak var backButton: UIButton!
- 
-//    let avQueuePlayer = AVQueuePlayer()
+    
+    //    let avQueuePlayer = AVQueuePlayer()
     var player = AVQueuePlayer()
     var songs = Array<Song>()
     var currentSong: Song?
@@ -51,14 +51,14 @@ class MediaPlayerViewController: UIViewController
     {
         super.viewDidLoad()
         
-//        self.navigationController!.navigationBar.topItem!.title = "Cancel"
+        //        self.navigationController!.navigationBar.topItem!.title = "Cancel"
         
         backButton.enabled = false
         
         pulse(playPauseButton)
         morePulse(playPauseButton)
-
-       //plusButton.hidden = true
+        
+        //plusButton.hidden = true
         
         timerCount = 0
         originalCount = 300
@@ -67,21 +67,21 @@ class MediaPlayerViewController: UIViewController
         setupAudioSession()
         configurePlaylist()
         loadCurrentSong()
-    
-      do
-      {
-        try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayAndRecord, withOptions:.DefaultToSpeaker)
+        
+        do
+        {
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayAndRecord, withOptions:.DefaultToSpeaker)
         }
-      catch let error as NSError
-      {
-        print("Failed to set audio session category. Error: \(error)")
+        catch let error as NSError
+        {
+            print("Failed to set audio session category. Error: \(error)")
         }
-//        let fileNames = ["betterdaysahead", "mindPowerAffirmation", "leaveswind", "mytomorrow", "thebeautifulbeach", "rainy", "coldsnowstorm", "rainOntheRooftop", "relaxingnovember", "heavywetrain", "busygreenforest", "gentlewetcreek", "thunderlight", "littlebirds" ]
-//        
-//        let songs = fileNames.map {AVPlayerItem(URL: NSBundle.mainBundle().URLForResource($0 , withExtension: "mp3")!)}
-//        player = AVQueuePlayer(items: songs)
-//        player.actionAtItemEnd = .Advance
-//        player.addObserver(self, forKeyPath: "currentItem", options: [.New, .Initial], context: nil)
+        //        let fileNames = ["betterdaysahead", "mindPowerAffirmation", "leaveswind", "mytomorrow", "thebeautifulbeach", "rainy", "coldsnowstorm", "rainOntheRooftop", "relaxingnovember", "heavywetrain", "busygreenforest", "gentlewetcreek", "thunderlight", "littlebirds" ]
+        //
+        //        let songs = fileNames.map {AVPlayerItem(URL: NSBundle.mainBundle().URLForResource($0 , withExtension: "mp3")!)}
+        //        player = AVQueuePlayer(items: songs)
+        //        player.actionAtItemEnd = .Advance
+        //        player.addObserver(self, forKeyPath: "currentItem", options: [.New, .Initial], context: nil)
         
     }
     
@@ -91,7 +91,7 @@ class MediaPlayerViewController: UIViewController
         if keyPath == "currentItem", let player = object as? AVPlayer, currentItem = player.currentItem?.asset as? AVURLAsset
         {
             songTitleLabel.text = currentItem.URL.lastPathComponent ?? "Unknown"
-        
+            
         }
     }
     override func didReceiveMemoryWarning()
@@ -112,42 +112,42 @@ class MediaPlayerViewController: UIViewController
             originalCount = 300
             meditationCountdown.text = "05:00"
             whichSegment = 0
-//            startTimer()
-//            setupAudioSession()
-//            loadCurrentSong()
-//            togglePlayback(true)
+            //            startTimer()
+            //            setupAudioSession()
+            //            loadCurrentSong()
+            //            togglePlayback(true)
         }
         else if sender.selectedSegmentIndex == 1
         {
             originalCount = 600
             meditationCountdown.text = "10:00"
             whichSegment = 1
-//            startTimer()
-//            setupAudioSession()
-//            loadCurrentSong()
-//            togglePlayback(true)
+            //            startTimer()
+            //            setupAudioSession()
+            //            loadCurrentSong()
+            //            togglePlayback(true)
         }
         else if sender.selectedSegmentIndex == 2
         {
             originalCount = 900
             meditationCountdown.text = "15:00"
             whichSegment = 2
-//            startTimer()
-//            setupAudioSession()
-//            loadCurrentSong()
-//            togglePlayback(true)
+            //            startTimer()
+            //            setupAudioSession()
+            //            loadCurrentSong()
+            //            togglePlayback(true)
         }
         else if sender.selectedSegmentIndex == 3
         {
             originalCount = 1200
             meditationCountdown.text = "20:00"
             whichSegment = 3
-//            startTimer()
-//            setupAudioSession()
-//            loadCurrentSong()
-//            togglePlayback(true)
+            //            startTimer()
+            //            setupAudioSession()
+            //            loadCurrentSong()
+            //            togglePlayback(true)
         }
-
+        
     }
     
     func morePulse(button: UIButton)
@@ -197,9 +197,9 @@ class MediaPlayerViewController: UIViewController
     func updateUI()
     {
         originalCount = originalCount - 1
-//        let newMinuteCount = originalCount/60
-//        let newSecondCount = originalCount%60
-//        meditationCountdown.text = String("\(newMinuteCount):\(newSecondCount)")
+        //        let newMinuteCount = originalCount/60
+        //        let newSecondCount = originalCount%60
+        //        meditationCountdown.text = String("\(newMinuteCount):\(newSecondCount)")
         timerDisplay()
         print(originalCount)
         
@@ -211,14 +211,14 @@ class MediaPlayerViewController: UIViewController
             playNotification()
         }
     }
-
+    
     func timerDisplay()
     {
-            let dFormat = "%02d"
-            let newMinuteCount = originalCount/60
-            let newSecondCount = originalCount%60
-            let s = "\(String(format: dFormat, newMinuteCount)):\(String(format: dFormat, newSecondCount))"
-            meditationCountdown.text = s
+        let dFormat = "%02d"
+        let newMinuteCount = originalCount/60
+        let newSecondCount = originalCount%60
+        let s = "\(String(format: dFormat, newMinuteCount)):\(String(format: dFormat, newSecondCount))"
+        meditationCountdown.text = s
     }
     
     func flashLabel()
@@ -274,36 +274,36 @@ class MediaPlayerViewController: UIViewController
         }
         currentSong = songs[nextSong]
         loadCurrentSong()
-//        togglePlayback(true)
+        //        togglePlayback(true)
     }
     
     @IBAction func skipBackTapped(sender: UIButton)
     {
         if nowPlaying
         {
-        meditationCountdown.textColor = UIColor.whiteColor()
-        timesTapped = timesTapped + 1
-    
-        if timesTapped % 2 == 1
-        {
-            player.seekToTime(CMTimeMakeWithSeconds(0.0, 1))
-        }
-        else if timesTapped % 2 == 0
-        {
-            let currentSongIndex = (songs as NSArray).indexOfObject(currentSong!)
-            let nextSong: Int
-            if currentSongIndex != 0
+            meditationCountdown.textColor = UIColor.whiteColor()
+            timesTapped = timesTapped + 1
+            
+            if timesTapped % 2 == 1
             {
-                nextSong = currentSongIndex - 1
+                player.seekToTime(CMTimeMakeWithSeconds(0.0, 1))
             }
-            else
+            else if timesTapped % 2 == 0
             {
-                nextSong = songs.count - 1
+                let currentSongIndex = (songs as NSArray).indexOfObject(currentSong!)
+                let nextSong: Int
+                if currentSongIndex != 0
+                {
+                    nextSong = currentSongIndex - 1
+                }
+                else
+                {
+                    nextSong = songs.count - 1
+                }
+                currentSong = songs[nextSong]
+                loadCurrentSong()
+                togglePlayback(true)
             }
-            currentSong = songs[nextSong]
-            loadCurrentSong()
-            togglePlayback(true)
-        }
         }
         else
         {
@@ -460,9 +460,9 @@ class MediaPlayerViewController: UIViewController
             song.playerItem.seekToTime(CMTimeMakeWithSeconds(0.0, 1))
             player.insertItem(song.playerItem, afterItem: nil)
             songTitleLabel.text = song.title
-//            artistLabel.text? = song.artist
+            //            artistLabel.text? = song.artist
             albumArtwork.image = UIImage(named: song.albumArtworkName)
-
+            
         }
     }
     
@@ -505,7 +505,7 @@ class MediaPlayerViewController: UIViewController
     @IBAction func resetPressed(sender: UIButton!)
     {
         meditationCountdown.textColor = UIColor.whiteColor()
-
+        
         if whichSegment == 0
         {
             originalCount = 300
@@ -526,13 +526,13 @@ class MediaPlayerViewController: UIViewController
             originalCount = 1200
             meditationCountdown.text = "20:00"
         }
-      
+        
         stopTimer()
         timerCount = 0
         timesTapped = 1
         loadCurrentSong()
         togglePlayback(false)
-//        startTimer()
+        //        startTimer()
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
@@ -561,5 +561,5 @@ class MediaPlayerViewController: UIViewController
     }
     
     
-
+    
 }

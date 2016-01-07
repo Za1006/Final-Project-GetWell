@@ -11,6 +11,7 @@ class PlaylistTableViewCell: UITableViewCell
     @IBOutlet weak var songTitle: UILabel!
     @IBOutlet weak var meditationImage: UIImageView!
     @IBOutlet weak var recordButton: UIButton!
+    @IBOutlet weak var imageOverlayView: UIView!
     
     override func awakeFromNib()
     {
@@ -23,6 +24,11 @@ class PlaylistTableViewCell: UITableViewCell
         super.setSelected(selected, animated: animated)
         
         // Configure the view for the selected state
+    }
+    
+    @IBAction func startRecording(sender: UIButton!)
+    {
+        
     }
     
 }
