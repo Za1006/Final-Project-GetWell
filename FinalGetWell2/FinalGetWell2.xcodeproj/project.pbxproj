@@ -42,6 +42,10 @@
 		5D6827551C24ABD700374755 /* thumbs-up-icon-black-hi.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D6827541C24ABD700374755 /* thumbs-up-icon-black-hi.png */; };
 		5D7C007B1C3ED9EB00CBC505 /* RecordingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7C007A1C3ED9EB00CBC505 /* RecordingViewController.swift */; };
 		5D7C007F1C3EDC3000CBC505 /* cancelButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D7C007E1C3EDC3000CBC505 /* cancelButton.png */; };
+		5D7C00841C3F5D4E00CBC505 /* beginBreathing.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D7C00801C3F5D4E00CBC505 /* beginBreathing.png */; };
+		5D7C00851C3F5D4E00CBC505 /* clearMind.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D7C00811C3F5D4E00CBC505 /* clearMind.png */; };
+		5D7C00861C3F5D4E00CBC505 /* findYourMeditationImg2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D7C00821C3F5D4E00CBC505 /* findYourMeditationImg2.png */; };
+		5D7C00871C3F5D4E00CBC505 /* getComfortable.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D7C00831C3F5D4E00CBC505 /* getComfortable.png */; };
 		5D7CFF8E1C3C1CFF00CBC505 /* newBeachImg.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D7CFF801C3C1CFF00CBC505 /* newBeachImg.png */; };
 		5D7CFF8F1C3C1CFF00CBC505 /* newBirdsImg.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D7CFF811C3C1CFF00CBC505 /* newBirdsImg.png */; };
 		5D7CFF901C3C1CFF00CBC505 /* newChillImg.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D7CFF821C3C1CFF00CBC505 /* newChillImg.png */; };
@@ -187,7 +191,11 @@
 		5D6827521C24AAD100374755 /* ThumbsUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ThumbsUp.png; sourceTree = "<group>"; };
 		5D6827541C24ABD700374755 /* thumbs-up-icon-black-hi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thumbs-up-icon-black-hi.png"; sourceTree = "<group>"; };
 		5D7C007A1C3ED9EB00CBC505 /* RecordingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordingViewController.swift; sourceTree = "<group>"; };
-		5D7C007E1C3EDC3000CBC505 /* cancelButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cancelButton.png; sourceTree = "<group>"; };
+		5D7C007E1C3EDC3000CBC505 /* cancelButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cancelButton.png; path = ../cancelButton.png; sourceTree = "<group>"; };
+		5D7C00801C3F5D4E00CBC505 /* beginBreathing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beginBreathing.png; sourceTree = "<group>"; };
+		5D7C00811C3F5D4E00CBC505 /* clearMind.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clearMind.png; sourceTree = "<group>"; };
+		5D7C00821C3F5D4E00CBC505 /* findYourMeditationImg2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = findYourMeditationImg2.png; sourceTree = "<group>"; };
+		5D7C00831C3F5D4E00CBC505 /* getComfortable.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = getComfortable.png; sourceTree = "<group>"; };
 		5D7CFF801C3C1CFF00CBC505 /* newBeachImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newBeachImg.png; sourceTree = "<group>"; };
 		5D7CFF811C3C1CFF00CBC505 /* newBirdsImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newBirdsImg.png; sourceTree = "<group>"; };
 		5D7CFF821C3C1CFF00CBC505 /* newChillImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newChillImg.png; sourceTree = "<group>"; };
@@ -363,6 +371,7 @@
 		5D4D47B61C3603C400B9949B /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
+				5D7C007E1C3EDC3000CBC505 /* cancelButton.png */,
 				5D7CFFAC1C3DAC8A00CBC505 /* microphone2.png */,
 				5D7CFFAA1C3DAC3B00CBC505 /* micIcon.png */,
 				4CDC86901C3D9D27006842DC /* RecordButtonEdited.png */,
@@ -448,6 +457,10 @@
 				AA184A361C237EB6001A679F /* MediaPlayerViewController.swift */,
 				5D8B94761C2AE3E4001C9579 /* MapViewController.swift */,
 				5D7C007A1C3ED9EB00CBC505 /* RecordingViewController.swift */,
+				5D7C00801C3F5D4E00CBC505 /* beginBreathing.png */,
+				5D7C00811C3F5D4E00CBC505 /* clearMind.png */,
+				5D7C00821C3F5D4E00CBC505 /* findYourMeditationImg2.png */,
+				5D7C00831C3F5D4E00CBC505 /* getComfortable.png */,
 				5DCF68B51C23336500A72F12 /* Main.storyboard */,
 				4C0C88421C3B3B81001016AE /* Parse Login */,
 				4C0C88411C3B3B56001016AE /* Set Reminder */,
@@ -651,6 +664,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D7C00841C3F5D4E00CBC505 /* beginBreathing.png in Resources */,
 				5D8B94431C2A264F001C9579 /* gentlewetcreek.mp3 in Resources */,
 				5D8B94681C2A27B8001C9579 /* TomorrowSound.png in Resources */,
 				5D8B944D1C2A274A001C9579 /* mytomorrow.mp3 in Resources */,
@@ -708,6 +722,7 @@
 				5DCF68E61C233F5E00A72F12 /* Previous.png in Resources */,
 				5D7CFFC21C3DAD4900CBC505 /* Icon-Small@2x.png in Resources */,
 				5D7CFF921C3C1CFF00CBC505 /* newForestImg.png in Resources */,
+				5D7C00861C3F5D4E00CBC505 /* findYourMeditationImg2.png in Resources */,
 				5D7CFFC01C3DAD4900CBC505 /* Icon-83.5@2x.png in Resources */,
 				5D8B94651C2A27B8001C9579 /* RoofTopSound.png in Resources */,
 				5D8B946B1C2A36E8001C9579 /* BeachSound.png in Resources */,
@@ -723,6 +738,7 @@
 				5D8B94201C29A8FC001C9579 /* checked@2x.png in Resources */,
 				5DCF68DE1C233F5E00A72F12 /* GetWellMainPage.png in Resources */,
 				5D7CFFA51C3D61C600CBC505 /* gwNewMindPower.mp3 in Resources */,
+				5D7C00871C3F5D4E00CBC505 /* getComfortable.png in Resources */,
 				5DCF68DF1C233F5E00A72F12 /* GetWellMediaDetailPage.jpg in Resources */,
 				5DCF68DB1C233F5E00A72F12 /* GetWellLogin2.png in Resources */,
 				5D8B94221C29A8FC001C9579 /* unchecked@1x.png in Resources */,
@@ -756,6 +772,7 @@
 				5D7CFF981C3C1CFF00CBC505 /* newSnowStormImg.png in Resources */,
 				5D7CFFA91C3D723400CBC505 /* newCalmAffirmation.png in Resources */,
 				5D28B1761C32FC1800A11907 /* MindPowerImg.png in Resources */,
+				5D7C00851C3F5D4E00CBC505 /* clearMind.png in Resources */,
 				5D7CFF971C3C1CFF00CBC505 /* newRooftopImg.png in Resources */,
 				5D7CFFAD1C3DAC8A00CBC505 /* microphone2.png in Resources */,
 				5D7CFF911C3C1CFF00CBC505 /* newCreekImg.png in Resources */,
