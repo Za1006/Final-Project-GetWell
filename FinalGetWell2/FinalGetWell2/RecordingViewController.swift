@@ -19,11 +19,37 @@ import AVFoundation
         // an instance of AVAudioRecorder and AVAudioPlayer (to play the recording sound)
         var audioRecorder: AVAudioRecorder!
         var audioPlayer: AVAudioPlayer!
+        var audioURL = NSURL()
         
         override func viewDidLoad()
         {
             super.viewDidLoad()
-            // Do any additional setup after loading the view, typically from a nib.
+            
+            let audioData = NSFileManager.defaultManager().contentsAtPath(self.audioURL.path!)
+            let audioFile = PFFile(data: (audioData)!)
+            
+            let sound = PFObject(className: "sound")
+            sound.setObject(PFUser.currentUser()!, forKey: "User")
+            sound.setObject(audioFile!, forKey: "Audio")
+            
+            sound.saveInBackgroundWithBlock { (sucess: Bool, error: NSError?) -> Void in
+            if sucess == true
+            {
+                let audioFile = PFFile(name: "mysound.caf", data: NSData(contentsOfURL: self.audioURL)!)
+                sound["audioFile"] = audioFile
+                
+            }
+            if sucess == false
+            {
+                print("Sucesses")
+            }
+            else
+            {
+                print("Nice Try")
+            }
+            }
+            
+            self.dismissViewControllerAnimated(true, completion: nil)
             
             let playTap = UITapGestureRecognizer(target: self, action: "play")
             playButtonImageView.addGestureRecognizer(playTap)
