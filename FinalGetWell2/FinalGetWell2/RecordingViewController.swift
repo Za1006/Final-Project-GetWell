@@ -12,41 +12,18 @@ import AVFoundation
     class RecordingViewController: UIViewController
     {
         
-        @IBOutlet weak var playButtonImageView: UIImageView!
-        @IBOutlet weak var cancelButtonImageView: UIImageView!
-        @IBOutlet weak var recordButtonImageView: UIImageView!
-        
         // an instance of AVAudioRecorder and AVAudioPlayer (to play the recording sound)
         var audioRecorder: AVAudioRecorder!
         var audioPlayer: AVAudioPlayer?
         
-        override func viewDidLoad() {
+        override func viewDidLoad()
+        {
             super.viewDidLoad()
-            // Do any additional setup after loading the view, typically from a nib.
-            
-            let playTap = UITapGestureRecognizer(target: self, action: "play")
-            playButtonImageView.addGestureRecognizer(playTap)
-            
-            let cancelTap = UITapGestureRecognizer(target: self, action: "cancel")
-            cancelButtonImageView.addGestureRecognizer(cancelTap)
-            
-            let recordTap = UITapGestureRecognizer(target: self, action: "record")
-            recordButtonImageView.addGestureRecognizer(recordTap)
-            
-            // disable the stop and play buttons when we start
-            self.configureImageView(cancelButtonImageView, alpha: 0.5, userInteractionEnabled: false)
-            self.configureImageView(playButtonImageView, alpha: 0.5, userInteractionEnabled: false)
-            
-            // let's set up the audio recorder and player
+
             setUpAudioRecord()
             
         }
-        
-        func configureImageView(imageView: UIImageView, alpha: CGFloat, userInteractionEnabled: Bool) {
-            imageView.alpha = alpha
-            imageView.userInteractionEnabled = userInteractionEnabled
-        }
-        
+    
         func setUpAudioRecord()
         {
             // set up the audio file
@@ -85,7 +62,6 @@ import AVFoundation
             if let player = audioPlayer {
                 if player.playing {
                     player.stop()
-                    playButtonImageView.image = UIImage(named: "Play")
                     return
                 }
             }
@@ -98,11 +74,9 @@ import AVFoundation
                         audioPlayer?.play()
                         
                         // change the play button. enable it and change the image
-                        playButtonImageView.image = UIImage(named: "Cancel")
-                        playButtonImageView.userInteractionEnabled = true
+                        
                         
                         // disable the cancel button image view
-                        configureImageView(cancelButtonImageView, alpha: 0.5, userInteractionEnabled: false)
                     } catch let error {
                         print(error)
                     }
@@ -114,10 +88,6 @@ import AVFoundation
         
         func cancel()
         {
-            recordButtonImageView.image = UIImage(named: "Record")
-            // enable play button image view
-            self.configureImageView(playButtonImageView, alpha: 1, userInteractionEnabled: true)
-            
             // stop the audio recorder
             audioRecorder?.stop()
             
@@ -135,8 +105,7 @@ import AVFoundation
             if let player = audioPlayer {
                 if player.playing {
                     player.stop()
-                    playButtonImageView.image = UIImage(named: "Play")
-                    playButtonImageView.userInteractionEnabled = false
+                    
                 }
             }
             
@@ -149,23 +118,17 @@ import AVFoundation
                         
                         // start recording
                         recorder.record()
-                        recordButtonImageView.image = UIImage(named: "Start-Recording")
-                        configureImageView(recordButtonImageView, alpha: 1.0, userInteractionEnabled: true)
+                        
                     } catch let error {
                         print(error)
                     }
                 } else {
                     // pause the recording
                     recorder.pause()
-                    recordButtonImageView.image = UIImage(named: "Record")
                 }
             }
             
-            // enable the cancel button image view
-            self.configureImageView(cancelButtonImageView, alpha: 1.0, userInteractionEnabled: true)
-            
-            // disable play button
-            self.configureImageView(playButtonImageView, alpha: 0.5, userInteractionEnabled: false)
+
         }
         
         // MARK: - Helper method
@@ -201,7 +164,21 @@ import AVFoundation
             if flag {
                 self.alert("Finish Playing", msg: "Finish playing the recording")
                 
-                playButtonImageView.image = UIImage(named: "Play")
             }
+        }
+        
+        @IBAction func recordTapped(sender: UIButton)
+        {
+            record()
+        }
+        
+        @IBAction func cancelTapped(sender: UIButton)
+        {
+            cancel()
+        }
+        
+        @IBAction func playTapped(sender: UIButton)
+        {
+            play()
         }
 }
