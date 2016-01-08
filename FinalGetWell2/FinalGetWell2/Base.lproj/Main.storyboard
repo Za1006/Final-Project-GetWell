@@ -643,45 +643,8 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newMediaSkin.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="2GE-va-WTo">
                                 <rect key="frame" x="-4" y="64" width="383" height="603"/>
                             </imageView>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="fik-pu-Jzf">
-                                <rect key="frame" x="0.0" y="340" width="375" height="29"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="OfG-tq-Kf8"/>
-                                    <constraint firstAttribute="width" constant="359" id="kFT-Xr-Yx1"/>
-                                    <constraint firstAttribute="height" constant="28" id="ngk-Zl-9ln"/>
-                                    <constraint firstAttribute="width" constant="600" id="tTr-20-ep3"/>
-                                </constraints>
-                                <segments>
-                                    <segment title="5 minutes"/>
-                                    <segment title="10 minutes"/>
-                                    <segment title="15 minutes"/>
-                                    <segment title="20 minutes"/>
-                                </segments>
-                                <color key="tintColor" red="0.94937485034776359" green="1" blue="0.9455585369080548" alpha="1" colorSpace="calibratedRGB"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="OfG-tq-Kf8"/>
-                                        <exclude reference="kFT-Xr-Yx1"/>
-                                        <exclude reference="ngk-Zl-9ln"/>
-                                        <exclude reference="tTr-20-ep3"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="182" width="400" height="29"/>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="311" width="375" height="29"/>
-                                    <mask key="constraints">
-                                        <exclude reference="OfG-tq-Kf8"/>
-                                        <exclude reference="kFT-Xr-Yx1"/>
-                                    </mask>
-                                </variation>
-                                <connections>
-                                    <action selector="segmentedIndexTapped:" destination="KqX-MC-iiQ" eventType="valueChanged" id="9tw-zu-FQV"/>
-                                </connections>
-                            </segmentedControl>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="TIMER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hPN-rr-9SK">
-                                <rect key="frame" x="162" y="374" width="53" height="25"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TIMER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hPN-rr-9SK">
+                                <rect key="frame" x="161" y="374" width="53" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="aes-Gd-F36"/>
                                     <constraint firstAttribute="width" constant="302" id="rJ3-nQ-XgD"/>
@@ -702,8 +665,8 @@
                                     <rect key="frame" x="161" y="354" width="53" height="25"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="05:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M8g-Na-5Ku">
-                                <rect key="frame" x="162" y="397" width="54" height="28"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="05:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M8g-Na-5Ku">
+                                <rect key="frame" x="160" y="397" width="54" height="28"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="54" id="41o-hf-5S7"/>
                                     <constraint firstAttribute="width" constant="54" id="DLB-DA-wq9"/>
@@ -732,8 +695,8 @@
                                     <rect key="frame" x="159" y="379" width="58" height="27"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Song Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qna-FH-2Bg">
-                                <rect key="frame" x="143" y="551" width="92" height="28"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Song Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qna-FH-2Bg">
+                                <rect key="frame" x="141" y="551" width="92" height="28"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="87" id="n2m-NB-7Er"/>
                                     <constraint firstAttribute="height" constant="26" id="yKM-TL-RIc"/>
@@ -754,29 +717,29 @@
                                     <rect key="frame" x="144" y="557" width="87" height="26"/>
                                 </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nmf-NF-XH3">
-                                <rect key="frame" x="166" y="490" width="45" height="45"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nmf-NF-XH3">
+                                <rect key="frame" x="164" y="490" width="45" height="45"/>
                                 <state key="normal" image="PlayB"/>
                                 <connections>
                                     <action selector="playPauseTapped:" destination="KqX-MC-iiQ" eventType="touchUpInside" id="Zem-lr-5pg"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y6D-cX-78S">
-                                <rect key="frame" x="251" y="490" width="45" height="45"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y6D-cX-78S">
+                                <rect key="frame" x="249" y="490" width="45" height="45"/>
                                 <state key="normal" image="NextB"/>
                                 <connections>
                                     <action selector="skipForwardTapped:" destination="KqX-MC-iiQ" eventType="touchUpInside" id="v6A-hX-1bq"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L3s-fU-7FT">
-                                <rect key="frame" x="81" y="490" width="45" height="45"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L3s-fU-7FT">
+                                <rect key="frame" x="79" y="490" width="45" height="45"/>
                                 <state key="normal" image="Prev"/>
                                 <connections>
                                     <action selector="skipBackTapped:" destination="KqX-MC-iiQ" eventType="touchUpInside" id="YRP-Pe-SXv"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5iS-jU-J5n">
-                                <rect key="frame" x="171" y="440" width="35" height="35"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5iS-jU-J5n">
+                                <rect key="frame" x="169" y="440" width="35" height="35"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <state key="normal" image="Reset"/>
                                 <connections>
@@ -840,6 +803,43 @@
                                     <rect key="frame" x="0.0" y="64" width="375" height="247"/>
                                 </variation>
                             </imageView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="fik-pu-Jzf">
+                                <rect key="frame" x="0.0" y="340" width="375" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="OfG-tq-Kf8"/>
+                                    <constraint firstAttribute="width" constant="359" id="kFT-Xr-Yx1"/>
+                                    <constraint firstAttribute="height" constant="28" id="ngk-Zl-9ln"/>
+                                    <constraint firstAttribute="width" constant="600" id="tTr-20-ep3"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="5 minutes"/>
+                                    <segment title="10 minutes"/>
+                                    <segment title="15 minutes"/>
+                                    <segment title="20 minutes"/>
+                                </segments>
+                                <color key="tintColor" red="0.94937485034776359" green="1" blue="0.9455585369080548" alpha="1" colorSpace="calibratedRGB"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="OfG-tq-Kf8"/>
+                                        <exclude reference="kFT-Xr-Yx1"/>
+                                        <exclude reference="ngk-Zl-9ln"/>
+                                        <exclude reference="tTr-20-ep3"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="182" width="400" height="29"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="311" width="375" height="29"/>
+                                    <mask key="constraints">
+                                        <exclude reference="OfG-tq-Kf8"/>
+                                        <exclude reference="kFT-Xr-Yx1"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="segmentedIndexTapped:" destination="KqX-MC-iiQ" eventType="valueChanged" id="9tw-zu-FQV"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
