@@ -18,6 +18,8 @@ class RecordingViewController: UIViewController
     var audioRecorder: AVAudioRecorder!
     var audioPlayer: AVAudioPlayer?
     
+    var delegate: MediaPlayerViewController?
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
