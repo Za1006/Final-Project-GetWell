@@ -1712,60 +1712,65 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PlayPauseBx3.png" translatesAutoresizingMaskIntoConstraints="NO" id="bPe-3R-nrh">
-                                <rect key="frame" x="153" y="152" width="70" height="63"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NJY-Nl-mqU">
+                                <rect key="frame" x="107" y="319" width="161" height="30"/>
+                                <state key="normal" title="Tap to Finish Recording"/>
+                                <connections>
+                                    <action selector="cancelTapped:" destination="v5f-zU-CnU" eventType="touchUpInside" id="Iab-VL-zUs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5cZ-Ur-vOg">
+                                <rect key="frame" x="135" y="450" width="105" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="70" id="CZE-RE-WIe"/>
+                                    <constraint firstAttribute="width" secondItem="5cZ-Ur-vOg" secondAttribute="height" multiplier="21:20" id="Ner-w1-J9G"/>
+                                    <constraint firstAttribute="width" constant="105" id="SZc-KI-Hoa"/>
                                 </constraints>
+                                <state key="normal" title="Play" image="PlayPauseBx3.png"/>
+                                <connections>
+                                    <action selector="playTapped:" destination="v5f-zU-CnU" eventType="touchUpInside" id="Lhl-mj-eVK"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recording" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hwk-Mr-uva">
+                                <rect key="frame" x="149" y="259" width="78" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.96470588239999999" green="0.1082987661" blue="0.14895784910000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HrZ-YS-nfE">
+                                <rect key="frame" x="145" y="114" width="86" height="105"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="HrZ-YS-nfE" secondAttribute="height" multiplier="86:105" id="Ax3-oF-ijn"/>
+                                    <constraint firstAttribute="width" constant="86" id="RSW-i2-CQG"/>
+                                    <constraint firstAttribute="width" constant="79" id="hrm-fa-uyT"/>
+                                    <constraint firstAttribute="width" secondItem="HrZ-YS-nfE" secondAttribute="height" multiplier="79:76" id="lca-6C-5Xg"/>
+                                </constraints>
+                                <state key="normal" title="Tap to Finish Recording" image="microphone2.png"/>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="CZE-RE-WIe"/>
+                                        <exclude reference="hrm-fa-uyT"/>
+                                        <exclude reference="lca-6C-5Xg"/>
                                     </mask>
                                 </variation>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="microphone2.png" translatesAutoresizingMaskIntoConstraints="NO" id="t0Q-Kk-IaK">
-                                <rect key="frame" x="55" y="152" width="70" height="63"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="70" id="Jtz-HR-SAo"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="Jtz-HR-SAo"/>
-                                    </mask>
-                                </variation>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cancelButton.png" translatesAutoresizingMaskIntoConstraints="NO" id="BQK-iG-WHC">
-                                <rect key="frame" x="252" y="152" width="70" height="63"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="70" id="Zki-w3-Zc3"/>
-                                </constraints>
-                            </imageView>
+                                <connections>
+                                    <action selector="recordTapped:" destination="v5f-zU-CnU" eventType="touchUpInside" id="ouR-Zt-hlF"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="ZuI-dj-Q2g" firstAttribute="top" secondItem="BQK-iG-WHC" secondAttribute="bottom" constant="452" id="1WO-5V-lDF"/>
-                            <constraint firstItem="ZuI-dj-Q2g" firstAttribute="top" secondItem="t0Q-Kk-IaK" secondAttribute="bottom" constant="452" id="7Br-ys-9rQ"/>
-                            <constraint firstItem="bPe-3R-nrh" firstAttribute="leading" secondItem="t0Q-Kk-IaK" secondAttribute="trailing" constant="28" id="DZY-XG-QYL"/>
-                            <constraint firstItem="t0Q-Kk-IaK" firstAttribute="top" secondItem="DJr-yd-ZJF" secondAttribute="bottom" constant="132" id="Eni-JJ-8vg"/>
-                            <constraint firstAttribute="trailing" secondItem="BQK-iG-WHC" secondAttribute="trailing" constant="53" id="EyJ-gi-Op9"/>
-                            <constraint firstItem="BQK-iG-WHC" firstAttribute="top" secondItem="bPe-3R-nrh" secondAttribute="bottom" constant="-63" id="KzG-rV-rPx"/>
-                            <constraint firstItem="t0Q-Kk-IaK" firstAttribute="top" secondItem="bPe-3R-nrh" secondAttribute="top" id="Oqg-Ih-YKU"/>
-                            <constraint firstItem="BQK-iG-WHC" firstAttribute="leading" secondItem="bPe-3R-nrh" secondAttribute="trailing" constant="29" id="SCj-Av-H3P"/>
-                            <constraint firstItem="bPe-3R-nrh" firstAttribute="centerX" secondItem="CQz-gW-Bwm" secondAttribute="centerX" id="Wko-1Z-REV"/>
-                            <constraint firstItem="BQK-iG-WHC" firstAttribute="top" secondItem="DJr-yd-ZJF" secondAttribute="bottom" constant="132" id="Y2C-EK-7zp"/>
-                            <constraint firstItem="BQK-iG-WHC" firstAttribute="centerY" secondItem="bPe-3R-nrh" secondAttribute="centerY" id="hb2-9L-Om3"/>
-                            <constraint firstItem="t0Q-Kk-IaK" firstAttribute="bottom" secondItem="BQK-iG-WHC" secondAttribute="bottom" id="kbi-pu-Zk9"/>
-                            <constraint firstItem="t0Q-Kk-IaK" firstAttribute="centerY" secondItem="bPe-3R-nrh" secondAttribute="centerY" id="pyL-54-v1H"/>
-                            <constraint firstItem="ZuI-dj-Q2g" firstAttribute="top" secondItem="bPe-3R-nrh" secondAttribute="bottom" constant="452" id="rDM-gm-Hyt"/>
-                            <constraint firstItem="bPe-3R-nrh" firstAttribute="top" secondItem="DJr-yd-ZJF" secondAttribute="bottom" constant="132" id="uNG-m2-3jg"/>
-                            <constraint firstItem="t0Q-Kk-IaK" firstAttribute="leading" secondItem="CQz-gW-Bwm" secondAttribute="leading" constant="55" id="veX-Yy-F0n"/>
+                            <constraint firstItem="HrZ-YS-nfE" firstAttribute="centerX" secondItem="CQz-gW-Bwm" secondAttribute="centerX" id="4PZ-5S-0hf"/>
+                            <constraint firstItem="Hwk-Mr-uva" firstAttribute="centerX" secondItem="HrZ-YS-nfE" secondAttribute="centerX" id="Eg1-hc-69i"/>
+                            <constraint firstItem="HrZ-YS-nfE" firstAttribute="centerY" secondItem="CQz-gW-Bwm" secondAttribute="centerY" multiplier="0.5" id="Hvd-ik-bn3"/>
+                            <constraint firstItem="NJY-Nl-mqU" firstAttribute="centerX" secondItem="CQz-gW-Bwm" secondAttribute="centerX" id="ITE-jY-jZz"/>
+                            <constraint firstItem="5cZ-Ur-vOg" firstAttribute="centerY" secondItem="CQz-gW-Bwm" secondAttribute="centerY" multiplier="1.5" id="L0H-82-nJH"/>
+                            <constraint firstItem="5cZ-Ur-vOg" firstAttribute="centerX" secondItem="CQz-gW-Bwm" secondAttribute="centerX" id="Tmi-IH-LCJ"/>
+                            <constraint firstItem="NJY-Nl-mqU" firstAttribute="centerY" secondItem="CQz-gW-Bwm" secondAttribute="centerY" id="Xpa-pt-n9d"/>
+                            <constraint firstItem="Hwk-Mr-uva" firstAttribute="top" secondItem="HrZ-YS-nfE" secondAttribute="bottom" constant="40" id="coA-ny-ckX"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="cancelButtonImageView" destination="BQK-iG-WHC" id="BM6-Uy-3bd"/>
-                        <outlet property="playButtonImageView" destination="bPe-3R-nrh" id="W3t-si-HMn"/>
-                        <outlet property="recordButtonImageView" destination="t0Q-Kk-IaK" id="5LT-0q-EKl"/>
+                        <outlet property="recordingLabel" destination="Hwk-Mr-uva" id="cmT-rR-UeO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7a8-bD-drR" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1827,7 +1832,6 @@
         <image name="Prev" width="45" height="45"/>
         <image name="Reset" width="35" height="35"/>
         <image name="background.png" width="1200" height="2038"/>
-        <image name="cancelButton.png" width="256" height="256"/>
         <image name="microphone2.png" width="366" height="366"/>
         <image name="newMediaSkin.jpg" width="1200" height="2038"/>
         <image name="searchYogaButton3.png" width="24" height="24"/>
