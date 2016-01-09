@@ -64,6 +64,12 @@ class LoginViewController: UIViewController
                     print(error?.localizedDescription)
                     self.errorMessageLabel.text = "Please enter username and password to login."
                 }
+//                if user == nil
+//                {
+//                    print("Sign in as Guest")
+//                    self.navigationController?.performSegueWithIdentifier("ShowMediaVCSegue", sender: self)
+//
+//                }
                 
             }
         }
@@ -75,6 +81,10 @@ class LoginViewController: UIViewController
        self.navigationController?.performSegueWithIdentifier("unwindFromLogin", sender: self)
     }
 
-
+    @IBAction func signinAsGuestTapped(sender: UIButton)
+    {
+        self.navigationController?.performSegueWithIdentifier("ShowMediaVCSegue", sender: self)
+        
+    }
 
 }
