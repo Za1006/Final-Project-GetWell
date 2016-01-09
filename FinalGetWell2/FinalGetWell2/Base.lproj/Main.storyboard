@@ -1421,7 +1421,7 @@
                                                     </variation>
                                                     <connections>
                                                         <action selector="startRecording:" destination="jVW-T4-tgf" eventType="touchUpInside" id="2wu-C7-y7T"/>
-                                                        <segue destination="v5f-zU-CnU" kind="presentation" id="fL3-g9-VEV"/>
+                                                        <segue destination="v5f-zU-CnU" kind="show" id="fL3-g9-VEV"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
