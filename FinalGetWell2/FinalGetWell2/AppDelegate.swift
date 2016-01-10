@@ -22,8 +22,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate
         
         application.registerUserNotificationSettings(UIUserNotificationSettings(forTypes: [.Alert, .Sound], categories: nil))
         
-  Parse.setApplicationId("TaE85IRBTU5SMaF1v1BUfPOOZ0eRNMsbqSWIY3p4",
-            clientKey: "tkjIZEXnJhcEOigGzkbr3PSY0eHKRBG0CgKehmD8")
+        Parse.setApplicationId("vRD8iG1xxduHAAOlLaGxxJAVk73f9cmYhuPp6n2B",
+            clientKey: "iIKaB9BmdXOVymILxrLhBXAvNJrTI4CDLNwBbrF9")
         
 
         return true

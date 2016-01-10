@@ -13,6 +13,7 @@
 		4C0C883D1C3B37F7001016AE /* PlaylistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0C883C1C3B37F7001016AE /* PlaylistTableViewCell.swift */; };
 		4C0C883F1C3B3891001016AE /* DownArrow2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C0C883E1C3B3891001016AE /* DownArrow2.png */; };
 		4C618F751C29D0D600104B71 /* reset.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C618F741C29D0D600104B71 /* reset.png */; };
+		4C802B841C42088000F5698C /* ParseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C802B831C42088000F5698C /* ParseHelper.swift */; };
 		4C8C816E1C287F03009C8C60 /* SessionOver.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4C8C816D1C287F03009C8C60 /* SessionOver.m4a */; };
 		4CDC86911C3D9D27006842DC /* RecordButtonEdited.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CDC86901C3D9D27006842DC /* RecordButtonEdited.png */; };
 		5D28B1751C32FC1800A11907 /* mindPowerAffirmation.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5D28B1731C32FC1800A11907 /* mindPowerAffirmation.mp3 */; };
@@ -159,6 +160,7 @@
 		4C0C883C1C3B37F7001016AE /* PlaylistTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistTableViewCell.swift; sourceTree = "<group>"; };
 		4C0C883E1C3B3891001016AE /* DownArrow2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DownArrow2.png; sourceTree = "<group>"; };
 		4C618F741C29D0D600104B71 /* reset.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reset.png; sourceTree = "<group>"; };
+		4C802B831C42088000F5698C /* ParseHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseHelper.swift; sourceTree = "<group>"; };
 		4C8C816D1C287F03009C8C60 /* SessionOver.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = SessionOver.m4a; sourceTree = "<group>"; };
 		4CDC86901C3D9D27006842DC /* RecordButtonEdited.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RecordButtonEdited.png; sourceTree = "<group>"; };
 		5D28B1731C32FC1800A11907 /* mindPowerAffirmation.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mindPowerAffirmation.mp3; sourceTree = "<group>"; };
@@ -456,6 +458,7 @@
 				5DCF68FF1C233FE500A72F12 /* Music */,
 				4C618F6D1C29CD8B00104B71 /* Misc */,
 				4C0C88401C3B3A79001016AE /* Playlist */,
+				4C802B831C42088000F5698C /* ParseHelper.swift */,
 			);
 			path = FinalGetWell2;
 			sourceTree = "<group>";
@@ -841,6 +844,7 @@
 				5D6827511C24A8DA00374755 /* TableViewCell.swift in Sources */,
 				AA184A2F1C233AC1001A679F /* RegisterViewController.swift in Sources */,
 				AA184A2B1C2339FB001A679F /* LoginViewController.swift in Sources */,
+				4C802B841C42088000F5698C /* ParseHelper.swift in Sources */,
 				AA184A311C233C5D001A679F /* MainViewController.swift in Sources */,
 				5DCF68BA1C23336500A72F12 /* FinalGetWell2.xcdatamodeld in Sources */,
 				4C0C883B1C3B3794001016AE /* PlaylistTableViewController.swift in Sources */,
@@ -965,7 +969,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FinalGetWell2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = FinalGetWell235;
+				PRODUCT_BUNDLE_IDENTIFIER = FinalGetWell236;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "FinalGetWell2/FinalGetWell2-Bridging-Header.h";
@@ -983,7 +987,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FinalGetWell2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = FinalGetWell235;
+				PRODUCT_BUNDLE_IDENTIFIER = FinalGetWell236;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "FinalGetWell2/FinalGetWell2-Bridging-Header.h";

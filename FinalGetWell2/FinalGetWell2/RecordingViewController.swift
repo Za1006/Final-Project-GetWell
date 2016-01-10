@@ -18,6 +18,8 @@ import AVFoundation
         var audioRecorder: AVAudioRecorder!
         var audioPlayer: AVAudioPlayer?
         
+        var lastAudioFileURL: String?
+        
         override func viewDidLoad()
         {
             super.viewDidLoad()
@@ -30,10 +32,12 @@ import AVFoundation
     
         func setUpAudioRecord()
         {
+//            let audiOFile = ParseHelper.uploadSoundFileToParse("documents/var..","myRecording1")
             // set up the audio file
             let directoryURL = NSFileManager.defaultManager().URLsForDirectory(NSSearchPathDirectory.DocumentDirectory, inDomains: NSSearchPathDomainMask.UserDomainMask).first!
+            // rename file using a method to change string to random
             let audioFileURL = directoryURL.URLByAppendingPathComponent("MyMemo.m4a")
-            
+            self.lastAudioFileURL = audioFileURL.absoluteString
             // set up the audio session
             // the audio session acts as the middle man between the app and the system's media service
             // answers question like should the app stops the currently playing music, should be allowed to play back the recording
@@ -182,12 +186,17 @@ import AVFoundation
         {
             cancel()
             recordingLabel.hidden = true
+            
+            
+            
 
         }
         
         @IBAction func playTapped(sender: UIButton)
         {
             play()
-            dismissViewControllerAnimated(true, completion: nil)
+            let nameOfFileTwo:String = "Wow"
+            ParseHelper.uploadSoundFileToParse(self.lastAudioFileURL!, nameOfFile:nameOfFileTwo)
+//            dismissViewControllerAnimated(true, completion: nil)
         }
 }

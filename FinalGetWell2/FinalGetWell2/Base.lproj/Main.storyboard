@@ -1716,7 +1716,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZHH-9V-yVL">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZHH-9V-yVL">
                                 <rect key="frame" x="16" y="64" width="61" height="69"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="ZHH-9V-yVL" secondAttribute="height" multiplier="61:69" id="3Vg-aP-WlN"/>
@@ -1750,7 +1750,7 @@
                                 <color key="textColor" red="0.96470588239999999" green="0.1082987661" blue="0.14895784910000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dhA-6A-JwW">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dhA-6A-JwW">
                                 <rect key="frame" x="255" y="64" width="104" height="119"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="dhA-6A-JwW" secondAttribute="height" multiplier="104:119" id="4c6-LH-K8k"/>
