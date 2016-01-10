@@ -108,6 +108,11 @@ class PlaylistTableViewController: UITableViewController
         //        parent?.player.play()
         //        parent?.startTimer()
         
+//        let controllerToPopTo = navigationController?.viewControllers[1] as! MediaPlayerViewController
+//        
+//        navigationController?.popToViewController(controllerToPopTo, animated: true)
+        
+//        navigationController?.popToViewController(UIViewController: MediaPlayerViewController, animated: true)
         navigationController?.dismissViewControllerAnimated(true, completion: nil)
     }
     

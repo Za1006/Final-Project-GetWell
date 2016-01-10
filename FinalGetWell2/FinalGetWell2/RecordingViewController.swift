@@ -12,6 +12,8 @@ import AVFoundation
     class RecordingViewController: UIViewController
     {
         
+        @IBOutlet weak var recordingLabel: UILabel!
+        
         // an instance of AVAudioRecorder and AVAudioPlayer (to play the recording sound)
         var audioRecorder: AVAudioRecorder!
         var audioPlayer: AVAudioPlayer?
@@ -19,6 +21,8 @@ import AVFoundation
         override func viewDidLoad()
         {
             super.viewDidLoad()
+            
+            recordingLabel.hidden = true
 
             setUpAudioRecord()
             
@@ -170,15 +174,20 @@ import AVFoundation
         @IBAction func recordTapped(sender: UIButton)
         {
             record()
+            recordingLabel.hidden = false
+
         }
         
         @IBAction func cancelTapped(sender: UIButton)
         {
             cancel()
+            recordingLabel.hidden = true
+
         }
         
         @IBAction func playTapped(sender: UIButton)
         {
             play()
+            dismissViewControllerAnimated(true, completion: nil)
         }
 }
