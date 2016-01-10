@@ -189,7 +189,7 @@
 		5D6827521C24AAD100374755 /* ThumbsUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ThumbsUp.png; sourceTree = "<group>"; };
 		5D6827541C24ABD700374755 /* thumbs-up-icon-black-hi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thumbs-up-icon-black-hi.png"; sourceTree = "<group>"; };
 		5D7C007A1C3ED9EB00CBC505 /* RecordingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordingViewController.swift; sourceTree = "<group>"; };
-		5D7C007E1C3EDC3000CBC505 /* cancelButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cancelButton.png; sourceTree = "<group>"; };
+		5D7C007E1C3EDC3000CBC505 /* cancelButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cancelButton.png; path = ../cancelButton.png; sourceTree = "<group>"; };
 		5D7CFF801C3C1CFF00CBC505 /* newBeachImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newBeachImg.png; sourceTree = "<group>"; };
 		5D7CFF811C3C1CFF00CBC505 /* newBirdsImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newBirdsImg.png; sourceTree = "<group>"; };
 		5D7CFF821C3C1CFF00CBC505 /* newChillImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newChillImg.png; sourceTree = "<group>"; };
@@ -364,6 +364,7 @@
 		5D4D47B61C3603C400B9949B /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
+				5D7C007E1C3EDC3000CBC505 /* cancelButton.png */,
 				5D7CFFAC1C3DAC8A00CBC505 /* microphone2.png */,
 				5D7CFFAA1C3DAC3B00CBC505 /* micIcon.png */,
 				4CDC86901C3D9D27006842DC /* RecordButtonEdited.png */,
@@ -445,11 +446,11 @@
 				5DCF68B11C23336500A72F12 /* AppDelegate.swift */,
 				AAEA574D1C3ECECA006D06BC /* StartUpViewController.swift */,
 				AA184A301C233C5D001A679F /* MainViewController.swift */,
-				5D7C007E1C3EDC3000CBC505 /* cancelButton.png */,
 				5D6827501C24A8DA00374755 /* TableViewCell.swift */,
 				AA184A361C237EB6001A679F /* MediaPlayerViewController.swift */,
 				5D8B94761C2AE3E4001C9579 /* MapViewController.swift */,
 				5D7C007A1C3ED9EB00CBC505 /* RecordingViewController.swift */,
+				4C802B831C42088000F5698C /* ParseHelper.swift */,
 				5DCF68B51C23336500A72F12 /* Main.storyboard */,
 				4C0C88421C3B3B81001016AE /* Parse Login */,
 				4C0C88411C3B3B56001016AE /* Set Reminder */,
@@ -458,7 +459,6 @@
 				5DCF68FF1C233FE500A72F12 /* Music */,
 				4C618F6D1C29CD8B00104B71 /* Misc */,
 				4C0C88401C3B3A79001016AE /* Playlist */,
-				4C802B831C42088000F5698C /* ParseHelper.swift */,
 			);
 			path = FinalGetWell2;
 			sourceTree = "<group>";
